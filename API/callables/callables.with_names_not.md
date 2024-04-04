@@ -54,7 +54,7 @@ Output:
 ### Modifiers Example
 
 ```python
-from astrea import *
+from glider import *
 
 def query():
   # Retrieve the modifiers that are not named `onlyOwner` and `onlyMinter`
