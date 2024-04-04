@@ -4,7 +4,7 @@ Adds a filter to get callables having specified argument types. Returns a filter
 
 To filter given a single argument type, refer to [Callables.with\_arg\_type()](callables.with\_arg\_type.md).
 
-_Note that the order of the argument types is important. I.e. calling `.with_arg_types(["a", "b"])` is **not equivalent** to calling `.with_arg_types(["a", "b"])` !_
+_Note that the order of the argument types is important. I.e. calling `.with_arg_types(["a", "b"])` is **not equivalent** to calling `.with_arg_types(["b", "a"])` !_
 
 ### Functions Example
 
