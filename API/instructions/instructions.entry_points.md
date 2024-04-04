@@ -1,8 +1,14 @@
 # Instructions.entry\_points()
 
-Returns an Instructions object for the entry\_point instructions.
+**`entry_points`**`() →` [`Instructions`](./)
 
-The Instructions object returned includes all entry points to functions.
+Returns an [Instructions](./) object for the entry\_point instructions.
+
+The [Instructions](./) object returned includes all entry points to functions.
+
+## Return type
+
+`→` [`Instructions`](./)
 
 ```python
 from glider import *

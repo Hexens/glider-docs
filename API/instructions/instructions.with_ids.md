@@ -1,6 +1,12 @@
 # Instructions.with\_ids()
 
+**`with_ids`**`(`_`ids: List[str]`_`) →` [`Instructions`](./)
+
 Adds a filter to get instructions having ids from the given list.
+
+## Return type
+
+`→` [`Instructions`](./)
 
 ```python
 from glider import *

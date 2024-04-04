@@ -1,6 +1,12 @@
 # Instructions.library\_calls()
 
+**`library_calls`**`() →` [`Instructions`](./)
+
 Returns a list of all library call instructions.
+
+## Return type
+
+`→` [`Instructions`](./)
 
 ```python
 from glider import *

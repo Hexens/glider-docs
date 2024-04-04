@@ -1,6 +1,12 @@
 # Instructions.external\_calls()
 
-Returns a list of all external call instructions.
+**`external_calls`**`() →` [`Instructions`](./)
+
+Returns the [Instructions](./) object withe all the external call instructions.
+
+## Return type
+
+`→` [`Instructions`](./)
 
 ```python
 from glider import *

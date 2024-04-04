@@ -1,8 +1,10 @@
 # Convertor.set\_conversions()
 
+**`set_conversions`**`(`_`conversions: dict`_`) → None`
+
 Set allowed conversions.
 
-Deletes any previous conversions added to the Convertor.\
+Deletes any previous conversions added to the [Convertor](./).\
 Takes as an argument a dictionary with as keys the convertible types and as values the lists of allowed converted types.
 
 ```python

@@ -1,6 +1,12 @@
 # Instructions.calls()
 
-Returns an Instructions object for the call instructions.
+**calls**() → [Instructions](./)
+
+Returns an [Instructions](./) object for the call instructions.
+
+## Return type
+
+→ [Instructions](./)
 
 ```python
 from glider import *

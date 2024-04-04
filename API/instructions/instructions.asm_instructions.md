@@ -1,6 +1,8 @@
 # Instructions.asm\_instructions()
 
-Returns an Instructions object for the assembly instructions.
+**`asm_instructions`**`() →` [`Instructions`](./)
+
+Returns an [Instructions](./) object for the assembly instructions.
 
 ```python
 from glider import *

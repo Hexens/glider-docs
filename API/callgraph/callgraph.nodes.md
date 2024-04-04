@@ -1,6 +1,8 @@
 # CallGraph.nodes()
 
-Returns the map of all call nodes. The key of the map is id of a node.
+**`nodes`**`() → Dict[str,` [`CallNode`](../callnode/)`]`
+
+Returns the map of all call nodes. The key of the map is the id of a node.
 
 ```python
 from glider import *

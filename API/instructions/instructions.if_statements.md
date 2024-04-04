@@ -1,6 +1,12 @@
 # Instructions.if\_statements()
 
-Returns an Instructions object for the if instructions.
+**`if_statements`**`() →` [`Instructions`](./)
+
+Returns an [Instructions](./) object for the if instructions.
+
+## Return type
+
+`→` [`Instructions`](./)
 
 ```python
 from glider import *

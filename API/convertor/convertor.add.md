@@ -1,7 +1,8 @@
 # Convertor.add()
 
-Add a new conversion.\
+**`add`**`(`_`from_type: str`_`,`` `_`to_type: str`_`) → None`
 
+Add a new conversion.
 
 ```python
 from glider import *

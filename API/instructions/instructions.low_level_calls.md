@@ -1,8 +1,14 @@
 # Instructions.low\_level\_calls()
 
+**`low_level_calls`**`() →` [`Instructions`](./)
+
 Returns a list of the functions calls instructions.
 
 Only solidity's low level `call()` is returned.
+
+## Return type
+
+`→` [`Instructions`](./)
 
 ```python
 from glider import *

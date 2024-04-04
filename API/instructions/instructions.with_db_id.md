@@ -1,6 +1,12 @@
 # Instructions.with\_db\_id()
 
+**`with_db_id`**`(`_`db_id: str`_`) →` [`Instruction`](./)
+
 Adds a filter to get instruction having given db id.
+
+## Return type
+
+`→` [`Instruction`](./)
 
 ```python
 from glider import *

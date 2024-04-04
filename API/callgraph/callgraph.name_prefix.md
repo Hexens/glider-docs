@@ -1,6 +1,12 @@
 # CallGraph.name\_prefix()
 
-Returns a list of call nodes whose corresponding function name has the specified prefix.
+**`name_prefix`**`(`_`suffix: str`_`,`` `_`sensitivity: bool = True`_`) → List[`[`CallNode`](../callnode/)`]`
+
+Returns a list of [CallNode](../callnode/) objects whose corresponding function name has the specified prefix.
+
+## Return type
+
+`→ List[`[`CallNode`](../callnode/)`]`
 
 <pre class="language-python"><code class="lang-python">from glider import *
 

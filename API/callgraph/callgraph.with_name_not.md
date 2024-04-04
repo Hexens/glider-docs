@@ -1,6 +1,12 @@
 # CallGraph.with\_name\_not()
 
+**`with_name_not`**`(`_`name: str`_`,`` `_`sensitivity: bool = True`_`) → List[`[`CallNode`](../callnode/)`]`
+
 Returns a list of call nodes whose corresponding function doesn't have the specified name.
+
+## Return type
+
+`→ List[`[`CallNode`](../callnode/)`]`
 
 <pre class="language-python"><code class="lang-python">from glider import *
 

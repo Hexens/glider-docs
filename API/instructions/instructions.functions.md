@@ -1,6 +1,12 @@
 # Instructions.functions()
 
-Returns Functions object for the functions of the instructions. Note: The function will return parent functions for those instructions that belong to a function, not to a modifier. To get parent modifiers of that instructions use `modifiers()` method.
+**`functions`**`() →` [`Functions`](../functions/)
+
+Returns [Functions](../functions/) object for the functions of the instructions. Note: The function will return parent functions for those instructions that belong to a function, not to a modifier. To get parent modifiers of that instructions use `modifiers()` method.
+
+## Return type
+
+`→` [`Functions`](../functions/)
 
 ```python
 from glider import *

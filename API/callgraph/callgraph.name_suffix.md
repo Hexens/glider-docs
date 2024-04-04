@@ -1,6 +1,12 @@
 # CallGraph.name\_suffix()
 
-Returns a list of call nodes whose corresponding function name has the specified suffix.
+**`name_suffix`**`(`_`suffix: str`_`,`` `_`sensitivity: bool = True`_`) → List[`[`CallNode`](../callnode/)`]`
+
+Returns a list of [CallNode](../callnode/) objects whose corresponding function name has the specified suffix.
+
+## Return type
+
+`→ List[`[`CallNode`](../callnode/)`]`
 
 ```python
 from glider import *

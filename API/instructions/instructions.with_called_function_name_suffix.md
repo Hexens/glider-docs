@@ -1,10 +1,12 @@
----
-description: >-
-  Adds a filter to get instructions that call a function whose name has the
-  given suffix.
----
-
 # Instructions.with\_called\_function\_name\_suffix()
+
+**`with_called_function_name_suffix`**`(`_`prefix: str`_`,`` `_`sensitivity: bool = True`_`) →` [`Instructions`](./)
+
+Adds a filter to get instructions that call a function whose name has the given suffix.
+
+## Return type
+
+`→` [`Instructions`](./)
 
 ```python
 from glider import *

@@ -1,8 +1,14 @@
 # Instructions.static\_calls()
 
+**`static_calls`**`() →` [`Instructions`](./)
+
 Returns a list of all static call instructions.
 
 Only solidity's low level `staticcall()` is returned.
+
+## Return type
+
+`→` [`Instructions`](./)
 
 ```python
 from glider import *

@@ -1,8 +1,14 @@
 # Instructions.exec()
 
-Executes the formed query and returns the list of Instruction objects.
+**`exec`**`(`_`limit_count: int = 0`_`,`` `_`offset_count: int = 0`_`) → List[`[`Instruction`](../instruction/)`]`
 
+Executes the formed query and returns the list of [Instruction](../instruction/) objects.
 
+`limit_count` is the number of instructions to query, while `offset_count` is the offset applied to the results returned. For example with `offset_count` = 2, will return `limit_count` instructions starting from the 3rd instructions.
+
+## Return type
+
+`→ List[`[`Instruction`](../instruction/)`]`
 
 ```python
 from glider import *

@@ -1,10 +1,12 @@
----
-description: >-
-  Adds a filter to get instructions that call a function whose name has the
-  given prefix.
----
-
 # Instructions.with\_called\_function\_name\_prefix()
+
+**`with_called_function_name_prefix`**`(`_`prefix: str`_`,`` `_`sensitivity: bool = True`_`) →` [`Instructions`](./)
+
+Adds a filter to get instructions that call a function whose name has the given prefix.
+
+## Return type
+
+`→` [`Instructions`](./)
 
 ```python
 from glider import *

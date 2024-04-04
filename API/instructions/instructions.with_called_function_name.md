@@ -1,8 +1,12 @@
----
-description: Adds a filter to get instructions that call a function with the given name.
----
-
 # Instructions.with\_called\_function\_name()
+
+**`with_called_function_name`**`(`_`name: str`_`,`` `_`sensitivity: bool = True`_`) →` [`Instructions`](./)
+
+Adds a filter to get instructions that call a function with the given name.
+
+## Return type
+
+`→` [`Instructions`](./)
 
 ```python
 from glider import *

@@ -1,6 +1,12 @@
 # Instructions.delegate\_calls()
 
+**`delegate_calls`**`() →` [`Instructions`](./)
+
 Returns a list of all delegate call instructions.
+
+## Return type
+
+`→` [`Instructions`](./)
 
 ```python
 from glider import *
