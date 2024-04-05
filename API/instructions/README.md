@@ -52,8 +52,8 @@ Bases: [Queryable](../queryable/)
 [instructions.high\_level\_static\_calls.md](instructions.high\_level\_static\_calls.md)
 {% endcontent-ref %}
 
-{% content-ref url="instructions.if_statements.md" %}
-[instructions.if\_statements.md](instructions.if\_statements.md)
+{% content-ref url="instructions.if_instructions.md" %}
+[instructions.if\_instructions.md](instructions.if\_instructions.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.internal_calls.md" %}

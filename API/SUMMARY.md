@@ -281,7 +281,7 @@
   * [Instructions.external\_calls()](instructions/instructions.external\_calls.md)
   * [Instructions.functions()](instructions/instructions.functions.md)
   * [Instructions.high\_level\_static\_calls()](instructions/instructions.high\_level\_static\_calls.md)
-  * [Instructions.if\_statements()](instructions/instructions.if\_statements.md)
+  * [Instructions.if\_instructions()](instructions/instructions.if\_instructions.md)
   * [Instructions.internal\_calls()](instructions/instructions.internal\_calls.md)
   * [Instructions.library\_calls()](instructions/instructions.library\_calls.md)
   * [Instructions.list()](instructions/instructions.list.md)

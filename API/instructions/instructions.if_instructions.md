@@ -1,6 +1,6 @@
-# Instructions.if\_statements()
+# Instructions.if\_instructions()
 
-**`if_statements`**`() →` [`Instructions`](./)
+**`if_instructions()`**` ``→` [`Instructions`](./)
 
 Returns an [Instructions](./) object for the if instructions.
 
@@ -13,7 +13,7 @@ from glider import *
 
 def query():
   # Fetch a list of if statement instructions
-  instructions = Instructions().if_statements().exec(2)
+  instructions = Instructions().if_instructions().exec(2)
 
   return instructions
 ```
