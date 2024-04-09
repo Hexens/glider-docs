@@ -6,9 +6,9 @@ description: This page describes how to use Glider interface and its features
 
 ### Basic usage
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>sample glider code</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>sample glide code</p></figcaption></figure>
 
-In general, Glider provides with a REPL-like interface. On the left side, the glider code is written; on the right side, the output is shown.&#x20;
+In general, Glider provides with a REPL-like interface. On the left side, the glide code is written; on the right side, the output is shown.&#x20;
 
 * To run the query, the researcher needs to press the `Run` button.
 * The `Chain` dropdown list is used to select the blockchain on which to run the query.
@@ -35,6 +35,6 @@ There are rules for submission, which are present on the universal Web3 program 
 
 As a side-effect, the report will automatically be hashed and committed to the zkEVM blockchain, which will give the ability for further submitters to get [zk proof of duplicate](https://docs.r.xyz/main/v/zk-proof/).&#x20;
 
-### Submitting a query (glider)
+### Submitting a query (glide)
 
 To get access to the mainnet queries, by default, only the Kovan testnet is queryable (Kovan was chosen as it was deprecated); one has to contribute three unique critical queries to the open-source Glider [repo](https://github.com/Hexens/glider-query-db).
