@@ -4,11 +4,9 @@ description: This page describes what are the main concepts of writing gliders
 
 # Writing Gliders
 
-A glider code can be separated into two parts: declarative queries (also called online part) and imperative arbitrary logic part (offline part)
+A glide code can be separated into two parts: declarative queries (also called online part) and imperative arbitrary logic part (offline part)
 
-
-
-Imagine the following glider code:
+Imagine the following glide code:
 
 ```python
 def query(): # The name query() is constant, and should not be changed
@@ -42,8 +40,6 @@ def query(): # The name query() is constant, and should not be changed
   return results # to see the results the query() function must return a list of objects
 ```
 
-
-
 ## Code as data
 
 Glider compiles and constructs artefacts from source code and places them in a specialized high-performance database.
@@ -61,7 +57,7 @@ The code partinstructions = Functions()\\
   .exec()
 ```
 
-showcases the declarative part of the glider, where we use `api.Functions` class to iterate over all of the functions and filter them, then we continue the chain and "level-down" to the instructions of already filtered functions, and then we filter the instructions.&#x20;
+showcases the declarative part of the glide, where we use `api.Functions` class to iterate over all of the functions and filter them, then we continue the chain and "level-down" to the instructions of already filtered functions, and then we filter the instructions.&#x20;
 
 _Note that the query chain always ends with_ [_`exec()`_](https://app.gitbook.com/s/KRI4GLnp45wDq2xrEWyI/instructions/instructions.exec) _call._ &#x20;
 
@@ -104,7 +100,7 @@ In order to see the results, the query() function must return a list of objects,
 
 ## Experimental feature - print()
 
-Glider has an experimental feature to show you print() outputs that you would place in the query code. This is mainly useful while debugging the query code. Whatever glider prints during the execution will be aggregated and shown as the last output root in the output (right) window.
+Glider has an experimental feature to show you print() outputs that you would place in the query code. This is mainly useful while debugging the query code. Whatever Glider prints during the execution will be aggregated and shown as the last output root in the output (right) window.
 
 Note that the feature is experimental and may be removed in future.
 
@@ -142,7 +138,7 @@ Output:
 
 ## from glider import \*
 
-In the Glider web interface, the queries will usually start with&#x20;
+In the Glider's web interface, the queries will usually start with&#x20;
 
 ```python
 from glider import *
