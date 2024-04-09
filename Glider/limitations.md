@@ -1,20 +1,20 @@
 ---
-description: This page describes limitations implemented on glider execution
+description: This page describes limitations implemented on glide execution.
 ---
 
 # Limitations
 
 ## Time limit
 
-Every glider has a timeout limit of 1000 seconds.
+Every glide has a timeout limit of 1000 seconds.
 
 ## Parallel execution count limit
 
-Every user can run only one glider in parallel.
+Every user can run only one glide in parallel.
 
 ## Output limit
 
-Every glider's output size is limited to 200KB.
+Every glide's output size is limited to 200KB.
 
 ## Python limitations
 
