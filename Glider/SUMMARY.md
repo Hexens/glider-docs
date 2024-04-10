@@ -1,8 +1,8 @@
 # Table of contents
 
-* [Glider introduction](README.md)
-* [Writing Gliders](writing-gliders.md)
-* [Limitations](limitations.md)
-* [Usage](usage.md)
-* [Comparison with other tools](comparison-with-other-tools.md)
-* [Roadmap](roadmap.md)
+* [👾 Welcome to Glider guidelines](README.md)
+
+## ⚖️ Legal notices
+
+* [🕵️ PRIVACY NOTICE](legal-notices/privacy-notice.md)
+* [📘 TERMS AND CONDITIONS](legal-notices/terms-and-conditions.md)
