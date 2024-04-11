@@ -25,7 +25,7 @@ def query():
   convertor.add("address", "bytes20")
 
   # Fetch a list of functions
-  funs = Functions().exec(10)
+  funs = Contracts().non_interface_contracts().functions().exec(20)
 
   # Return the functions with at least one argument convertible to bytes20
   # It will be only the argument of type address
@@ -39,10 +39,14 @@ def query():
 
 ## Output Example
 
-```json
+```solidity
 {
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "Ownable",
-  "sol_function": "function transferOwnership(address newOwner) public virtual onlyOwner {\n        require(newOwner != address(0),\"Ownable: new owner is the zero address\");\n        _setOwner(newOwner);\n    }"
+  "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf",
+  "contract_name": "Token",
+  "sol_function": "
+    function balanceOf(address account) public view override returns (uint256) {
+            return _balances[account];
+    }
+  "
 }
 ```
