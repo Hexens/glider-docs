@@ -1,0 +1,2 @@
+# Function.has\_modifiers()
+

@@ -1,0 +1,2 @@
+# MethodProp.IS\_GLOBAL
+

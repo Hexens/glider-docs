@@ -1,0 +1,2 @@
+# Function.is\_external()
+

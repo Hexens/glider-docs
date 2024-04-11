@@ -1,0 +1,2 @@
+# Variable.is\_public()
+
