@@ -1,6 +1,16 @@
+---
+description: Returns a list of arguments having specified memory type.
+---
+
 # Arguments.with\_type()
 
-Returns a list of arguments having specified memory type.
+## Function Signature
+
+`with_type(`_`arg_type: str`_`) → List[`[`Argument`](../argument/)`]`
+
+
+
+## Query Example
 
 ```python
 def query():
@@ -24,7 +34,9 @@ def query():
 
 Example of an Argument with the memory type bytes32
 
-Output:
+
+
+## Output Example
 
 ```json
 {

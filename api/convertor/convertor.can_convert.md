@@ -1,7 +1,3 @@
----
-description: Returns true if the first type can be converted to the second.
----
-
 # Convertor.can\_convert()
 
 **`can_convert`**`(`_`from_type: str`_`,`` `_`to_type: str`_`) → bool`

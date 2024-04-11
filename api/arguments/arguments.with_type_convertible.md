@@ -1,6 +1,18 @@
+---
+description: >-
+  Returns a list of arguments that can be converted to specified types.
+  Convertor will define a table of allowed conversions.
+---
+
 # Arguments.with\_type\_convertible()
 
-Returns a list of arguments that can be converted to specified types. Convertor will define a table of allowed conversions.
+## Function Signature
+
+`with_type_convertible(arg_type: List[str], convertor:` [`Convertor`](../convertor/)`) -> List[`[`Argument`](../argument/)`]`
+
+
+
+## Query Example
 
 ```python
 from glider import *
@@ -25,7 +37,7 @@ def query():
   return output
 ```
 
-Output:
+## Output Example
 
 ```json
 {
