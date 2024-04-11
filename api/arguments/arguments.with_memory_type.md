@@ -14,7 +14,7 @@ description: Returns a list of arguments having specified memory type.
 
 ```python
 def query():
-  functions = Functions().exec(10000)
+  functions = Functions().exec(45)
 
   function_with_args = []
   for f in functions:
@@ -43,9 +43,13 @@ Example of an Argument with the memory type storage&#x20;
     {
       "Argument data": {
         "name": "counter",
-        "name_ssa": "counter_0 (-> ['STORAGE_counter'])",
         "canonical_name": "Counters.current(Counters.Counter).counter",
-        "type": "Counters.Counter",
+        "type": {
+          "type": "struct",
+          "name": "Counter",
+          "relative_filepath": "AirdropNFTs.sol",
+          "contract_name": "Counters"
+        },
         "memory_type": "storage"
       }
     }
