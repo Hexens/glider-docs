@@ -24,6 +24,7 @@
   * [Arguments](api/arguments/README.md)
     * [Arguments.list()](api/arguments/arguments.list.md)
     * [Arguments.with\_memory\_type()](api/arguments/arguments.with\_memory\_type.md)
+    * [Arguments.with\_name()](api/arguments/arguments.with\_name.md)
     * [Arguments.with\_type()](api/arguments/arguments.with\_type.md)
     * [Arguments.with\_type\_convertible()](api/arguments/arguments.with\_type\_convertible.md)
   * [Convertor](api/convertor/README.md)
