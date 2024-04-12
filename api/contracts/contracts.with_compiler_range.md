@@ -6,31 +6,28 @@ description: >-
 
 # Contracts.with\_compiler\_range()
 
-Input:
+## Function Signature
+
+`with_compiler_range(lower_bound: str, upper_bound: str) ->` [`Contracts`](./)
+
+## Query Example
 
 ```python
 from glider import *
 
 def query():
-  contracts = Contracts().with_compiler_range("0.4.0", "0.8.18").exec(5)
-  
-  addresses = []
-  for contract in contracts:
-    addresses.append(contract.address())
+  contracts = Contracts().with_compiler_range("0.4.20", "0.4.24").exec(10)
 
-  return [{"addresses": addresses}]
+  return contracts
 ```
 
-Output:
+## Output Example
 
 ```python
 {
-  "addresses": [
-    "0x6f1b14a08410c36ea8a3f3cd367a33f89f75b169",
-    "0x6f1b14a08410c36ea8a3f3cd367a33f89f75b169",
-    "0x5760Ed11eb738e0Da57ADFAa37Ce7808Bcc8738c",
-    "0x52eb5c21391aac589f316667d03bd50bafa6d509",
-    "0x52eb5c21391aac589f316667d03bd50bafa6d509"
-  ]
+    {
+        "contract": "0xcb3590c74e77b1ccc0975029bc1bf1e1b69a1edd",
+        "contract_name": "SafeMath"
+    }
 }
 ```
