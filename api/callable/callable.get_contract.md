@@ -6,6 +6,8 @@ description: >-
 
 # Callable.get\_contract()
 
+The function may return NoneObject in cases where it does not belong to any contract and is a global function, as Solidity supports that type of functions.
+
 ## Return type
 
 → [Contract](../contract/) | NoneObject
