@@ -299,7 +299,6 @@
     * [Instructions.with\_db\_id()](api/instructions/instructions.with\_db\_id.md)
     * [Instructions.with\_ids()](api/instructions/instructions.with\_ids.md)
   * [NewVariableInstruction](api/newvariableinstruction.md)
-  * [OtherEntrypointInstruction](api/otherentrypointinstruction.md)
   * [PlaceholderInstruction](api/placeholderinstruction.md)
   * [ReturnInstruction](api/returninstruction.md)
   * [StartLoopInstruction](api/startloopinstruction.md)
