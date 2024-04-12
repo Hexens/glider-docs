@@ -6,31 +6,32 @@ description: >-
 
 # Contracts.with\_compiler\_range\_not()
 
-Input:
+## Function Signature
+
+`with_compiler_range_not(lower_bound: str, upper_bound: str) ->` [`Contracts`](./)
+
+## Query Example
 
 ```python
 from glider import *
 
 def query():
-  contracts = Contracts().with_compiler_range_not("0.8.0", "0.8.20").exec(5)
-  
-  addresses = []
-  for contract in contracts:
-    addresses.append(contract.address())
+  contracts = (
+    Contracts().
+    non_interface_contracts().
+    with_compiler_range_not("0.5.0", "0.5.17").
+    exec(1))
 
-  return [{"addresses": addresses}]
+  return contracts
 ```
 
-Output:
+## Output Example
 
 ```python
 {
-  "addresses": [
-    "0x400a7e0960b63d3288591ee0e6B6D9578eAFFe23",
-    "0x400a7e0960b63d3288591ee0e6B6D9578eAFFe23",
-    "0x400a7e0960b63d3288591ee0e6B6D9578eAFFe23",
-    "0x400a7e0960b63d3288591ee0e6B6D9578eAFFe23",
-    "0x400a7e0960b63d3288591ee0e6B6D9578eAFFe23"
-  ]
+    {
+        "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf",
+        "contract_name": "Context"
+    }
 }
 ```
