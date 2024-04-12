@@ -2,7 +2,7 @@
 
 ## Description
 
-It returns the inherited base contracts of a Contract. The function is recursive. See the example.
+It returns the [Contracts](../contracts/) object representing the base contracts of a Contract. The function is recursive. See the example.
 
 ## Return type
 

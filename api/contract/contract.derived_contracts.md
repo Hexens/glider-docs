@@ -1,8 +1,12 @@
+---
+description: >-
+  Returns Contracts object for the contracts which were derived from the
+  contract.
+---
+
 # Contract.derived\_contracts()
 
-## Description
 
-Returns the contracts which were derived from a Contract.
 
 ## Return type
 

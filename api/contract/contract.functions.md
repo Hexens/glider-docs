@@ -1,8 +1,10 @@
+---
+description: Returns all the functions of a Contract.
+---
+
 # Contract.functions()
 
-## Description
-
-Returns all the functions of a Contract.
+This function will return all of the functions that the Contract has, including the inherited functions from its base classes.
 
 ## Return type
 

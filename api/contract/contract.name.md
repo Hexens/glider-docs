@@ -1,8 +1,8 @@
+---
+description: Returns the name of a Contract.
+---
+
 # Contract.name
-
-## Description
-
-Returns the name of a Contract.
 
 ## Return type
 

@@ -1,8 +1,8 @@
+---
+description: Returns true if the Contract is a library, false otherwise.
+---
+
 # Contract.is\_lib()
-
-## Description
-
-Returns true if the Contract is a library, false otherwise.
 
 ## Return type
 

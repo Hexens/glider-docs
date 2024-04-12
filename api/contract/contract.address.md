@@ -1,8 +1,8 @@
+---
+description: Returns the address of the contract.
+---
+
 # Contract.address()
-
-## Description
-
-It returns the on-chain address of a Contract.
 
 ## Return type
 

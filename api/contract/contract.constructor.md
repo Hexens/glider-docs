@@ -1,8 +1,8 @@
+---
+description: Returns the constructor of the contract, if exists.
+---
+
 # Contract.constructor()
-
-## Description
-
-It returns the constructor function of a Contract, if exists.
 
 ## Return type
 

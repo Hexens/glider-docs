@@ -1,8 +1,8 @@
+---
+description: Returns call graph of the contract.
+---
+
 # Contract.call\_graph()
-
-## Description
-
-Returns call graph of the contract.
 
 ## Return type
 

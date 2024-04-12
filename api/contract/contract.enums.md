@@ -1,8 +1,8 @@
+---
+description: The function returns all the enums of a Contract.
+---
+
 # Contract.enums()
-
-## Description
-
-The function returns all the enums of a Contract.
 
 ## Return type
 

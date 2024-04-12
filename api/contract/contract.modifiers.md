@@ -1,8 +1,10 @@
+---
+description: Returns all the modifiers of a Contract.
+---
+
 # Contract.modifiers()
 
-## Description
-
-Returns all the modifiers of a Contract.
+The function also handles inherited modifiers.
 
 ## Return type
 

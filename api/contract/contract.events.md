@@ -1,8 +1,8 @@
+---
+description: The function returns all the events of a Contract.
+---
+
 # Contract.events()
-
-## Description
-
-The function returns all the events of a Contract.
 
 ## Return type
 

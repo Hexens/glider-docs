@@ -1,8 +1,8 @@
+---
+description: Returns the list of all pragmas of the contract.
+---
+
 # Contract.pragmas()
-
-## Description
-
-Returns the list of all pragmas of the contract.
 
 ## Return type
 
@@ -27,212 +27,25 @@ def query():
 ## Example output
 
 ```json
-[
-  "../smart-contract-sanctuary-ethereum/contracts/kovan/40/400a7e0960b63d3288591ee0e6B6D9578eAFFe23_ChainlinkInceptionPriceFeed.sol",
-  [
-    [
-      "experimental",
-      "ABIEncoderV2"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      ">=",
-      "0.6",
-      ".0",
-      "<",
-      "0.8",
-      ".0"
-    ],
-    [
-      "solidity",
-      ">=",
-      "0.6",
-      ".0",
-      "<",
-      "0.8",
-      ".0"
-    ],
-    [
-      "solidity",
-      ">=",
-      "0.4",
-      ".24",
-      "<",
-      "0.8",
-      ".0"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      ">=",
-      "0.6",
-      ".0",
-      "<",
-      "0.8",
-      ".0"
-    ],
-    [
-      "solidity",
-      ">=",
-      "0.6",
-      ".0",
-      "<",
-      "0.8",
-      ".0"
-    ],
-    [
-      "solidity",
-      ">=",
-      "0.6",
-      ".2",
-      "<",
-      "0.8",
-      ".0"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ],
-    [
-      "solidity",
-      "0.6",
-      ".12"
-    ]
-  ]
+"root":[2 items
+0:string"RollBot.sol"
+1:[7 items
+0:[4 items
+0:string"solidity"
+1:string"^"
+2:string"0.8"
+3:string".0"
+]
+1:[4 items
+0:string"solidity"
+1:string"^"
+2:string"0.8"
+3:string".0"
+]
+2:[4 items
+0:string"solidity"
+1:string"^"
+2:string"0.8"
+3:string".0"
 ]
 ```

@@ -1,8 +1,10 @@
+---
+description: >-
+  Returns Contracts object for the contracts from which the contract was
+  inherited directly.
+---
+
 # Contract.parent\_contracts()
-
-## Description
-
-Returns Contracts object for the contracts from which the contract was inherited directly.
 
 ## Return type
 

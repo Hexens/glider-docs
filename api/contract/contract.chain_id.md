@@ -1,12 +1,12 @@
+---
+description: Returns the ChainID of the blockchain where the Contract was deployed.
+---
+
 # Contract.chain\_id()
-
-## Description
-
-Returns the ID of the blockchain where a Contract was deployed.
 
 ## Return type
 
-int (e.g., 1 for Ethereum)
+int (e.g., 1 for Ethereum Mainnet)
 
 ## Example query
 

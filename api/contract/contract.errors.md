@@ -1,8 +1,8 @@
+---
+description: The function returns all the errors of a Contract.
+---
+
 # Contract.errors()
-
-## Description
-
-The function returns all the errors of a Contract.
 
 ## Return type
 

@@ -1,8 +1,10 @@
+---
+description: Returns true if the Contract is main, false otherwise.
+---
+
 # Contract.is\_main()
 
-## Description
-
-Returns true if the Contract is main, false otherwise.
+By main the engine marks contracts that is the one actually being executed if a method is being called to tha&#x20;
 
 ## Return type
 
