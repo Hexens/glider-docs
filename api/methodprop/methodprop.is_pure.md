@@ -25,7 +25,7 @@ def query():
 
 ## Output
 
-```json
+```solidity
 "root":{3 items
 "contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
 "contract_name":string"IConstantFlowAgreementV1"

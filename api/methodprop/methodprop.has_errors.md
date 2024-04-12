@@ -36,7 +36,7 @@ def query():
 
 ## Output
 
-```json
+```solidity
 "root":{3 items
 "contract":string"0xe90baa4A5fD4fE25443d27e6E2883350a0E67855"
 "contract_name":string"Bulker"
