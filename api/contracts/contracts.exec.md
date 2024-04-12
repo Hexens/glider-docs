@@ -4,7 +4,11 @@ description: Executes the formed query and returns the list of Contract objects.
 
 # Contracts.exec()
 
-Input:
+## Function Signature
+
+`exec(limit_count: int = 0, offset_count: int = 0) -> List[`[`Contract`](../contract/)`]`
+
+## Example Query
 
 ```python
 from glider import *
@@ -15,15 +19,17 @@ def query():
   return contracts
 ```
 
-Output:
+## Output Example
 
-```python
-"root":{2 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"Context"
-}
-"root":{2 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"Ownable"
+```json
+{
+    {
+        "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
+        "contract_name": "Context"
+    },
+    {
+        "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
+        "contract_name": "Ownable"
+    }
 }
 ```
