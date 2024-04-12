@@ -186,6 +186,8 @@
     * [Functions.with\_one\_of\_the\_modifier\_name\_regexes()](api/functions/functions.with\_one\_of\_the\_modifier\_name\_regexes.md)
     * [Functions.with\_one\_property()](api/functions/functions.with\_one\_property.md)
     * [Functions.without\_properties()](api/functions/functions.without\_properties.md)
+    * [Functions.with\_all\_modifier\_names()](api/functions/functions.with\_all\_modifier\_names.md)
+    * [Functions.without\_modifiers()](api/functions/functions.without\_modifiers.md)
   * [MethodProp](api/methodprop/README.md)
     * [MethodProp.EXTERNAL](api/methodprop/methodprop.external.md)
     * [MethodProp.HAS\_ARGS](api/methodprop/methodprop.has\_args.md)
