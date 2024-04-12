@@ -228,7 +228,6 @@
   * [Instruction](api/instruction/README.md)
     * [Instruction.backward\_df()](api/instruction/instruction.backward\_df.md)
     * [Instruction.callee\_names()](api/instruction/instruction.callee\_names.md)
-    * [Instruction.db\_id](api/instruction/instruction.db\_id.md)
     * [Instruction.extended\_backward\_df()](api/instruction/instruction.extended\_backward\_df.md)
     * [Instruction.forward\_df()](api/instruction/instruction.forward\_df.md)
     * [Instruction.get\_callee\_values()](api/instruction/instruction.get\_callee\_values.md)

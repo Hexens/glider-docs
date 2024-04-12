@@ -1,11 +1,10 @@
----
-description: >-
-  Returns a list of all previous instructions of the current node in the data
-  flow graph. It returns 0 for an instruction that does not have any previous
-  instructions.
----
-
 # Instruction.backward\_df()
+
+`backward_df() → List[Point]`
+
+Returns a list of all previous instructions/arguments of the current point in the data flow graph.
+
+
 
 Query
 
@@ -13,18 +12,34 @@ Query
 from glider import *
 def query():
   #fetch an instruction
-  instructions = Instructions().exec(1,16)
+  instructions = Instructions().with_callee_function_name('verify').exec(1)
+  
+  for points in instructions[0].backward_df():
+    print(points.source_code())
   # return the list of previous instructions of the current instruction
-  return instructions[0].backward_df() 
+  return instructions
 ```
 
 Output
 
-```json
-{
-    "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-    "contract_name": "Ownable",
-    "sol_function": "function transferOwnership(address newOwner) public virtual onlyOwner {\n        require(newOwner != address(0),\"Ownable: new owner is the zero address\");\n        _setOwner(newOwner);\n    }", 
-    "sol_instruction": "require(newOwner != address(0),\"Ownable: new owner is the zero address\")"
+```solidity
+"root":{4 items
+"contract":string"0x8a93bc8ed29da1b090265137a9d201ebf1154626"
+"contract_name":string"METAANIxKPP"
+"sol_function":solidity
+function _verify(bytes32 leaf, bytes32[] memory proof)
+    internal view returns (bool)
+    {
+        return MerkleProof.verify(proof, allowListRoot, leaf);
+    }
+"sol_instruction":solidity
+return MerkleProof.verify(proof, allowListRoot, leaf)
+},
+"root":{1 item
+    "print_output":[3 items
+    0:string"return MerkleProof.verify(proof, allowListRoot, leaf)"
+    1:string"bytes32[] proof"
+    2:string"bytes32 leaf"
+    ]
 }
 ```
