@@ -79,6 +79,7 @@
     * [Contracts.name\_prefix()](api/contracts/contracts.name\_prefix.md)
     * [Contracts.name\_regex()](api/contracts/contracts.name\_regex.md)
     * [Contracts.name\_suffix()](api/contracts/contracts.name\_suffix.md)
+    * [Contracts.non\_interface\_contracts()](api/contracts/contracts.non\_interface\_contracts.md)
     * [Contracts.with\_compiler\_range()](api/contracts/contracts.with\_compiler\_range.md)
     * [Contracts.with\_compiler\_range\_not()](api/contracts/contracts.with\_compiler\_range\_not.md)
     * [Contracts.with\_error\_name()](api/contracts/contracts.with\_error\_name.md)
