@@ -1,8 +1,8 @@
+---
+description: Returns the list of all structs of the contract.
+---
+
 # Contract.structs()
-
-## Description
-
-Returns the list of all structs of the contract.
 
 ## Return type
 

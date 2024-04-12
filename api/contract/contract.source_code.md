@@ -1,8 +1,8 @@
+---
+description: Returns the source code of the contract.
+---
+
 # Contract.source\_code()
-
-## Description
-
-Returns the source code of the contract.
 
 ## Return type
 

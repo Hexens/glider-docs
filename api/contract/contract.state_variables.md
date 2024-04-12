@@ -1,12 +1,14 @@
-# Contract.variables()
+---
+description: Returns the list of all state variables of the contract.
+---
 
-## Description
+# Contract.state\_variables()
 
-Returns the list of all variables of the contract.
+Returns a StateVariables object for the state variables of the contract.
 
 ## Return type
 
-[Variables](../variables/)
+StateVariables
 
 ## Example query
 
