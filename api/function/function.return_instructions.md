@@ -1,5 +1,7 @@
 # Function.return\_instructions()
 
+`return_instructions() →` [`Instructions`](../instructions/)
+
 Returns the `return` instructions of the function.
 
 ```python
@@ -10,7 +12,7 @@ def query():
   functions = Functions().exec(10)
 
   # Retrieve the return instructions of the first function
-  instruction = functions[0].return_instructions()
+  instruction = functions[0].return_instructions().exec()
 
   return instruction
 ```
@@ -20,11 +22,15 @@ def query():
 
 Output:
 
-```json
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "Context",
-  "sol_function": "function _msgSender() internal view virtual returns (address) {\n        return msg.sender;\n    }",
-  "sol_instruction": "return msg.sender"
+```solidity
+"root":{4 items
+"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
+"contract_name":string"Context"
+"sol_function":solidity
+function _msgSender() internal view virtual returns (address) {
+        return msg.sender;
+    }
+"sol_instruction":solidity
+return msg.sender
 }
 ```

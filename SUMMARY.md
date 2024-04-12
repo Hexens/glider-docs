@@ -169,7 +169,6 @@
     * [Function.is\_pure()](api/function/function.is\_pure.md)
     * [Function.is\_view()](api/function/function.is\_view.md)
     * [Function.modifiers()](api/function/function.modifiers.md)
-    * [Function.other\_entry\_point\_instructions()](api/function/function.other\_entry\_point\_instructions.md)
     * [Function.properties()](api/function/function.properties.md)
     * [Function.return\_instructions()](api/function/function.return\_instructions.md)
     * [Function.return\_tuple()](api/function/function.return\_tuple.md)
