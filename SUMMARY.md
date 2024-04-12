@@ -71,7 +71,6 @@
     * [Contract.structs()](api/contract/contract.structs.md)
     * [Contract.state\_variables()](api/contract/contract.state\_variables.md)
   * [Contracts](api/contracts/README.md)
-    * [Contracts.contracts](api/contracts/contracts.contracts.md)
     * [Contracts.exec()](api/contracts/contracts.exec.md)
     * [Contracts.functions()](api/contracts/contracts.functions.md)
     * [Contracts.interface\_contracts()](api/contracts/contracts.interfaces.md)
