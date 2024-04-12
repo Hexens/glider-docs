@@ -4,63 +4,53 @@ description: Returns the Functions object for the functions of the contracts.
 
 # Contracts.functions()
 
-Input:
+## Function Signature
+
+`functions() →` [`Functions`](../function/)
+
+
+
+## Example Query
 
 ```python
 from glider import *
 
 def query():
-  contracts = Contracts().functions().exec(5)
 
-  return contracts
+  functions = Contracts().functions().exec(1)
+
+  return functions
 ```
 
-Output:
+## Output Example
 
-```python
-"root":{3 items
-"contract":string"0x82e3077da0d038197b810d0620aed3e513164694"
-"contract_name":string"Voting"
-"sol_function":solidity
-function isWhitelisted(address addr) public view returns (bool) {
-        return whitelist[addr]!=0;
+```solidity
+{
+    "contract": "0x209adb20b0d6115ea69ef34c7afa4ac6216c2be2"
+    "contract_name": "Strings"
+    "sol_function":
+        function toString(uint256 value) internal pure returns (string memory) {
+            // Inspired by OraclizeAPI's implementation - MIT licence
+            // https://github.com/oraclize/ethereum-api/blob/b42146b063c7d6ee1358846c198246239e9360e8/oraclizeAPI_0.4.25.sol
+
+            if (value == 0) {
+                return "0";
+            }
+            uint256 temp = value;
+            uint256 digits;
+            while (temp != 0) {
+                digits++;
+                temp /= 10;
+            }
+            bytes memory buffer = new bytes(digits);
+            uint256 index = digits - 1;
+            temp = value;
+            while (temp != 0) {
+                buffer[index--] = byte(uint8(48 + temp % 10));
+                temp /= 10;
+            }
+            return string(buffer);
     }
-}
-"root":{3 items
-"contract":string"0x82e3077da0d038197b810d0620aed3e513164694"
-"contract_name":string"Voting"
-"sol_function":solidity
-function whitelistAddress(address addr) public onlyOwner{
-        require(!isWhitelisted(addr),"Already whitelisted");
-        counter++;
-        _voters++;
-        whitelist[addr]=counter;
-    }
-}
-"root":{3 items
-"contract":string"0x82e3077da0d038197b810d0620aed3e513164694"
-"contract_name":string"Voting"
-"sol_function":solidity
-function removeAddress(address addr) public onlyOwner{
-        require(isWhitelisted(addr),"Not whitelisted");
-        _voters--;
-        whitelist[addr] = 0;
-    }
-}
-"root":{3 items
-"contract":string"0x82e3077da0d038197b810d0620aed3e513164694"
-"contract_name":string"Voting"
-"sol_function":solidity
-function numVoters() public view returns (uint){
-        return _voters;
-    }
-}
-"root":{3 items
-"contract":string"0x82e3077da0d038197b810d0620aed3e513164694"
-"contract_name":string"Voting"
-"sol_function":solidity
-function addProposer(address addr) public onlyOwner{
-        isProposer[addr]=true;
-    }
+
 }
 ```
