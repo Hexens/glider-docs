@@ -1,10 +1,12 @@
 ---
-description: The class represents a condition.
+description: The class represents a condition in if-statement or a ternary operator.
 ---
 
 # Condition
 
 `Condition(`_`token: str = ''`_`)`
+
+The [IfInstruction.get\_condition()](../ifinstruction/ifinstruction.get\_condition.md) function can be used to get the condition object of an if-statement.
 
 Base: **object**
 
