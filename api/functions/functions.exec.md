@@ -1,8 +1,8 @@
 # Functions.exec()
 
-Executes the formed query and returns a list of the Function objects.
+`exec(`_`limit_count: int = 0`_`,`` `_`offset_count: int = 0`_`) → List[`[`Function`](../function/)`]`
 
-Parameters : `limit_count: int = 0, offset_count: int = 0`
+Executes the formed query and returns a list of the Function objects.
 
 ```python
 from glider import *

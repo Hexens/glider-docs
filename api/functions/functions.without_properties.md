@@ -1,8 +1,10 @@
 # Functions.without\_properties()
 
+`without_properties(`_`properties: List[MethodProp]`_`) →` [`Functions`](./)
+
 Adds a filter to get functions that don't have any of the given properties.
 
-Parameters : `properties: List[MethodProp]`
+## Example
 
 ```python
 from glider import *
@@ -15,10 +17,7 @@ def query():
   return functions
 ```
 
-\
-
-
-Output:
+## Output
 
 <pre class="language-json"><code class="lang-json"><strong>[
 </strong>  {

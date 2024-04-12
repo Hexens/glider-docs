@@ -1,8 +1,10 @@
-# Functions.with\_modifier\_name\_not()
+# Functions.without\_modifier\_name()
+
+`without_modifier_name(`_`name: str`_`,`` `_`sensitivity: bool = True`_`) →` [`Functions`](./)
 
 Adds a filter to get functions that either have no modifier with the given name or have no modifier at all.
 
-Parameters : `name: str, sensitivity: bool = True`
+## Example
 
 ```python
 from glider import *
@@ -10,15 +12,12 @@ from glider import *
 def query():
   
   # Fetch a list of functions without onlyOwner modifier
-  functions = Functions().with_modifier_name_not('onlyOwner').exec(10)
+  functions = Functions().without_modifier_name('onlyOwner').exec(10)
 
   return functions
 ```
 
-\
-
-
-Output:
+## Output
 
 <pre class="language-json"><code class="lang-json"><strong>[
 </strong>  {

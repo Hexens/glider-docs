@@ -1,26 +1,23 @@
 # Functions.with\_all\_properties()
 
-Adds a filter to get functions that have all given properties.
+`with_all_properties(`_`properties: List[`_[_`MethodProp`_](../methodprop/)_`]`_`) →` [`Functions`](./)
 
-Parameters : `properties: List[MethodProp]`
+Adds a filter to get functions that have all of the given properties.
+
+## Example
 
 ```python
 from glider import *
 
 def query():
-
   properties = [MethodProp.IS_PAYABLE, MethodProp.EXTERNAL]
-  
   # Fetch a list of functions with all the properties
   functions = Functions().with_all_properties(properties).exec(10)
 
   return functions
 ```
 
-\
-
-
-Output:
+## Output
 
 <pre class="language-json"><code class="lang-json"><strong>[
 </strong><strong>  {

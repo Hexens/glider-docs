@@ -1,8 +1,10 @@
 # Functions.with\_modifier\_name()
 
+`with_modifier_name(`_`name: str`_`,`` `_`sensitivity: bool = True`_`) →` [`Functions`](./)
+
 Adds a filter to get functions that have a modifier with the given name.
 
-Parameters : `name: str, sensitivity: bool = True`
+## Example
 
 ```python
 from glider import *
@@ -15,10 +17,7 @@ def query():
   return functions
 ```
 
-\
-
-
-Output:
+## Output
 
 <pre class="language-json"><code class="lang-json"><strong>[
 </strong>  {

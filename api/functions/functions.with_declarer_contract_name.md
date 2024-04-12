@@ -1,8 +1,10 @@
 # Functions.with\_declarer\_contract\_name()
 
-Adds a filter to get functions that have declarer contract with the given name.
+`with_declarer_contract_name(`_`name: str`_`,`` `_`sensitivity: bool = True`_`) →` [`Functions`](./)
 
-Parameters : `name: str, sensitivity: bool = True`
+Adds a filter to get functions that have direct declarer contract with the given name.
+
+## Example
 
 ```python
 from glider import *
@@ -15,10 +17,7 @@ def query():
   return functions
 ```
 
-\
-
-
-Output:
+## Output
 
 <pre class="language-json"><code class="lang-json"><strong>[
 </strong>  {

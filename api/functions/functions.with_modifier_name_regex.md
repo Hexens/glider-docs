@@ -1,8 +1,10 @@
 # Functions.with\_modifier\_name\_regex()
 
+`with_modifier_name_regex(`_`regex: str`_`) →` [`Functions`](./)
+
 Adds a filter to get functions, that have modifier whose name matches the given regex.
 
-Parameters : `regex: str`
+## Example
 
 ```python
 from glider import *
@@ -15,10 +17,7 @@ def query():
   return functions
 ```
 
-\
-
-
-Output:
+## Output
 
 <pre class="language-json"><code class="lang-json"><strong>[
 </strong>  {

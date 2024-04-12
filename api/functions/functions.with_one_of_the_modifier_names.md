@@ -1,8 +1,10 @@
-# Functions.with\_modifiers\_name()
+# Functions.with\_one\_of\_the\_modifier\_names()
+
+`with_one_of_the_modifier_names(`_`names: List[str]`_`,`` `_`sensitivity: bool = True`_`) →` [`Functions`](./)
 
 Adds a filter to get functions that have a modifier with one of the given names.
 
-Parameters : `names: List[str], sensitivity: bool = True`
+## Example
 
 ```python
 from glider import *
@@ -10,15 +12,12 @@ from glider import *
 def query():
   
   # Fetch a list of functions with modifiers from the given list
-  functions = Functions().with_modifiers_name(['onlyAdmin','onlyOwner']).exec(10)
+  functions = Functions().with_one_of_the_modifier_names(['onlyAdmin','onlyOwner']).exec(10)
 
   return functions
 ```
 
-\
-
-
-Output:
+## Output
 
 <pre class="language-json"><code class="lang-json"><strong>[
 </strong>  {

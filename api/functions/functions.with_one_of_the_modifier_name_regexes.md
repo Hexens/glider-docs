@@ -1,8 +1,10 @@
-# Functions.with\_modifiers\_name\_regex()
+# Functions.with\_one\_of\_the\_modifier\_name\_regexes()
+
+`with_one_of_the_modifier_name_regexes(`_`regexes: List[str]`_`) →` [`Functions`](./)
 
 Adds a filter to get functions that have a modifier whose name matches one of the given regexes.
 
-Parameters : `regexes: List[str]`
+## Example
 
 ```python
 from glider import *
@@ -10,15 +12,12 @@ from glider import *
 def query():
   
   # Fetch a list of functions with modifiers matching regex list
-  functions = Functions().with_modifiers_name_regex(['^only.*', 'admin']).exec(10)
+  functions = Functions().with_one_of_the_modifier_name_regexes(['^only.*', 'admin']).exec(10)
 
   return functions
 ```
 
-\
-
-
-Output:
+## Output
 
 <pre class="language-json"><code class="lang-json"><strong>[
 </strong>  {

@@ -1,6 +1,10 @@
 # Functions.constructors()
 
+`constructors() →` [`Functions`](./)
+
 Adds a filter to get only the constructors.
+
+## Example
 
 ```python
 from glider import *
@@ -12,10 +16,7 @@ def query():
   return functions
 ```
 
-\
-
-
-Output:
+## Output
 
 <pre class="language-json"><code class="lang-json"><strong>[
 </strong><strong>  {
@@ -30,3 +31,45 @@ Output:
   }
 ]
 </code></pre>
+
+## Old constructor syntax
+
+The function also accounts for the old constructor syntax, which in the older Solidity versions was named the same as the contract.&#x20;
+
+```python
+from glider import *
+
+def query():
+  funcs = Functions().constructors().without_name('constructor').exec(2)
+  return funcs
+```
+
+Output
+
+```solidity
+"root":{3 items
+"contract":string"0x1cfa0b95c531bc2c88a81a4263f6a6f5c1613b96"
+"contract_name":string"owned"
+"sol_function":solidity
+function owned() public {
+        owner = msg.sender;
+    }
+},
+"root":{3 items
+"contract":string"0x1cfa0b95c531bc2c88a81a4263f6a6f5c1613b96"
+"contract_name":string"TokenERC20"
+"sol_function":solidity
+function TokenERC20(
+        uint256 initialSupply,
+        string tokenName,
+        string tokenSymbol
+    ) public {
+        totalSupply = initialSupply * 10 ** uint256(decimals);  // Update total supply with the decimal amount
+        balanceOf[msg.sender] = totalSupply;                // Give the creator all initial tokens
+        name = tokenName;                                   // Set the name for display purposes
+        symbol = tokenSymbol;                               // Set the symbol for display purposes
+    }
+}
+
+```
+
