@@ -6,31 +6,26 @@ description: >-
 
 # Contracts.with\_event\_prefix()
 
-Input:
+## Function Signature
+
+`with_error_suffix(suffix: str, sensitivity: bool = True) ->` [`Contracts`](./)
+
+## Query Example
 
 ```python
 from glider import *
 
 def query():
-  contracts = Contracts().with_event_prefix('user').exec(5)
-  
-  addresses = []
-  for contract in contracts:
-    addresses.append(contract.address())
+  contracts = Contracts().with_error_prefix("admin", sensitivity=False).exec(1)
 
-  return [{"addresses": addresses}]
+  return contracts
 ```
 
-Output:
+## Output Example
 
 ```python
 {
-  "addresses": [
-    "0x84efEf0c34698d29014a1d7bcEBcBBCcb91b2865",
-    "0xdd4e308c42ebc152c53172ae70e0ab1aee95d67d",
-    "0xdd4e308c42ebc152c53172ae70e0ab1aee95d67d",
-    "0xdd4e308c42ebc152c53172ae70e0ab1aee95d67d",
-    "0xdd4e308c42ebc152c53172ae70e0ab1aee95d67d"
-  ]
+    "contract": "0x83a41749667ba2c944a7ba4f6287d0652bc440f9",
+    "contract_name": "ERC721Drop"
 }
 ```
