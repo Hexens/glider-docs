@@ -97,6 +97,7 @@
     * [Contracts.with\_function\_name\_not()](api/contracts/contracts.with\_function\_name\_not.md)
     * [Contracts.with\_name()](api/contracts/contracts.with\_name.md)
     * [Contracts.with\_name\_not()](api/contracts/contracts.with\_name\_not.md)
+    * [Contracts. with\_one\_of\_the\_function\_names()](api/contracts/contracts.-with\_one\_of\_the\_function\_names.md)
     * [Contracts.with\_struct\_field\_name()](api/contracts/contracts.with\_struct\_field\_name.md)
     * [Contracts.with\_struct\_field\_type()](api/contracts/contracts.with\_struct\_field\_type.md)
     * [Contracts.with\_struct\_fields\_count()](api/contracts/contracts.with\_struct\_fields\_count.md)
