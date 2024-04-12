@@ -8,7 +8,7 @@ description: >-
 
 ## Function Signature
 
-`with_error_suffix(suffix: str, sensitivity: bool = True) ->` [`Contracts`](./)
+`with_event_prefix(prefix: str, sensitivity: bool = True) ->` [`Contracts`](./)
 
 ## Query Example
 
@@ -16,7 +16,7 @@ description: >-
 from glider import *
 
 def query():
-  contracts = Contracts().with_error_prefix("admin", sensitivity=False).exec(1)
+  contracts = Contracts().with_event_prefix("role", sensitivity=False).exec(1)
 
   return contracts
 ```
@@ -25,7 +25,9 @@ def query():
 
 ```python
 {
-    "contract": "0x83a41749667ba2c944a7ba4f6287d0652bc440f9",
-    "contract_name": "ERC721Drop"
+    {
+        "contract": "0x320d5f8e4d1630d6915c2b676de6aec28a342af8",
+        "contract_name": "LibACL"
+    }
 }
 ```
