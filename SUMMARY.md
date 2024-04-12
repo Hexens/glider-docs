@@ -103,7 +103,6 @@
     * [Contracts.with\_struct\_name()](api/contracts/contracts.with\_struct\_name.md)
   * [Event](api/event/README.md)
     * [Event.arg\_list()](api/event/event.arg\_list.md)
-    * [Event.dump\_into\_json()](api/event/event.dump\_into\_json.md)
     * [Event.name](api/event/event.name.md)
     * [Event.signature](api/event/event.signature.md)
   * [Callable](api/callable/README.md)
