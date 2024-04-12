@@ -4,6 +4,8 @@ description: Returns entry_point instructions of the function/modifier.
 
 # Callable.entry\_point\_instructions()
 
+The entry\_point of a function is not a "real" instruction, but rather an abstract instruction representing the starting point of the function.
+
 ## Return type
 
 → [Instructions](../instructions/)
@@ -17,7 +19,7 @@ def query():
 
   entry_points = []
   for function in functions:
-    for entry_point_instruction in function.entry_point_instructions():
+    for entry_point_instruction in function.entry_point_instructions().exec():
       # For each function, return entry points
       entry_points.append(entry_point_instruction)
 

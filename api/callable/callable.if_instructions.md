@@ -13,12 +13,11 @@ description: Returns if instructions of the function/modifier.
 ```python
 from glider import *
 def query():
-  functions = Functions().with_modifiers_name_not(["onlyOwner"]).exec(100)
+  functions = Functions().exec(100)
 
   if_instructions = []
   for function in functions:
-    # For each function without an "onlyOwner" modifier, return the if instructions
-    for instruction in function.if_instructions():
+    for instruction in function.if_instructions().exec():
       if_instructions.append(instruction)
 
   return if_instructions
@@ -26,7 +25,7 @@ def query():
 
 ## Example output
 
-```json
+```solidity
 [
   {
     "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",

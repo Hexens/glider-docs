@@ -4,6 +4,8 @@ description: Returns an Instruction object with specified id from function.
 
 # Callable.instruction\_with\_id()
 
+This function is used internally while traversing CFG/DFG graphs.
+
 ## Return type
 
 → [Instruction](../instruction/)

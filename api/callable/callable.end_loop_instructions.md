@@ -4,6 +4,10 @@ description: Returns end_loop instructions of the function/modifier.
 
 # Callable.end\_loop\_instructions()
 
+The functions will return end\_loop instructions for all types of loops e.g. while/for
+
+end\_loop instruction is not a "real" instruction but rather an abstract one representing the end of the loop.
+
 ## Return type
 
 → [Instructions](../instructions/)
@@ -17,7 +21,7 @@ def query():
 
   loop = []
   for function in functions:
-    for loop_instruction in function.end_loop_instructions():
+    for loop_instruction in function.end_loop_instructions().exec():
       # For each function, return the loop instructions
       loop.append(loop_instruction)
 

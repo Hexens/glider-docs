@@ -17,7 +17,7 @@ def query():
 
   assembly = []
   for function in functions:
-    for asm_instruction in function.end_assembly_instructions():
+    for asm_instruction in function.end_assembly_instructions().exec():
       # For each function, return the assembly instructions
       assembly.append(asm_instruction)
 
@@ -26,7 +26,7 @@ def query():
 
 ## Example output
 
-```json
+```solidity
 [
   {
     "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",

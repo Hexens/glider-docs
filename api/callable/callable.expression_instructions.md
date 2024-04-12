@@ -17,7 +17,7 @@ def query():
 
   expressions = []
   for function in functions:
-    for exp_instruction in function.expression_instructions():
+    for exp_instruction in function.expression_instructions().exec():
       # For each function, return the expressions
       expressions.append(exp_instruction)
 

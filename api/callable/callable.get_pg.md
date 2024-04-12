@@ -4,6 +4,8 @@ description: Constructs and returns procedure graph of the function/modifier.
 
 # Callable.get\_pg()
 
+The ProcedureGraph is an internal data structure for representing CFG/DFG graphs of the code. There is low probability that anyone will need to directly access it while writing queries.
+
 ## Return type
 
 → ProcedureGraph
@@ -13,7 +15,7 @@ description: Constructs and returns procedure graph of the function/modifier.
 ```python
 from glider import *
 def query():
-  functions = Functions().with_modifiers_name_not(["onlyOwner"]).exec(100)
+  functions = Functions().without_modifier_names(["onlyOwner"]).exec(100)
 
   state_variables = []
   for function in functions:

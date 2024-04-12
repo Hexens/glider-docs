@@ -15,7 +15,7 @@ description: >-
 ```python
 from glider import *
 def query():
-  functions = Functions().with_modifiers_name_not(["onlyOwner"]).exec(100)
+  functions = Functions().without_modifier_names(["onlyOwner"]).exec(100)
 
   contracts = []
   for function in functions:

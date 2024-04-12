@@ -1,5 +1,7 @@
 ---
-description: Returns keccak256 hash of the function's or modifier's signature.
+description: >-
+  Returns the selector (4 bytes of keccak256 hash) of the function's or
+  modifier's signature.
 ---
 
 # Callable.hashed\_signature()
@@ -13,11 +15,10 @@ description: Returns keccak256 hash of the function's or modifier's signature.
 ```python
 from glider import *
 def query():
-  functions = Functions().with_modifiers_name_not(["onlyOwner"]).exec(100)
+  functions = Functions().exec(100)
 
   functions_with_sig = []
   for function in functions:
-    # For each function without an "onlyOwner" modifier, return the hashed signature
     functions_with_sig.append({"function": function.name(), "sig": function.hashed_signature()})
 
   return functions_with_sig

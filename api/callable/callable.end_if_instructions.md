@@ -17,7 +17,7 @@ def query():
 
   conditional = []
   for function in functions:
-    for if_instruction in function.end_if_instructions():
+    for if_instruction in function.end_if_instructions().exec():
       # For each function, return the conditional (if) instructions
       conditional.append(if_instruction)
 
@@ -26,7 +26,7 @@ def query():
 
 ## Example output
 
-```json
+```solidity
 [
   {
     "contract": "0x0c16f70dBBbCB63a81de06eB2fc2ABE4a19f89F2",

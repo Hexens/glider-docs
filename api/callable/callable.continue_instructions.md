@@ -26,7 +26,7 @@ def query():
 
 ## Example output
 
-```json
+```solidity
 [
   {
     "contract": "0x31Cef25171d9b06B6A8eF9dEBBFCf84c9aaB5A32",
