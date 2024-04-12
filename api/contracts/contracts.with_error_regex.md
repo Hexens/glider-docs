@@ -6,31 +6,28 @@ description: >-
 
 # Contracts.with\_error\_regex()
 
-Input:
+## Function Signature
+
+`with_error_regex(regex: str) ->` [`Contracts`](./)
+
+## Query Example
 
 ```python
 from glider import *
 
 def query():
-  contracts = Contracts().with_error_regex('^Err.*').exec(5)
+  contracts = Contracts().with_error_regex('^Err.*').exec(1)
   
-  addresses = []
-  for contract in contracts:
-    addresses.append(contract.address())
-
-  return [{"addresses": addresses}]
+  return contracts
 ```
 
-Output:
+## Output Example
 
 ```python
 {
-  "addresses": [
-    "0xd6c4884106ff00e231f7c1626c18700b2cb98456",
-    "0xb795987CF22936fBc2cA945FFEEAa49894EAcF84",
-    "0xb795987CF22936fBc2cA945FFEEAa49894EAcF84",
-    "0xb795987CF22936fBc2cA945FFEEAa49894EAcF84",
-    "0xb795987CF22936fBc2cA945FFEEAa49894EAcF84"
-  ]
+    {
+        "contract": "0x423ce5282c460eed5fe0786b4d47d2c2a4ef3721",
+        "contract_name": "IRiverV1"
+    }
 }
 ```
