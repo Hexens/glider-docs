@@ -4,31 +4,29 @@ description: Adds a filter to get contracts that don't have the given name.
 
 # Contracts.with\_name\_not()
 
-Input:
+## Function Signature
+
+`with_name_not(name: str, sensitivity: bool = True) →` [`Contracts`](./)
+
+## Query Example
 
 ```python
 from glider import *
 
 def query():
-  contracts = Contracts().with_name_not("Account").exec(5)
-  
-  addresses = []
-  for contract in contracts:
-    addresses.append(contract.address())
+  contracts = Contracts().with_name_not("Context").exec(1)
 
-  return [{"addresses": addresses}]
+  return contracts
 ```
 
-Output:
+## Output Example
 
-```
+```json
 {
-  "addresses": [
-    "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-    "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-    "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-    "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-    "0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-  ]
+    {
+        "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf",
+        "contract_name": "IERC20"
+    }
+}
 ```
 
