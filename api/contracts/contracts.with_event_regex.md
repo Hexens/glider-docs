@@ -6,31 +6,28 @@ description: >-
 
 # Contracts.with\_event\_regex()
 
-Input:
+## Function Signature
+
+`with_event_regex(regex: str) ->` [`Contracts`](./)
+
+## Query Example
 
 ```python
 from glider import *
 
 def query():
-  contracts = Contracts().with_event_regex('^Update.*').exec(5)
-  
-  addresses = []
-  for contract in contracts:
-    addresses.append(contract.address())
+  contracts = Contracts().with_event_regex('^change.*').exec(1)
 
-  return [{"addresses": addresses}]
+  return contracts
 ```
 
-Output:
+## Output Example
 
 ```python
 {
-  "addresses": [
-    "0xeB3D8DBFa30A83A80DcFd5F6317426a6ce41CEE4",
-    "0xb2F7E60359438655311e6582dfb2f9EF04CB142C",
-    "0xb2F7E60359438655311e6582dfb2f9EF04CB142C",
-    "0x7FAfB0571B10757373df3c463C472C39D688711c",
-    "0x7e6B034880393a4604175D6867ba25Fa16402E43"
-  ]
+    {
+        "contract": "0xf7ee2cea69f9013098abc8ba63844a228885da4c",
+        "contract_name": "VaultFactory"
+    }
 }
 ```
