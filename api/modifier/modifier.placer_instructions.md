@@ -1,6 +1,10 @@
 # Modifier.placer\_instructions()
 
+`placer_instructions() →` [`Instructions`](../instructions/)
+
 Returns placeholder [instructions](../instruction/) of the [modifier](./).
+
+The placeholder or placer instruction is the "\_" (underline) instruction which defines where the function code must be inline in the modifier.
 
 ## Return type
 
@@ -12,13 +16,13 @@ An example of a query which can analyze placeholder instructions is:
 from glider import *
 def query():
   modifierlist = Modifiers()\
-      .name_prefix("check")\
+      .with_name_prefix("check")\
       .exec(5)
   
   results =  []
 
   for modd in modifierlist:
-    for placers in modd.placer_instructions():
+    for placers in modd.placer_instructions().exec():
       results.append(placers)
 
   return results
@@ -27,7 +31,7 @@ def query():
 
 ## Output
 
-```json
+```solidity
 "root":{4 items
 "contract":string"0x2D76FCCC67645A61794cB65584c5e89A9f3945Ed"
 "contract_name":string"CommonBudgetApproval"
