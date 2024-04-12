@@ -156,6 +156,7 @@
     * [Callables.without\_names()](api/callables/callables.without\_names.md)
     * [Callables.with\_signature()](api/callables/callables.with\_signature.md)
     * [Callables.with\_signatures()](api/callables/callables.with\_signatures.md)
+    * [Callables.with\_callee\_names()](api/callables/callables.with\_callee\_names.md)
   * [Function](api/function/README.md)
     * [Function.Properties](api/function/function.properties.md)
     * [Function.get\_callee\_functions()](api/function/function.get\_callee\_functions.md)
