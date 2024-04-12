@@ -6,7 +6,7 @@ description: Adds a filter to get contracts with the given name.
 
 ## Function Signature
 
-`with_name(`_`name: str`_`,`` `_`sensitivity: bool = True`_`) →` [`Contracts`](./)
+`with_name(name: str, sensitivity: bool = True) ->` [`Contracts`](./)
 
 ## Query Example
 
