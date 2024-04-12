@@ -4,7 +4,13 @@ description: Adds a filter to get contracts that have a struct with the given fi
 
 # Contracts.with\_struct\_field\_name()
 
-Input:
+## Function Signature
+
+`with_struct_field_name(name: str, sensitivity: bool = True) →` [`Contracts`](./)
+
+
+
+## Query Example
 
 ```python
 from glider import *
@@ -19,7 +25,7 @@ def query():
   return [{"addresses": addresses}]
 ```
 
-Output (\~80 secs):
+## Output Example
 
 ```python
 {

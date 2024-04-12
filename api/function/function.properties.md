@@ -1,9 +1,32 @@
-# Function.Properties
+# Function.properties()
 
-BOOL = {MethodProp.IS\_CONSTRUCTOR: 'is\_constructor', MethodProp.IS\_GLOBAL: 'is\_global', MethodProp.IS\_PAYABLE: 'is\_payable', MethodProp.IS\_PURE: 'is\_pure', MethodProp.IS\_VIEW: 'is\_view'}
+Returns the function's properties as a list of [MethodProps](../methodprop/)
 
-DICT = {MethodProp.HAS\_CALLEES: 'callees'}
+```python
+from glider import *
 
-LIST = {MethodProp.HAS\_ARGS: 'args', MethodProp.HAS\_ERRORS: 'errors', MethodProp.HAS\_MODIFIERS: 'modifiers', MethodProp.HAS\_STATE\_VARIABLES\_READ: 'state\_variables\_read', MethodProp.HAS\_STATE\_VARIABLES\_WRITTEN: 'state\_variables\_written'}
+def query():
+  # Fetch a list of functions
+  functions = Functions().exec(10)
 
-VISIBILITY = \[MethodProp.PUBLIC, MethodProp.EXTERNAL, MethodProp.INTERNAL, MethodProp.PRIVATE]
+  # Retrieve the properties of the first function
+  properties = functions[0].properties()
+  for prop in properties:
+    print(prop)
+
+  return functions
+```
+
+\
+
+
+Output:
+
+```json
+{
+  "print_output": [
+    "MethodProp.IS_VIEW",
+    "MethodProp.INTERNAL"
+  ]
+}
+```
