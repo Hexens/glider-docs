@@ -1,6 +1,10 @@
-# Modifiers.instructions()
+# Modifiers.placer\_instructions()
 
-Returns Instructions object for the instructions of the modifiers.
+`placer_instructions() →` [`Instructions`](../instructions/)
+
+Returns placeholder [instructions](../instructions/) for the set of [Modifiers](./).
+
+The placeholder or placer instruction is the "\_" (underline) instruction which defines where the function code must be inline in the modifier.
 
 ## Return type
 
@@ -13,14 +17,14 @@ from glider import *
 def query():
   instructionlist = Modifiers()\
       .with_name("onlyOwner")\
-      .instructions()\
+      .placer_instructions()\
       .exec(5)
   return instructionlist
 ```
 
 ## Output
 
-```json
+```solidity
 "root":{4 items
 "contract":string"0x6f48d31eB35c9f52ef336aBf12f46E78F18fD7Fb"
 "contract_name":string"Ownable"

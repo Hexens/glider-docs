@@ -1,7 +1,7 @@
 ---
-description: class api.functions.Modifiers
+description: The aim of this class is to filter modifiers with specified properties.
 ---
 
 # Modifiers
 
-Bases: [callables](../callables/ "mention")
+Bases: [`Callables`](../callables/)

@@ -1,16 +1,15 @@
 # Modifiers.exec()
 
+`exec(`_`limit_count: int = 0`_`,`` `_`offset_count: int = 0`_`) → List[`[`Modifier`](../modifier/)`]`\
+
+
 Executes the formed query and returns a list of the [Modifier](../modifier/) objects.
 
-## Return type
+It accepts two integer parameters: the first one is `limit_count` which limits the count of the returned results, and the second is `offset_count` which sets the offset from which the result set must be returned.
 
-→ List\[[Modifier](../modifier/)]
+In specific, in the Modifiers scenario, it will action a query to search for modifiers.
 
-It accepts two integer parameters the first one is `limit_count` which limits the count of the returned results and the second is `offset_count` which sets the offset from which the result set must be returned.
-
-&#x20;In specific in the Modifiers scenario it will action a query to search for modifiers.
-
-In solidity a smart contract can define modifiers which can be called before the code of the function is run.
+In solidity, a smart contract can define modifiers which can be called before the code of the function is run.
 
 An example of such a contract would be as below:
 
@@ -45,7 +44,7 @@ def query():
 
 ## Output
 
-```json
+```solidity
 "root":{3 items
 "contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
 "contract_name":string"Ownable"
