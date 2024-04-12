@@ -26,7 +26,6 @@ def query():
     {
         "contract": "0x92a6b64544643a70ac3fbb825524a3138c4cac57",
         "contract_name": "IDCAHubPositionHandler"
-
     }
 }
 ```
