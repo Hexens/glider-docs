@@ -6,31 +6,28 @@ description: >-
 
 # Contracts.with\_error\_prefix()
 
-Input:
+## Function Signature
+
+`with_error_prefix(prefix: str, sensitivity: bool = True) ->` [`Contracts`](./)
+
+## Example Query
 
 ```python
 from glider import *
 
 def query():
-  contracts = Contracts().with_error_prefix("_er").exec(5)
-  
-  addresses = []
-  for contract in contracts:
-    addresses.append(contract.address())
+  contracts = Contracts().with_error_prefix("Wrong").exec(1)
 
-  return [{"addresses": addresses}]
+  return contracts
 ```
 
-Output:
+## Output Example
 
 ```python
 {
-  "addresses": [
-    "0xbe90c8e5b01669188978D6CF6d39324ab5410ccf",
-    "0x5985B9a914bCd6A46d72690Df78c1640064c499e",
-    "0x5985B9a914bCd6A46d72690Df78c1640064c499e",
-    "0x5985B9a914bCd6A46d72690Df78c1640064c499e",
-    "0x5985B9a914bCd6A46d72690Df78c1640064c499e"
-  ]
+    {
+        "contract": "0x4730c58fda9d78f60c987039aeab7d261aad942e",
+        "contract_name": "PrqBridge"
+    }
 }
 ```
