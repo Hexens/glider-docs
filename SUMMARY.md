@@ -74,7 +74,7 @@
     * [Contracts.contracts](api/contracts/contracts.contracts.md)
     * [Contracts.exec()](api/contracts/contracts.exec.md)
     * [Contracts.functions()](api/contracts/contracts.functions.md)
-    * [Contracts.interfaces()](api/contracts/contracts.interfaces.md)
+    * [Contracts.interface\_contracts()](api/contracts/contracts.interface\_contracts.md)
     * [Contracts.mains()](api/contracts/contracts.mains.md)
     * [Contracts.name\_prefix()](api/contracts/contracts.name\_prefix.md)
     * [Contracts.name\_regex()](api/contracts/contracts.name\_regex.md)
