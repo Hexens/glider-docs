@@ -23,7 +23,7 @@ def query():
     # For each of its arguments...
     for arg in f.arguments().list():
       # ...return the type and name
-      function["args"].append({"type": arg.type, "name": arg.name})
+      function["args"].append({"type": arg.type.name, "name": arg.name})
 
     # Add the function to the array only if it has at least one argument
     if len(function["args"]) > 0:

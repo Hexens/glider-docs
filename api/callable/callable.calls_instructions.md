@@ -6,6 +6,8 @@ description: >-
 
 # Callable.calls\_instructions()
 
+The function returns [Instructions](../instructions/) object for all instructions that have any type of call inside it, whether it is an external, internal, library or other type of call.
+
 ## Return type
 
 → [Instructions](../instructions/)

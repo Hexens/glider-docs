@@ -109,7 +109,7 @@
     * [Callable.arguments()](api/callable/callable.arguments.md)
     * [Callable.asm\_instructions()](api/callable/callable.asm\_instructions.md)
     * [Callable.break\_instructions()](api/callable/callable.break\_instructions.md)
-    * [Callable.get\_all\_called()](api/callable/callable.get\_all\_called.md)
+    * [Callable.callee\_functions()](api/callable/callable.callee\_functions.md)
     * [Callable.callee\_values()](api/callable/callable.callee\_values.md)
     * [Callable.calls\_instructions()](api/callable/callable.calls\_instructions.md)
     * [Callable.catch\_instructions()](api/callable/callable.catch\_instructions.md)

@@ -18,7 +18,7 @@ def query():
   results = []
   for function in functions:
     # For each function, return each break instruction
-    for instruction in function.break_instructions():
+    for instruction in function.break_instructions().exec():
       results.append(instruction)
 
   return results
@@ -26,24 +26,33 @@ def query():
 
 ## Example output
 
-```json
-[
-  {
-    "contract": "0x0000000000000000000000000000000000000001",
-    "contract_name": "MockContract",
-    // Formatted for the example
-    "sol_function": `
-    function functionWithBreak(uint256 _length, uint256 _index) external {
-        require(_index < _length, "Index out of bounds");
-        for (uint256 i = 0; i < _length; i++) {
-            if (i == _index) {
-                break;
+```solidity
+"root":{4 items
+"contract":string"0xa4915dc6ee2652c471397c32ce5c8d3494ef3e6c"
+"contract_name":string"Strings"
+"sol_function":solidity
+function toString(uint256 value) internal pure returns (string memory) {
+        unchecked {
+            uint256 length = Math.log10(value) + 1;
+            string memory buffer = new string(length);
+            uint256 ptr;
+            /// @solidity memory-safe-assembly
+            assembly {
+                ptr := add(buffer, add(32, length))
             }
+            while (true) {
+                ptr--;
+                /// @solidity memory-safe-assembly
+                assembly {
+                    mstore8(ptr, byte(mod(value, 10), _SYMBOLS))
+                }
+                value /= 10;
+                if (value == 0) break;
+            }
+            return buffer;
         }
     }
-    `,
-    "sol_instruction": "break"
-  },
-  ...
-]
+"sol_instruction":solidity
+break
+}
 ```

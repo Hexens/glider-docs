@@ -4,7 +4,7 @@ description: >-
   function/modifier.
 ---
 
-# Callable.get\_all\_called()
+# Callable.callee\_functions()
 
 ## Return type
 
@@ -19,7 +19,7 @@ def query():
 
   called_functions = []
   for function in functions:
-    for called in function.get_all_called().exec():
+    for called in function.callee_functions().exec():
       # Return each called function from this specific one
       called_functions.append(called)
 
@@ -28,7 +28,7 @@ def query():
 
 ## Example output
 
-```json
+```solidity
 [
   {
     "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
