@@ -6,38 +6,28 @@ description: >-
 
 # Contracts.with\_function\_name\_not()
 
-Input:
+## Function Signature
+
+`with_function_name_not(name: str, sensitivity: bool = True) ->` [`Contracts`](./)
+
+## Query Example
 
 ```python
 from glider import *
 
 def query():
-  contracts = Contracts().with_function_name_not('transfer').exec(5)
+  contracts = Contracts().with_function_name_not('transfer').exec(1)
 
   return contracts
 ```
 
-Output:
+## Output Example
 
 ```python
-"root":{2 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"Context"
-}
-"root":{2 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"Ownable"
-}
-"root":{2 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"IERC165"
-}
-"root":{2 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"ERC165"
-}
-"root":{2 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"IERC721"
+{
+    {
+        "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf",
+        "contract_name": "Context"
+    }
 }
 ```
