@@ -95,7 +95,6 @@
     * [Contracts.with\_event\_suffix()](api/contracts/contracts.with\_event\_suffix.md)
     * [Contracts.with\_function\_name()](api/contracts/contracts.with\_function\_name.md)
     * [Contracts.with\_function\_name\_not()](api/contracts/contracts.with\_function\_name\_not.md)
-    * [Contracts.with\_ids()](api/contracts/contracts.with\_ids.md)
     * [Contracts.with\_info()](api/contracts/contracts.with\_info.md)
     * [Contracts.with\_name()](api/contracts/contracts.with\_name.md)
     * [Contracts.with\_name\_not()](api/contracts/contracts.with\_name\_not.md)
