@@ -1,8 +1,10 @@
-# Callables.name\_suffix()
+# Callables.with\_name\_suffix()
+
+`with_name_suffix(`_`suffix: str`_`,`` `_`sensitivity: bool = True`_`) →` [`Callables`](./)
 
 Adds a filter to get callables whose names have the given suffix. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
-To filter given a list of suffixes, refer to [Callables.name\_suffixes()](callables.name\_suffixes.md).
+To filter given a list of suffixes, refer to [Callables.with\_name\_suffixes()](callables.with\_name\_suffixes.md).
 
 ### Functions Example
 
@@ -11,7 +13,7 @@ from glider import *
 
 def query():
   # Retrieve the functions that have `down` as suffix
-  functions = Functions().name_suffix("down").exec(100)
+  functions = Functions().with_name_suffix("down").exec(100)
 
   # Return the first five functions
   return functions[0:5]
@@ -56,7 +58,7 @@ from glider import *
 
 def query():
   # Retrieve the modifiers that have `Initialized` as suffix
-  modifiers = Modifiers().name_suffix("Initialized").exec(100)
+  modifiers = Modifiers().with_name_suffix("Initialized").exec(100)
 
   # Return the first five modifiers
   return modifiers[0:5]

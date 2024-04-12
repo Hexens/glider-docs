@@ -2,6 +2,10 @@
 
 Returns the [Instructions](../instructions/) object for the instructions of the callables. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
+### Return type
+
+\-> [Instructions](../instructions/)
+
 ### Functions Example
 
 ```python

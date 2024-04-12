@@ -1,5 +1,11 @@
 # Callables.with\_arg\_memory\_type()
 
+`with_arg_memory_type(`_`arg_memory_type: str`_`,`` `_`sensitivity: bool = True`_`) →` [`Callables`](./)
+
+_`arg_memory_type` can take as arguments: "storage", "memory", "calldata"_
+
+_By default, "memory" is set as the memory type of argument unless stated otherwise explicitly._
+
 Adds a filter to get callables having specified argument memory type. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
 ### Functions Example

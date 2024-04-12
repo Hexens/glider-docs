@@ -1,10 +1,12 @@
-# Callables.with\_name\_not()
+# Callables.without\_name()
 
-Adds a filter to get callables that that don't have the specified name. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
+`without_name(`_`name: str`_`,`` `_`sensitivity: bool = True`_`) →` [`Callables`](./)
+
+Adds a filter to get callables that don't have the specified name. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
 To get the callables with a specified name, refer to [Callables.with\_name()](callables.with\_name.md).
 
-To filter given a list of undesired names, refer to [Callables.with\_names\_not()](callables.with\_names\_not.md).
+To filter given a list of undesired names, refer to [Callables.without\_names()](callables.without\_names.md).
 
 ### Functions Example
 
@@ -13,7 +15,7 @@ from glider import *
 
 def query():
   # Retrieve all functions that are not named `distributeFunds`
-  functions = Functions().with_name_not("distributeFunds").exec(100)
+  functions = Functions().without_name("distributeFunds").exec(100)
 
   # Return the first five functions
   return functions[0:5]
@@ -58,7 +60,7 @@ from glider import *
 
 def query():
   # Retrieve the modifiers that are not named `onlyCaller`
-  modifiers = Modifiers().with_name_not("onlyCaller").exec(100)
+  modifiers = Modifiers().without_name("onlyCaller").exec(100)
 
   # Return the first five modifiers
   return modifiers[0:5]

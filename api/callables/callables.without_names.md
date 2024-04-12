@@ -1,10 +1,12 @@
-# Callables.with\_names\_not()
+# Callables.without\_names()
+
+`without_names(`_`names: List[str]`_`,`` `_`sensitivity: bool = True`_`) →` [`Callables`](./)
 
 Adds a filter to get callables that that don't have the specified names. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
-To get the callables without a specified name, refer to [Callables.with\_name\_not()](callables.with\_name\_not.md).
+To get the callables without a specified name, refer to [Callables.without\_name()](callables.without\_name.md).
 
-To filter given a list of names, refer to [Callables.with\_names()](callables.with\_names.md).
+To filter given a list of names, refer to [Callables.with\_one\_of\_the\_names()](callables.with\_one\_of\_the\_names.md).
 
 ### Functions Example
 
@@ -13,7 +15,7 @@ from glider import *
 
 def query():
   # Retrieve all functions that are not named `_msgSender` and `_msgData`
-  functions = Functions().with_names_not(["_msgSender", "_msgData"]).exec(100)
+  functions = Functions().without_names(["_msgSender", "_msgData"]).exec(100)
 
   # Return the first five functions
   return functions[0:5]
@@ -58,7 +60,7 @@ from glider import *
 
 def query():
   # Retrieve the modifiers that are not named `onlyOwner` and `onlyMinter`
-  modifiers = Modifiers().with_names_not(["onlyOwner", "onlyMinter"]).exec(100)
+  modifiers = Modifiers().without_names(["onlyOwner", "onlyMinter"]).exec(100)
 
   # Return the first five modifiers
   return modifiers[0:5]

@@ -1,10 +1,12 @@
-# Callables.with\_names()
+# Callables.with\_one\_of\_the\_names()
+
+with\_one\_of\_the\_names(_names: List\[str]_, _sensitivity: bool = True_) → [Callables](./)
 
 Adds a filter to get callables having specified names. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
 To filter given a single name, refer to [Callables.with\_name()](callables.with\_name.md).
 
-To get all but some specified names, refer to [Callables.with\_names\_not()](callables.with\_names\_not.md).
+To get all but some specified names, refer to [Callables.without\_names()](callables.without\_names.md).
 
 ### Functions Example
 
@@ -13,7 +15,7 @@ from glider import *
 
 def query():
   # Retrieve all functions that are named `sendMessage` and `totalSupply`
-  functions = Functions().with_names(["sendMessage", "totalSupply"]).exec(100)
+  functions = Functions().with_one_of_the_names(["sendMessage", "totalSupply"]).exec(100)
 
   # Return the first five functions
   return functions[0:5]
@@ -58,7 +60,7 @@ from glider import *
 
 def query():
   # Retrieve the modifiers that are named `onlyCaller` and `onlyClient`
-  modifiers = Modifiers().with_names(["onlyCaller", "onlyClient"]).exec(100)
+  modifiers = Modifiers().with_one_of_the_names(["onlyCaller", "onlyClient"]).exec(100)
 
   # Return the first five modifiers
   return modifiers[0:5]

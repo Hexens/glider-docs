@@ -1,5 +1,7 @@
 # Callables.with\_arg\_count()
 
+`with_arg_count(`_`arg_count: int`_`) →` [`Callables`](./)
+
 Adds a filter to get callables having specified argument count. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
 ### Functions Example

@@ -1,8 +1,10 @@
-# Callables.name\_regex()
+# Callables.with\_name\_regex()
+
+`with_name_regex(`_`regex: str`_`) →` [`Callables`](./)
 
 Adds a filter to get callables whose names match the given regex expression. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
-To filter given a list of regex expression, refer to [Callables.name\_regexes()](callables.name\_regexes.md).
+To filter given a list of regex expression, refer to [Callables.with\_name\_regexes()](callables.with\_name\_regexes.md).
 
 ### Functions Example
 
@@ -11,7 +13,7 @@ from glider import *
 
 def query():
   # Retrieve the functions that have `claim` in their name but do not start with `_`
-  functions = Functions().name_regex(r"^(?!_).*claim.*$").exec(100)
+  functions = Functions().with_name_regex(r"^(?!_).*claim.*$").exec(100)
 
   # Return the first five functions
   return functions[0:5]
@@ -56,7 +58,7 @@ from glider import *
 
 def query():
   # Retrieve the modifiers that have `claim` in their name but do not start with `only`
-  modifiers = Modifiers().name_regex(r"^(?!only).*claim.*$").exec(100)
+  modifiers = Modifiers().with_name_regex(r"^(?!only).*claim.*$").exec(100)
 
   # Return the first five modifiers
   return modifiers[0:5]

@@ -1,8 +1,10 @@
-# Callables.name\_prefix()
+# Callables.with\_name\_prefix()
+
+`with_name_prefix(`_`prefix: str`_`,`` `_`sensitivity: bool = True`_`) →` [`Callables`](./)
 
 Adds a filter to get callables whose names have the given prefix. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
-To filter given a list of prefixes, refer to [Callables.name\_prefixes()](callables.name\_prefixes.md).
+To filter given a list of prefixes, refer to [Callables.with\_name\_prefixes()](callables.with\_name\_prefixes.md).
 
 ### Functions Example
 
@@ -56,7 +58,7 @@ from glider import *
 
 def query():
   # Retrieve the modifiers that have `only` as prefix
-  modifiers = Modifiers().name_prefix("only").exec(100)
+  modifiers = Modifiers().with_name_prefix("only").exec(100)
 
   # Return the first five modifiers
   return modifiers[0:5]

@@ -1,8 +1,12 @@
 # Callables.with\_arg\_type()
 
-Adds a filter to get callables having specified argument type. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
+`with_arg_type(`_`arg_type: str`_`,`` `_`sensitivity: bool = True`_`) →` [`Callables`](./)
+
+Adds a filter to get callables having specified argument type like "address" or even non-elementary types like structs. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
 To filter given a list of argument types, refer to [Callables.with\_arg\_types()](callables.with\_arg\_types.md).
+
+_Note that the function will handle alias types, e.g. if uint256 is passed to the function, the results will also include the alias "uint" variables_
 
 ### Functions Example
 

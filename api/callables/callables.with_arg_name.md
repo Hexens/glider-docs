@@ -1,5 +1,7 @@
 # Callables.with\_arg\_name()
 
+`with_arg_name(`_`arg_name: str`_`,`` `_`sensitivity: bool = True`_`) →` [`Callables`](./)
+
 Adds a filter to get callables having specified argument name. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
 ### Functions Example
