@@ -8,27 +8,31 @@ description: Returns true if it is "<" check, otherwise returns false.
 from glider import *
 
 def query():
-  functions = Functions().name_prefix('checkIf').exec(200)
-  results = []
-  for func in functions:
-    if_instructions = func.if_instructions() # api.instructions.IfInstruction's instance
-    if(len(if_instructions) > 0):
-      # this will be True if the comparition operators is less than ("<")
-      is_le = func.if_instructions()[0].get_condition().is_le()
-      if is_le:
-        print(func.if_instructions()[0].source_code())
-        results.append(func)
-  return results
+  if_instructions = Instructions().if_instructions().exec(100)
+
+  for if_instruction in if_instructions:
+    if if_instruction.get_condition().is_le():
+      print(if_instruction.source_code())
+      return [if_instruction.get_parent()]
+  return []
 ```
 
 
 
 Output:
 
-```
-{
-  "print_output": [
-    "(address token0,address token1) = tokenA < tokenB ? (tokenA,tokenB) : (tokenB,tokenA)"
-  ]
+```solidity
+"root":{3 items
+"contract":string"0xa4915dc6ee2652c471397c32ce5c8d3494ef3e6c"
+"contract_name":string"SignedMath"
+"sol_function":solidity
+function min(int256 a, int256 b) internal pure returns (int256) {
+        return a < b ? a : b;
+    }
+},
+"root":{1 item
+"print_output":[1 item
+0:string"return a < b ? a : b"
+]
 }
 ```

@@ -4,6 +4,8 @@ description: The class represents a condition.
 
 # Condition
 
+`Condition(`_`token: str = ''`_`)`
+
 Base: **object**
 
 ***

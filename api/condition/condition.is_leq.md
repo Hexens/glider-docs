@@ -8,29 +8,40 @@ description: Returns true if it is "<=" check, otherwise returns false.
 from glider import *
 
 def query():
-  functions = Functions().name_prefix('checkIf').exec(300)
-  results = []
-  uniq_source_code = []
-  for func in functions:
-    if_instructions = func.if_instructions() # api.instructions.IfInstruction's instance
-    if(len(if_instructions) > 0):
-      # this will be True if the comparition operators is less than or equal ("<=")
-      is_leq = func.if_instructions()[0].get_condition().is_leq()
-      source_code = func.if_instructions()[0].source_code()
-      if is_leq and source_code not in uniq_source_code:
-        uniq_source_code.append(source_code)
-        print(func.if_instructions()[0].source_code())
-        results.append(func)
-  return results
+  if_instructions = Instructions().if_instructions().exec(100,200)
+
+  for if_instruction in if_instructions:
+    if if_instruction.get_condition().is_leq():
+      print(if_instruction.source_code())
+      return [if_instruction.get_parent()]
+  return []
 ```
 
 Output:
 
-```json
-{
-  "print_output": [
-    "debtRatio_ <= MAX_DEBT_RATIO",
-    "vesting[cachedIndexVesting[referrals[i].referralAddr] - 1].tokensReserved <= 1"
-  ]
+```solidity
+"root":{3 items
+"contract":string"0x8a93bc8ed29da1b090265137a9d201ebf1154626"
+"contract_name":string"MerkleProof"
+"sol_function":solidity
+function processProof(bytes32[] memory proof, bytes32 leaf) internal pure returns (bytes32) {
+        bytes32 computedHash = leaf;
+        for (uint256 i = 0; i < proof.length; i++) {
+            bytes32 proofElement = proof[i];
+            if (computedHash <= proofElement) {
+                // Hash(current computed hash + current element of the proof)
+                computedHash = _efficientHash(computedHash, proofElement);
+            } else {
+                // Hash(current element of the proof + current computed hash)
+                computedHash = _efficientHash(proofElement, computedHash);
+            }
+        }
+        return computedHash;
+    }
+},
+"root":{1 item
+"print_output":[1 item
+0:string"computedHash <= proofElement"
+]
 }
 ```
