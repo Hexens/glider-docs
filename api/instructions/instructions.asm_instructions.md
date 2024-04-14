@@ -1,8 +1,14 @@
+---
+description: Returns an Instructions object for the 'assembly' instructions
+---
+
 # Instructions.asm\_instructions()
+
+## Function Signature
 
 **`asm_instructions`**`() →` [`Instructions`](./)
 
-Returns an [Instructions](./) object for the assembly instructions.
+## Query Example
 
 ```python
 from glider import *
@@ -14,7 +20,7 @@ def query():
   return instructions
 ```
 
-Output:
+## Output Example
 
 ```json
 {
@@ -42,5 +48,5 @@ Output:
   "sol_instruction": "assembly {
                         revert(add(32,reason),mload(reason))
                     }"
-}Add 
+}
 ```
