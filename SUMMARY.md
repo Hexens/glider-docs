@@ -274,6 +274,8 @@
     * [Instructions.asm\_instructions()](api/instructions/instructions.asm\_instructions.md)
     * [Instructions. break\_instructions()](api/instructions/instructions.-break\_instructions.md)
     * [Instructions.calls()](api/instructions/instructions.calls.md)
+    * [Instruction.catch\_instructions()](api/instructions/instruction.catch\_instructions.md)
+    * [Instructions. continue\_instructions()](api/instructions/instructions.-continue\_instructions.md)
     * [Instructions.delegate\_calls()](api/instructions/instructions.delegate\_calls.md)
     * [Instructions.delegate\_calls\_from\_assembly()](api/instructions/instructions.delegate\_calls\_from\_assembly.md)
     * [Instructions.delegate\_calls\_non\_assembly()](api/instructions/instructions.delegate\_calls\_non\_assembly.md)
