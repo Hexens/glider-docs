@@ -1,12 +1,14 @@
+---
+description: Returns an Instructions object for the call instructions
+---
+
 # Instructions.calls()
 
-**calls**() → [Instructions](./)
+## Function Signature
 
-Returns an [Instructions](./) object for the call instructions.
+`calls() →` [`Instructions`](./)
 
-## Return type
-
-→ [Instructions](./)
+## Query Example
 
 ```python
 from glider import *
@@ -18,17 +20,21 @@ def query():
   return instructions
 ```
 
-Output:
+## Output Example
 
-```json
+```solidity
 {
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "Ownable",
-  "sol_function": "constructor() {
-        _setOwner(_msgSender());
-    }",
-  "sol_instruction": "_setOwner(_msgSender())"
+    "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf"
+    "contract_name": "SafeMath"
+    "sol_function":
+        function add(uint256 a, uint256 b) internal pure returns (uint256) {
+                uint256 c = a + b;
+                require(c >= a, "SafeMath: addition overflow");
+                return c;
+            }
+    "sol_instruction":
+        require(c >= a, "SafeMath: addition overflow")
 }
 ```
 
-This example returns the call instruction to the `_setOwner()` private function.
+This example returns the call instruction to the `require()` solidity built-in function.
