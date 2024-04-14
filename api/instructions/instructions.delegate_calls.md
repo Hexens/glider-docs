@@ -1,8 +1,12 @@
+---
+description: Returns a list of all delegate call instructions.
+---
+
 # Instructions.delegate\_calls()
 
-**`delegate_calls`**`() →` [`Instructions`](./)
+## Function Signature
 
-Returns a list of all delegate call instructions.
+**`delegate_calls`**`() →` [`Instructions`](./)
 
 ## Return type
 
@@ -20,18 +24,19 @@ def query():
 
 Output:
 
-```json
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "Address",
-  "sol_function": "function functionDelegateCall(
-        address target,bytes memory data,string memory errorMessage
-    ) internal returns (bytes memory) {
-        require(isContract(target),"Address: delegate call to non-contract");
-
-        (bool success,bytes memory returndata) = target.delegatecall(data);
-        return verifyCallResult(success,returndata,errorMessage);
-    }",
-  "sol_instruction": "(bool success,bytes memory returndata) = target.delegatecall(data)"
+<pre class="language-solidity"><code class="lang-solidity">{
+    "contract":"0xa4915dc6ee2652c471397c32ce5c8d3494ef3e6c"
+    "contract_name":"Address"
+<strong>    "sol_function":
+</strong>        function functionDelegateCall(
+                address target,
+                bytes memory data,
+                string memory errorMessage
+            ) internal returns (bytes memory) {
+                (bool success, bytes memory returndata) = target.delegatecall(data);
+                return verifyCallResultFromTarget(target, success, returndata, errorMessage);
+            }
+"sol_instruction":
+        (bool success, bytes memory returndata) = target.delegatecall(data)
 }
-```
+</code></pre>
