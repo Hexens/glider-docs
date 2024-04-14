@@ -272,6 +272,7 @@
   * [Instructions](api/instructions/README.md)
     * [Instructions.CALLEES](api/instructions/instructions.callees.md)
     * [Instructions.asm\_instructions()](api/instructions/instructions.asm\_instructions.md)
+    * [Instructions. break\_instructions()](api/instructions/instructions.-break\_instructions.md)
     * [Instructions.calls()](api/instructions/instructions.calls.md)
     * [Instructions.delegate\_calls()](api/instructions/instructions.delegate\_calls.md)
     * [Instructions.delegate\_calls\_from\_assembly()](api/instructions/instructions.delegate\_calls\_from\_assembly.md)
