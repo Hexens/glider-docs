@@ -4,31 +4,33 @@ description: Adds a filter to get contracts that have a struct with the given fi
 
 # Contracts.with\_struct\_field\_type()
 
-Input:
+## Function Signature
+
+`with_struct_field_type(field_type: str, sensitivity: bool = True) →` [`Contracts`](./)
+
+## Query Example
 
 ```python
 from glider import *
 
 def query():
-  contracts = Contracts().with_struct_field_type('bytes32').exec(5)
+  contracts = (
+    Contracts().
+    with_name("DepositSecurityModule").
+    with_struct_field_type('bytes32').
+    exec(1)
+  )
   
-  addresses = []
-  for contract in contracts:
-    addresses.append(contract.address())
-
-  return [{"addresses": addresses}]
+  return contracts
 ```
 
-Output(Takes a while \~30 secs):&#x20;
+## Output Example
 
 ```python
 {
-  "addresses": [
-    "0x1d8B9d1334575b5cB265E63D2A5AD0E70Fe46A2B",
-    "0xe90baa4A5fD4fE25443d27e6E2883350a0E67855",
-    "0x2d8bE62BF76F5c6962E0E44e93374786F329260c",
-    "0x1C3517AFb608610DB403401B7C85929774c3cdd7",
-    "0x69fEe260917b62C46EC95D7d2FE59DC827934cdD"
-  ]
+    {
+        "contract": "0xdb149235b6f40dc08810aa69869783be101790e7",
+        "contract_name": "DepositSecurityModule"
+    }
 }
 ```
