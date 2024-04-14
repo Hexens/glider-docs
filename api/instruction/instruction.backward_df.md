@@ -1,12 +1,18 @@
+---
+description: >-
+  Returns a list of all previous instructions/arguments of the current point in
+  the data flow graph.
+---
+
 # Instruction.backward\_df()
+
+## Function Signature
 
 `backward_df() → List[Point]`
 
-Returns a list of all previous instructions/arguments of the current point in the data flow graph.
+The `backward_df()` function is an intra-procedural analysis function. This means that the function does not operate recursively and instead returns `instructions/arguments` within the current function instruction set.
 
-
-
-Query
+## Query Example
 
 ```python
 from glider import *
@@ -20,26 +26,28 @@ def query():
   return instructions
 ```
 
-Output
+## Output Example
 
 ```solidity
-"root":{4 items
-"contract":string"0x8a93bc8ed29da1b090265137a9d201ebf1154626"
-"contract_name":string"METAANIxKPP"
-"sol_function":solidity
-function _verify(bytes32 leaf, bytes32[] memory proof)
-    internal view returns (bool)
+{
     {
-        return MerkleProof.verify(proof, allowListRoot, leaf);
+        "contract": "0x8a93bc8ed29da1b090265137a9d201ebf1154626"
+        "contract_name": "METAANIxKPP"
+        "sol_function":
+            function _verify(bytes32 leaf, bytes32[] memory proof)
+                internal view returns (bool)
+                {
+                    return MerkleProof.verify(proof, allowListRoot, leaf);
+                }
+        "sol_instruction":
+            return MerkleProof.verify(proof, allowListRoot, leaf)
+    },
+    {
+        "print_output":[
+            0: "bytes32 leaf"
+            1: "bytes32[] proof"
+            2: "return MerkleProof.verify(proof, allowListRoot, leaf)"
+        ]
     }
-"sol_instruction":solidity
-return MerkleProof.verify(proof, allowListRoot, leaf)
-},
-"root":{1 item
-    "print_output":[3 items
-    0:string"return MerkleProof.verify(proof, allowListRoot, leaf)"
-    1:string"bytes32[] proof"
-    2:string"bytes32 leaf"
-    ]
 }
 ```
