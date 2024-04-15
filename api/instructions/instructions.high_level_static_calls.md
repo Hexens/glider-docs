@@ -41,3 +41,4 @@ def query():
 }
 ```
 
+In this instance, the static call refers to `uniswapV2Router.factory()`.
