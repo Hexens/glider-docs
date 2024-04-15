@@ -289,6 +289,7 @@
     * [Instructions.functions()](api/instructions/instructions.functions.md)
     * [Instructions.high\_level\_static\_calls()](api/instructions/instructions.high\_level\_static\_calls.md)
     * [Instructions.if\_instructions()](api/instructions/instructions.if\_instructions.md)
+    * [Instructions. if\_loop\_instructions()](api/instructions/instructions.-if\_loop\_instructions.md)
     * [Instructions.internal\_calls()](api/instructions/instructions.internal\_calls.md)
     * [Instructions.library\_calls()](api/instructions/instructions.library\_calls.md)
     * [Instructions.list()](api/instructions/instructions.list.md)
