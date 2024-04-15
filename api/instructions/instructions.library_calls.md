@@ -1,12 +1,16 @@
+---
+description: Returns a list of all library call instructions.
+---
+
 # Instructions.library\_calls()
 
 **`library_calls`**`() →` [`Instructions`](./)
 
-Returns a list of all library call instructions.
-
 ## Return type
 
 `→` [`Instructions`](./)
+
+## Query Example
 
 ```python
 from glider import *
@@ -18,19 +22,36 @@ def query():
   return instructions
 ```
 
-Output:
+## Output Example
 
-```json
+```solidity
 {
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "ERC721",
-  "sol_function": "function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
-        require(_exists(tokenId),"ERC721Metadata: URI query for nonexistent token");
-
-        string memory baseURI = _baseURI();
-        return bytes(baseURI).length > 0 ? string(abi.encodePacked(baseURI,tokenId.toString())) : "";
-    }",
-  "sol_instruction": "return bytes(baseURI).length > 0 ? string(abi.encodePacked(baseURI,tokenId.toString())) : """
+    "contract": "0xa4915dc6ee2652c471397c32ce5c8d3494ef3e6c"
+    "contract_name": "Strings"
+    "sol_function":
+        function toString(uint256 value) internal pure returns (string memory) {
+                unchecked {
+                    uint256 length = Math.log10(value) + 1;
+                    string memory buffer = new string(length);
+                    uint256 ptr;
+                    /// @solidity memory-safe-assembly
+                    assembly {
+                        ptr := add(buffer, add(32, length))
+                    }
+                    while (true) {
+                        ptr--;
+                        /// @solidity memory-safe-assembly
+                        assembly {
+                            mstore8(ptr, byte(mod(value, 10), _SYMBOLS))
+                        }
+                        value /= 10;
+                        if (value == 0) break;
+                    }
+                    return buffer;
+                }
+        }
+    "sol_instruction":
+        true
 }
 ```
 
