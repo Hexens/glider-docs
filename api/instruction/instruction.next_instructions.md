@@ -6,36 +6,59 @@ description: >-
 
 # Instruction.next\_instructions()
 
-Query
+`next_instructions() → List[`[`Instruction`](./)`]`
+
+The  difference between the next\_instruction**S**() function and [next\_instruction()](instruction.next\_instruction.md) is that this function will return all instructions following the current instruction in the CFG (control-flow-graph).
+
+_The function is intra-procedural, and thus will not follow function calls; for the **inter**-procedural variant of this function, use extended\_next\_instructions()._
+
+### Query Example
 
 ```python
 from glider import *
 def query():
-  instructions = Instructions().exec(1,19)
-  return instructions[0].next_instructions()
+  instructions = Instructions().exec(1,9)
+
+  return instructions + instructions[0].next_instructions()
 ```
 
-Output
+### Output
 
-```json
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "Ownable",
-  "sol_function": "function _setOwner(address newOwner) private {\n        address oldOwner = _owner;\n        _owner = newOwner;\n        emit OwnershipTransferred(oldOwner,newOwner);\n    }",
-  "sol_instruction": "address oldOwner = _owner"
-}
-
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "Ownable",
-  "sol_function": "function _setOwner(address newOwner) private {\n        address oldOwner = _owner;\n        _owner = newOwner;\n        emit OwnershipTransferred(oldOwner,newOwner);\n    }",
-  "sol_instruction": "_owner = newOwner"
-}
-
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "Ownable",
-  "sol_function": "function _setOwner(address newOwner) private {\n        address oldOwner = _owner;\n        _owner = newOwner;\n        emit OwnershipTransferred(oldOwner,newOwner);\n    }",
-  "sol_instruction": "emit OwnershipTransferred(oldOwner,newOwner)"
+```solidity
+"root":{4 items
+"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
+"contract_name":string"SafeMath"
+"sol_function":solidity
+function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+        require(b <= a, errorMessage);
+        uint256 c = a - b;
+        return c;
+    }
+"sol_instruction":solidity
+require(b <= a, errorMessage)
+},
+"root":{4 items
+"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
+"contract_name":string"SafeMath"
+"sol_function":solidity
+function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+        require(b <= a, errorMessage);
+        uint256 c = a - b;
+        return c;
+    }
+"sol_instruction":solidity
+uint256 c = a - b
+},
+"root":{4 items
+"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
+"contract_name":string"SafeMath"
+"sol_function":solidity
+function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+        require(b <= a, errorMessage);
+        uint256 c = a - b;
+        return c;
+    }
+"sol_instruction":solidity
+return c
 }
 ```
