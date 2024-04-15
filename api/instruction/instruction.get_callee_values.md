@@ -16,7 +16,7 @@ return keccak256(abi.encodePacked(account , amount));
 
 The function will return Call objects for keccak256 and abi.encodePacked calls.
 
-Query
+## Query Example
 
 ```python
 from glider import *
@@ -29,7 +29,7 @@ def query():
   return instruction
 ```
 
-Output
+## Output
 
 ```solidity
 "root":{4 items
