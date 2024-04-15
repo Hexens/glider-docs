@@ -1,6 +1,6 @@
 # Instructions. new\_variable\_instructions()
 
-Returns an [Instructions](./) object for the 'new variable' instructions
+Returns an [Instructions](./) object for the new variable creation instructions
 
 `new_variable_instructions() →` [`Instructions`](./)
 
