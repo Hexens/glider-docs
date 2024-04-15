@@ -236,7 +236,6 @@
     * [Instruction.get\_operands()](api/instruction/instruction.get\_operands.md)
     * [Instruction.get\_parent()](api/instruction/instruction.get\_parent.md)
     * [Instruction.has\_global\_df()](api/instruction/instruction.has\_global\_df.md)
-    * [Instruction.instruction\_data](api/instruction/instruction.instruction\_data.md)
     * [Instruction.is\_assembly()](api/instruction/instruction.is\_assembly.md)
     * [Instruction.is\_break()](api/instruction/instruction.is\_break.md)
     * [Instruction.is\_call()](api/instruction/instruction.is\_call.md)

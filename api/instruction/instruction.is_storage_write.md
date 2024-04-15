@@ -34,4 +34,4 @@ Output
 }
 ```
 
-In the output above, the first instruction is a storage write instruction where the `_owner` state variable is written with the value of ``newOwner. Hence, the `is_storage_write()` returns `True` whereas for the second instruction it returns `False` as it does not write to any state variable``&#x20;
+In the output above, the first instruction is a storage write instruction where the `_owner` state variable is written with the value of `newOwner`. Hence, the `is_storage_write()` returns \`True\` whereas for the second instruction it returns \`False\` as it does not write to any state variable&#x20;
