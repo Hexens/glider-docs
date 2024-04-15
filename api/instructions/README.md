@@ -84,8 +84,8 @@ Bases: [Queryable](../queryable/)
 [instructions.modifiers.md](instructions.modifiers.md)
 {% endcontent-ref %}
 
-{% content-ref url="instructions.static_calls.md" %}
-[instructions.static\_calls.md](instructions.static\_calls.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.with_called_function_name.md" %}
