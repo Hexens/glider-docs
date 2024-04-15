@@ -4,8 +4,6 @@ description: Returns an Instructions object for the call instructions
 
 # Instructions.calls()
 
-## Function Signature
-
 `calls() →` [`Instructions`](./)
 
 ## Query Example
