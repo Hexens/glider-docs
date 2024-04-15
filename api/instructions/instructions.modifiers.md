@@ -8,6 +8,8 @@ Returns [Modifiers](../modifiers/) object for the modifiers of the instructions.
 
 `→` [`Modifiers`](../modifiers/)
 
+## Query Example
+
 ```python
 from glider import *
 
@@ -18,15 +20,15 @@ def query():
   return instructions
 ```
 
-Output:
+## Output Example
 
-```json
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "Ownable",
-  "sol_modifier": modifier onlyOwner() {
-        require(owner() == _msgSender(),"Ownable: caller is not the owner");
-        _;
-    }
+<pre class="language-solidity"><code class="lang-solidity">{
+<strong>    "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf"
+</strong>    "contract_name": "Ownable"
+    "sol_modifier": 
+        modifier onlyOwner() {
+            require(_owner == _msgSender(), "Ownable: caller is not the owner");
+            _;
+        }
 }
-```
+</code></pre>
