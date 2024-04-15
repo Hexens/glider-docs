@@ -1,41 +1,48 @@
+---
+description: Returns the Instructions object withe all the external call instructions.
+---
+
 # Instructions.external\_calls()
 
 **`external_calls`**`() →` [`Instructions`](./)
 
-Returns the [Instructions](./) object withe all the external call instructions.
-
 ## Return type
 
 `→` [`Instructions`](./)
+
+## Query Example
 
 ```python
 from glider import *
 
 def query():
   # Fetch a list of external call instructions
-  instructions = Instructions().external_calls().exec(1,100)
+  instructions = Instructions().external_calls().exec(1)
   
   return instructions
 ```
 
-Output:
+## Output Example
 
-```json
+```solidity
 {
-  "contract": "0x5C3975C1F017833156806435cF123F8Cb0651F5f",
-  "contract_name": "VaultGovernance",
-  "sol_function": "function deployVault(
-        address[] memory vaultTokens,bytes memory options,address owner
-    ) public virtual returns (IVault vault,uint256 nft) {
-        require(initialized,Exceptions.INITIALIZATION);
-        IProtocolGovernance protocolGovernance = IProtocolGovernance(_internalParams.protocolGovernance);
-        require(protocolGovernance.permissionless() || protocolGovernance.isAdmin(msg.sender),Exceptions.PERMISSIONLESS_OR_ADMIN);
-        vault = factory.deployVault(vaultTokens,options);
-        address nftOwner = owner;
-        nft = _internalParams.registry.registerVault(address(vault),nftOwner);
-        vault.initialize(nft);
-        emit DeployedVault(tx.origin,msg.sender,vaultTokens,options,nftOwner,address(vault),nft);
-    }",
-  "sol_instruction": "vault = factory.deployVault(vaultTokens,options)"
+    "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf"
+    "contract_name": "Token"
+    "sol_function":
+        constructor () {
+            uniswapV2Pair = IUniswapV2Factory(uniswapV2Router.factory()).createPair(address(this), uniswapV2Router.WETH());
+            _taxWallet = payable(_msgSender());
+            _balances[_msgSender()] = _tTotal;
+            _isExcludedFromFee[owner()] = true;
+            _isExcludedFromFee[address(this)] = true;
+            _isExcludedFromFee[_taxWallet] = true;
+            _isExcludedFromFee[address(uniswapV2Router)] = true;
+            _approve(msg.sender, address(this), type(uint256).max);
+            _approve(address(this), address(uniswapV2Router), type(uint256).max);
+            emit Transfer(address(0), _msgSender(), _tTotal);
+        }
+    "sol_instruction":
+        uniswapV2Pair = IUniswapV2Factory(uniswapV2Router.factory()).createPair(address(this), uniswapV2Router.WETH())
 }
+
 ```
