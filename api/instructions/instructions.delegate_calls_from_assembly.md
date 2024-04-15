@@ -4,8 +4,6 @@ description: Returns a list of delegate call instructions from assembly.
 
 # Instructions.delegate\_calls\_from\_assembly()
 
-## Function Signature
-
 `delegate_calls_from_assembly() →` [`Instructions`](./)
 
 ## Query Example

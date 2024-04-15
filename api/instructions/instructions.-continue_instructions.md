@@ -4,8 +4,6 @@ description: Returns an Instructions object for the 'continue' instructions
 
 # Instructions. continue\_instructions()
 
-## Function Signature
-
 `continue_instructions() →` [`Instructions`](./)
 
 ## Query Example

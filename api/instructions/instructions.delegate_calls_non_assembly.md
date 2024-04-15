@@ -4,8 +4,6 @@ description: Returns a list of delegate call instructions from non assembly.
 
 # Instructions.delegate\_calls\_non\_assembly()
 
-## Function Signature
-
 `delegate_calls_non_assembly() →` [`Instructions`](./)
 
 ## Query Example

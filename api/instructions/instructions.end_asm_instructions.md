@@ -4,8 +4,6 @@ description: Returns an Instructions object for the 'end assembly' instructions.
 
 # Instructions.end\_asm\_instructions()
 
-## Function Signature
-
 `end_loop_instructions() →` [`Instructions`](./)
 
 ## Query Example

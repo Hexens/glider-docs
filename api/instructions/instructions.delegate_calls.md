@@ -4,8 +4,6 @@ description: Returns a list of all delegate call instructions.
 
 # Instructions.delegate\_calls()
 
-## Function Signature
-
 **`delegate_calls`**`() →` [`Instructions`](./)
 
 ## Return type
