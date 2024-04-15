@@ -2,7 +2,7 @@
 description: Returns an Instructions object for the 'expression' instructions.
 ---
 
-# Instructions. expression\_instructions()
+# Instructions.expression\_instructions()
 
 `expression_instructions() →` [`Instructions`](./)
 

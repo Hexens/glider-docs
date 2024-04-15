@@ -1,4 +1,4 @@
-# Instructions. return\_instructions()
+# Instructions.return\_instructions()
 
 Returns an [Instructions](./) object for the 'return' instructions.
 

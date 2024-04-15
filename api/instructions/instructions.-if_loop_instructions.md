@@ -1,10 +1,10 @@
 ---
-description: Returns an Instructions object for the 'end loop' instructions.
+description: Returns an Instructions object for the 'if loop' instructions.
 ---
 
-# Instructions. end\_loop\_instructions()
+# Instructions.if\_loop\_instructions()
 
-`end_loop_instructions() →` [`Instructions`](./)
+`if_loop_instructions() →` [`Instructions`](../instruction/)
 
 ## Query Example
 
@@ -12,8 +12,8 @@ description: Returns an Instructions object for the 'end loop' instructions.
 from glider import *
 
 def query():
-  instructions = Instructions().end_loop_instructions().exec(1)
-  
+  instructions = Instructions().if_loop_instructions().exec(1)
+
   return instructions
 ```
 
@@ -44,16 +44,8 @@ def query():
                     }
                     return buffer;
                 }
-            }
+        }
     "sol_instruction":
-        while (true) {
-                        ptr--;
-                        /// @solidity memory-safe-assembly
-                        assembly {
-                            mstore8(ptr, byte(mod(value, 10), _SYMBOLS))
-                        }
-                        value /= 10;
-                        if (value == 0) break;
-                    }
+        true
 }
 ```

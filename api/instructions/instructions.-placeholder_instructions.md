@@ -1,4 +1,4 @@
-# Instructions. placeholder\_instructions()
+# Instructions.placeholder\_instructions()
 
 Returns an [Instructions](./) object for the [Modifier](../modifier/) placeholder instructions.
 

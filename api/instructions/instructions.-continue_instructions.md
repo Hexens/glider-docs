@@ -2,7 +2,7 @@
 description: Returns an Instructions object for the 'continue' instructions
 ---
 
-# Instructions. continue\_instructions()
+# Instructions.continue\_instructions()
 
 `continue_instructions() →` [`Instructions`](./)
 

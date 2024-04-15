@@ -2,7 +2,7 @@
 description: Returns an Instructions object for the 'entry point' instructions
 ---
 
-# Instructions. entry\_point\_instructions()
+# Instructions.entry\_point\_instructions()
 
 `entry_point_instructions() →` [`Instructions`](./)
 

@@ -1,4 +1,4 @@
-# Instructions. new\_variable\_instructions()
+# Instructions.new\_variable\_instructions()
 
 Returns an [Instructions](./) object for the new variable creation instructions
 
