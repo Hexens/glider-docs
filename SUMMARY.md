@@ -301,6 +301,7 @@
     * [Instructions.start\_loop\_instructions()](api/instructions/instructions.-start\_loop\_instructions.md)
     * [Instructions.throw\_instructions()](api/instructions/instructions.throw\_instructions.md)
     * [Instructions.try\_instructions()](api/instructions/instructions.try\_instructions.md)
+    * [Instructions.with\_all\_callee\_function\_names()](api/instructions/instructions.with\_all\_callee\_function\_names.md)
     * [Instructions.with\_called\_function\_name()](api/instructions/instructions.with\_called\_function\_name.md)
     * [Instructions.with\_called\_function\_name\_not()](api/instructions/instructions.with\_called\_function\_name\_not.md)
     * [Instructions.with\_called\_function\_name\_prefix()](api/instructions/instructions.with\_called\_function\_name\_prefix.md)
