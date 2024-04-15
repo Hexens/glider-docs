@@ -4,22 +4,71 @@ description: Returns a list of immediate following instructions in the control f
 
 # Instruction.next\_instruction()
 
-Query
+`next_instruction() → List[`[`Instruction`](./)`]`
+
+The main difference between the next\_instruction() function and [next\_instructionS()](instruction.next\_instructions.md) is that this function will return a list of instructions that are immediately following the current instruction in the CFG (control-flow-graph).
+
+
+
+For example, in the function:
+
+```solidity
+function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+        require(b <= a, errorMessage);
+        uint256 c = a - b;
+        return c;
+    }
+```
+
+for the instruction:&#x20;
+
+```solidity
+require(b <= a, errorMessage);
+```
+
+the function will return the instruction:
+
+```solidity
+uint256 c = a - b;
+```
+
+## Query Example
 
 ```python
 from glider import *
 def query():
-  instructions = Instructions().exec(1,19)
-  return instructions[0].next_instruction()
+  instructions = Instructions().exec(1,9)
+
+  return instructions + instructions[0].next_instruction()
 ```
 
-Output
+## Output
 
-```json
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "Ownable",
-  "sol_function": "function _setOwner(address newOwner) private {\n        address oldOwner = _owner;\n        _owner = newOwner;\n        emit OwnershipTransferred(oldOwner,newOwner);\n    }",
-  "sol_instruction": "address oldOwner = _owner"
+```solidity
+"root":{4 items
+"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
+"contract_name":string"SafeMath"
+"sol_function":solidity
+function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+        require(b <= a, errorMessage);
+        uint256 c = a - b;
+        return c;
+    }
+"sol_instruction":solidity
+require(b <= a, errorMessage)
+},
+
+"root":{4 items
+"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
+"contract_name":string"SafeMath"
+"sol_function":solidity
+function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+        require(b <= a, errorMessage);
+        uint256 c = a - b;
+        return c;
+    }
+"sol_instruction":solidity
+uint256 c = a - b
 }
 ```
+
