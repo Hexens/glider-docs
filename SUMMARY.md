@@ -284,6 +284,7 @@
     * [Instructions. end\_loop\_instructions()](api/instructions/instructions.-end\_loop\_instructions.md)
     * [Instructions. entry\_point\_instructions()](api/instructions/instructions.entry\_points.md)
     * [Instructions.exec()](api/instructions/instructions.exec.md)
+    * [Instructions. expression\_instructions()](api/instructions/instructions.-expression\_instructions.md)
     * [Instructions.external\_calls()](api/instructions/instructions.external\_calls.md)
     * [Instructions.functions()](api/instructions/instructions.functions.md)
     * [Instructions.high\_level\_static\_calls()](api/instructions/instructions.high\_level\_static\_calls.md)
