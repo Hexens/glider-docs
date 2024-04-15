@@ -282,7 +282,7 @@
     * [Instructions.end\_asm\_instructions()](api/instructions/instructions.end\_asm\_instructions.md)
     * [Instructions. end\_if\_instructions()](api/instructions/instructions.-end\_if\_instructions.md)
     * [Instructions. end\_loop\_instructions()](api/instructions/instructions.-end\_loop\_instructions.md)
-    * [Instructions.entry\_points()](api/instructions/instructions.entry\_points.md)
+    * [Instructions. entry\_point\_instructions()](api/instructions/instructions.-entry\_point\_instructions.md)
     * [Instructions.exec()](api/instructions/instructions.exec.md)
     * [Instructions.external\_calls()](api/instructions/instructions.external\_calls.md)
     * [Instructions.functions()](api/instructions/instructions.functions.md)
