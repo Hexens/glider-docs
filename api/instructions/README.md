@@ -32,8 +32,8 @@ Bases: [Queryable](../queryable/)
 [instructions.delegate\_calls\_non\_assembly.md](instructions.delegate\_calls\_non\_assembly.md)
 {% endcontent-ref %}
 
-{% content-ref url="instructions.entry_points.md" %}
-[instructions.entry\_points.md](instructions.entry\_points.md)
+{% content-ref url="instructions.entry_point_instructions.md" %}
+[instructions.entry\_point\_instructions.md](instructions.entry\_point\_instructions.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.exec.md" %}
