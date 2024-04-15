@@ -1,4 +1,4 @@
-# Instructions. start\_loop\_instructions()
+# Instructions.start\_loop\_instructions()
 
 Returns an [Instructions](./) object for the 'start loop' instructions.
 

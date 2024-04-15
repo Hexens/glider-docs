@@ -298,7 +298,7 @@
     * [Instructions. new\_variable\_instructions()](api/instructions/instructions.-new\_variable\_instructions.md)
     * [Instructions. placeholder\_instructions()](api/instructions/instructions.-placeholder\_instructions.md)
     * [Instructions. return\_instructions()](api/instructions/instructions.-return\_instructions.md)
-    * [Instructions.start\_loop\_instructions()](api/instructions/instructions.start\_loop\_instructions.md)
+    * [Instructions.start\_loop\_instructions()](api/instructions/instructions.-start\_loop\_instructions.md)
     * [Instructions.throw\_instructions()](api/instructions/instructions.throw\_instructions.md)
     * [Instructions. try\_instructions()](api/instructions/instructions.-try\_instructions.md)
     * [Instructions.with\_called\_function\_name()](api/instructions/instructions.with\_called\_function\_name.md)
