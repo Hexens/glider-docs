@@ -307,7 +307,7 @@
     * [Instructions.with\_callee\_function\_signature()](api/instructions/instructions.with\_called\_function\_signature.md)
     * [Instructions.with\_one\_of\_callee\_function\_names()](api/instructions/instructions.with\_one\_of\_callee\_function\_names.md)
     * [Instructions.without\_callee\_function\_name()](api/instructions/instructions.without\_callee\_function\_name.md)
-    * [Instructions.with\_called\_function\_name\_not()](api/instructions/instructions.with\_called\_function\_name\_not.md)
+    * [Instructions.without\_callee\_function\_names()](api/instructions/instructions.without\_callee\_function\_names.md)
   * [NewVariableInstruction](api/newvariableinstruction.md)
   * [PlaceholderInstruction](api/placeholderinstruction.md)
   * [ReturnInstruction](api/returninstruction.md)

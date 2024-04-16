@@ -92,8 +92,8 @@ Bases: [Queryable](../queryable/)
 [instructions.with\_callee\_function\_name.md](instructions.with\_callee\_function\_name.md)
 {% endcontent-ref %}
 
-{% content-ref url="instructions.with_called_function_name_not.md" %}
-[instructions.with\_called\_function\_name\_not.md](instructions.with\_called\_function\_name\_not.md)
+{% content-ref url="instructions.without_callee_function_names.md" %}
+[instructions.without\_callee\_function\_names.md](instructions.without\_callee\_function\_names.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.with_called_function_name_prefix.md" %}
