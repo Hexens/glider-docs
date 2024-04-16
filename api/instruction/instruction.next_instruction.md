@@ -6,7 +6,7 @@ description: Returns a list of immediate following instructions in the control f
 
 `next_instruction() → List[`[`Instruction`](./)`]`
 
-The main difference between the next\_instruction() function and [next\_instructionS()](instruction.next\_instructions.md) is that this function will return a list of instructions that are immediately following the current instruction in the CFG (control-flow-graph).
+The difference between the next\_instruction() function and [next\_instructions()](instruction.next\_instructions.md) is that this function will return a list of instructions that are immediately following the current instruction in the CFG (control-flow-graph).
 
 _The function is intra-procedural._
 

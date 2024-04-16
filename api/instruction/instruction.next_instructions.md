@@ -8,7 +8,7 @@ description: >-
 
 `next_instructions() → List[`[`Instruction`](./)`]`
 
-The  difference between the next\_instruction**S**() function and [next\_instruction()](instruction.next\_instruction.md) is that this function will return all instructions following the current instruction in the CFG (control-flow-graph).
+The difference between the next\_instructions() function and [next\_instruction()](instruction.next\_instruction.md) is that this function will return all instructions following the current instruction in the CFG (control-flow-graph).
 
 _The function is intra-procedural, and thus will not follow function calls; for the **inter**-procedural variant of this function, use extended\_next\_instructions()._
 
