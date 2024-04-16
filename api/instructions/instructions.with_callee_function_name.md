@@ -8,6 +8,8 @@ Adds a filter to get [Instructions](./) that call a function with the given name
 
 `→` [`Instructions`](./)
 
+## Query Example
+
 ```python
 from glider import *
 
@@ -21,7 +23,7 @@ def query():
   return instructions
 ```
 
-Output:
+## Output Example
 
 ```solidity
 {
