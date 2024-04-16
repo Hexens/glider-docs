@@ -260,6 +260,7 @@
     * [Instruction.next\_block()](api/instruction/instruction.next\_block.md)
     * [Instruction.next\_instruction()](api/instruction/instruction.next\_instruction.md)
     * [Instruction.next\_instructions()](api/instruction/instruction.next\_instructions.md)
+    * [Instruction.extended\_next\_instructions()](api/instruction/instruction.extended\_next\_instructions.md)
     * [Instruction.previous\_instruction()](api/instruction/instruction.previous\_instruction.md)
     * [Instruction.previous\_instructions()](api/instruction/instruction.previous\_instructions.md)
     * [Instruction.procedure\_graph](api/instruction/instruction.procedure\_graph.md)
