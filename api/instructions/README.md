@@ -104,8 +104,8 @@ Bases: [Queryable](../queryable/)
 [instructions.with\_callee\_function\_name\_suffix.md](instructions.with\_callee\_function\_name\_suffix.md)
 {% endcontent-ref %}
 
-{% content-ref url="instructions.with_callee_function_signature.md" %}
-[instructions.with\_callee\_function\_signature.md](instructions.with\_callee\_function\_signature.md)
+{% content-ref url="instructions.with_called_function_signature.md" %}
+[instructions.with\_called\_function\_signature.md](instructions.with\_called\_function\_signature.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.with_db_id.md" %}
