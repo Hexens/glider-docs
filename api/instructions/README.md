@@ -88,8 +88,8 @@ Bases: [Queryable](../queryable/)
 [Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="instructions.with_called_function_name.md" %}
-[instructions.with\_called\_function\_name.md](instructions.with\_called\_function\_name.md)
+{% content-ref url="instructions.with_callee_function_name.md" %}
+[instructions.with\_callee\_function\_name.md](instructions.with\_callee\_function\_name.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.with_called_function_name_not.md" %}
