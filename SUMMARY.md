@@ -264,7 +264,6 @@
     * [Instruction.previous\_instructions()](api/instruction/instruction.previous\_instructions.md)
     * [Instruction.procedure\_graph](api/instruction/instruction.procedure\_graph.md)
     * [Instruction.procedure\_graph\_node](api/instruction/instruction.procedure\_graph\_node.md)
-    * [Instruction.set\_procedure\_graph\_node()](api/instruction/instruction.set\_procedure\_graph\_node.md)
     * [Instruction.solidity\_callee\_names()](api/instruction/instruction.solidity\_callee\_names.md)
     * [Instruction.source\_code()](api/instruction/instruction.source\_code.md)
     * [Instruction.source\_lines()](api/instruction/instruction.source\_lines.md)
