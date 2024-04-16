@@ -1,0 +1,37 @@
+# Instructions.without\_callee\_function\_name()
+
+Adds a filter to get instructions that don't call a function with the given name.
+
+`without_callee_function_name(name: str, sensitivity: bool = True) →` [`Instructions`](./)
+
+## Query Example
+
+```python
+from glider import *
+
+def query():
+  instructions = (
+    Instructions().
+    without_callee_function_name("keccka256").
+    exec(1)
+  )
+
+  return instructions
+```
+
+## Output Example
+
+```solidity
+{
+    "contract":"0xd705c24267ed3c55458160104994c55c6492dfcf"
+    "contract_name":"Context"
+    "sol_function":
+        function _msgSender() internal view virtual returns (address) {
+                return msg.sender;
+            }
+    "sol_instruction":
+        {
+            return msg.sender;
+        }
+}
+```
