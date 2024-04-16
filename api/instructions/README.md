@@ -100,8 +100,8 @@ Bases: [Queryable](../queryable/)
 [instructions.with\_called\_function\_name\_prefix.md](instructions.with\_called\_function\_name\_prefix.md)
 {% endcontent-ref %}
 
-{% content-ref url="instructions.with_called_function_name_suffix.md" %}
-[instructions.with\_called\_function\_name\_suffix.md](instructions.with\_called\_function\_name\_suffix.md)
+{% content-ref url="instructions.with_callee_function_name_suffix.md" %}
+[instructions.with\_callee\_function\_name\_suffix.md](instructions.with\_callee\_function\_name\_suffix.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.with_called_function_signature.md" %}
