@@ -303,7 +303,7 @@
     * [Instructions.with\_all\_callee\_function\_names()](api/instructions/instructions.with\_all\_callee\_function\_names.md)
     * [Instructions.with\_callee\_function\_name()](api/instructions/instructions.with\_callee\_function\_name.md)
     * [Instructions.with\_called\_function\_name\_not()](api/instructions/instructions.with\_called\_function\_name\_not.md)
-    * [Instructions.with\_called\_function\_name\_prefix()](api/instructions/instructions.with\_called\_function\_name\_prefix.md)
+    * [Instructions.with\_callee\_function\_name\_prefix()](api/instructions/instructions.with\_callee\_function\_name\_prefix.md)
     * [Instructions.with\_called\_function\_name\_suffix()](api/instructions/instructions.with\_called\_function\_name\_suffix.md)
     * [Instructions.with\_called\_function\_signature()](api/instructions/instructions.with\_called\_function\_signature.md)
     * [Instructions.with\_db\_id()](api/instructions/instructions.with\_db\_id.md)
