@@ -108,10 +108,10 @@ Bases: [Queryable](../queryable/)
 [instructions.with\_called\_function\_signature.md](instructions.with\_called\_function\_signature.md)
 {% endcontent-ref %}
 
-{% content-ref url="instructions.with_db_id.md" %}
-[instructions.with\_db\_id.md](instructions.with\_db\_id.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="instructions.with_ids.md" %}
-[instructions.with\_ids.md](instructions.with\_ids.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
