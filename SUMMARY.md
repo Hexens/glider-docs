@@ -362,6 +362,22 @@
     * [Var.get\_call\_qualifier()](api/var/var.get\_call\_qualifier.md)
     * [Var.get\_value()](api/var/var.get\_value.md)
     * [Var.get\_values()](api/var/var.get\_values.md)
+  * [Literal](api/literal/README.md)
+    * [Literal.get\_type()](api/literal/literal.get\_type.md)
+    * [Literal.get\_value()](api/literal/literal.get\_value.md)
+  * [Call](api/call/README.md)
+    * [Call.get\_args()](api/call/call.get\_args.md)
+    * [Call.get\_call\_gas()](api/call/call.get\_call\_gas.md)
+    * [Call.get\_call\_qualifier()](api/call/call.get\_call\_qualifier.md)
+    * [Call.get\_call\_salt()](api/call/call.get\_call\_salt.md)
+    * [Call.get\_call\_type()](api/call/call.get\_call\_type.md)
+    * [Call.get\_call\_value()](api/call/call.get\_call\_value.md)
+    * [Call.get\_contract\_name()](api/call/call.get\_contract\_name.md)
+    * [Call.get\_function()](api/call/call.get\_function.md)
+    * [Call.get\_name()](api/call/call.get\_name.md)
+    * [Call.get\_signature()](api/call/call.get\_signature.md)
+    * [Call.get\_special\_params()](api/call/call.get\_special\_params.md)
+    * [Call.kv\_parameters()](api/call/call.kv\_parameters.md)
 
 ## ⚖️ Legal Notices
 
