@@ -378,6 +378,7 @@
     * [Call.get\_signature()](api/call/call.get\_signature.md)
     * [Call.get\_special\_params()](api/call/call.get\_special\_params.md)
     * [Call.kv\_parameters()](api/call/call.kv\_parameters.md)
+  * [CallType](api/calltype.md)
 
 ## ⚖️ Legal Notices
 
