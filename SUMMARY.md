@@ -349,6 +349,9 @@
     * [Variables.with\_type()](api/variables/variables.with\_type.md)
   * [Value](api/value/README.md)
     * [Value.expression](api/value/value.expression.md)
+    * [Value.is\_main\_operand()](api/value/value.is\_main\_operand.md)
+    * [Value.node](api/value/value.node.md)
+    * [Value.parent\_value](api/value/value.parent\_value.md)
 
 ## ⚖️ Legal Notices
 
