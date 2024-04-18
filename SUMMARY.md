@@ -352,6 +352,16 @@
     * [Value.is\_main\_operand()](api/value/value.is\_main\_operand.md)
     * [Value.node](api/value/value.node.md)
     * [Value.parent\_value](api/value/value.parent\_value.md)
+  * [Var](api/var/README.md)
+    * [Var.backward\_df()](api/var/var.backward\_df.md)
+    * [Var.forward\_df()](api/var/var.forward\_df.md)
+    * [Var.get\_object\_of\_var()](api/var/var.get\_object\_of\_var.md)
+    * [Var.get\_parent()](api/var/var.get\_parent.md)
+    * [Var.procedure\_graph\_node](api/var/var.procedure\_graph\_node.md)
+    * [Var.type()](api/var/var.type.md)
+    * [Var.get\_call\_qualifier()](api/var/var.get\_call\_qualifier.md)
+    * [Var.get\_value()](api/var/var.get\_value.md)
+    * [Var.get\_values()](api/var/var.get\_values.md)
 
 ## ⚖️ Legal Notices
 
