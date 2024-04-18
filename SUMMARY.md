@@ -355,6 +355,7 @@
   * [ValueExpression](api/valueexpression/README.md)
     * [ValueExpression.get\_dest()](api/valueexpression/valueexpression.get\_dest.md)
     * [ValueExpression.get\_operands()](api/valueexpression/valueexpression.get\_operands.md)
+  * [ConditionType](api/conditiontype.md)
   * [Var](api/var/README.md)
     * [Var.backward\_df()](api/var/var.backward\_df.md)
     * [Var.forward\_df()](api/var/var.forward\_df.md)
