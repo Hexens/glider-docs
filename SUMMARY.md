@@ -347,6 +347,8 @@
     * [Variables.with\_name()](api/variables/variables.with\_name.md)
     * [Variables.with\_one\_property()](api/variables/variables.with\_one\_property.md)
     * [Variables.with\_type()](api/variables/variables.with\_type.md)
+  * [Value](api/value/README.md)
+    * [Value.expression](api/value/value.expression.md)
 
 ## ⚖️ Legal Notices
 
