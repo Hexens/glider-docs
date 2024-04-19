@@ -47,9 +47,9 @@ the function will return instructions from `transferFrom()`, as well as from `_a
 ```python
 from glider import *
 def query():
-  instructions = Instructions().with_callee_function_name('require').exec(1,100)
+  instructions = Functions().with_all_properties([MethodProp.INTERNAL]).instructions().with_callee_function_name('require').exec(1,2)
 
-  return instructions + list(instructions[0].extended_next_instructions())
+  return instructions + list(instructions[0].extended_previous_instructions())
 ```
 
 ### Output

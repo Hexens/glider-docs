@@ -268,6 +268,7 @@
     * [Instruction.solidity\_callee\_names()](api/instruction/instruction.solidity\_callee\_names.md)
     * [Instruction.source\_code()](api/instruction/instruction.source\_code.md)
     * [Instruction.source\_lines()](api/instruction/instruction.source\_lines.md)
+    * [Instruction.extended\_previous\_instructions()](api/instruction/instruction.extended\_previous\_instructions.md)
   * [Instructions](api/instructions/README.md)
     * [Instructions.CALLEES](api/instructions/instructions.callees.md)
     * [Instructions.asm\_instructions()](api/instructions/instructions.asm\_instructions.md)
