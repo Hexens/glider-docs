@@ -1,5 +1,5 @@
 ---
-description: This class represents a signle state variable.
+description: This class represents a single state variable.
 ---
 
 # StateVariable

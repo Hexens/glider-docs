@@ -403,6 +403,12 @@
     * [StateVariableProp.INTERNAL](api/statevariableprop/statevariableprop.internal.md)
     * [StateVariableProp.PRIVATE](api/statevariableprop/statevariableprop.private.md)
     * [StateVariableProp.PUBLIC](api/statevariableprop/statevariableprop.public.md)
+  * [StateVariables](api/statevariables/README.md)
+    * [StateVariables.exec()](api/statevariables/statevariables.exec.md)
+    * [StateVariables.with\_all\_properties()](api/statevariables/statevariables.with\_all\_properties.md)
+    * [StateVariables.with\_name()](api/statevariables/statevariables.with\_name.md)
+    * [StateVariables.with\_one\_property()](api/statevariables/statevariables.with\_one\_property.md)
+    * [StateVariables.with\_type()](api/statevariables/statevariables.with\_type.md)
 
 ## ⚖️ Legal Notices
 
