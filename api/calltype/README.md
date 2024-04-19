@@ -1,5 +1,7 @@
 # CallType
 
+The class represents [call](../call/) types.
+
 `EVENT: str = 'event'`
 
 `EXTERNAL: str = 'external'`

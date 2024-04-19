@@ -18,4 +18,4 @@ While benefiting from a shallow learning curve, it is limited in its functionali
 
 ## Slither
 
-In comparison to Semgrep, SAST tools like Slither can operate on CFG/DFG, do complex taint analysis, and so on, as well as it has well-designed IR (Intermediate Representation), but the downside would be its very long learning curve as well as no ability to do the analysis on scale, which affects both distribution and scalability aspects.
+In comparison to Semgrep, SAST tools like Slither can operate on CFG/DFG, do complex taint analysis, and so on, as well as it has well-designed IR (Intermediate Representation), moreover the Glider uses the SlithIR for intermediate representation. But the overall downside of these kind of tool is its learning curve as well as the inability to do the analysis on a scale, which affects both distribution and scalability aspects.
