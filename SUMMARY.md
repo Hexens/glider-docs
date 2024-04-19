@@ -388,6 +388,21 @@
     * [Call.get\_special\_params()](api/call/call.get\_special\_params.md)
     * [Call.kv\_parameters()](api/call/call.kv\_parameters.md)
   * [CallType](api/calltype.md)
+  * [StateVariable](api/statevariable/README.md)
+    * [StateVariable.contract()](api/statevariable/statevariable.contract.md)
+    * [StateVariable.is\_constant()](api/statevariable/statevariable.is\_constant.md)
+    * [StateVariable.is\_immutable()](api/statevariable/statevariable.is\_immutable.md)
+    * [StateVariable.is\_internal()](api/statevariable/statevariable.is\_internal.md)
+    * [StateVariable.is\_private()](api/statevariable/statevariable.is\_private.md)
+    * [StateVariable.is\_public()](api/statevariable/statevariable.is\_public.md)
+    * [StateVariable.name()](api/statevariable/statevariable.name.md)
+    * [StateVariable.properties()](api/statevariable/statevariable.properties.md)
+* [StateVariableProp](statevariableprop/README.md)
+  * [StateVariableProp.CONSTANT](statevariableprop/statevariableprop.constant.md)
+  * [StateVariableProp.IMMUTABLE](statevariableprop/statevariableprop.immutable.md)
+  * [StateVariableProp.INTERNAL](statevariableprop/statevariableprop.internal.md)
+  * [StateVariableProp.PRIVATE](statevariableprop/statevariableprop.private.md)
+  * [StateVariableProp.PUBLIC](statevariableprop/statevariableprop.public.md)
 
 ## ⚖️ Legal Notices
 
