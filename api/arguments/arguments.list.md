@@ -6,8 +6,6 @@ description: >-
 
 # Arguments.list()
 
-## Function Signature
-
 `list() -> List[`[`Argument`](../argument/)`]`
 
 ## Example Query

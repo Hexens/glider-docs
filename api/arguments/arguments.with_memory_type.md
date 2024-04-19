@@ -4,8 +4,6 @@ description: Returns a list of arguments having specified memory type.
 
 # Arguments.with\_memory\_type()
 
-## Function Signature
-
 `with_memory_type(memory_type: str) -> List[`[`Argument`](../argument/)`]`
 
 

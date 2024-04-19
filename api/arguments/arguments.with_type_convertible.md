@@ -6,8 +6,6 @@ description: >-
 
 # Arguments.with\_type\_convertible()
 
-## Function Signature
-
 `with_type_convertible(arg_type: List[str], convertor:` [`Convertor`](../convertor/)`) -> List[`[`Argument`](../argument/)`]`
 
 

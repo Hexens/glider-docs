@@ -4,8 +4,6 @@ description: Returns a list of arguments having specified name
 
 # Arguments.with\_name()
 
-## Function Signature
-
 `with_name(arg_name: str, sensitivity: bool = False) -> List[`[`Argument`](../argument/)`]`
 
 
