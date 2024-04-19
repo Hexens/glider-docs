@@ -397,12 +397,12 @@
     * [StateVariable.is\_public()](api/statevariable/statevariable.is\_public.md)
     * [StateVariable.name()](api/statevariable/statevariable.name.md)
     * [StateVariable.properties()](api/statevariable/statevariable.properties.md)
-* [StateVariableProp](statevariableprop/README.md)
-  * [StateVariableProp.CONSTANT](statevariableprop/statevariableprop.constant.md)
-  * [StateVariableProp.IMMUTABLE](statevariableprop/statevariableprop.immutable.md)
-  * [StateVariableProp.INTERNAL](statevariableprop/statevariableprop.internal.md)
-  * [StateVariableProp.PRIVATE](statevariableprop/statevariableprop.private.md)
-  * [StateVariableProp.PUBLIC](statevariableprop/statevariableprop.public.md)
+  * [StateVariableProp](api/statevariableprop/README.md)
+    * [StateVariableProp.CONSTANT](api/statevariableprop/statevariableprop.constant.md)
+    * [StateVariableProp.IMMUTABLE](api/statevariableprop/statevariableprop.immutable.md)
+    * [StateVariableProp.INTERNAL](api/statevariableprop/statevariableprop.internal.md)
+    * [StateVariableProp.PRIVATE](api/statevariableprop/statevariableprop.private.md)
+    * [StateVariableProp.PUBLIC](api/statevariableprop/statevariableprop.public.md)
 
 ## ⚖️ Legal Notices
 
