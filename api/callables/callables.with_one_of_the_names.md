@@ -1,6 +1,6 @@
 # Callables.with\_one\_of\_the\_names()
 
-with\_one\_of\_the\_names(_names: List\[str]_, _sensitivity: bool = True_) → [Callables](./)
+`with_one_of_the_names(`_`names: List[str]`_`,`` `_`sensitivity: bool = True`_`) →` [`Callables`](./)
 
 Adds a filter to get callables having specified names. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
