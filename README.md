@@ -34,7 +34,7 @@ selfdestruct(payable(msg.sender))
 }
 ```
 
-This is a playbook example; in fact, the Glider gives the ability to describe much more complex scenarios (such as traversing CFG/DFG graphs) in smart contract code and to find the ones that match it.
+This is a playbook example; in fact Glider gives the ability to describe much more complex scenarios (such as traversing CFG/DFG graphs) in smart contract code and to find the ones that match it.
 
 The core concepts of the engine are scalability, distribution and reusability.&#x20;
 
@@ -50,4 +50,4 @@ One of the reasons why Glider does not introduce a new language for queries and 
 
 ## Reusable
 
-The above mentioned concepts make gliders reusable, and while the ability to describe scenarios is distributed, the reported gliders can be reused by everyone and even be improved by other users and the community.
+The above mentioned concepts make glides reusable, and while the ability to describe scenarios is distributed, the reported glides can be reused by everyone and even be improved by other users and the community.
