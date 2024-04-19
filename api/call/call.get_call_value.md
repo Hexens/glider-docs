@@ -1,8 +1,12 @@
 ---
-description: Returns the Value representing the "value" (eth sent) during the external call
+description: >-
+  Returns the Value representing the "value" (ether sent) during the external
+  call
 ---
 
 # Call.get\_call\_value()
+
+`get_call_value() → List[`[`Value`](../value/)`]`
 
 As some types of calls can have, a special parameter set representing the ether value to send in the call), this function can be used to retrieve that value.
 
