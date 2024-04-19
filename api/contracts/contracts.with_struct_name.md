@@ -4,8 +4,6 @@ description: Adds a filter to get contracts that have a struct with the given na
 
 # Contracts.with\_struct\_name()
 
-## Function Signature
-
 `with_struct_name(name: str, sensitivity: bool = True) →` [`Contracts`](./)
 
 ## Query Example

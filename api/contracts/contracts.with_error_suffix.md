@@ -6,8 +6,6 @@ description: >-
 
 # Contracts.with\_error\_suffix()
 
-## Function Signature
-
 `with_error_suffix(suffix: str, sensitivity: bool = True) ->` [`Contracts`](./)
 
 ## Query Example

@@ -6,8 +6,6 @@ description: >-
 
 # Contracts.with\_event\_regex()
 
-## Function Signature
-
 `with_event_regex(regex: str) ->` [`Contracts`](./)
 
 ## Query Example

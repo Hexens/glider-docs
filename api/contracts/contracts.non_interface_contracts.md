@@ -4,8 +4,6 @@ description: Adds a filter to get contracts that are not interface.
 
 # Contracts.non\_interface\_contracts()
 
-## Function Signature
-
 `non_interface_contracts() ->` [`Contracts`](./)
 
 ## Query Example

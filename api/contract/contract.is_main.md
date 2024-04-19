@@ -4,11 +4,9 @@ description: Returns true if the Contract is main, false otherwise.
 
 # Contract.is\_main()
 
-The engine marks the contract as main, that is the one being executed on the deployed address
+`is_main() → bool`
 
-## Return type
-
-bool
+The engine marks the contract as main, if it is the one being executed on the deployed address
 
 ## Example query
 

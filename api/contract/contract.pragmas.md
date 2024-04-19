@@ -4,9 +4,7 @@ description: Returns the list of all pragmas of the contract.
 
 # Contract.pragmas()
 
-## Return type
-
-List\[Tuple\[str, str]]
+`pragmas() → List[Tuple[str, str]]`
 
 ## Example query
 

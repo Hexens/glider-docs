@@ -4,9 +4,7 @@ description: Returns the list of all structs of the contract.
 
 # Contract.structs()
 
-## Return type
-
-List\[Struct]
+`structs() → List[Struct]`
 
 ## Example query
 

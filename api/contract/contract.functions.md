@@ -4,11 +4,9 @@ description: Returns all the functions of a Contract.
 
 # Contract.functions()
 
-This function will return all of the functions that the Contract has, including the inherited functions from its base classes.
+`functions() →` [`Functions`](../functions/)
 
-## Return type
-
-[Functions](../functions/)
+The function returns all of the functions that the Contract has, including the inherited functions from its base classes.
 
 ## Example query
 

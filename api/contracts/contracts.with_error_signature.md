@@ -4,8 +4,6 @@ description: Adds a filter to get contracts that have an error with the given si
 
 # Contracts.with\_error\_signature()
 
-## Function Signature
-
 `with_error_signature(signature: str) ->` [`Contracts`](./)
 
 ## Query Example

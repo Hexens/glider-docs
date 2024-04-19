@@ -4,8 +4,6 @@ description: Adds a filter to get contracts that have an event with the given na
 
 # Contracts.with\_event\_name()
 
-## Function Signature
-
 `with_event_name(name: str, sensitivity: bool = True) ->` [`Contracts`](./)
 
 ## Query Example

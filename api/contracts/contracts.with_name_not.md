@@ -4,8 +4,6 @@ description: Adds a filter to get contracts that don't have the given name.
 
 # Contracts.with\_name\_not()
 
-## Function Signature
-
 `with_name_not(name: str, sensitivity: bool = True) →` [`Contracts`](./)
 
 ## Query Example

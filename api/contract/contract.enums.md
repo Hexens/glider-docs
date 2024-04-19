@@ -4,9 +4,7 @@ description: The function returns all the enums of a Contract.
 
 # Contract.enums()
 
-## Return type
-
-List\[Enum]
+`enums() → List[Enum]`
 
 ## Example query
 

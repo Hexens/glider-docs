@@ -4,8 +4,6 @@ description: Adds a filter to get contracts that have a struct with the given fi
 
 # Contracts.with\_struct\_fields\_count()
 
-## Function Signature
-
 `with_struct_fields_count(number: int) →` [`Contracts`](./)
 
 ## Query Example

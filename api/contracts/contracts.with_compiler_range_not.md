@@ -6,8 +6,6 @@ description: >-
 
 # Contracts.with\_compiler\_range\_not()
 
-## Function Signature
-
 `with_compiler_range_not(lower_bound: str, upper_bound: str) ->` [`Contracts`](./)
 
 ## Query Example

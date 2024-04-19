@@ -4,9 +4,7 @@ description: Returns the constructor of the contract, if exists.
 
 # Contract.constructor()
 
-## Return type
-
-([NoneObject](../noneobject/) | [Function](../function/))
+`constructor() →` [`Function`](../function/) `| NoneObject`
 
 ## Example query
 

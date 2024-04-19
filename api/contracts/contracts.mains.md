@@ -4,6 +4,8 @@ description: Adds a filter to get contracts that are main.
 
 # Contracts.mains()
 
+`mains() →` [`Contracts`](./)
+
 The engine marks the contract as main, that is the one being executed on the deployed address
 
 ## Query Example

@@ -4,9 +4,7 @@ description: The function returns all the errors of a Contract.
 
 # Contract.errors()
 
-## Return type
-
-List\[Error]
+`errors() → List[Error]`
 
 ## Example query
 

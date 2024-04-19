@@ -4,9 +4,7 @@ description: Returns call graph of the contract.
 
 # Contract.call\_graph()
 
-## Return type
-
-[CallGraph](../callgraph/)
+`call_graph() →` [`CallGraph`](../callgraph/)
 
 ## Example query
 

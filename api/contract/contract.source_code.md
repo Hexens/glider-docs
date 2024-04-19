@@ -4,9 +4,7 @@ description: Returns the source code of the contract.
 
 # Contract.source\_code()
 
-## Return type
-
-str
+`source_code() → str`
 
 ## Example query
 

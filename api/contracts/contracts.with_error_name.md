@@ -4,8 +4,6 @@ description: Adds a filter to get contracts that have an error with the given na
 
 # Contracts.with\_error\_name()
 
-## Function Signature
-
 `with_error_name(name: str, sensitivity: boot = True) ->` [`Contracts`](./)
 
 ## Query Example

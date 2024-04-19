@@ -4,8 +4,6 @@ description: Adds a filter to get contracts whose names have the given prefix.
 
 # Contracts.name\_prefix()
 
-## Function Signature
-
 `name_prefix(prefix: str, sensitivity: bool = True) ->` [`Contracts`](./)
 
 

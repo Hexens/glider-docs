@@ -4,9 +4,7 @@ description: Returns arguments' types of the event.
 
 # Event.arg\_list()
 
-## Return type
-
-→ List\[str]
+`arg_list() → List[str]`
 
 ## Example
 

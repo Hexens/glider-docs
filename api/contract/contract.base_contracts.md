@@ -1,12 +1,14 @@
+---
+description: >-
+  Returns Contracts object for the contracts from which contract was inherited
+  directly or indirectly.
+---
+
 # Contract.base\_contracts()
 
-## Description
+`base_contracts() →` [`Contracts`](../contracts/)
 
 It returns the [Contracts](../contracts/) object representing the base contracts of a Contract. The function is recursive. See the example.
-
-## Return type
-
-[Contracts](../contracts/)
 
 ## Example query
 

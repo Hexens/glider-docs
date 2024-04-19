@@ -4,8 +4,6 @@ description: Returns the Functions object for the functions of the contracts.
 
 # Contracts.functions()
 
-## Function Signature
-
 `functions() →` [`Functions`](../function/)
 
 

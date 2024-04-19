@@ -4,8 +4,6 @@ description: Executes the formed query and returns the list of Contract objects.
 
 # Contracts.exec()
 
-## Function Signature
-
 `exec(limit_count: int = 0, offset_count: int = 0) -> List[`[`Contract`](../contract/)`]`
 
 ## Example Query 1

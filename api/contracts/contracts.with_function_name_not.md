@@ -6,8 +6,6 @@ description: >-
 
 # Contracts.with\_function\_name\_not()
 
-## Function Signature
-
 `with_function_name_not(name: str, sensitivity: bool = True) ->` [`Contracts`](./)
 
 ## Query Example

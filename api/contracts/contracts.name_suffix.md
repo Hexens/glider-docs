@@ -4,8 +4,6 @@ description: Adds a filter to get contracts that names have the given suffix.
 
 # Contracts.name\_suffix()
 
-## Function Signature
-
 `name_suffix(suffix: str, sensitivity: bool = True) ->` [`Contracts`](./)
 
 ## Query Example

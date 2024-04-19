@@ -6,11 +6,7 @@ description: >-
 
 # Contract.derived\_contracts()
 
-
-
-## Return type
-
-[Contracts](../contracts/)
+`derived_contracts() →` [`Contracts`](../contracts/)
 
 ## Example query
 

@@ -4,8 +4,6 @@ description: Adds a filter to get contracts that are interface.
 
 # Contracts.interface\_contracts()
 
-## Function Signature
-
 `interface_contracts() →` [`Contracts`](../contract/)
 
 ## Example Query

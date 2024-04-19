@@ -4,8 +4,6 @@ description: Adds a filter to get contracts with the given name.
 
 # Contracts.with\_name()
 
-## Function Signature
-
 `with_name(name: str, sensitivity: bool = True) ->` [`Contracts`](./)
 
 ## Query Example

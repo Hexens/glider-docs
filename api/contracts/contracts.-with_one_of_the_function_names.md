@@ -6,8 +6,6 @@ description: >-
 
 # Contracts. with\_one\_of\_the\_function\_names()
 
-## Function Signature
-
 `with_one_of_the_function_names(names: List[str], sensitivity: bool = True) →` [`Contracts`](./)
 
 ## Query Example

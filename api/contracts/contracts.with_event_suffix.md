@@ -6,8 +6,6 @@ description: >-
 
 # Contracts.with\_event\_suffix()
 
-## Function Signature
-
 `with_event_suffix(suffix: str, sensitivity: bool = True) ->` [`Contracts`](./)
 
 ## Query Example

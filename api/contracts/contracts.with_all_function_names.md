@@ -4,8 +4,6 @@ description: Adds a filter to get contracts that have functions with all the giv
 
 # Contracts.with\_all\_function\_names()
 
-## Function Signature
-
 `with_all_function_names(names: List[str], sensitivity: bool = True) ->` [`Contracts`](./)
 
 ## Query Example

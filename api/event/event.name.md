@@ -4,9 +4,7 @@ description: Returns the name of the event.
 
 # Event.name
 
-## Return type
-
-→ str
+_`property`_` ``name`_`: str`_
 
 ## Example
 

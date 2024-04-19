@@ -4,9 +4,7 @@ description: Returns the signature of the event.
 
 # Event.signature
 
-## Return type
-
-→ str
+_`property`_` ``signature`_`: str`_
 
 ## Example
 

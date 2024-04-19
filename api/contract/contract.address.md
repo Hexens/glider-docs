@@ -4,9 +4,7 @@ description: Returns the address of the contract.
 
 # Contract.address()
 
-## Return type
-
-str (e.g. `"0x798AcB51D8FBc97328835eE2027047a8B54533AD"`)
+`address() → str`
 
 ## Example query
 

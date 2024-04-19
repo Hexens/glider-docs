@@ -4,9 +4,7 @@ description: Returns true if the Contract is a library, false otherwise.
 
 # Contract.is\_lib()
 
-## Return type
-
-bool
+`is_lib() → bool`
 
 ## Example query
 

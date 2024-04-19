@@ -4,8 +4,6 @@ description: Adds a filter to get contracts whose names match the given regex.
 
 # Contracts.name\_regex()
 
-## Function Signature
-
 `name_regex(regex: str) ->` [`Contracts`](./)
 
 ## Query Example

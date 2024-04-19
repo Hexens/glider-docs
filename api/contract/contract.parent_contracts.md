@@ -6,9 +6,7 @@ description: >-
 
 # Contract.parent\_contracts()
 
-## Return type
-
-[Contracts](../contracts/)
+`parent_contracts() →` [`Contracts`](../contracts/)
 
 ## Example query
 

@@ -6,8 +6,6 @@ description: >-
 
 # Contracts.with\_error\_prefix()
 
-## Function Signature
-
 `with_error_prefix(prefix: str, sensitivity: bool = True) ->` [`Contracts`](./)
 
 ## Example Query

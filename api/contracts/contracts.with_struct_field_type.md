@@ -4,8 +4,6 @@ description: Adds a filter to get contracts that have a struct with the given fi
 
 # Contracts.with\_struct\_field\_type()
 
-## Function Signature
-
 `with_struct_field_type(field_type: str, sensitivity: bool = True) →` [`Contracts`](./)
 
 ## Query Example

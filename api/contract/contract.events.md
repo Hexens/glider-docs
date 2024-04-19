@@ -4,9 +4,7 @@ description: The function returns all the events of a Contract.
 
 # Contract.events()
 
-## Return type
-
-List\[[Event](../event/)]
+`events() → List[Event]`
 
 ## Example query
 

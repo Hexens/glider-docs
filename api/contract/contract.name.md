@@ -4,9 +4,7 @@ description: Returns the name of a Contract.
 
 # Contract.name
 
-## Return type
-
-str (e.g., `"ERC721"`, `"PaymentSplitter"`)
+_`property`_` ``name`_`: str`_
 
 ## Example query
 

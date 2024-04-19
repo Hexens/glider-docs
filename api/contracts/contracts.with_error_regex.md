@@ -6,8 +6,6 @@ description: >-
 
 # Contracts.with\_error\_regex()
 
-## Function Signature
-
 `with_error_regex(regex: str) ->` [`Contracts`](./)
 
 ## Query Example

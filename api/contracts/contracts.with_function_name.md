@@ -4,8 +4,6 @@ description: Adds a filter to get contracts that have a function with the given 
 
 # Contracts.with\_function\_name()
 
-## Function Signature
-
 `with_function_name(name: str, sensitivity: bool = True) ->` [`Contracts`](./)
 
 ## Query Example

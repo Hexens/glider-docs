@@ -4,11 +4,9 @@ description: Returns the list of all state variables of the contract.
 
 # Contract.state\_variables()
 
+`state_variables() →` [`StateVariables`](../statevariables/)
+
 Returns a StateVariables object for the state variables of the contract.
-
-## Return type
-
-StateVariables
 
 ## Example query
 
