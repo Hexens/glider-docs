@@ -4,6 +4,10 @@ description: Returns the source code of the argument.
 
 # Argument.source\_code()
 
+`source_code() → str`
+
+
+
 ```python
 def query():
   functions = Functions().exec(100)

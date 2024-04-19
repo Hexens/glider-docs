@@ -6,6 +6,8 @@ description: >-
 
 # Argument.backward\_df()
 
+`backward_df() → List[Point]`
+
 As Argument has no intraprocedural backward dataflow, this function solely exists to comply with the glider architecture, but if used will return an empty list
 
 ```python

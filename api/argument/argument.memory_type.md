@@ -2,6 +2,10 @@
 
 Returns the memory type of the argument.
 
+_`property`_` ``memory_type`_`: str`_
+
+
+
 ```python
 def query():
   functions = Functions().exec(100)

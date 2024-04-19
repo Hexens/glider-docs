@@ -4,9 +4,9 @@ description: Returns the type of the argument.
 
 # Argument.type
 
-## Return Type:
+_`property`_` ``type`_`: Type`_
 
-* Type
+
 
 ```python
 from glider import *

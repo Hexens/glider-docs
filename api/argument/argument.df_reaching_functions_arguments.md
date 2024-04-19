@@ -7,6 +7,8 @@ description: >-
 
 # Argument.df\_reaching\_functions\_arguments()
 
+`df_reaching_functions_arguments() → List[Tuple[`[`Callable`](../callable/)`, int]]`
+
 ```python
 from glider import *
 def query():

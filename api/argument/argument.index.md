@@ -4,6 +4,10 @@ description: Returns the index of the argument.
 
 # Argument.index
 
+_`property`_` ``index`_`: int`_
+
+
+
 ```python
 from glider import *
 def query():

@@ -4,6 +4,8 @@ description: Returns the internal data of the Argument
 
 # Argument.data
 
+_`property`_` ``data`
+
 It contains the name, canonical\_name, type, and memory\_type of the Argument.
 
 ```python

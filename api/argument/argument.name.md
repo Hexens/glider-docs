@@ -4,6 +4,10 @@ description: Returns the name of the argument.
 
 # Argument.name
 
+_`property`_` ``name`_`: str`_
+
+
+
 ```python
 def query():
   functions = Functions().exec(100)

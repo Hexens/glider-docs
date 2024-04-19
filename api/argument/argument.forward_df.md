@@ -6,9 +6,7 @@ description: >-
 
 # Argument.forward\_df()
 
-## Return type:
-
-* **List\[**[**Instruction**](../instruction/)**]**&#x20;
+`forward_df() → List[`[`Instruction`](../instruction/)`]`
 
 ## Example Query
 

@@ -4,9 +4,7 @@ description: Returns parent function/modifier of the argument.
 
 # Argument.get\_parent()
 
-## Return type:
-
-* [Callable](../callable/)
+`get_parent() →` [`Callable`](../callable/)
 
 ## Example Query
 
