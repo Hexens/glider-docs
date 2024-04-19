@@ -1,8 +1,8 @@
 ---
-description: This page describes what are the main concepts of writing gliders
+description: This page describes what are the main concepts of writing glides
 ---
 
-# 🏄 Writing Gliders
+# 🏄 Writing Glides
 
 A glide code can be separated into two parts: declarative queries (also called online part) and imperative arbitrary logic part (offline part)
 
