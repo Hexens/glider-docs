@@ -409,6 +409,10 @@
     * [StateVariables.with\_name()](api/statevariables/statevariables.with\_name.md)
     * [StateVariables.with\_one\_property()](api/statevariables/statevariables.with\_one\_property.md)
     * [StateVariables.with\_type()](api/statevariables/statevariables.with\_type.md)
+  * [LocalVariable](api/localvariable/README.md)
+    * [LocalVariable.get\_parent()](api/localvariable/localvariable.get\_parent.md)
+    * [LocalVariable.memory\_type](api/localvariable/localvariable.memory\_type.md)
+    * [LocalVariable.type](api/localvariable/localvariable.type.md)
 
 ## ⚖️ Legal Notices
 
