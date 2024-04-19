@@ -4,9 +4,7 @@ description: Returns end_assembly instructions of the function/modifier.
 
 # Callable.end\_assembly\_instructions()
 
-## Return type
-
-→ [Instructions](../instructions/)
+`end_assembly_instructions() →` [`Instructions`](../instructions/)
 
 ## Example
 

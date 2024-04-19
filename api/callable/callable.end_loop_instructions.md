@@ -4,13 +4,11 @@ description: Returns end_loop instructions of the function/modifier.
 
 # Callable.end\_loop\_instructions()
 
+`end_loop_instructions() →` [`Instructions`](../instructions/)
+
 The functions will return end\_loop instructions for all types of loops e.g. while/for
 
 end\_loop instruction is not a "real" instruction but rather an abstract one representing the end of the loop.
-
-## Return type
-
-→ [Instructions](../instructions/)
 
 ## Example
 

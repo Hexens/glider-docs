@@ -4,9 +4,7 @@ description: Returns the function's or modifier's name.
 
 # Callable.name()
 
-## Return type
-
-→ str
+`name() → str`
 
 ## Example
 

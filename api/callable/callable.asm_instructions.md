@@ -6,9 +6,7 @@ description: >-
 
 # Callable.asm\_instructions()
 
-## Return type
-
-→ [Instructions](../instructions/)
+`asm_instructions() →` [`Instructions`](../instructions/)
 
 ## Example
 

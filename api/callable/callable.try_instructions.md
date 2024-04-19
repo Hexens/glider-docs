@@ -4,9 +4,7 @@ description: Returns try instructions of the function/modifier.
 
 # Callable.try\_instructions()
 
-## Return type
-
-→ [Instructions](../instructions/)
+`try_instructions() →` [`Instructions`](../instructions/)
 
 ## Example
 

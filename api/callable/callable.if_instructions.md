@@ -4,9 +4,7 @@ description: Returns if instructions of the function/modifier.
 
 # Callable.if\_instructions()
 
-## Return type
-
-→ [Instructions](../instructions/)
+`if_instructions() →` [`Instructions`](../instructions/)
 
 ## Example
 

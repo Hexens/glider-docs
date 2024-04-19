@@ -4,11 +4,9 @@ description: Constructs and returns procedure graph of the function/modifier.
 
 # Callable.get\_pg()
 
+`get_pg() → ProcedureGraph`
+
 The ProcedureGraph is an internal data structure for representing CFG/DFG graphs of the code. There is low probability that anyone will need to directly access it while writing queries.
-
-## Return type
-
-→ ProcedureGraph
 
 ## Example
 

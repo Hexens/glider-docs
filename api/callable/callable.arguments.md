@@ -4,9 +4,7 @@ description: Returns an Arguments object for the arguments of the function/modif
 
 # Callable.arguments()
 
-## Return type
-
-→ [Arguments](../arguments/)
+`arguments() →` [`Arguments`](../arguments/)
 
 ## Example
 

@@ -4,9 +4,7 @@ description: Returns catch instructions of the function/modifier.
 
 # Callable.catch\_instructions()
 
-## Return type
-
-→ [Instructions](../instructions/)
+`catch_instructions() →` [`Instructions`](../instructions/)
 
 ## Example
 

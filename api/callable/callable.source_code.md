@@ -4,9 +4,7 @@ description: Returns the source code of the function/modifier.
 
 # Callable.source\_code()
 
-## Return type
-
-→ str
+`source_code() → str`
 
 ## Example
 

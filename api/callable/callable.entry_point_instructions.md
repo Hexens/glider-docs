@@ -4,11 +4,9 @@ description: Returns entry_point instructions of the function/modifier.
 
 # Callable.entry\_point\_instructions()
 
+`entry_point_instructions() →` [`Instructions`](../instructions/)
+
 The entry\_point of a function is not a "real" instruction, but rather an abstract instruction representing the starting point of the function.
-
-## Return type
-
-→ [Instructions](../instructions/)
 
 ## Example
 

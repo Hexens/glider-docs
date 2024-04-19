@@ -6,9 +6,7 @@ description: >-
 
 # Callable.hashed\_signature()
 
-## Return type
-
-→ int
+`hashed_signature() → int`
 
 ## Example
 

@@ -4,9 +4,7 @@ description: Returns continue instructions of the function/modifier.
 
 # Callable.continue\_instructions()
 
-## Return type
-
-→ [Instructions](../instructions/)
+`continue_instructions() →` [`Instructions`](../instructions/)
 
 ## Example
 

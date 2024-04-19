@@ -4,9 +4,7 @@ description: Returns end_if instructions of the function/modifier.
 
 # Callable.end\_if\_instructions()
 
-## Return type
-
-→ [Instructions](../instructions/)
+`end_if_instructions() →` [`Instructions`](../instructions/)
 
 ## Example
 

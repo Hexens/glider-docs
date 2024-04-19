@@ -4,9 +4,7 @@ description: Returns throw instructions of the function/modifier.
 
 # Callable.throw\_instructions()
 
-## Return type
-
-→ [Instructions](../instructions/)
+`throw_instructions() →` [`Instructions`](../instructions/)
 
 ## Example
 

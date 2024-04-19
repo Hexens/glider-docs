@@ -4,9 +4,7 @@ description: Returns break instructions of the function/modifier.
 
 # Callable.break\_instructions()
 
-## Return type
-
-→ List\[[Instruction](../instruction/)]
+`break_instructions() →` [`Instructions`](../instructions/)
 
 ## Example
 

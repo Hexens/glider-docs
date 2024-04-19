@@ -4,13 +4,11 @@ description: Returns start_loop instructions of the function/modifier.
 
 # Callable.start\_loop\_instructions()
 
+`start_loop_instructions() →` [`Instructions`](../instructions/)
+
 The functions will return start\_loop instructions for all types of loops e.g. while/for.
 
 start\_loop instruction is not a "real" instruction but rather an abstract one representing the start of the loop.
-
-## Return type
-
-→ [Instructions](../instructions/)
 
 ## Example
 

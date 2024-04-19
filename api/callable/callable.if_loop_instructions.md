@@ -4,11 +4,9 @@ description: Returns if_loop instructions of the function/modifier.
 
 # Callable.if\_loop\_instructions()
 
+`if_loop_instructions() →` [`Instructions`](../instructions/)
+
 The function returns [Instructions](../instructions/) that represent the condition part in loop operators. It will return for all types of loops e.g. while and for
-
-## Return type
-
-→ [Instructions](../instructions/)
 
 ## Example
 

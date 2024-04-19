@@ -4,9 +4,7 @@ description: Returns expression instructions of the function/modifier.
 
 # Callable.expression\_instructions()
 
-## Return type
-
-→ [Instructions](../instructions/)
+`expression_instructions() →` [`Instructions`](../instructions/)
 
 ## Example
 

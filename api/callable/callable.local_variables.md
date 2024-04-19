@@ -4,11 +4,9 @@ description: return the local variables for the function/modifier.
 
 # Callable.local\_variables()
 
+`local_variables() →` [`LocalVariables`](../localvariables/)
+
 Returns a LocalVariables object for the local variables of the function/modifier.
-
-## Return type:
-
-→ LocalVariables
 
 ## Example
 

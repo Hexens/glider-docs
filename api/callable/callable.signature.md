@@ -4,9 +4,7 @@ description: Returns the function's or modifier's signature.
 
 # Callable.signature()
 
-## Return type
-
-→ str
+`signature() → str`
 
 ## Example
 

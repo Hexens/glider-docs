@@ -4,11 +4,9 @@ description: Returns an Instructions object for the instructions of the function
 
 # Callable.instructions()
 
+`instructions() →` [`Instructions`](../instructions/)
+
 The function will return all of the instructions directly reachable from the function.
-
-## Return type
-
-→ [Instructions](../instructions/)
 
 ## Example
 

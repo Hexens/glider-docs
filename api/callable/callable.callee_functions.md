@@ -6,9 +6,7 @@ description: >-
 
 # Callable.callee\_functions()
 
-## Return type
-
-→ [Functions](../functions/)
+`callee_functions() →` [`Functions`](../functions/)
 
 ## Example
 

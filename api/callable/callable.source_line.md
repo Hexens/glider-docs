@@ -4,9 +4,7 @@ description: Returns the function's or modifier's source line numbers.
 
 # Callable.source\_line()
 
-## Return type
-
-→ int
+`source_line() → int`
 
 ## Example
 
