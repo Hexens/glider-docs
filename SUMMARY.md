@@ -413,6 +413,10 @@
     * [LocalVariable.get\_parent()](api/localvariable/localvariable.get\_parent.md)
     * [LocalVariable.memory\_type](api/localvariable/localvariable.memory\_type.md)
     * [LocalVariable.type](api/localvariable/localvariable.type.md)
+  * [LocalVariables](api/localvariables/README.md)
+    * [LocalVariables.list()](api/localvariables/localvariables.list.md)
+    * [LocalVariables.with\_memory\_type()](api/localvariables/localvariables.with\_memory\_type.md)
+    * [LocalVariables.with\_type()](api/localvariables/localvariables.with\_type.md)
 
 ## ⚖️ Legal Notices
 
