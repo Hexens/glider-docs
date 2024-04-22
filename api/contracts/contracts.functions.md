@@ -4,7 +4,7 @@ description: Returns the Functions object for the functions of the contracts.
 
 # Contracts.functions()
 
-`functions() →` [`Functions`](../function/)
+`functions() →` [`Functions`](../callable/function/)
 
 
 

@@ -4,7 +4,7 @@ description: Adds a filter to get state variables that have all given properties
 
 # StateVariables.with\_all\_properties()
 
-`with_all_properties(properties: List[`[`StateVariableProp`](../statevariableprop/)`]) →` [`StateVariables`](./)
+`with_all_properties(properties: List[`[`StateVariableProp`](statevariableprop/)`]) →` [`StateVariables`](./)
 
 **Query Example**
 

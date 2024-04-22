@@ -2,7 +2,7 @@
 
 `with_name_regex(`_`regex: str`_`) →` [`Callables`](./)
 
-Adds a filter to get callables whose names match the given regex expression. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
+Adds a filter to get callables whose names match the given regex expression. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](functions/) and [Modifiers](modifiers/).
 
 To filter given a list of regex expression, refer to [Callables.with\_name\_regexes()](callables.with\_name\_regexes.md).
 

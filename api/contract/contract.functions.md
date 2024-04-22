@@ -4,7 +4,7 @@ description: Returns all the functions of a Contract.
 
 # Contract.functions()
 
-`functions() →` [`Functions`](../functions/)
+`functions() →` [`Functions`](../callables/functions/)
 
 The function returns all of the functions that the Contract has, including the inherited functions from its base classes.
 

@@ -6,7 +6,7 @@ description: >-
 
 # StateVariables.with\_one\_property()
 
-`with_one_property(properties: List[`[`StateVariableProp`](../statevariableprop/)`]) →` [`StateVariables`](./)
+`with_one_property(properties: List[`[`StateVariableProp`](statevariableprop/)`]) →` [`StateVariables`](./)
 
 **Query Example**
 

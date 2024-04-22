@@ -1,6 +1,6 @@
 # Callables
 
-The Callables class is the base class for the [Functions](../functions/) and [Modifiers](../modifiers/) classes, and implements a series of methods common to both Functions and Modifiers:
+The Callables class is the base class for the [Functions](functions/) and [Modifiers](modifiers/) classes, and implements a series of methods common to both Functions and Modifiers:
 
 {% content-ref url="callables.contracts.md" %}
 [callables.contracts.md](callables.contracts.md)

@@ -7,11 +7,11 @@ description: >-
 
 # Instructions.functions()
 
-**`functions`**`() →` [`Functions`](../functions/)
+**`functions`**`() →` [`Functions`](../callables/functions/)
 
 ## Return type
 
-`→` [`Functions`](../functions/)
+`→` [`Functions`](../callables/functions/)
 
 ## Query Example
 

@@ -6,7 +6,7 @@ description: Returns parent function/modifier of the instruction.
 
 `get_parent() → Callable | NoneObject`
 
-The function returns a [Callable](../callable/) object, specifically either a [Function](../function/) or [Modifier](../modifier/) object, where the current instruction is placed.
+The function returns a [Callable](../callable/) object, specifically either a [Function](../callable/function/) or [Modifier](../callable/modifier/) object, where the current instruction is placed.
 
 ## Query Example
 

@@ -6,7 +6,7 @@ description: >-
 
 # Callable.callee\_values()
 
-`callee_values() → List[`[`Call`](../call/)`]`
+`callee_values() → List[`[`Call`](../value/call/)`]`
 
 ## Example
 
