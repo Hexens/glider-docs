@@ -2,7 +2,7 @@
 
 The aim of this class is to filter instructions with some properties.
 
-Bases: [Queryable](../queryable/)
+Bases: [Queryable](../internal/queryable/)
 
 {% content-ref url="instructions.callees.md" %}
 [instructions.callees.md](instructions.callees.md)

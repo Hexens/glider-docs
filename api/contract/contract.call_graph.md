@@ -4,7 +4,7 @@ description: Returns call graph of the contract.
 
 # Contract.call\_graph()
 
-`call_graph() →` [`CallGraph`](../callgraph/)
+`call_graph() →` [`CallGraph`](../internal/callgraph/)
 
 ## Example query
 

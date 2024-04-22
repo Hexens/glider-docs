@@ -4,7 +4,7 @@ description: The aim of this class is to define type conversions.
 
 # Convertor
 
-The class is used in conjunction with [Arguments](../arguments/) functions such as [with\_type\_convertible()](../arguments/arguments.with\_type\_convertible.md).
+The class is used in conjunction with [Arguments](../) functions such as [with\_type\_convertible()](../arguments.with\_type\_convertible.md).
 
 For example, if you want to treat `uint160` as a type `address`, you can use the `Convertor` to add that conversion type.
 

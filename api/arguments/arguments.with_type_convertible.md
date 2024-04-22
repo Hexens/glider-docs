@@ -6,7 +6,7 @@ description: >-
 
 # Arguments.with\_type\_convertible()
 
-`with_type_convertible(arg_type: List[str], convertor:` [`Convertor`](../convertor/)`) -> List[`[`Argument`](../argument/)`]`
+`with_type_convertible(arg_type: List[str], convertor:` [`Convertor`](convertor/)`) -> List[`[`Argument`](../argument/)`]`
 
 
 

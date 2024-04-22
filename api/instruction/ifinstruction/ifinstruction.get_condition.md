@@ -1,6 +1,6 @@
 # IfInstruction.get\_condition()
 
-`get_condition() →` [`Condition`](../../condition/)
+`get_condition() →` [`Condition`](condition/)
 
 Returns condition of the if-statement.
 
