@@ -46,14 +46,14 @@ Glider compiles and constructs artefacts from source code and places them in a s
 
 This gives the ability for query writers to query code as data in a declarative format using Glider's [API](https://app.gitbook.com/o/D7bVwvgIhKRqv3dZQbQH/s/KRI4GLnp45wDq2xrEWyI/)
 
-The code partinstructions = Functions()\\
+The code part:
 
 ```python
  instructions = Functions()\
   .with_one_property([MethodProp.EXTERNAL, MethodProp.PUBLIC])\
   .without_properties([MethodProp.HAS_MODIFIERS, MethodProp.IS_CONSTRUCTOR])\
   .instructions()\
-  .with_called_function_name('selfdestruct')\
+  .with_callee_function_name('selfdestruct')\
   .exec()
 ```
 
@@ -78,7 +78,7 @@ Glider leverages the Python environment to give users the possibility to write a
       # previous_instructions will return all of the instruction that come before in the CFG (control flow graph)
       for prev in i.previous_instructions():
         #check if its a function call of "if" and that it does not include msg.sender in the expression
-        if (prev.is_call() or prev.is_if()) and 'msg.sender' in prev.procedure_graph_node.expression:
+        if (prev.is_call() or prev.is_if()) and 'msg.sender' in prev.source_code():
           flag = False
           break
       # include the instruction in the resulting set
@@ -86,9 +86,9 @@ Glider leverages the Python environment to give users the possibility to write a
         results.append(i)
 ```
 
-As you can see we use here basic Python constructs and Glider's functionality to do quite complex filtering on the result.&#x20;
+As you can see, we use basic Python constructs and Glider's functionality here to do quite complex filtering of the result.&#x20;
 
-We check that the instruction we got has a global dataflow (controllable by the caller) and that there is no function call or "if"s containing msg.sender that precedes the selfdestruct call.&#x20;
+We check that the instruction we got has a global dataflow (controllable by the caller) and that there is no function call or "if"s containing `msg.sender` that precedes the `selfdestruct` call.&#x20;
 
 This is a playbook example of a query, while it already can yield very good results, the query has a lot of room for improvement, e.g. instead of checking `msg.sender` to not be part of the expression one should check that the call/if expressions are not tainted from msg.sender.
 
