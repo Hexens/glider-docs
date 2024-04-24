@@ -15,7 +15,7 @@ def query(): # The name query() is constant, and should not be changed
   .with_one_property([MethodProp.EXTERNAL, MethodProp.PUBLIC])\
   .without_properties([MethodProp.HAS_MODIFIERS, MethodProp.IS_CONSTRUCTOR])\
   .instructions()\
-  .with_called_function_name('selfdestruct')\
+  .with_callee_function_name('selfdestruct')\
   .exec() # chain of calls must always end with exec() otherwise the query will not be dispatched
   
   # Arbitrary logic part, where we analyse the CFG/DFG graphs to filter the result
@@ -30,7 +30,7 @@ def query(): # The name query() is constant, and should not be changed
       # previous_instructions will return all of the instruction that come before in the CFG (control flow graph)
       for prev in i.previous_instructions():
         #check if its a function call of "if" and that it does not include msg.sender in the expression
-        if (prev.is_call() or prev.is_if()) and 'msg.sender' in prev.procedure_graph_node.expression:
+        if (prev.is_call() or prev.is_if()) and 'msg.sender' in prev.source_code():
           flag = False
           break
       # include the instruction in the resulting set
