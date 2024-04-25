@@ -14,7 +14,7 @@ instructions = (
     .with_one_property([MethodProp.EXTERNAL, MethodProp.PUBLIC])
     .without_properties([MethodProp.HAS_MODIFIERS, MethodProp.IS_CONSTRUCTOR])
     .instructions()
-    .with_called_function_name("selfdestruct")
+    .with_callee_function_name("selfdestruct")
     .exec()
 )
 ```
@@ -45,4 +45,4 @@ The function can be called with parameters:
 
 `exec(limit)`
 
-`exec(offset,limit)`
+`exec(limit,offset)`
