@@ -1,9 +1,9 @@
 # Modifiers.exec()
 
-`exec(`_`limit_count: int = 0`_`,`` `_`offset_count: int = 0`_`) → List[`[`Modifier`](../modifier/)`]`\
+`exec(`_`limit_count: int = 0`_`,`` `_`offset_count: int = 0`_`) → List[`[`Modifier`](../../callable/modifier/)`]`\
 
 
-Executes the formed query and returns a list of the [Modifier](../modifier/) objects.
+Executes the formed query and returns a list of the [Modifier](../../callable/modifier/) objects.
 
 It accepts two integer parameters: the first one is `limit_count` which limits the count of the returned results, and the second is `offset_count` which sets the offset from which the result set must be returned.
 

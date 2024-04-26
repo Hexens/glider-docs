@@ -2,4 +2,4 @@
 
 The class represents a single function object.
 
-Bases: [`Callable`](../callables/)
+Bases: [`Callable`](../../callables/)

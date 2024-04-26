@@ -4,6 +4,12 @@ description: This page describes how to use Glider interface and its features
 
 # 🔧 Usage
 
+
+
+{% hint style="info" %}
+Note that in case the query is run against a whole blockchain the results will be grouped by uniques bytecodes, thus while checking a contract address, one should also check for similar contracts in etherscan to get full list of duplicate addresses.
+{% endhint %}
+
 ### Basic usage
 
 <figure><img src=".gitbook/assets/spaces_vNCyQODNfxkMFwdzKHsZ_uploads_ndHgGKRRGgDJ818bYBXa_image.webp" alt=""><figcaption><p>sample glide code</p></figcaption></figure>

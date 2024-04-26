@@ -4,7 +4,7 @@ description: Returns all the modifiers of a Contract.
 
 # Contract.modifiers()
 
-`modifiers() →` [`Modifiers`](../modifiers/)
+`modifiers() →` [`Modifiers`](../callables/modifiers/)
 
 The function also handles inherited modifiers.
 

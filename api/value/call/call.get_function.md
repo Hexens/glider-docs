@@ -6,9 +6,9 @@ description: >-
 
 # Call.get\_function()
 
-`get_function() →` [`Function`](../../function/) `| NoneObject`
+`get_function() →` [`Function`](../../callable/function/) `| NoneObject`
 
-The function will return the [Function](../../function/) object of the function being called, as there can be cases (such as low-level external calls, or solidity built-in calls) where there is no defined function the function will return NoneObject:
+The function will return the [Function](../../callable/function/) object of the function being called, as there can be cases (such as low-level external calls, or solidity built-in calls) where there is no defined function the function will return NoneObject:
 
 For example, in the call:
 
@@ -18,7 +18,7 @@ require(balanceOf(to) + amount <= _maxWalletSize, "Exceeds the limit")
 
 The if the function is used on the call representing the `require(...)`, NoneObject will be returned, as there is no solidity code representing the builtin function.
 
-On the other hand if the function is called on the call representing `balanceOf(to)` it will return the [Function](../../function/) object of the `balanceOf`.
+On the other hand if the function is called on the call representing `balanceOf(to)` it will return the [Function](../../callable/function/) object of the `balanceOf`.
 
 {% hint style="info" %}
 Note that for the external calls made using interfaces, the function will return the interface Function object.

@@ -1,12 +1,12 @@
 # Instructions.modifiers()
 
-**`modifiers`**`() →` [`Modifiers`](../modifiers/)
+**`modifiers`**`() →` [`Modifiers`](../callables/modifiers/)
 
-Returns [Modifiers](../modifiers/) object for the modifiers of the instructions. Note: The function will return parent modifiers for those instructions that belong to a modifier, not to a function. To get parent functions of that instructions use `functions()` method.
+Returns [Modifiers](../callables/modifiers/) object for the modifiers of the instructions. Note: The function will return parent modifiers for those instructions that belong to a modifier, not to a function. To get parent functions of that instructions use `functions()` method.
 
 ## Return type
 
-`→` [`Modifiers`](../modifiers/)
+`→` [`Modifiers`](../callables/modifiers/)
 
 ## Query Example
 

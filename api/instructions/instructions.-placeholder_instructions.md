@@ -1,6 +1,6 @@
 # Instructions.placeholder\_instructions()
 
-Returns an [Instructions](./) object for the [Modifier](../modifier/) placeholder instructions.
+Returns an [Instructions](./) object for the [Modifier](../callable/modifier/) placeholder instructions.
 
 `placeholder_instructions() →` [`Instructions`](./)
 

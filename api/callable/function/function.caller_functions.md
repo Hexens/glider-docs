@@ -4,7 +4,7 @@ description: Returns a Functions object that represents functions that call the 
 
 # Function.caller\_functions()
 
-`caller_functions() →` [`Functions`](../functions/)
+`caller_functions() →` [`Functions`](../../callables/functions/)
 
 The caller functions are the functions that directly call the specified function.
 

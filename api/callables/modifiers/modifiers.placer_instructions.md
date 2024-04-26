@@ -1,14 +1,14 @@
 # Modifiers.placer\_instructions()
 
-`placer_instructions() →` [`Instructions`](../instructions/)
+`placer_instructions() →` [`Instructions`](../../instructions/)
 
-Returns placeholder [instructions](../instructions/) for the set of [Modifiers](./).
+Returns placeholder [instructions](../../instructions/) for the set of [Modifiers](./).
 
 The placeholder or placer instruction is the "\_" (underline) instruction which defines where the function code must be inline in the modifier.
 
 ## Return type
 
-→ [Instructions](../instructions/)
+→ [Instructions](../../instructions/)
 
 An example to retrieve the instructions used by the modifiers with the name `onlyOwner` is as below
 

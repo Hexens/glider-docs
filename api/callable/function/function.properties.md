@@ -4,9 +4,9 @@ description: Returns the function's properties.
 
 # Function.properties()
 
-`properties() → List[`[`MethodProp`](../callables/methodprop/)`]`
+`properties() → List[`[`MethodProp`](../../callables/methodprop/)`]`
 
-Returns the function's properties as a list of [MethodProps](../callables/methodprop/)
+Returns the function's properties as a list of [MethodProps](../../callables/methodprop/)
 
 ## Example
 

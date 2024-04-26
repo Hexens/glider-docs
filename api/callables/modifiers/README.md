@@ -4,4 +4,4 @@ description: The aim of this class is to filter modifiers with specified propert
 
 # Modifiers
 
-Bases: [`Callables`](../callables/)
+Bases: [`Callables`](../)

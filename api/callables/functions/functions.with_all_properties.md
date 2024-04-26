@@ -1,6 +1,6 @@
 # Functions.with\_all\_properties()
 
-`with_all_properties(`_`properties: List[`_[_`MethodProp`_](../callables/methodprop/)_`]`_`) →` [`Functions`](./)
+`with_all_properties(`_`properties: List[`_[_`MethodProp`_](../methodprop/)_`]`_`) →` [`Functions`](./)
 
 Adds a filter to get functions that have all of the given properties.
 

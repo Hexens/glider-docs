@@ -1,6 +1,6 @@
 # Function.return\_instructions()
 
-`return_instructions() →` [`Instructions`](../instructions/)
+`return_instructions() →` [`Instructions`](../../instructions/)
 
 Returns the `return` instructions of the function.
 
