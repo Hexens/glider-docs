@@ -2,7 +2,7 @@
 
 `with_name_suffixes(`_`suffixes: List[str]`_`,`` `_`sensitivity: bool = True`_`) →` [`Callables`](./)
 
-Adds a filter to get callables whose names have suffixes from the given list of suffixes. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](functions/) and [Modifiers](modifiers/).
+Adds a filter to get callables whose names have suffixes from the given list of suffixes. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
 To filter given a single prefix, refer to [Callables.with\_name\_suffix()](callables.with\_name\_suffix.md).
 

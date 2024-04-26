@@ -1,8 +1,8 @@
 # Modifier.functions()
 
-`functions() →` [`Functions`](../../callables/functions/)
+`functions() →` [`Functions`](../functions/)
 
-Returns the [Functions](../../callables/functions/) object for the functions which have the modifier.
+Returns the [Functions](../functions/) object for the functions which have the modifier.
 
 
 

@@ -2,7 +2,7 @@
 
 `with_arg_types(`_`arg_types: List[str]`_`,`` `_`sensitivity: bool = True`_`) →` [`Callable`](./)
 
-Adds a filter to get callables having specified argument types like "address" or even non-elementary types like structs is strict ordering. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](functions/) and [Modifiers](modifiers/).
+Adds a filter to get callables having specified argument types like "address" or even non-elementary types like structs is strict ordering. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
 To filter given a single argument type, refer to [Callables.with\_arg\_type()](callables.with\_arg\_type.md).
 

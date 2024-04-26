@@ -8,7 +8,7 @@ description: Adds a filter to get functions/modifiers having specified callee na
 
 Adds a filter to get callables that have all of the specified callees (functions that are being called within a function/modifier). Returns a filtered [Callables](./) child object.&#x20;
 
-This method can be called on all [Callables](./) child classes: [Functions](functions/) and [Modifiers](modifiers/).
+This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
 ## Function Example
 

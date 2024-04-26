@@ -2,7 +2,7 @@
 
 `with_name(`_`name: str`_`,`` `_`sensitivity: bool = True`_`) →` [`Callables`](./)
 
-Adds a filter to get callables having specified name. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](functions/) and [Modifiers](modifiers/).
+Adds a filter to get callables having specified name. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
 To get all but the specified name, refer to [Callables.without\_name()](callables.without\_name.md).
 

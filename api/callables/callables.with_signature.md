@@ -2,7 +2,7 @@
 
 `with_signature(`_`signature: str`_`) →` [`Callables`](./)
 
-Adds a filter to get callables that have the given signature. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](functions/) and [Modifiers](modifiers/).
+Adds a filter to get callables that have the given signature. Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
 To filter given a list of signatures, refer to [Callables.with\_signatures()](callables.with\_signatures.md).
 

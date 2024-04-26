@@ -2,7 +2,7 @@
 
 `with_hashed_signature(`_`signature_hash: int`_`) →` [`Callables`](./)
 
-Adds a filter to get callables having specified selector (4 bytes of signature hash). Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](functions/) and [Modifiers](modifiers/).
+Adds a filter to get callables having specified selector (4 bytes of signature hash). Returns a filtered [Callables](./) child object. This method can be called on all [Callables](./) child classes: [Functions](../functions/) and [Modifiers](../modifiers/).
 
 ### Functions Example
 

@@ -6,7 +6,7 @@ description: Returns parent function/modifier of the local variable.
 
 `get_parent() →` [`Callable`](../callable/)
 
-The function returns the [Function](../callable/function/) or [Modifier](../callable/modifier/) object of the function/modifier where the local variable is declared.
+The function returns the [Function](../function/) or [Modifier](../modifier/) object of the function/modifier where the local variable is declared.
 
 **Query Example**
 

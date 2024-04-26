@@ -199,17 +199,17 @@ While the [Contract](contract/) class is used to obtain information about a sing
 
 Contracts contain references to other entities that belong to those contracts:
 
-[Functions](callables/functions/)([Callables](callables/)), [Modifiers](callables/modifiers/)([Callables](callables/)), [StateVariables](statevariables/), [Structs](contract/contract.structs.md), [Enums](contract/contract.enums.md), [Errors](contract/contract.errors.md).
+[Functions](functions/)([Callables](callables/)), [Modifiers](modifiers/)([Callables](callables/)), [StateVariables](statevariables/), [Structs](contract/contract.structs.md), [Enums](contract/contract.enums.md), [Errors](contract/contract.errors.md).
 
 ## Callables
 
 Glider treats functions and modifiers as callable objects.&#x20;
 
-Nonetheless, Glider has [Function](callable/function/) and [Modifier](callable/modifier/) classes that both derive from [Callable](callable/)
+Nonetheless, Glider has [Function](function/) and [Modifier](modifier/) classes that both derive from [Callable](callable/)
 
 ### Functions
 
-Each function in the contract code is represented by a [Function](callable/function/) object.
+Each function in the contract code is represented by a [Function](function/) object.
 
 The set of functions is represented by the [Functions](./#functions) object.
 
@@ -262,7 +262,7 @@ library SafeMath {
 
 ### Modifiers
 
-Each modifier is represented by a [Modifier](callable/modifier/) object.
+Each modifier is represented by a [Modifier](modifier/) object.
 
 The set of modifiers is represented by a [Modifiers](./#modifiers) object.
 
@@ -302,14 +302,14 @@ And `whenNotPaused` and `whenPaused` modifiers in Pauable:
 
 ```
 
-[Function](callable/function/) and [Modifier](callable/modifier/) objects can be used to obtain data about a specific object, while [Functions](./#functions) and [Modifiers](./#modifiers) objects are used to query and/or filter functions/modifiers by specific properties from a set or the whole database.
+[Function](function/) and [Modifier](modifier/) objects can be used to obtain data about a specific object, while [Functions](./#functions) and [Modifiers](./#modifiers) objects are used to query and/or filter functions/modifiers by specific properties from a set or the whole database.
 
 Functions have references to the modifiers that are being used in the function and vice versa.
 
 {% hint style="info" %}
-See methods: [Modifier.functions()](callable/modifier/modifier.functions.md) and [Function.modifiers()](callable/function/function.modifiers.md) for a single function/modifier instance
+See methods: [Modifier.functions()](modifier/modifier.functions.md) and [Function.modifiers()](function/function.modifiers.md) for a single function/modifier instance
 
-Also: [Modifiers.functions()](callable/modifier/modifier.functions.md) and [Functions.modifiers()](callable/function/function.modifiers.md) for the set
+Also: [Modifiers.functions()](modifier/modifier.functions.md) and [Functions.modifiers()](function/function.modifiers.md) for the set
 {% endhint %}
 
 One of the most important references that functions/modifiers have is their reference to their [instructions](instructions/).
@@ -365,7 +365,7 @@ _;
 {% hint style="info" %}
 Note that the special underline symbol (\_), which is also called placer/placeholder, is also considered an instruction.
 
-See methods: [Instruction.is\_placer()](instruction/instruction.is\_placer.md), [Modifier.placer\_instructions()](callable/modifier/modifier.placer\_instructions.md), [Modifiers.placer\_instructions()](callables/modifiers/modifiers.placer\_instructions.md)
+See methods: [Instruction.is\_placer()](instruction/instruction.is\_placer.md), [Modifier.placer\_instructions()](modifier/modifier.placer\_instructions.md), [Modifiers.placer\_instructions()](modifiers/modifiers.placer\_instructions.md)
 {% endhint %}
 
 The constructors are also considered functions; special methods can be used to query and check that a function is a constructor.

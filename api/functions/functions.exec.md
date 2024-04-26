@@ -1,6 +1,6 @@
 # Functions.exec()
 
-`exec(`_`limit_count: int = 0`_`,`` `_`offset_count: int = 0`_`) → List[`[`Function`](../../callable/function/)`]`
+`exec(`_`limit_count: int = 0`_`,`` `_`offset_count: int = 0`_`) → List[`[`Function`](../function/)`]`
 
 Executes the formed query and returns a list of the Function objects.
 

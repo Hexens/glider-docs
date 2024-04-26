@@ -4,9 +4,9 @@ description: Returns the Modifiers object for the modifiers of the function.
 
 # Function.modifiers()
 
-`modifiers() →` [`Modifiers`](../../callables/modifiers/)
+`modifiers() →` [`Modifiers`](../modifiers/)
 
-Returns the [Modifiers](../../callables/modifiers/) object for the modifiers of the function.
+Returns the [Modifiers](../modifiers/) object for the modifiers of the function.
 
 ## Example
 

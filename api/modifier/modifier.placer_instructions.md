@@ -1,14 +1,14 @@
 # Modifier.placer\_instructions()
 
-`placer_instructions() →` [`Instructions`](../../instructions/)
+`placer_instructions() →` [`Instructions`](../instructions/)
 
-Returns placeholder [instructions](../../instruction/) of the [modifier](./).
+Returns placeholder [instructions](../instruction/) of the [modifier](./).
 
 The placeholder or placer instruction is the "\_" (underline) instruction which defines where the function code must be inline in the modifier.
 
 ## Return type
 
-→ List\[[Instruction](../../instruction/)]
+→ List\[[Instruction](../instruction/)]
 
 An example of a query which can analyze placeholder instructions is:
 

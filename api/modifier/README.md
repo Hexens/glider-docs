@@ -3,4 +3,4 @@
 The class represents a single modifier object.
 
 \
-Bases: [`Callable`](../)
+Bases: [`Callable`](../callable/)
