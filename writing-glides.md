@@ -147,3 +147,9 @@ from glider import *
 {% hint style="info" %}
 While this will not affect the execution of the query in any way, and this line can be skipped, it is used for the query editor interface to activate the Intellisense with autocomplete, tooltips, and other features.
 {% endhint %}
+
+***
+
+{% hint style="success" %}
+You can [Join our Community](http://discord.gg/remedy) of Security Researchers where you can ask your questions, learn more about Glider, stay up to date on latest developments and interact directly with the creators of this powerful tool.
+{% endhint %}
