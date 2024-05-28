@@ -408,9 +408,9 @@
       * [NoneObject.dump\_into\_json()](api/internal/noneobject/noneobject.dump\_into\_json.md)
       * [NoneObject.instructions()](api/internal/noneobject/noneobject.instructions.md)
       * [NoneObject.name()](api/internal/noneobject/noneobject.name.md)
+* [Changelog](changelog.md)
 
 ## ⚖️ Legal Notices
 
 * [Privacy Notice](legal-notices/privacy-notice.md)
 * [Terms and Conditions](legal-notices/terms-and-conditions.md)
-* [Changelog](legal-notices/changelog.md)
