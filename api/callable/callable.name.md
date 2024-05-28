@@ -2,9 +2,9 @@
 description: Returns the function's or modifier's name.
 ---
 
-# Callable.name()
+# Callable.name
 
-`name() → str`
+`property: name -> str`
 
 ## Example
 
@@ -18,11 +18,11 @@ def query():
     contract = {"name": c.name, "functions": [], "modifiers": []}
     # Aggregate the name of all functions for each contract
     for function in c.functions().exec():
-      contract["functions"].append(function.name())
+      contract["functions"].append(function.name)
 
     # Same for modifiers
     for modifier in c.modifiers().list():
-      contract["modifiers"].append(modifier.name())
+      contract["modifiers"].append(modifier.name)
 
     contracts_with_callables.append(contract)
 
