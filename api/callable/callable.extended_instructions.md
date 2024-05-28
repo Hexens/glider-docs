@@ -8,7 +8,7 @@ description: >-
 
 `extended_instructions() -> Set[`[`Instruction`](../instruction/)`]`
 
-The function is the _**extended**_**/**_**inter-procedural**_ variant of the [`nstructions()`](callable.instructions.md), meaning that it works recursively. It returns a set of Instructions object representing all the instructions which are reachable from the target function, the differences between `extended_instructions()` and `instructions()` the latter will only return instructions directly accessible from the function. At the same time, the extended version will find all the instructions recursively, which are eventually called when executing the function.
+The function is the _**extended**_**/**_**inter-procedural**_ variant of the [`instructions()`](callable.instructions.md), meaning that it works recursively. It returns a set of Instructions object representing all the instructions which are reachable from the target function, the differences between `extended_instructions()` and `instructions()` the latter will only return instructions directly accessible from the function. At the same time, the extended version will find all the instructions recursively, which are eventually called when executing the function.
 
 Also, note that the return types of `extended_instructions() -> Set[Instruction]` and `instructions() -> Instructions` are different, the extended version returns a set of Instruction objects, while the original one returns Instructions (queryable) object.
 
