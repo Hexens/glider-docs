@@ -325,7 +325,7 @@
       * [Var.get\_object\_of\_var()](api/value/var/var.get\_object\_of\_var.md)
       * [Var.get\_parent()](api/value/var/var.get\_parent.md)
       * [Var.procedure\_graph\_node](api/value/var/var.procedure\_graph\_node.md)
-      * [Var.type()](api/value/var/var.type.md)
+      * [Var.type](api/value/var/var.type.md)
       * [Var.get\_call\_qualifier()](api/value/var/var.get\_call\_qualifier.md)
       * [Var.get\_value()](api/value/var/var.get\_value.md)
       * [Var.get\_values()](api/value/var/var.get\_values.md)
