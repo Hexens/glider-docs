@@ -413,3 +413,4 @@
 
 * [Privacy Notice](legal-notices/privacy-notice.md)
 * [Terms and Conditions](legal-notices/terms-and-conditions.md)
+* [Changelog](legal-notices/changelog.md)
