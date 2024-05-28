@@ -6,7 +6,7 @@ description: Returns corresponding object of the variable.
 
 The function returns the appropriate object for the Var, such as: [LocalVariable](../../localvariable/), [StateVariable](../../statevariable/), GlobalVariable, [Argument](../../argument/).
 
-It is essential to understand that Var represents not just a variable in general but a specific "placement" of that variable in the code while the classes like LocalVariabl or StateVariable etc. represent the variable itself.
+It is essential to understand that Var represents not just a variable in general but a specific "placement" of that variable in the code while the classes like LocalVariable or StateVariable etc. represent the variable itself.
 
 It is easy to see in an example:
 
