@@ -119,7 +119,9 @@ Our Platform is not intended for children aged 13 or younger, and we do not inte
 
 We will only retain your personal information for as long as necessary for the purposes for which that information was collected as set out in this Notice or for longer as required under any applicable legal, regulatory, accounting, or reporting requirements.
 
-The length of time for which we will retain your personal information will depend on the purposes for which we need to retain it. After we no longer need to retain your personal information, it will be deleted or securely destroyed. We understand the importance of transparency, and information regarding data retention, will be made available upon your request. You can always request to remove the personal data. But keep in mind that in certain cases we are obliged to store your information to be legally compliant.
+The length of time for which we will retain your personal information will depend on the purposes for which we need to retain it. After we no longer need to retain your personal information, it will be deleted or securely destroyed. We understand the importance of transparency, and information regarding data retention, will be made available upon your request.&#x20;
+
+You can always request to remove your personal data. However, please note that for individuals who have obtained access to Glider and passed KYC, we will retain personal information for a minimum of 3 years. This retention period is necessary to ensure that we can track and investigate any queries made through Glider in the event of a security incident. During this period, requests for data removal may be denied to comply with this policy and ensure legal compliance.
 
 ## THIRD PARTY SITES
 
