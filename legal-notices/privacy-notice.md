@@ -149,6 +149,6 @@ For more information see [https://edps.europa.eu/data-protection/our-work/our-wo
 
 Please note that the exercise of your rights may be subject to additional legal conditions. To exercise any of your rights, please send us a written request, using the contact details above.
 
-Last updated: 17-Jan-2023
+Last updated: 10-June-2024
 
 [^1]: 
