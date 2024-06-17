@@ -17,7 +17,7 @@ def query():
   # Get call nodes of functions starting with "_msgSend" 
   call_nodes = contracts[0].call_graph().name_prefix("_msgSend")
   for node in call_nodes:
-    print(node.function_name())
+    print(node.callable_name())
   return []
 </code></pre>
 
