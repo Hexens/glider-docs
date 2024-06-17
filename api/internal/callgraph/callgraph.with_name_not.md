@@ -17,7 +17,7 @@ def query():
   # Get call nodes of functions whose name is not "_msgSender"
   call_nodes = contracts[0].call_graph().with_name_not("_msgSender")
   for node in call_nodes:
-    print(node.function_name())
+    print(node.callable_name())
   return []
 </code></pre>
 
