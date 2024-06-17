@@ -16,7 +16,7 @@ def query():
   
   # print all call nodes' corresponding function names
   for node_id in call_nodes:
-    print(call_nodes[node_id].function_name())
+    print(call_nodes[node_id].callable_name())
   return []
 ```
 
@@ -24,10 +24,19 @@ Output:
 
 ```json
 {
-  "print_output": [
-    "_msgSender",
-    "_msgData"
-  ]
+    "print_output": [
+        string"REBITCOIN",
+        string"totalSupply",
+        string"totalBurned",
+        string"balanceOf",
+        string"transfer",
+        string"transferFrom",
+        string"approve",
+        string"allowance",
+        string"burn",
+        string"burnFrom",
+        string"onlyOwner"
+    ]
 }
 ```
 
