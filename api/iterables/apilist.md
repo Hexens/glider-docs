@@ -14,3 +14,7 @@ The `filter()` function uses a predicate to evaluate each element of the `APILis
 
 When a function return another `APIList`, the results are flattened into a single, one-dimensional `APIList`. This ensures a unified list structure, facilitating easier processing and analysis.
 
+
+
+###
+
