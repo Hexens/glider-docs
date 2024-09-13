@@ -2,11 +2,7 @@
 
 * [Glider introduction](README.md)
 * [🏄 Writing Glides](writing-glides.md)
-* [🚧 Limitations](limitations.md)
-* [🔧 Usage](usage.md)
 * [✍️ Glider and Declarative Query Writing](glider-and-declarative-query-writing.md)
-* [👥 Comparison with other tools](comparison-with-other-tools.md)
-* [🗺️ Roadmap](roadmap.md)
 * [📙 API](api/README.md)
   * [📌 Main concepts](api/main-concepts.md)
   * [Iterables](api/iterables/README.md)
@@ -414,6 +410,10 @@
       * [NoneObject.instructions()](api/internal/noneobject/noneobject.instructions.md)
       * [NoneObject.name()](api/internal/noneobject/noneobject.name.md)
 * [Changelog](changelog.md)
+* [🚧 Limitations](limitations.md)
+* [🔧 Usage](usage.md)
+* [🗺️ Roadmap](roadmap.md)
+* [👥 Comparison with other tools](comparison-with-other-tools.md)
 
 ## ⚖️ Legal Notices
 

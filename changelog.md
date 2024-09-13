@@ -1,5 +1,6 @@
 ---
 description: Page to follow the updates on Glider engine
+icon: list-check
 ---
 
 # Changelog
