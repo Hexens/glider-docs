@@ -4,6 +4,7 @@
 * [🏄 Writing Glides](writing-glides.md)
 * [🚧 Limitations](limitations.md)
 * [🔧 Usage](usage.md)
+* [Glider and Declarative Query Writing](glider-and-declarative-query-writing.md)
 * [👥 Comparison with other tools](comparison-with-other-tools.md)
 * [🗺️ Roadmap](roadmap.md)
 * [📙 API](api/README.md)
