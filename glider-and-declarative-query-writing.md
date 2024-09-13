@@ -45,11 +45,37 @@ evens = [number for number in numbers if number % 2 == 0]
 print(evens)
 ```
 
-We simply specify that we want to get the even numbers from the list, without describing the process step by step. Readability and Code Maintenance: Imperative Approach: Can become complex to read and maintain as the number of steps and complexity of algorithms increase. Declarative Approach: Generally results in more concise, understandable code that is easier to maintain, as it only describes the goal. Level of Abstraction: Imperative Approach: Typically operates at a low level of abstraction, as it requires detailed description of each step, including managing the program's state. Declarative Approach: Operates at a higher level of abstraction, as it hides implementation details and focuses on the final goal. Now that we have covered what declarative coding is, its time to move on to Glider! Glider gives ability to mix declarative and imperative forms to write code queries. Before the release of Glider 1.0: As the user has filtered `Contracts`/`Functions`/`Instructions`, they received a list of objects they wanted. Then, using imperative methods (e.g., if, `for`, `while`), they iterated over these objects to write their query. This approach, while functional, has several drawbacks: Imperative code is more difficult to read and write. Due to the large number of nested loops and checks, it becomes hard to comprehend. There is a significant amount of duplicated code. Recognizing these issues, the approach to writing queries in Glider 1.0 was completely revised, and it now aligns more closely with the declarative style of programming.
+We simply specify that we want to get the even numbers from the list, without describing the process step by step.
+
+#### Readability and Code Maintenance:&#x20;
+
+Imperative Approach: Can become complex to read and maintain as the number of steps and complexity of algorithms increase.&#x20;
+
+Declarative Approach: Generally results in more concise, understandable code that is easier to maintain, as it only describes the goal.&#x20;
+
+#### Level of Abstraction:
+
+Imperative Approach: Typically operates at a low level of abstraction, as it requires detailed description of each step, including managing the program's state.&#x20;
+
+Declarative Approach: Operates at a higher level of abstraction, as it hides implementation details and focuses on the final goal.&#x20;
+
+Now that we have covered what declarative coding is, it's time to move on to Glider!&#x20;
+
+Glider gives the ability to mix declarative and imperative forms to write code queries.
+
+Before the release of Glider 1.0: As the user has filtered `Contracts`/`Functions`/`Instructions`, they received a list of objects they wanted. Then, using imperative methods (e.g., if, `for`, `while`), they iterated over these objects to write their query.&#x20;
+
+This approach, while functional, has several drawbacks: Imperative code is more difficult to read and write. Due to the large number of nested loops and checks, it becomes hard to comprehend. There is a significant amount of duplicated code. Recognizing these issues, the approach to writing queries in Glider 1.0 was completely revised, and it now aligns more closely with the declarative programming style.
+
+
 
 ### What Was Changed?
 
-Now, the functions of most Glider 1.0 classes return not standard lists, sets, or tuples, but new objects of the `APIList`/`APISet`/`APITuple` classes. What is useful about these classes? Lets examine the difference using the example of a query to find reentrancy vulnerabilities in ERC777.
+Now, the functions of most Glider 1.0 classes return not standard lists, sets, or tuples but new objects of the `APIList`/`APISet`/`APITuple` classes.
+
+What is useful about these classes?&#x20;
+
+Let's examine the difference using the example of a query to find reentrancy vulnerabilities in ERC777.
 
 **A query without using the declarative approach looks as follows:**
 
@@ -82,7 +108,11 @@ def query():
     return results
 ```
 
-In this query, the declarative part is only the fragment where we find all `instructions` with the function call `transferFrom`. Additionally, the function where `transferFrom` is called must be `public` or `external`, one of its arguments must be of type `address`, and it should not contain the modifiers `nonReentrant`, `lock`, or `onlyOwner`. After we find the corresponding `instructions`, we use a `for` loop to iterate through them and, using the `next_instruction()` function, obtain the next instruction after the `balanceOf` call. We then check if this `instruction` contains a call to the `transferFrom` or `safeTransferFrom` function. If such a call is present, we move to the next instruction after the `transferFrom`/`safeTransferFrom` call and check if the `balanceOf` function is called there. If so, we have found the required contracts. We add such `instructions` to the result list and return it. The entire code for this query takes around 40 lines, uses 3 for loops, and creates one result list.
+In this query, the declarative part is only the fragment where we find all `instructions` with the function call `transferFrom`. Additionally, the function where `transferFrom` is called must be `public` or `external`, one of its arguments must be of type `address`, and it should not contain the modifiers `nonReentrant`, `lock`, or `onlyOwner`.&#x20;
+
+After we find the corresponding `instructions`, we use a `for` loop to iterate through them and, using the `next_instruction()` function, obtain the next instruction after the `balanceOf` call. We then check if this `instruction` contains a call to the `transferFrom` or `safeTransferFrom` function. If such a call is present, we move to the next instruction after the `transferFrom`/`safeTransferFrom` call and check if the `balanceOf` function is called there.
+
+If so, we have found the required contracts. We add such `instructions` to the result list and return it. The entire code for this query takes around 40 lines, uses 3 for loops, and creates one result list.
 
 **Now let's look at the new syntax in Glider 1.0 for declarative query writing. The logic of the query will remain unchanged:**
 
@@ -104,4 +134,28 @@ def query():
     return instructions
 ```
 
-The first thing that stands out is the noticeable reduction in the amount of code compared to the initial query. Lets explore how it works! The first part, where we retrieve the necessary `instructions`, remains the same as in the previous query. However, next, we use the `next_instruction` function, which is only available for objects of type `Instruction`. How is this possible? In Glider Engine, after calling the `exec()` function, you get a `list` of objects depending on the type of the object on which the `exec()` method was called. For example, when `exec()` is called on an object of type `Instructions`, the function will return an `APIList[Instruction]`, whereas in the previous version of Glider, it would have returned a `List[Instruction]`. What is the difference between `APIList[type]` and `List[type]`? `APIList[type]` allows you to apply a method not to the entire `list` at once, but to each individual element. Therefore, we can call the `next_instruction` method, which is defined for `Instruction`, on the entire list of `instructions` without using a `for` loop. One of the key features of the `APIList[type]`, `APISet[type]`, and `APITuple[type]` structures is their unidimensionality. This means that when calling the `next_instructions` function, which returns an `APIList[Instruction]`, the result will be a one-dimensional `APIList`. In other words, the lists returned from the called functions maintain the same type of structure `APIList`, `APISet`, or `APITuple` with which we started working. This makes possible of chaining functions/properties on list, as with other declarative parts. This feature has its pros and cons. The advantage is that we always know exactly what type of data we are dealing with. However, the downside is that sometimes, due to this feature, it may be necessary to use traditional imperative approaches. For example, if you need to filter the list returned by the `next_instructions` function and select the original instructions based on checks, this might require breaking the query chain and using loops. It is important to note that after calling such a method, all objects in `APIList[Instruction]` will be modified. In our case, `APIList[Instruction]` will contain all subsequent instructions for the instructions obtained in the first part of our query. What does this give us? The ability to write queries this way allows for more compact and readable queries, as seen in the examples. One of the significant updates is the `filter()` function, which also supports better chaining list filtering during query writing. The `filter()` function is a higher-order function that takes another function as an argument. The function passed to `filter()` must be a `predicate function`, meaning it should return a `boolean` value (`true` or `false`). This requirement ensures more explicit query behavior. The `filter()` function allows the following: if the predicate function passed to `filter()` returns `true`, the object from `APIList[type]` will remain in the list; if `false`, the object will be removed. This helps eliminate if statements, making queries shorter and more readable. Let's examine the use of the `filter()` function with an example. In the declarative query, the first call to `filter()` received a predicate `lambda function`: `lambda x: "transferFrom" in x.callee_names() or 'safeTransferFrom' in x.callee_names()`. As an argument, this `lambda function` automatically receives an `instruction` from the `APIList[Instruction]` list. If the `lambda function` returns `true`, the `instruction` remains in the `APIList[Instruction]`; if `false`, it is removed. As a result, the length of the query code is 12 lines. This query does not use for loops or if statements, and no separate result list is created. The readability of the query has significantly increased, and the process of writing it has become simpler.
+The first thing that stands out is the noticeable reduction in the amount of code compared to the initial query.&#x20;
+
+Let's explore how it works!&#x20;
+
+The first part, where we retrieve the necessary `instructions`, remains the same as in the previous query. However, next, we use the `next_instruction` function, which is only available for objects of type `Instruction`. How is this possible? In Glider Engine, after calling the `exec()` function, you get a `list` of objects depending on the type of the object on which the `exec()` method was called.
+
+For example, when `exec()` is called on an object of type `Instructions`, the function will return an `APIList[Instruction]`, whereas in the previous version of Glider, it would have returned a `List[Instruction]`. What is the difference between `APIList[type]` and `List[type]`? `APIList[type]` allows you to apply a method not to the entire `list` at once, but to each individual element.&#x20;
+
+Therefore, we can call the `next_instruction` method, which is defined for `Instruction`, on the entire list of `instructions` without using a `for` loop. One of the key features of the `APIList[type]`, `APISet[type]`, and `APITuple[type]` structures is their unidimensionality. This means that when calling the `next_instructions` function, which returns an `APIList[Instruction]`, the result will be a one-dimensional `APIList`.&#x20;
+
+In other words, the lists returned from the called functions maintain the same type of structure `APIList`, `APISet`, or `APITuple` with which we started working. This makes it possible to chain functions/properties on the list, as with other declarative parts.
+
+&#x20;This feature has its pros and cons. The advantage is that we always know exactly the data type we deal with. However, the downside is that sometimes, due to this feature, it may be necessary to use traditional imperative approaches. For example, if you need to filter the list returned by the `next_instructions` function and select the original instructions based on checks, this might require breaking the query chain and using loops.
+
+It is important to note that after calling such a method, all objects in `APIList[Instruction]` will be modified. In our case, `APIList[Instruction]` will contain all subsequent instructions for the instructions obtained in the first part of our query.&#x20;
+
+What does this give us? The ability to write queries this way allows for more compact and readable queries, as seen in the examples.&#x20;
+
+One of the significant updates is the `filter()` function, which also supports better chaining list filtering during query writing. The `filter()` function is a higher-order function that takes another function as an argument. The function passed to `filter()` must be a `predicate function`, meaning it should return a `boolean` value (`true` or `false`).&#x20;
+
+This requirement ensures more explicit query behaviour. The `filter()` function allows the following: if the predicate function is passed to `filter()` returns `true`, the object from `APIList[type]` will remain in the list; if `false`, the object will be removed. This helps eliminate if statements, making queries shorter and more readable.&#x20;
+
+Let's examine the use of the `filter()` function with an example. In the declarative query, the first call to `filter()` received a predicate `lambda function`: `lambda x: "transferFrom" in x.callee_names() or 'safeTransferFrom' in x.callee_names()`. As an argument, this `lambda function` automatically receives an `instruction` from the `APIList[Instruction]` list. If the `lambda function` returns `true`, the `instruction` remains in the `APIList[Instruction]`; if `false`, it is removed.&#x20;
+
+As a result, the length of the query code is 12 lines. This query does not use for loops or if statements, and no separate result list is created. The readability of the query has significantly increased, and the process of writing it has become simpler.
