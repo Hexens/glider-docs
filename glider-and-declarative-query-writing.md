@@ -1,4 +1,4 @@
-# Glider and Declarative Query Writing
+# ✍️ Glider and Declarative Query Writing
 
 ## Glider and Declarative Query Writing
 
