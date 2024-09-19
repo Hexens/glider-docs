@@ -7,6 +7,10 @@ description: >-
 
 # Functions.with\_all\_properties()
 
+**Deprecated:** This method is deprecated and will be removed in future versions.
+
+**Alternative:** Use `with_properties()` instead for improved functionality.
+
 `with_all_properties(`_`properties: List[`_[_`MethodProp`_](../methodprop/)_`]`_`) →` [`Functions`](./)
 
 ## Example
