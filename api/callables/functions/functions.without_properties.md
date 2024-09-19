@@ -7,7 +7,7 @@ description: >-
 
 # Functions.without\_properties()
 
-Deprecated: This method is deprecated and will be removed in future versions.
+**Deprecated**: This method is deprecated and will be removed in future versions.
 
 **Alternative:** Use `with_properties()` instead for improved functionality.
 
