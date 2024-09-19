@@ -2,11 +2,9 @@
 description: Adds a filter to get contracts whose names have the given prefix.
 ---
 
-# Contracts.name\_prefix()
+# Contracts.with\_name\_prefix()
 
-`name_prefix(prefix: str, sensitivity: bool = True) ->` [`Contracts`](./)
-
-
+`with_name_prefix(`_`prefix: str, sensitivity: bool = True`_`) ->` [`Contracts`](./)
 
 ## Query Example
 
@@ -15,7 +13,7 @@ from glider import *
 
 def query():
 
-  main_contracts = Contracts().name_prefix("Access", sensitivity=True).exec(1)
+  main_contracts = Contracts().with_name_prefix("Access", sensitivity=True).exec(1)
 
   return main_contracts
 ```

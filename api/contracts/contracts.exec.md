@@ -4,7 +4,7 @@ description: Executes the formed query and returns the list of Contract objects.
 
 # Contracts.exec()
 
-`exec(limit_count: int = 0, offset_count: int = 0) -> List[`[`Contract`](../contract/)`]`
+`exec(`_`limit_count: int = 0, offset_count: int = 0`_`) ->` [`APIList`](../iterables/apilist.md)`[`[`Contract`](../contract/)`]`
 
 ## Example Query 1
 
@@ -42,7 +42,6 @@ def query():
 from glider import *
 
 def query():
-
   contracts = Contracts().exec(1, 2)
 
   return contracts

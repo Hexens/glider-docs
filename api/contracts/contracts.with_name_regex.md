@@ -2,9 +2,9 @@
 description: Adds a filter to get contracts whose names match the given regex.
 ---
 
-# Contracts.name\_regex()
+# Contracts.with\_name\_regex()
 
-`name_regex(regex: str) ->` [`Contracts`](./)
+`with_name_regex(`_`regex: str`_`) ->` [`Contracts`](./)
 
 ## Query Example
 
@@ -13,7 +13,7 @@ from glider import *
 
 def query():
 
-  non_interface_contract = Contracts().name_regex('^[^I][^A-Z].*').exec(1)
+  non_interface_contract = Contracts().with_name_regex('^[^I][^A-Z].*').exec(1)
 
   return non_interface_contract
 ```

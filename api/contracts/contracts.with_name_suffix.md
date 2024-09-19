@@ -2,9 +2,9 @@
 description: Adds a filter to get contracts that names have the given suffix.
 ---
 
-# Contracts.name\_suffix()
+# Contracts.with\_name\_suffix()
 
-`name_suffix(suffix: str, sensitivity: bool = True) ->` [`Contracts`](./)
+`with_name_suffix(`_`suffix: str, sensitivity: bool = True`_`) ->` [`Contracts`](./)
 
 ## Query Example
 
@@ -13,7 +13,7 @@ from glider import *
 
 def query():
 
-  prefix_contracts = Contracts().name_suffix("link", sensitivity=False).exec(1)
+  prefix_contracts = Contracts().with_name_suffix("link", sensitivity=False).exec(1)
 
   return prefix_contracts
 ```
