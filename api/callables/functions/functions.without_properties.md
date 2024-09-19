@@ -7,6 +7,10 @@ description: >-
 
 # Functions.without\_properties()
 
+Deprecated: This method is deprecated and will be removed in future versions.
+
+**Alternative:** Use `with_properties()` instead for improved functionality.
+
 `without_properties(`_`properties: List[MethodProp]`_`) →` [`Functions`](./)
 
 ## Example
