@@ -1,9 +1,10 @@
+---
+description: Executes the formed query and returns an APIList of the Modifier objects.
+---
+
 # Modifiers.exec()
 
-`exec(`_`limit_count: int = 0`_`,`` `_`offset_count: int = 0`_`) → List[`[`Modifier`](../../callable/modifier/)`]`\
-
-
-Executes the formed query and returns a list of the [Modifier](../../callable/modifier/) objects.
+`exec(`_`limit_count: int = 0`_`,`` `_`offset_count: int = 0`_`) →` [`APIList`](../../iterables/apilist.md)`[`[`Modifier`](../../callable/modifier/)`]`
 
 It accepts two integer parameters: the first one is `limit_count` which limits the count of the returned results, and the second is `offset_count` which sets the offset from which the result set must be returned.
 
@@ -35,11 +36,15 @@ An example of a query which adds a filter to select functions which have modifie
 
 ```python
 from glider import *
+
 def query():
-  modifierlist = Modifiers()\
-      .with_name("onlyOwner")\
+  modifiers = (
+    Modifiers()
+      .with_name("onlyOwner")
       .exec(5)
-  return modifierlist
+  )
+
+  return modifiers
 ```
 
 ## Output
