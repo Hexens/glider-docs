@@ -4,7 +4,7 @@ description: >-
   names.
 ---
 
-# Contracts. with\_one\_of\_the\_function\_names()
+# Contracts.with\_one\_of\_the\_function\_names()
 
 `with_one_of_the_function_names(names: List[str], sensitivity: bool = True) →` [`Contracts`](./)
 

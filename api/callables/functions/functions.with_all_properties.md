@@ -1,8 +1,13 @@
+---
+description: >-
+  with_all_properties is deprecated and will be removed in future versions.
+  Please use with_properties in- stead. Adds a filter to get functions that have
+  all given properties.
+---
+
 # Functions.with\_all\_properties()
 
 `with_all_properties(`_`properties: List[`_[_`MethodProp`_](../methodprop/)_`]`_`) →` [`Functions`](./)
-
-Adds a filter to get functions that have all of the given properties.
 
 ## Example
 

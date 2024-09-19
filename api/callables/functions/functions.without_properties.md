@@ -1,8 +1,13 @@
+---
+description: >-
+  without_properties is deprecated and will be removed in future versions.
+  Please use with_properties instead. Adds a filter to get functions that don't
+  have any of the given properties.
+---
+
 # Functions.without\_properties()
 
 `without_properties(`_`properties: List[MethodProp]`_`) →` [`Functions`](./)
-
-Adds a filter to get functions that don't have any of the given properties.
 
 ## Example
 
