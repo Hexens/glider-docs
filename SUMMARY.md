@@ -371,7 +371,7 @@
         * [StateVariables.with\_type()](api/variables/statevariables/statevariables/statevariables.with\_type.md)
         * [StateVariable.with\_name()](api/variables/statevariables/statevariables/statevariable.with\_name.md)
       * [StateVariableProp](api/variables/statevariables/statevariableprop.md)
-      * [StateVariable](api/variables/statevariables/statevariable/README.md)
+      * [StateVariable](api/variables/statevariables/statevariable.md)
         * [StateVariable.contract()](api/variables/statevariables/statevariable/statevariable.contract.md)
         * [StateVariable.is\_accessible()](api/variables/statevariables/statevariable/statevariable.is\_accessible.md)
         * [StateVariable.is\_constant()](api/variables/statevariables/statevariable/statevariable.is\_constant.md)
