@@ -13,6 +13,22 @@ description: >-
 
 ## Query Example
 
+```python
+from glider import *
 
+def query():
+
+  state_variables = (
+    StateVariables()
+    .exec(5, 10)
+    .filter(lambda state_variable: state_variable.is_accessible)
+  )
+
+  print(state_variables[0].source_code())
+
+  return state_variables
+```
 
 ## Output Example
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
