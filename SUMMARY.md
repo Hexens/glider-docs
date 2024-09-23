@@ -410,7 +410,6 @@
       * [Variable.type](api/variables/variable/variable.type.md)
     * [StateVariables](api/variables/statevariables/README.md)
       * [StateVariables](api/variables/statevariables/statevariables/README.md)
-        * [StateVariables.list()](api/variables/statevariables/statevariables/statevariables.list.md)
         * [StateVariables.exec()](api/variables/statevariables/statevariables/statevariables.exec.md)
         * [StateVariables.with\_all\_properties()](api/variables/statevariables/statevariables/statevariables.with\_all\_properties.md)
         * [StateVariables.with\_one\_property()](api/variables/statevariables/statevariables/statevariables.with\_one\_property.md)
