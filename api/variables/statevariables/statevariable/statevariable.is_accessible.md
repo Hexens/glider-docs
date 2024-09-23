@@ -21,7 +21,7 @@ def query():
   state_variables = (
     StateVariables()
     .exec(5, 10)
-    .filter(lambda state_variable: state_variable.is_accessible)
+    .filter(lambda state_variable: state_variable.is_accessible())
   )
 
   print(state_variables[0].source_code())
