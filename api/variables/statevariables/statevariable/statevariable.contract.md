@@ -6,11 +6,8 @@ description: Returns state variable's parent contract if it exists.
 
 `contract() →` [`Contract`](../../../contract/) `|` [`NoneObject`](../../../internal/noneobject/)
 
-
-
 ## Query Example
 
-````python
 ```python
 from glider import *
 
@@ -22,7 +19,6 @@ def query():
     in StateVariables().exec(10,10)
   ]
 ```
-````
 
 ## Output Example
 
