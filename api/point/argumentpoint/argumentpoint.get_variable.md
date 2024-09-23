@@ -1,3 +1,16 @@
+---
+description: Return object of argument variable
+---
+
 # ArgumentPoint.get\_variable()
 
-get\_variable() → [ArgumentVariable](../../variables/argumentvariable/)
+`get_variable() →` [`ArgumentVariable`](../../variables/argumentvariables.md)
+
+
+
+## Query Example
+
+
+
+## Output Example
+
