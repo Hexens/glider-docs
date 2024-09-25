@@ -10,7 +10,26 @@ description: Returns the list of ArgumentPoints having specified memory type.
 
 ## Query Example
 
+```python
+from glider import *
 
+def query():
+    functions = (
+        Functions()
+        .with_name("observe")
+        .exec(1)
+    )
+
+    arguments = functions[0].arguments()
+
+    print(arguments.with_memory_type("calldata").source_code())
+
+    return functions
+```
 
 ## Output Example
+
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+
 
