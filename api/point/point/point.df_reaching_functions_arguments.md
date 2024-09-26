@@ -12,6 +12,8 @@ description: >-
 ## Query Example
 
 ```python
+from glider import *
+
 def query():
 
   instructions = Instructions().exec(1, 77)
@@ -26,7 +28,7 @@ def query():
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-09-26 at 19.56.11.png" alt=""><figcaption></figcaption></figure>
 
-### Here is a more detailed output:
+### Here is a more detailed output
 
 ```solidity
 Point1: 
