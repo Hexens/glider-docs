@@ -8,13 +8,24 @@ description: >-
 
 `has_global_df() → bool`
 
-
-
 ## Query Example
 
-
+```python
+def query():
+  instructions = (
+    Instructions()
+    .exec(10, 10)
+    .filter(lambda x: x.has_global_df())
+  )
+  
+  print(len(instructions))
+  
+  return instructions
+```
 
 ## Output Example
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 
 
