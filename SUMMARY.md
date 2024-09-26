@@ -379,7 +379,6 @@
     * [ArgumentPoint](api/point/argumentpoint.md)
       * [ArgumentPoint.get\_variable()](api/point/argumentpoint/argumentpoint.get\_variable.md)
     * [ArgumentPoints](api/point/argumentpoints/README.md)
-      * [ArgumentPoints.list()](api/point/argumentpoints/argumentpoints.list.md)
       * [ArgumentsPoints.with\_memory\_type()](api/point/argumentpoints/argumentspoints.with\_memory\_type.md)
       * [ArgumentPoints.with\_name()](api/point/argumentpoints/argumentpoints.with\_name.md)
       * [ArgumentPoints.with\_type()](api/point/argumentpoints/argumentpoints.with\_type.md)
