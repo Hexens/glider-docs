@@ -16,7 +16,21 @@ This path can include points belonging to other functions.
 
 ## Query Example
 
+```python
+from glider import *
 
+
+def query():
+
+  instructions = Instructions().exec(1,1)
+
+  affected_points = instructions[0].get_tainted_path_affecting_point()
+  print(affected_points)
+  for point in affected_points:
+    print(point.source_code())
+  return instructions
+```
 
 ## Output Example
 
+<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
