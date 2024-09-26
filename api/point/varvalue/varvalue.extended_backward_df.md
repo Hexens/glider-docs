@@ -25,8 +25,8 @@ def query():
     for component in components:
       points = component.extended_backward_df()
       print(points)
-      for backward_df in points:
-        print(backward_df.source_code())
+      for extended_backward_df in points:
+        print(extended_backward_df.source_code())
 
   return instructions
 ```
