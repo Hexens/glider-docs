@@ -11,13 +11,24 @@ description: >-
 
 Returns a set of paths containing tainted data that affect the point.
 
-
-
 ## Query Example
 
+```python
+from glider import *
 
+
+def query():
+
+  instructions = Instructions().exec(1,1)
+
+  affected_points = instructions[0].get_all_tainted_paths_affecting_point()
+  print(affected_points)
+  for point in affected_points:
+    print(point.source_code())
+  return instructions
+```
 
 ## Output Example
 
-
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
