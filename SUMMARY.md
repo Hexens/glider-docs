@@ -426,7 +426,6 @@
         * [StateVariable.source\_code()](api/variables/statevariables/statevariable/statevariable.source\_code.md)
     * [LocalVariables](api/variables/localvariables/README.md)
       * [LocalVariables](api/variables/localvariables/localvariables/README.md)
-        * [LocalVariables.list()](api/variables/localvariables/localvariables/localvariables.list.md)
         * [LocalVariables.with\_memory\_type()](api/variables/localvariables/localvariables/localvariables.with\_memory\_type.md)
         * [LocalVariables.with\_type()](api/variables/localvariables/localvariables/localvariables.with\_type.md)
       * [LocalVariable](api/variables/localvariables/localvariable/README.md)
