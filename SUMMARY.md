@@ -316,7 +316,7 @@
     * [Instructions.without\_callee\_function\_names()](api/instructions/instructions.without\_callee\_function\_names.md)
   * [Value](api/value/README.md)
     * [Value.expression](api/value/value.expression.md)
-    * [Value.is\_main\_operand()](api/value/value.is\_main\_operand.md)
+    * [Value.is\_main\_value()](api/value/value.is\_main\_value.md)
     * [Value.parent\_value](api/value/value.parent\_value.md)
     * [Value.get\_state\_vars()](api/value/value.get\_state\_vars.md)
     * [Value.get\_local\_vars()](api/value/value.get\_local\_vars.md)
