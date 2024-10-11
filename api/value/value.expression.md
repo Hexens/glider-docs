@@ -8,32 +8,19 @@ The property returns the "part" of the instruction that the Value represents.
 
 ```python
 from glider import *
+
 def query():
-	instructions = Instructions().exec(1,1)
-	operands = instructions[0].get_operands()
-	for operand in operands:
-		print(operand.expression)
-	return instructions
+    instructions = (
+        Instructions()
+        .exec(1, 99)
+    )
+    for instruction in instructions:
+        print(instruction.get_components()[0].expression)
+    return instructions
 ```
 
 **Output**
 
-```solidity
-"root":{4 items
-"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
-"contract_name":string"Context"
-"sol_function":solidity
-function _msgSender() internal view virtual returns (address) {
-        return msg.sender;
-    }
-"sol_instruction":solidity
-return msg.sender
-}
-"root":{1 item
-"print_output":[1 item
-0:string"msg.sender"
-]
-}
-```
+<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 Here the Value represents the `msg.sender` variable inside the `return msg.sender;` instruction.
