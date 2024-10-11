@@ -6,7 +6,7 @@ description: >-
 
 # Value.get\_state\_vars()
 
-`get_state_vars() ->`[`APIList`](../iterables/apilist.md)`[`[`VarValue`](../point/varvalue/)`]`
+`get_state_vars() ->`[`APIList`](../../iterables/apilist.md)`[`[`VarValue`](../../point/varvalue/)`]`
 
 The function returns all the state variables used (read/written) inside the Value.
 
@@ -29,4 +29,4 @@ def query():
 
 ## Example Output
 
-<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>

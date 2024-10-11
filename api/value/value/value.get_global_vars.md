@@ -6,7 +6,7 @@ description: >-
 
 # Value.get\_global\_vars()
 
-`get_global_vars() ->` [`APIList`](../iterables/apilist.md)`[`[`VarValue`](../point/varvalue/)`]`
+`get_global_vars() ->` [`APIList`](../../iterables/apilist.md)`[`[`VarValue`](../../point/varvalue/)`]`
 
 The function returns all the global variables, e.g. `msg.sender, msg.value, tx.origin, ...`, used inside the Value.
 
@@ -29,4 +29,4 @@ def query():
 
 ## Example Output
 
-<figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>

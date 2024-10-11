@@ -6,7 +6,7 @@ description: >-
 
 # Value.get\_arg\_vars()
 
-`get_arg_vars() ->` [`APIList`](../iterables/apilist.md)`[`[`VarValue`](../point/varvalue/)`]`
+`get_arg_vars() ->` [`APIList`](../../iterables/apilist.md)`[`[`VarValue`](../../point/varvalue/)`]`
 
 The function returns all the arguments' vars used inside the Value.
 
@@ -27,4 +27,4 @@ def query():
 
 ## Example Output
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

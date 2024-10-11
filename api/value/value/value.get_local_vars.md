@@ -6,7 +6,7 @@ description: >-
 
 # Value.get\_local\_vars()
 
-`get_local_vars() ->` [`APIList`](../iterables/apilist.md)`[`[`VarValue`](../point/varvalue/)`]`
+`get_local_vars() ->` [`APIList`](../../iterables/apilist.md)`[`[`VarValue`](../../point/varvalue/)`]`
 
 The function returns all the local variables used (read/written) inside the Value.
 
@@ -27,5 +27,5 @@ def query():
 
 ## Example Output
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-10-11 at 15.27.43.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-10-11 at 15.27.43.png" alt=""><figcaption></figcaption></figure>
 

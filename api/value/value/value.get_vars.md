@@ -4,7 +4,7 @@ description: Returns a list of all VarValue objects of current value.
 
 # Value.get\_vars()
 
-`get_vars() ->` [`APIList`](../iterables/apilist.md)`[`[`VarValue`](../point/varvalue/)`]`
+`get_vars() ->` [`APIList`](../../iterables/apilist.md)`[`[`VarValue`](../../point/varvalue/)`]`
 
 The function returns all the VarValues used (read/written) inside the Value.&#x20;
 
@@ -27,4 +27,4 @@ def query():
 
 ## Example Output
 
-<figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>

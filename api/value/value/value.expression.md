@@ -21,6 +21,6 @@ def query():
 
 **Output**
 
-<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 Here the Value represents the `msg.sender` variable inside the `return msg.sender;` instruction.

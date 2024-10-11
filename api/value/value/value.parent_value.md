@@ -1,8 +1,8 @@
 # Value.parent\_value
 
-Returns the parent [Value](./) in case the current one is inside another Value; returns None otherwise.
+Returns the parent [Value](../) in case the current one is inside another Value; returns None otherwise.
 
-`property parent_value:` [`Value`](./) `| None`
+`property parent_value:` [`Value`](../) `| None`
 
 **Query Example**
 
@@ -21,4 +21,4 @@ def query():
 
 **Output**
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
