@@ -327,7 +327,7 @@
     * [ValueExpression](api/value/valueexpression/README.md)
       * [ValueExpression.get\_dest()](api/value/valueexpression/valueexpression.get\_dest.md)
       * [ValueExpression.get\_dests()](api/value/valueexpression/valueexpression.get\_dests.md)
-      * [ValueExpression.component()](api/value/valueexpression/valueexpression.component.md)
+      * [ValueExpression.get\_component()](api/value/valueexpression/valueexpression.get\_component.md)
       * [ValueExpression.get\_components()](api/value/valueexpression/valueexpression.get\_components.md)
       * [ValueExpression.get\_assignment\_operator()](api/value/valueexpression/valueexpression.get\_assignment\_operator.md)
       * [ValueExpression.has\_global\_df()](api/value/valueexpression/valueexpression.has\_global\_df.md)

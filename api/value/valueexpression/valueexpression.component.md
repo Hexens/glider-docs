@@ -1,2 +1,0 @@
-# ValueExpression.get\_operands()
-
