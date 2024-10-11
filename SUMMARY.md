@@ -319,6 +319,7 @@
       * [Value.expression](api/value/value/value.expression.md)
       * [Value.is\_main\_value()](api/value/value/value.is\_main\_value.md)
       * [Value.parent\_value](api/value/value/value.parent\_value.md)
+      * [Value.get\_callee\_values()](api/value/value/value.get\_callee\_values.md)
       * [Value.get\_state\_vars()](api/value/value/value.get\_state\_vars.md)
       * [Value.get\_local\_vars()](api/value/value/value.get\_local\_vars.md)
       * [Value.get\_global\_vars()](api/value/value/value.get\_global\_vars.md)
