@@ -6,7 +6,7 @@ description: >-
 
 # Call.get\_args()
 
-`get_args() → List[`[`Value`](../)`]`
+`get_args() ->` [`APIList`](../../iterables/apilist.md)`[Union[`[`Value`](../value/)`,` [`NoneObject`](../../internal/noneobject/)`]]`
 
 ## Query Example
 

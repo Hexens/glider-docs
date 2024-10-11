@@ -1,5 +1,6 @@
 ---
 description: Returns the signature of the function being called
+hidden: true
 ---
 
 # Call.get\_signature()

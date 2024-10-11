@@ -1,5 +1,6 @@
 ---
 description: Returns the name of the function being called.
+hidden: true
 ---
 
 # Call.get\_name()
