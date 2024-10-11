@@ -52,57 +52,10 @@ def query():
   return results
 ```
 
-**Output**
+**Output Example**
 
-```solidity
-"root":{3 items
-"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
-"contract_name":string"Token"
-"sol_function":solidity
-function balanceOf(address account) public view override returns (uint256) {
-        return _balances[account];
-    }
-}
-"root":{3 items
-"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
-"contract_name":string"Token"
-"sol_function":solidity
-function balanceOf(address account) public view override returns (uint256) {
-        return _balances[account];
-    }
-}
-"root":{3 items
-"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
-"contract_name":string"Token"
-"sol_function":solidity
-function _msgSender() internal view virtual returns (address) {
-        return msg.sender;
-    }
-}
-"root":{3 items
-"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
-"contract_name":string"Ownable"
-"sol_function":solidity
-function _msgSender() internal view virtual returns (address) {
-        return msg.sender;
-    }
-}
-"root":{1 item
-"print_output":[14 items
-0:string"no function object: require(bool,string)"
-1:string"no function object: require(bool,string)"
-2:string"no function object: require(bool,string)"
-3:string"no function object: require(bool,string)"
-4:string"no function object: require(bool,string)"
-5:string"no function object: require(bool,string)"
-6:string"balanceOf(to)"
-7:string"no function object: require(bool,string)"
-8:string"balanceOf(to)"
-9:string"no function object: require(bool)"
-10:string"no function object: require(bool)"
-11:string"_msgSender()"
-12:string"no function object: require(bool,string)"
-13:string"_msgSender()"
-]
-}
-```
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+### The function was called from the `_fallback()` instruction
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
