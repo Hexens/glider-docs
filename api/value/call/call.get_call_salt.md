@@ -4,26 +4,26 @@ description: Return the value representing the salt parameter of the contract cr
 
 # Call.get\_call\_salt()
 
-`get_call_salt() → List[`[`Value`](../)`]`
+`get_call_salt() ->` [`APIList`](../../iterables/apilist.md)`[Union[`[`Value`](../)`,` [`NoneObject`](../../internal/noneobject/)`]]`
 
 The function returns the Value (or any derived class) that represents the special salt parameter used in contract creation calls; the list will be empty if the call is not a contract creation or does not have a salt parameter.
 
 For example, in the instruction:
 
 ```solidity
-lmPool = new PancakeV3LmPool{salt: keccak256(abi.encode(address(pool), masterChef, block.timestamp))}();
+pool = address(new UniswapV3Pool{salt: keccak256(abi.encode(token0, token1, fee))}());
 ```
 
 the contract creation call:
 
 ```solidity
-new PancakeV3LmPool{salt: keccak256(abi.encode(address(pool), masterChef, block.timestamp))}();
+new UniswapV3Pool{salt: keccak256(abi.encode(token0, token1, fee))}
 ```
 
 has a salt parameter:&#x20;
 
 ```solidity
-keccak256(abi.encode(address(pool), masterChef, block.timestamp))
+keccak256(abi.encode(token0, token1, fee))
 ```
 
 the function will return the value representing this expression (and it will be of type [Call](./) in this case, as its a keccak256 function call)
@@ -34,62 +34,24 @@ the function will return the value representing this expression (and it will be 
 from glider import *
 
 def query():
-  instructions = Functions().with_name('deploy').instructions().calls().exec(1000)
+    instructions = (
+        Contracts()
+        .with_name("UniswapV3PoolDeployer")
+        .functions()
+        .with_name("deploy")
+        .instructions()
+        .exec(10)
+        .filter(lambda x: x.is_new_contract())
+    )
 
-  output = []
 
-  for instruction in instructions:
-    for call in instruction.get_callee_values():
-        for salt in call.get_call_salt():
-          output.append(instruction)
-          print(salt, salt.expression)
-          return [instruction]
+    for ins in instructions:
+        print(ins.get_value().get_callee_values()[0].get_call_salt())
+        print(ins.get_value().get_callee_values()[0].get_call_salt().expression)
 
-  return output
+    return instructions
 ```
 
-**Output**
+**Output Example**
 
-```solidity
-"root":{4 items
-"contract":string"0xbebb526e8e197b3ba317573e6653c5a1ec0a3829"
-"contract_name":string"PancakeV3LmPoolDeployer"
-"sol_function":solidity
-function deploy(IPancakeV3PoolWithLMPool pool) external onlyOwner returns (IPancakeV3LmPool lmPool) {
-        require(whiteList[address(pool)], 'Not in whiteList');
- 
-        require(!LMPoolUpdateFlag[address(pool)], 'Already Updated');
-        LMPoolUpdateFlag[address(pool)] = true;
- 
-        address secondLMPool = pool.lmPool();
-        address firstLMPool = ILMPool(secondLMPool).OldLMPool();
-        parameters = Parameters({
-            pool: address(pool),
-            masterChef: masterChef,
-            firstLMPool: firstLMPool,
-            secondLMPool: secondLMPool
-        });
- 
-        lmPool = new PancakeV3LmPool{salt: keccak256(abi.encode(address(pool), masterChef, block.timestamp))}();
- 
-        delete parameters;
- 
-        // Set new LMPool for pancake v3 pool.
-        IPancakeV3Factory(INonfungiblePositionManager(IMasterChefV3(masterChef).nonfungiblePositionManager()).factory())
-            .setLmPool(address(pool), address(lmPool));
- 
-        // Initialize the new LMPool.
-        lmPool.initialize();
- 
-        emit NewLMPool(address(pool), address(lmPool));
-    }
-"sol_instruction":solidity
-lmPool = new PancakeV3LmPool{salt: keccak256(abi.encode(address(pool), masterChef, block.timestamp))}()
-}
-"root":{1 item
-"print_output":[2 items
-0:string"<api.value.Call object at 0x7f9e659a5910>"
-1:string"keccak256(bytes)(abi.encode(address(pool),masterChef,block.timestamp))"
-]
-}
-```
+<figure><img src="../../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
