@@ -119,6 +119,7 @@
     * [Functions.without\_modifier\_names()](api/callables/functions/functions.without\_modifier\_names.md)
     * [Functions.with\_one\_of\_the\_modifier\_name\_regexes()](api/callables/functions/functions.with\_one\_of\_the\_modifier\_name\_regexes.md)
     * [Functions.with\_one\_property()](api/callables/functions/functions.with\_one\_property.md)
+    * [Functions.with\_properties()](api/functions/functions.with\_properties.md)
     * [Functions.without\_properties()](api/callables/functions/functions.without\_properties.md)
     * [Functions.with\_all\_modifier\_names()](api/callables/functions/functions.with\_all\_modifier\_names.md)
     * [Functions.without\_modifiers()](api/callables/functions/functions.without\_modifiers.md)
