@@ -4,7 +4,7 @@ description: Returns the destination (lvalue) if the instruction has any type of
 
 # Instruction.get\_dest()
 
-`get_dest() → List[Value]`
+`get_dest() →` [`APIList`](../iterables/apilist.md)`[`[`Value`](../value/) `|` [`NoneObject`](../internal/noneobject/)`]`
 
 For the function:
 

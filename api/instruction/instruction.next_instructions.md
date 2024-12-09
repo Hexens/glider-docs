@@ -6,9 +6,9 @@ description: >-
 
 # Instruction.next\_instructions()
 
-`next_instructions() → List[`[`Instruction`](./)`]`
+`next_instructions() →` [`APISet`](../iterables/apiset.md)`[`[`Instruction`](./)`]`
 
-The difference between the next\_instructions() function and [next\_instruction()](instruction.next\_instruction.md) is that this function will return all instructions following the current instruction in the CFG (control-flow-graph).
+The difference between the next\_instructions() function and [next\_instruction()](instruction.next_instruction.md) is that this function will return all instructions following the current instruction in the CFG (control-flow-graph).
 
 _The function is intra-procedural, and thus will not follow function calls; for the **inter**-procedural variant of this function, use extended\_next\_instructions()._
 
@@ -19,10 +19,10 @@ from glider import *
 def query():
   instructions = Instructions().exec(1,9)
 
-  return instructions + instructions[0].next_instructions()
+  return instructions + list(instructions[0].next_instructions())
 ```
 
-### Output
+### Output Example
 
 ```solidity
 "root":{4 items
@@ -62,3 +62,9 @@ function sub(uint256 a, uint256 b, string memory errorMessage) internal pure ret
 return c
 }
 ```
+
+
+
+{% hint style="info" %}
+The function returns APISet, instead of APIList, in case the result of the function is used as the return value of the query it must be casted to `list()`
+{% endhint %}

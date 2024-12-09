@@ -6,9 +6,9 @@ description: >-
 
 # Instruction.previous\_instructions()
 
-`previous_instructions() → List[`[`Instruction`](./)`]`
+`previous_instructions() →` [`APISet`](../iterables/apiset.md)`[`[`Instruction`](./)`]`
 
-The difference between the previous\_instructions() function and [previous\_instruction()](instruction.previous\_instruction.md) is that this function will return all previous instructions of the current instruction in the CFG (control-flow-graph).
+The difference between the previous\_instructions() function and [previous\_instruction()](instruction.previous_instruction.md) is that this function will return all previous instructions of the current instruction in the CFG (control-flow-graph).
 
 _The function is intra-procedural, and thus will not follow function calls; for the **inter**-procedural variant of this function, use extended\_previous\_instructions()._
 
@@ -36,17 +36,17 @@ require(b <= a, errorMessage);
 *entry_point_instruction*
 ```
 
-Query
+## Query Example
 
 ```python
 from glider import *
 def query():
   instructions = Instructions().exec(1,11)
 
-  return instructions + instructions[0].previous_instructions()
+  return instructions + list(instructions[0].previous_instructions())
 ```
 
-Output
+## Example Output
 
 ```solidity
 "root":{4 items
@@ -82,4 +82,8 @@ require(b <= a, errorMessage)
 
 {% hint style="info" %}
 As can be seen from the last output, "virtual" instructions like entry-point instruction, end-if, etc. when being printed with source\_code() will print full code block's source
+{% endhint %}
+
+{% hint style="info" %}
+The function returns APISet, instead of APIList, in case the result of the function is used as the return value of the query it must be casted to `list()`
 {% endhint %}

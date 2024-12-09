@@ -6,11 +6,11 @@ description: >-
 
 # Instruction.extended\_next\_instructions()
 
-`extended_next_instructions() → Set[`[`Instruction`](./)`]`
+`extended_next_instructions() →` [`APISet`](../iterables/apiset.md)`[`[`Instruction`](./)`]`
 
-The difference between the extended\_next\_instructions() function and [next\_instructions()](instruction.next\_instructions.md) is that this function works in an **inter**-procedural manner and returns all instructions following the current instruction in the CFG (control-flow-graph).
+The difference between the extended\_next\_instructions() function and [next\_instructions()](instruction.next_instructions.md) is that this function works in an **inter**-procedural manner and returns all instructions following the current instruction in the CFG (control-flow-graph).
 
-_The function is intra-procedural, and follows function calls; for the **intra**-procedural variant of this function, use_ [_next\_instructions()_](instruction.next\_instructions.md)_._
+_The function is intra-procedural, and follows function calls; for the **intra**-procedural variant of this function, use_ [_next\_instructions()_](instruction.next_instructions.md)_._
 
 
 
@@ -52,7 +52,7 @@ def query():
   return instructions + list(instructions[0].extended_previous_instructions())
 ```
 
-### Output
+### Output Example
 
 ```solidity
 "root":{4 items
@@ -110,11 +110,10 @@ function _msgSender() internal view virtual returns (address) {
     }
 }
 ...
-
 ```
 
 
 
 {% hint style="info" %}
-The function returns Set, instead of List, in case the result of the function is used as the return value of the query it must be casted to `list()`
+The function returns APISet, instead of APIList, in case the result of the function is used as the return value of the query it must be casted to `list()`
 {% endhint %}

@@ -4,9 +4,9 @@ description: Returns a list of immediate following instructions in the control f
 
 # Instruction.next\_instruction()
 
-`next_instruction() → List[`[`Instruction`](./)`]`
+`next_instruction() →` [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`
 
-The difference between the next\_instruction() function and [next\_instructions()](instruction.next\_instructions.md) is that this function will return a list of instructions that are immediately following the current instruction in the CFG (control-flow-graph).
+The difference between the next\_instruction() function and [next\_instructions()](instruction.next_instructions.md) is that this function will return a list of instructions that are immediately following the current instruction in the CFG (control-flow-graph).
 
 _The function is intra-procedural._
 
@@ -44,7 +44,7 @@ def query():
   return instructions + instructions[0].next_instruction()
 ```
 
-## Output
+## Example Output
 
 ```solidity
 "root":{4 items

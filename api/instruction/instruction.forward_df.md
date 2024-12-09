@@ -6,7 +6,7 @@ description: >-
 
 # Instruction.forward\_df()
 
-`forward_df() → List[`[`Instruction`](./)`]`
+`forward_df() →` [`APISet`](../iterables/apiset.md)`[`[`Point`](../point/)`]`
 
 The `forward_df()` function is an intra-procedural analysis function. This means that the function does not operate recursively and instead returns instructions within the current function instruction set.
 
@@ -36,15 +36,16 @@ The easy way to put this is that it will follow the nodes where the variable `c`
 
 ```python
 from glider import *
+
 def query():
-  #fetch an instruction
-  instructions = Instructions().exec(1,16)
-  # return the list of instructions following the current instruction
+    #fetch an instruction
+    instructions = Instructions().exec(1,16)
+    # return the list of instructions following the current instruction
   
-  return instructions + instructions[0].forward_df()
+    return instructions + list(instructions[0].forward_df())
 ```
 
-## Output
+## Example Output
 
 ```solidity
 "root":{4 items
@@ -72,3 +73,8 @@ return c
 }
 ```
 
+
+
+{% hint style="info" %}
+The function returns APISet, instead of APIList, in case the result of the function is used as the return value of the query it must be casted to `list()`
+{% endhint %}

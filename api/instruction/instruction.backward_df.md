@@ -6,11 +6,11 @@ description: >-
 
 # Instruction.backward\_df()
 
-`backward_df() → List[Point]`
+`backward_df() →` [`APISet`](../iterables/apiset.md)`[`[`Point`](../point/)`]`
 
 The `backward_df()` function is an intra-procedural analysis function. This means that the function does not operate recursively and instead returns `instruction/argument/variable` within the current function instruction set.
 
-The function returns the derived classes from Point, such as [Argument](../argument/), Var, [Instruction](./).
+The function returns the derived classes from [Point](../point/), such as [ArgumentPoint](../point/argumentpoint.md), [VarValue](../point/varvalue/), [Instruction](./), etc.
 
 ## Query Example
 
@@ -80,3 +80,8 @@ def query():
 }
 ```
 
+
+
+{% hint style="info" %}
+The function returns APISet, instead of APIList, in case the result of the function is used as the return value of the query it must be casted to `list()`
+{% endhint %}

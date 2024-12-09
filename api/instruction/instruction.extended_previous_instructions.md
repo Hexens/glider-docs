@@ -6,13 +6,13 @@ description: >-
 
 # Instruction.extended\_previous\_instructions()
 
-`extended_previous_instructions() → Set[`[`Instruction`](./)`]`
+`extended_previous_instructions() →` [`APISet`](../iterables/apiset.md)`[`[`Instruction`](./)`]`
 
 The function returns all instructions that are previous to the instruction in the CFG (control flow graph).
 
-The difference between the extended\_previous\_instructions() function and [previous\_instructions()](instruction.previous\_instructions.md) is that the former works in an inter-procedural manner.
+The difference between the extended\_previous\_instructions() function and [previous\_instructions()](instruction.previous_instructions.md) is that the former works in an inter-procedural manner.
 
-_The function is inter-procedural, and follows function calls; for the **intra**-procedural variant of this function, use_ [_previous\_instructions()_](instruction.previous\_instructions.md)_._
+_The function is inter-procedural, and follows function calls; for the **intra**-procedural variant of this function, use_ [_previous\_instructions()_](instruction.previous_instructions.md)_._
 
 
 
@@ -112,7 +112,7 @@ def query():
   return instructions + list(instructions[0].extended_previous_instructions())
 ```
 
-## Output
+## Example Output
 
 ```solidity
 "root":{4 items
@@ -193,3 +193,9 @@ function transferFrom(address sender, address recipient, uint256 amount) public 
 _transfer(sender, recipient, amount)
 }
 ```
+
+
+
+{% hint style="info" %}
+The function returns APISet, instead of APIList, in case the result of the function is used as the return value of the query it must be casted to `list()`
+{% endhint %}

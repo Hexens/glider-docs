@@ -4,9 +4,9 @@ description: Returns a list of immediate previous instructions in the control fl
 
 # Instruction.previous\_instruction()
 
-`previous_instruction() → List[`[`Instruction`](./)`]`
+`previous_instruction() →` [`APISet`](../iterables/apiset.md)`[`[`Instruction`](./)`]`
 
-The difference between the previous\_instruction() function and [previous\_instructions()](instruction.previous\_instructions.md) is that this function will return a list of immediate previous instructions of the current instruction in the CFG (control-flow-graph).
+The difference between the previous\_instruction() function and [previous\_instructions()](instruction.previous_instructions.md) is that this function will return a list of immediate previous instructions of the current instruction in the CFG (control-flow-graph).
 
 _The function is intra-procedural._
 
@@ -34,17 +34,17 @@ the function will return the instruction:
 uint256 c = a - b;
 ```
 
-Query
+## Query Example
 
 ```python
 from glider import *
 def query():
   instructions = Instructions().exec(1,11)
 
-  return instructions + instructions[0].previous_instruction()
+  return instructions + list(instructions[0].previous_instruction())
 ```
 
-Output
+## Output Example
 
 ```solidity
 "root":{4 items
@@ -72,3 +72,9 @@ function sub(uint256 a, uint256 b, string memory errorMessage) internal pure ret
 uint256 c = a - b
 }
 ```
+
+
+
+{% hint style="info" %}
+The function returns APISet, instead of APIList, in case the result of the function is used as the return value of the query it must be casted to `list()`
+{% endhint %}

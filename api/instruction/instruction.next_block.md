@@ -6,7 +6,7 @@ description: >-
 
 # Instruction.next\_block()
 
-`next_block() → List[`[`Instruction`](./)`]`
+`next_block() →` [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`
 
 Query
 
