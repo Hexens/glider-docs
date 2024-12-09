@@ -6,6 +6,10 @@ description: >-
 
 # CallNode.caller\_functions()
 
+`caller_functions() →` [`Functions`](../../callables/functions/)
+
+## Query Example
+
 ```python
 from glider import *
 
@@ -13,7 +17,7 @@ from glider import *
 
 def query():
   data = []
-  instructions = Instructions().with_called_function_name_prefix('burn').exec(10)
+  instructions = Instructions().with_callee_function_name_prefix('burn').exec(10)
   for instruction in instructions:
     if len(data) > 0:
       break # demo first result only
@@ -34,7 +38,7 @@ def query():
   return data
 ```
 
-Output:
+## Example Output
 
 ```json
 {

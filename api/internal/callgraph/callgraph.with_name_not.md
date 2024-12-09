@@ -1,12 +1,14 @@
+---
+description: >-
+  Returns a list of call nodes whose corresponding function doesn't have the
+  specified name.
+---
+
 # CallGraph.with\_name\_not()
 
-**`with_name_not`**`(`_`name: str`_`,`` `_`sensitivity: bool = True`_`) → List[`[`CallNode`](../callnode/)`]`
+`with_name_not(`_`name: str`_`,`` `_`sensitivity: bool = True`_`) →` [`APIList`](../../iterables/apilist.md)`[`[`CallNode`](../callnode/)`]`
 
-Returns a list of call nodes whose corresponding function doesn't have the specified name.
-
-## Return type
-
-`→ List[`[`CallNode`](../callnode/)`]`
+## Query Example
 
 <pre class="language-python"><code class="lang-python">from glider import *
 
@@ -21,7 +23,7 @@ def query():
   return []
 </code></pre>
 
-Output:
+## Example Output
 
 ```json
 {

@@ -1,8 +1,12 @@
+---
+description: Returns the map of all call nodes. The key of the map is the id of a node.
+---
+
 # CallGraph.nodes()
 
-**`nodes`**`() → Dict[str,` [`CallNode`](../callnode/)`]`
+`nodes() → Dict[str,` [`CallNode`](../callnode/)`]`
 
-Returns the map of all call nodes. The key of the map is the id of a node.
+## Query Example
 
 ```python
 from glider import *
@@ -20,7 +24,7 @@ def query():
   return []
 ```
 
-Output:
+## Example Output
 
 ```json
 {
@@ -39,4 +43,3 @@ Output:
     ]
 }
 ```
-

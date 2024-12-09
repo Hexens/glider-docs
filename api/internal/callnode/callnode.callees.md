@@ -6,12 +6,16 @@ description: >-
 
 # CallNode.callees()
 
+`callees() →` [`APIList`](../../iterables/apilist.md)`[`[`CallNode`](./)`]`
+
+## Query Example
+
 ```python
 from glider import *
 
 def query():
   data = []
-  instructions = Instructions().with_called_function_name_prefix('burn').exec(10)
+  instructions = Instructions().with_callee_function_name_prefix('burn').exec(10)
   for instruction in instructions:
     if len(data) > 0:
       break # demo first result only
@@ -26,12 +30,12 @@ def query():
       if len(callees) > 0:
         print(functionContainsBurn.source_code())
         for callee in callees:
-          print("callee: " + callee.function_name())
+          print("callee: " + callee.callable_name())
         data.append(instruction)
   return data
 ```
 
-Output:
+## Example Output
 
 ```json
 {
