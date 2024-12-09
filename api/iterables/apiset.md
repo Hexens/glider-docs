@@ -14,15 +14,16 @@ The `filter()` function uses a predicate to evaluate each element of the `APISet
 
 When a function returns another `APISet`, the results are flattened into a single, unified `APISet`. This ensures a consistent set structure, simplifying further processing and analysis
 
-### Functions that return APIList
+### Functions that return APISet
 
-* [`instruction.backward_df()`](../instruction/instruction.backward\_df.md)
-* [`instruction.forward_df()`](../instruction/instruction.forward\_df.md)
-* [`instruction.extended_next_instructions()`](../instruction/instruction.extended\_next\_instructions.md)
-* [`instruction.extended_previous_instructions()`](../instruction/instruction.extended\_previous\_instructions.md)
-* [`instruction.next_instructions()`](../instruction/instruction.next\_instructions.md)
-* [`instruction.previous_instruction()`](../instruction/instruction.previous\_instruction.md)
-* [`instruction.previous_instructions()`](../instruction/instruction.previous\_instructions.md)
+* [`instruction.backward_df()`](../instruction/instruction.backward_df.md)
+* [`instruction.forward_df()`](../instruction/instruction.forward_df.md)
+* [`instruction.extended_next_instructions()`](../instruction/instruction.extended_next_instructions.md)
+* [`instruction.extended_previous_instructions()`](../instruction/instruction.extended_previous_instructions.md)
+* [`instruction.next_instructions()`](../instruction/instruction.next_instructions.md)
+* [`instruction.previous_instruction()`](../instruction/instruction.previous_instruction.md)
+* [`instruction.previous_instructions()`](../instruction/instruction.previous_instructions.md)
+* [`callable.get_reachable_instructions()`](../callable/callable.get_reachable_instructions.md)
 
 
 

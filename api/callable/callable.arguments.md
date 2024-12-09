@@ -4,49 +4,51 @@ description: Returns an Arguments object for the arguments of the function/modif
 
 # Callable.arguments()
 
-`arguments() →` [`Arguments`](../arguments/)
+`arguments() → ArgumentPoints`
 
 ## Example
 
 ```python
 from glider import *
+
 def query():
-  functions = Functions().exec(100)
+    functions = Functions().exec(1,4)
 
-  function_with_args = []
-  for f in functions:
-    # Prepare the object for this function
-    function = {"function": f.name(), "args": []}
+    for func in functions:
+        for arg in func.arguments().list():
+            print(f"Function name: {func.name}, Argument: {arg.source_code()}")
 
-    # For each of its arguments...
-    for arg in f.arguments().list():
-      # ...return the type and name
-      function["args"].append({"type": arg.type.name, "name": arg.name})
+    return functions
 
-    # Add the function to the array only if it has at least one argument
-    if len(function["args"]) > 0:
-      function_with_args.append(function)
-
-  return function_with_args
 ```
 
 ## Example output
 
-```json
+```solidity
 [
   {
-    "function": "approve",
-    "args": [
-      {
-        "type": "address",
-        "name": "to"
-      },
-      {
-        "type": "uint256",
-        "name": "tokenId"
-      }
-    ]
+    "contract": "0xae690cf07c85bfb2de29ab32080c0ea182ae82b5",
+    "contract_name": "REBITCOIN",
+    "contract_link": "https://etherscan.io/address/0xae690cf07c85bfb2de29ab32080c0ea182ae82b5",
+    "uuid": "9d43cae9-de12-4774-9d46-689b90409b7c",
+    "severity": "",
+    "sol_function": 
+      function transfer(address _to, uint256 _amount) returns (bool success) 
+       {
+          ...
+       }
   },
-  ...
+  {
+    "print_output": [
+      "Function name: transfer, Argument: address _to",
+      "Function name: transfer, Argument: uint256 _amount"
+    ]
+  }
 ]
 ```
+
+
+
+{% hint style="info" %}
+The function returns ArgumentPoints, instead of APIList, in case the result of the function is used as the return value of the query it must be casted to `list()`
+{% endhint %}

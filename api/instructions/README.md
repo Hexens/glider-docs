@@ -8,8 +8,8 @@ Bases: [Queryable](../internal/queryable/)
 [instructions.callees.md](instructions.callees.md)
 {% endcontent-ref %}
 
-{% content-ref url="../callable/callable.asm_instructions.md" %}
-[callable.asm\_instructions.md](../callable/callable.asm\_instructions.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.calls.md" %}
@@ -17,23 +17,23 @@ Bases: [Queryable](../internal/queryable/)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.delegate_calls.md" %}
-[instructions.delegate\_calls.md](instructions.delegate\_calls.md)
+[instructions.delegate\_calls.md](instructions.delegate_calls.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.delegate_calls_from_assembly.md" %}
-[instructions.delegate\_calls\_from\_assembly.md](instructions.delegate\_calls\_from\_assembly.md)
+[instructions.delegate\_calls\_from\_assembly.md](instructions.delegate_calls_from_assembly.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.delegate_calls_non_assembly.md" %}
-[instructions.delegate\_calls\_non\_assembly.md](instructions.delegate\_calls\_non\_assembly.md)
+[instructions.delegate\_calls\_non\_assembly.md](instructions.delegate_calls_non_assembly.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.delegate_calls_non_assembly.md" %}
-[instructions.delegate\_calls\_non\_assembly.md](instructions.delegate\_calls\_non\_assembly.md)
+[instructions.delegate\_calls\_non\_assembly.md](instructions.delegate_calls_non_assembly.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.entry_points.md" %}
-[instructions.entry\_points.md](instructions.entry\_points.md)
+[instructions.entry\_points.md](instructions.entry_points.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.exec.md" %}
@@ -41,7 +41,7 @@ Bases: [Queryable](../internal/queryable/)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.external_calls.md" %}
-[instructions.external\_calls.md](instructions.external\_calls.md)
+[instructions.external\_calls.md](instructions.external_calls.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.functions.md" %}
@@ -49,19 +49,19 @@ Bases: [Queryable](../internal/queryable/)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.high_level_static_calls.md" %}
-[instructions.high\_level\_static\_calls.md](instructions.high\_level\_static\_calls.md)
+[instructions.high\_level\_static\_calls.md](instructions.high_level_static_calls.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.if_instructions.md" %}
-[instructions.if\_instructions.md](instructions.if\_instructions.md)
+[instructions.if\_instructions.md](instructions.if_instructions.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.internal_calls.md" %}
-[instructions.internal\_calls.md](instructions.internal\_calls.md)
+[instructions.internal\_calls.md](instructions.internal_calls.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.library_calls.md" %}
-[instructions.library\_calls.md](instructions.library\_calls.md)
+[instructions.library\_calls.md](instructions.library_calls.md)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}
@@ -73,11 +73,11 @@ Bases: [Queryable](../internal/queryable/)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.low_level_function_calls.md" %}
-[instructions.low\_level\_function\_calls.md](instructions.low\_level\_function\_calls.md)
+[instructions.low\_level\_function\_calls.md](instructions.low_level_function_calls.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.low_level_static_calls.md" %}
-[instructions.low\_level\_static\_calls.md](instructions.low\_level\_static\_calls.md)
+[instructions.low\_level\_static\_calls.md](instructions.low_level_static_calls.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.modifiers.md" %}
@@ -89,23 +89,23 @@ Bases: [Queryable](../internal/queryable/)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.with_callee_function_name.md" %}
-[instructions.with\_callee\_function\_name.md](instructions.with\_callee\_function\_name.md)
+[instructions.with\_callee\_function\_name.md](instructions.with_callee_function_name.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.without_callee_function_names.md" %}
-[instructions.without\_callee\_function\_names.md](instructions.without\_callee\_function\_names.md)
+[instructions.without\_callee\_function\_names.md](instructions.without_callee_function_names.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.with_called_function_name_prefix.md" %}
-[instructions.with\_called\_function\_name\_prefix.md](instructions.with\_called\_function\_name\_prefix.md)
+[instructions.with\_called\_function\_name\_prefix.md](instructions.with_called_function_name_prefix.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.with_callee_function_name_suffix.md" %}
-[instructions.with\_callee\_function\_name\_suffix.md](instructions.with\_callee\_function\_name\_suffix.md)
+[instructions.with\_callee\_function\_name\_suffix.md](instructions.with_callee_function_name_suffix.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.with_called_function_signature.md" %}
-[instructions.with\_called\_function\_signature.md](instructions.with\_called\_function\_signature.md)
+[instructions.with\_called\_function\_signature.md](instructions.with_called_function_signature.md)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}

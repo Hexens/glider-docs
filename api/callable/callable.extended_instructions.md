@@ -6,17 +6,16 @@ description: >-
 
 # Callable.extended\_instructions()
 
-`extended_instructions() -> Set[`[`Instruction`](../instruction/)`]`
+`extended_instructions() ->` [`APISet`](../iterables/apiset.md)`[`[`Instruction`](../instruction/)`]`
 
 The function is the _**extended**_**/**_**inter-procedural**_ variant of the [`instructions()`](callable.instructions.md), meaning that it works recursively. It returns a set of Instructions object representing all the instructions which are reachable from the target function, the differences between `extended_instructions()` and `instructions()` the latter will only return instructions directly accessible from the function. At the same time, the extended version will find all the instructions recursively, which are eventually called when executing the function.
 
-Also, note that the return types of `extended_instructions() -> Set[Instruction]` and `instructions() -> Instructions` are different, the extended version returns a set of Instruction objects, while the original one returns Instructions (queryable) object.
+Also, note that the return types of `extended_instructions() -> APISet[Instruction]` and `instructions() -> Instructions` are different, the extended version returns an APISet of Instruction objects, while the original one returns Instructions (queryable) object.
 
 ## Example
 
-```python
-from glider import *
-
+<pre class="language-python"><code class="lang-python"><strong>from glider import *
+</strong>
 def query():
     # lets find a function with name transferFrom
     functions = Functions().with_name('functionCallWithValue').exec(1)
@@ -27,7 +26,7 @@ def query():
     #return the list of (extended) instructions, as it return a set, we need to cast it to list
     return list(functions[0].extended_instructions())
 
-```
+</code></pre>
 
 For the function:
 

@@ -2,27 +2,28 @@
 description: Returns end_assembly instructions of the function/modifier.
 ---
 
-# Callable.end\_assembly\_instructions()
+# Callable.end\_asm\_instructions()
 
-`end_assembly_instructions() →` [`Instructions`](../instructions/)
+`end_asm_instructions() →` [`Instructions`](../instructions/)
 
-## Example
+## Query Example
 
 ```python
 from glider import *
+
 def query():
-  functions = Functions().exec(100)
+    functions = Functions().exec(100)
 
-  assembly = []
-  for function in functions:
-    for asm_instruction in function.end_assembly_instructions().exec():
-      # For each function, return the assembly instructions
-      assembly.append(asm_instruction)
+    assembly = []
+    for function in functions:
+        for asm_instruction in function.end_asm_instructions().exec():
+            # For each function, return the assembly instructions
+            assembly.append(asm_instruction)
 
-  return assembly
+    return assembly
 ```
 
-## Example output
+## Example Output
 
 ```solidity
 [

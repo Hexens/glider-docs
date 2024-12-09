@@ -6,36 +6,36 @@ description: >-
 
 # Callable.callee\_values()
 
-`callee_values() → List[`[`Call`](../value/call/)`]`
+`callee_values() →` [`APIList`](../iterables/apilist.md)`[`[`Call`](../value/call/)`]`
 
-## Example
+## Query Example
 
 ```python
 from glider import *
+
 def query():
-  functions = Functions().exec(100)
+    functions = Functions().exec(10)
 
-  results = []
-  for function in functions:
-    for call in function.callee_values():
-      # Return the expression (code) of each call in each function
-      results.append({"function": function.name(), "call": call.expression})
+    for function in functions:
+        for call in function.callee_values():
+            print(f"function {function.name}, call {call.expression}")
 
-  return results
+    return functions
 ```
 
-## Example output
+## Example Output
 
 ```json
 [
-  {
-    "function": "transferOwnership",
-    "call": "require(bool,string)(newOwner != address(0),\"Ownable: new owner is the zero address\")"
-  },
-  {
-    "function": "transferOwnership",
-    "call": "_setOwner(newOwner)"
-  },
   ...
+  {
+    "print_output": [
+      "function transfer, call Transfer(msg.sender,_to,_amount)",
+      "function transferFrom, call Transfer(_from,_to,_amount)",
+      "function approve, call Approval(msg.sender,_spender,_amount)",
+      "function burn, call Burn(msg.sender,_value)",
+      "function burnFrom, call Burn(_from,_value)"
+    ]
+  }
 ]
 ```
