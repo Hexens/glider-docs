@@ -127,6 +127,7 @@
   * [Modifier](api/callable/modifier/README.md)
     * [Modifier.functions()](api/callable/modifier/modifier.functions.md)
     * [Modifier.placer\_instructions()](api/callable/modifier/modifier.placer_instructions.md)
+    * [Modifier.properties()](api/modifier/modifier.properties.md)
   * [Modifiers](api/callables/modifiers/README.md)
     * [Modifiers.exec()](api/callables/modifiers/modifiers.exec.md)
     * [Modifiers.placer\_instructions()](api/callables/modifiers/modifiers.placer_instructions.md)
