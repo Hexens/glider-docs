@@ -4,9 +4,9 @@ description: Returns the function's properties.
 
 # Function.properties()
 
-`properties() → List[`[`MethodProp`](../../callables/methodprop/)`]`
+`properties() →` [`APIList`](../../iterables/apilist.md)`[`[`MethodProp`](../../callables/methodprop/)`]`
 
-Returns the function's properties as a list of [MethodProps](../../callables/methodprop/)
+Returns the function's properties as an [APIList](../../iterables/apilist.md) of [MethodProps](../../callables/methodprop/).
 
 ## Example
 
