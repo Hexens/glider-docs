@@ -12,34 +12,35 @@ description: Returns the list of all structs of the contract.
 from glider import *
 
 def query():
-  contracts = Contracts().exec(50, 50)
-  
-  names = []
-  for contract in contracts:
-    structs = contract.structs()
+    contracts = Contracts().exec(50)
 
-    for struct in structs:
-      names.append(struct.name)
-
-  return [{"names": names}]
+    for contract in contracts:
+        for struct in contract.structs().exec():
+            print(struct.name)
+        
+    return contracts
 ```
 
 ## Example output
 
 ```json
-{
-  "names": [
-    "TData",
-    "TokenInfo",
-    "MintParams",
-    "PoolInfo",
-    "TrancheInfo",
-    "PoolSlice",
-    "SliceInfo",
-    "ApplyResult",
-    "CollateralConfig",
-    "Vault",
-    "CollateralConfig"
-  ]
-}
+[
+  ...
+  {
+    "print_output": [
+      "TokenOwnership",
+      "AddressData",
+      "AddressSlot",
+      "BooleanSlot",
+      "Bytes32Slot",
+      "Uint256Slot",
+      "Slot0",
+      "ProtocolFees",
+      "ModifyPositionParams",
+      "SwapCache",
+      "SwapState",
+      "StepComputations"
+    ]
+  }
+]
 ```

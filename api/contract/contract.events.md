@@ -4,7 +4,7 @@ description: The function returns all the events of a Contract.
 
 # Contract.events()
 
-`events() → List[Event]`
+`events() →` [`APIList`](../iterables/apilist.md)`[`[`Event`](../event/)`]`
 
 ## Example query
 
@@ -12,27 +12,29 @@ description: The function returns all the events of a Contract.
 from glider import *
 
 def query():
-  contracts = Contracts().exec(5)
-  
-  names = []
-  for contract in contracts:
-    events = contract.events()
+    contracts = Contracts().exec(2)
+   
+    for contract in contracts:
+        events = contract.events()
 
     for event in events:
-      names.append(event.name)
+        print(event.name)
 
-  return [{"names": names}]
+    return contracts
 ```
 
-## Example output
+## &#x20;Output Example
 
 ```json
-{
-  "names": [
-    "OwnershipTransferred",
-    "Transfer",
-    "Approval",
-    "ApprovalForAll"
-  ]
-}
+[
+  ...
+  {
+    "print_output": [
+      "Transfer",
+      "Approval",
+      "Burn",
+      "OwnershipTransferred"
+    ]
+  }
+]
 ```
