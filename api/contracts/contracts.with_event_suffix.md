@@ -15,18 +15,13 @@ from glider import *
 
 def query():
   contracts = Contracts().with_event_suffix('validated').exec(1)
-  
+  events = contracts[0].events()
+  for event in events:
+    print(event.signature)
+
   return contracts
 ```
 
 ## Output Example
 
-```python
-{
-    {
-        "contract": "0x5eeda8c2a8b22177abd18ebf9382f8eb0ce232d3",
-        "contract_name": "NFTMarket"
-
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
