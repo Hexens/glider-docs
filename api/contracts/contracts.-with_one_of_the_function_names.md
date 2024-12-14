@@ -14,22 +14,15 @@ description: >-
 from glider import *
 
 def query():
-  contracts = (
-    Contracts().
-    with_one_of_the_function_names(["deposit", "withdraw"]).
-    exec(1)
-  )
+  contracts = Contracts().with_one_of_the_function_names(["deposit", "withdraw"]).exec(1,1)
+
+  functions = contracts.functions().exec()
+  for function in functions:
+    print(function.name)
 
   return contracts
 ```
 
 ## Output Example
 
-```json
-{
-    {
-        "contract": "0x23297ee054e8f600af482013ddbe856b7178a7d3",
-        "contract_name": "WETH9"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
