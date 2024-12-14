@@ -9,28 +9,21 @@ description: The function returns all the enums of a Contract.
 ## Example query
 
 ```python
+python
 from glider import *
 
 def query():
-  contracts = Contracts().exec(100)
-  
-  names = []
+  contracts = Contracts().with_name("Math").exec(1)
+
   for contract in contracts:
-    enums = contract.enums()
-
+    enums = contract.enums().exec()
     for enum in enums:
-      names.append(enum.name)
+      print(enum.name)
+      print(enum.values)
 
-  return [{"names": names}]
+  return contracts
 ```
 
 ## Example output
 
-```json
-{
-  "names": [
-    "Upgradability",
-    "Tranches"
-  ]
-}
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
