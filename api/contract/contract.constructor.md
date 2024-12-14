@@ -12,29 +12,20 @@ description: Returns the constructor of the contract, if exists.
 from glider import *
 
 def query():
-  contracts = Contracts().exec(10)
-  
-  constructors = []
-  for contract in contracts:
-    constructor = contract.constructor()
-
-    if not isinstance(constructor, NoneObject):
-      constructors.append(constructor)
+  constructors = (
+    Contracts()
+    .exec(3)
+    .constructor()
+    .filter(lambda x: not isinstance(x, NoneObject))
+  )
 
   return constructors
 ```
 
+Starting with Glider 1.0, you can use functions from [`Contracts`](../contracts/), [`Functions`](../callables/functions/), and [`Instructions`](../instructions/) on [`APIList`](../iterables/apilist.md)`[`[`Contract`](./)`]`, [`APIList`](../iterables/apilist.md)`[`[`Function`](../callable/function/)`]`, and [`APIList`](../iterables/apilist.md)`[`[`Instruction`](../instruction/)`]`. More details are available on the [Glider and Declarative Query Writing](../../glider-and-declarative-query-writing.md) page.
+
+Additionally, the filter function is used to ignore [`NoneObject`](../internal/noneobject/). This occurs because not all contracts have a constructor, which may result in [`NoneObject`](../internal/noneobject/) being returned
+
 ## Example output
 
-```json
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "Ownable",
-  "sol_function": "constructor() {\n        _setOwner(_msgSender());\n    }"
-}
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "ERC721",
-  "sol_function": "constructor(string memory name_,string memory symbol_) {\n        _name = name_;\n        _symbol = symbol_;\n    }"
-}
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
