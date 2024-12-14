@@ -14,30 +14,16 @@ The function returns all of the functions that the Contract has, including the i
 from glider import *
 
 def query():
-  contracts = Contracts().exec(1, 1)
-  
-  names = []
+  contracts = Contracts().exec(1)
+
   for contract in contracts:
     functions = contract.functions().exec()
-
     for function in functions:
-      names.append(function.name())
+      print(function.name)
 
-  return [{"names": names}]
+  return contracts
 ```
 
 ## Example output
 
-```json
-{
-  "names": [
-    "_msgSender",
-    "_msgData",
-    "constructor",
-    "owner",
-    "renounceOwnership",
-    "transferOwnership",
-    "_setOwner"
-  ]
-}
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
