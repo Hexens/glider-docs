@@ -4,7 +4,7 @@ description: The function returns all the errors of a Contract.
 
 # Contract.errors()
 
-`errors() → List[Error]`
+`errors() → APIList[Errors]`
 
 ## Example query
 
@@ -12,25 +12,16 @@ description: The function returns all the errors of a Contract.
 from glider import *
 
 def query():
-  contracts = Contracts().exec(5, 150)
-  
-  names = []
+  contracts = Contracts().exec(1, 13)
+
   for contract in contracts:
-    errors = contract.errors()
-
+    errors = contract.errors().exec()
     for error in errors:
-      names.append(error.name)
+      print(error.signature)
 
-  return [{"names": names}]
+  return contracts
 ```
 
 ## Example output
 
-```json
-{
-  "names": [
-    "InvalidArgument",
-    "FailedToSendEther"
-  ]
-}
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
