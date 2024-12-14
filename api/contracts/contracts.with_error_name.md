@@ -13,16 +13,14 @@ from glider import *
 
 def query():
   contracts = Contracts().with_error_name("Invalid").exec(1)
+  errors = contracts[0].errors().exec()
+  for error in errors:
+    print(error.signature)
 
   return contracts
+
 ```
 
 ## Output Example
 
-<pre class="language-json"><code class="lang-json">{
-    {
-        "contract": "0x37d2127ed8fc713cbb30c8dd2f6ef6d329e43420",
-<strong>        "contract_name": "MiyaMints"
-</strong>    }
-}
-</code></pre>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
