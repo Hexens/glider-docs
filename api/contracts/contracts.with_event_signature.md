@@ -12,22 +12,14 @@ description: Adds a filter to get contracts that have an event with the given si
 from glider import *
 
 def query():
-  contracts = (
-    Contracts().
-    with_event_signature('Deposit(uint256,address)').
-    exec(1)
-  )
+  contracts = Contracts().with_event_signature('Deposit(uint256,address)').exec(1)
+  events = contracts[0].events()
+  for event in events:
+    print(event.signature)
 
   return contracts
 ```
 
 ## Output Example
 
-```python
-{
-    {
-        "contract": "0xdb5f028d12d703ba79fa00769219853e323685ae",
-        "contract_name": "PoHwhale"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
