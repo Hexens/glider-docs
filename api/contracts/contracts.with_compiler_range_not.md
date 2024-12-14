@@ -14,22 +14,14 @@ description: >-
 from glider import *
 
 def query():
-  contracts = (
-    Contracts().
-    non_interface_contracts().
-    with_compiler_range_not("0.5.0", "0.5.17").
-    exec(1))
+  contracts = Contracts().with_compiler_range_not("0.8.0", "0.8.11").exec(3)
+
+  for contract in contracts:
+    print(contract.pragmas())
 
   return contracts
 ```
 
 ## Output Example
 
-```python
-{
-    {
-        "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf",
-        "contract_name": "Context"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
