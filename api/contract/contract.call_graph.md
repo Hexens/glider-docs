@@ -1,5 +1,6 @@
 ---
 description: Returns call graph of the contract.
+hidden: true
 ---
 
 # Contract.call\_graph()

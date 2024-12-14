@@ -12,25 +12,14 @@ description: Returns the ChainID of the blockchain where the Contract was deploy
 from glider import *
 
 def query():
-  contracts = Contracts().with_name("ERC721").exec(5)
-  
-  chain_ids = []
-  for contract in contracts:
-    chain_ids.append(contract.chain_id())
+  contracts = Contracts().exec(5)
 
-  return [{"chain_ids": chain_ids}]
+  for contract in contracts:
+    print(contract.chain_id())
+
+  return contracts
 ```
 
 ## Example output
 
-```json
-{
-  "chain_ids": [
-    69,
-    69,
-    69,
-    69,
-    69
-  ]
-}
-```
+<figure><img src="../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
