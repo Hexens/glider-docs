@@ -15,17 +15,13 @@ from glider import *
 
 def query():
   contracts = Contracts().with_event_prefix("role", sensitivity=False).exec(1)
+  events = contracts[0].events()
+  for event in events:
+    print(event.signature)
 
   return contracts
 ```
 
 ## Output Example
 
-```python
-{
-    {
-        "contract": "0x320d5f8e4d1630d6915c2b676de6aec28a342af8",
-        "contract_name": "LibACL"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
