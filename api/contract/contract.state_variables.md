@@ -14,34 +14,15 @@ Returns a StateVariables object for the state variables of the contract.
 from glider import *
 
 def query():
-  contracts = Contracts().exec(10)
-  
-  names = []
-  for contract in contracts:
-    variables = contract.variables().exec()
+  contracts = Contracts().exec(1)
 
-    for variable in variables:
-      names.append(variable.name())
+  state_variables = contracts[0].state_variables().exec()
+  for state_variable in state_variables:
+    print(state_variable.source_code())
 
-  return [{"names": names}]
+  return contracts
 ```
 
 ## Example output
 
-```json
-{
-  "names": [
-    "_owner",
-    "_name",
-    "_symbol",
-    "_owners",
-    "_balances",
-    "_tokenApprovals",
-    "_operatorApprovals",
-    "_tokenURIs",
-    "owner",
-    "paused",
-    "canPause"
-  ]
-}
-```
+<figure><img src="../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>

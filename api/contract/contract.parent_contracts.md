@@ -14,31 +14,16 @@ description: >-
 from glider import *
 
 def query():
-  contracts = Contracts().exec(1, 1)
-  
-  names = []
+  contracts = Contracts().exec(1,1)
+
   for contract in contracts:
-    print(contract.name)
-
     parent_contracts = contract.parent_contracts().exec()
+    for parent_contract in parent_contracts:
+      print(parent_contract.name)
 
-    for contract in parent_contracts:
-      names.append(contract.name)
-
-  return [{"names": names}]
+  return contracts
 ```
 
 ## Example output
 
-```json
-{
-  "names": [
-    "Context"
-  ]
-}
-{
-  "print_output": [
-    "Ownable"
-  ]
-}
-```
+<figure><img src="../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
