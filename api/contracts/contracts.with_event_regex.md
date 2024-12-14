@@ -15,17 +15,13 @@ from glider import *
 
 def query():
   contracts = Contracts().with_event_regex('^change.*').exec(1)
+  events = contracts[0].events()
+  for event in events:
+    print(event.signature)
 
   return contracts
 ```
 
 ## Output Example
 
-```python
-{
-    {
-        "contract": "0xf7ee2cea69f9013098abc8ba63844a228885da4c",
-        "contract_name": "VaultFactory"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
