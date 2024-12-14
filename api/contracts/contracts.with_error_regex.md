@@ -15,17 +15,13 @@ from glider import *
 
 def query():
   contracts = Contracts().with_error_regex('^Err.*').exec(1)
-  
+  errors = contracts[0].errors().exec()
+  for error in errors:
+    print(error.signature)
+
   return contracts
 ```
 
 ## Output Example
 
-```python
-{
-    {
-        "contract": "0x423ce5282c460eed5fe0786b4d47d2c2a4ef3721",
-        "contract_name": "IRiverV1"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
