@@ -16,30 +16,45 @@ It returns the [Contracts](../contracts/) object representing the base contracts
 from glider import *
 
 def query():
-  contracts = Contracts().exec(1, 6)
+  contracts = Contracts().with_name("Deposit").exec(1)
+
+  result = []
+
+  result.append(contracts[0])
+
+  base_contracts = contracts[0].base_contracts().exec()
+
+  result.extend(base_contracts)
   
-  names = []
-  for contract in contracts:
-    bases = contract.base_contracts().exec()
-
-    for base in bases:
-      names.append(base.name)
-
-  return [{"names": names}]
+  return result
 ```
 
 ## Example output
 
-```json
-{
-  "names": [
-    "Context",
-    "ERC165",
-    "IERC165",
-    "IERC721",
-    "IERC721Metadata"
-  ]
+<figure><img src="../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+
+`Deposit` is the main contract. Below this text, a portion of the source code for this contract is provided. You can see that `Deposit` inherits from `Context`, `Ownable`, and `ReentrancyGuard`. The `Context` contract is derived from the `Ownable` contract
+
+### Code Example
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity =0.8.19;
+
+...
+
+contract Deposit is Ownable, ReentrancyGuard {
+    ...
 }
 ```
 
-If you add `print(contract.source_code())` to the loop, you will see these contracts in the declaration: `contract ERC721 is Context, ERC165, IERC721, IERC721Metadata`. Note that the function outputs `IERC165`, though it is not directly inherited.
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+...
+
+abstract contract Ownable is Context {
+    ...
+}
+```
