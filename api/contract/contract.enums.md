@@ -4,7 +4,7 @@ description: The function returns all the enums of a Contract.
 
 # Contract.enums()
 
-`enums() →` [`APIList`](../iterables/apilist.md)`[`[`Enums`](../enums/)`]`
+`enums() →` [`Enums`](../enums/)
 
 ## Example query
 

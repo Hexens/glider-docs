@@ -4,7 +4,7 @@ description: The function returns all the errors of a Contract.
 
 # Contract.errors()
 
-`errors() →` [`APIList`](../iterables/apilist.md)`[`[`Errors`](../errors/)`]`
+`errors() →` [`Errors`](../errors/)
 
 ## Example query
 
