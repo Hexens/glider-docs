@@ -12,21 +12,19 @@ description: Adds a filter to get contracts that have a struct with the given na
 from glider import *
 
 def query():
+  contracts = (
+    Contracts()
+    .with_struct_name("User")
+    .exec(1))
 
-  contracts = Contracts().with_struct_name("User").exec(100)
-
-  # Return the first five functions
-  return contracts[0:5]
+  structs = contracts[0].structs().exec()
+  for struct in structs:
+      print(struct.name)
+  
+  return contracts
 ```
 
 ## Output Example
 
-```json
-{
-    {
-        "contract":"0x99280cefeecceaf2c5b1537cd4eeb3b44c3c171f"
-        "contract_name": "SmartWay"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
 
