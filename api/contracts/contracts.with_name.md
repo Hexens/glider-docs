@@ -12,18 +12,10 @@ description: Adds a filter to get contracts with the given name.
 from glider import *
 
 def query():
-  contracts = Contracts().with_name("Deposit", sensitivity=False).exec(1)
-  
+  contracts = Contracts().with_name("Manager").exec(10)
   return contracts
 ```
 
 ## Output Example
 
-```json
-{
-    {
-        "contract": "0xad23d386ff5be971fcf57f34f477217f91bbc44d",
-        "contract_name": "Deposit"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
