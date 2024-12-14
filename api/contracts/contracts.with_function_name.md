@@ -13,17 +13,14 @@ from glider import *
 
 def query():
   contracts = Contracts().with_function_name('receive').exec(1)
-  
+
+  functions = contracts.functions().exec()
+  for function in functions:
+    print(function.name)
+
   return contracts
 ```
 
 ## Output Example
 
-```python
-{
-    {
-        "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf",
-        "contract_name": "Token"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
