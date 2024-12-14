@@ -13,22 +13,19 @@ from glider import *
 
 def query():
   contracts = (
-    Contracts().
-    with_name("DepositSecurityModule").
-    with_struct_fields_count(2).
-    exec(1)
-  )
+    Contracts()
+    .with_name("DepositSecurityModule")
+    .with_struct_fields_count(2)
+    .exec(1))
+
+  structs = contracts[0].structs().exec()
+  for struct in structs:
+    for struct_field in struct.fields:
+      print(struct_field.type)
   
   return contracts
 ```
 
 ## Output Example
 
-```json
-{
-    {
-        "contract": "0xdb149235b6f40dc08810aa69869783be101790e7"
-        "contract_name": "DepositSecurityModule"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
