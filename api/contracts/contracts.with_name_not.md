@@ -12,19 +12,11 @@ description: Adds a filter to get contracts that don't have the given name.
 from glider import *
 
 def query():
-  contracts = Contracts().with_name_not("Context").exec(1)
-
+  contracts = Contracts().with_name_not("Ownable").exec(10)
   return contracts
 ```
 
 ## Output Example
 
-```json
-{
-    {
-        "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf",
-        "contract_name": "IERC20"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 
