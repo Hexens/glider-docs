@@ -14,18 +14,14 @@ description: >-
 from glider import *
 
 def query():
-  contracts = Contracts().with_compiler_range("0.4.20", "0.4.24").exec(10)
+  contracts = Contracts().with_compiler_range("0.4.20", "0.4.24").exec(3)
+
+  for contract in contracts:
+    print(contract.pragmas())
 
   return contracts
 ```
 
 ## Output Example
 
-```python
-{
-    {
-        "contract": "0xcb3590c74e77b1ccc0975029bc1bf1e1b69a1edd",
-        "contract_name": "SafeMath"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
