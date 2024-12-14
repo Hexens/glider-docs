@@ -12,22 +12,14 @@ description: Adds a filter to get contracts that have an error with the given si
 from glider import *
 
 def query():
-  contracts = (
-    Contracts().
-    with_error_signature('InsufficientBalance(uint256,uint256)').
-    exec(1)
-    )
+  contracts = Contracts().with_error_signature('InsufficientBalance(uint256,uint256)').exec(1)
+  errors = contracts[0].errors().exec()
+  for error in errors:
+    print(error.signature)
 
   return contracts
 ```
 
 ## Output Example
 
-```python
-{
-    {
-        "contract": "0x3e2c366065ba0f6f9936c2c6a802d72f250b27aa",
-        "contract_name": "Address"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
