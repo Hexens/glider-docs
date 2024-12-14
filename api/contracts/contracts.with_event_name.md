@@ -13,17 +13,13 @@ from glider import *
 
 def query():
   contracts = Contracts().with_event_name('Modified').exec(1)
+  events = contracts[0].events()
+  for event in events:
+    print(event.signature)
 
   return contracts
 ```
 
 ## Output Example
 
-```python
-{
-    {
-        "contract": "0x92a6b64544643a70ac3fbb825524a3138c4cac57",
-        "contract_name": "IDCAHubPositionHandler"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
