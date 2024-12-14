@@ -15,17 +15,14 @@ from glider import *
 
 def query():
   contracts = Contracts().with_struct_field_name('balance', sensitivity=False).exec(1)
+  structs = contracts[0].structs().exec()
+  for struct in structs:
+    for struct_field in struct.fields:
+      print(struct_field.name)
   
   return contracts
 ```
 
 ## Output Example
 
-```python
-{
-    {
-        "contract": "0x6dcc3e57e7583430db0b005e40a05554ff7ad4a8",
-        "contract_name": "ERC721A"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
