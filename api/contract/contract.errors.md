@@ -4,7 +4,7 @@ description: The function returns all the errors of a Contract.
 
 # Contract.errors()
 
-`errors() → APIList[Errors]`
+`errors() →` [`APIList`](../iterables/apilist.md)`[`[`Errors`](../errors/)`]`
 
 ## Example query
 
@@ -24,4 +24,4 @@ def query():
 
 ## Example output
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

@@ -12,29 +12,16 @@ description: The function returns all the events of a Contract.
 from glider import *
 
 def query():
-    contracts = Contracts().exec(2)
-   
-    for contract in contracts:
-        events = contract.events()
+  contracts = Contracts().with_name("IERC721").exec(1)
 
+  for contract in contracts:
+    events = contract.events()
     for event in events:
-        print(event.name)
+      print(event.signature)
 
-    return contracts
+  return contracts
 ```
 
 ## &#x20;Output Example
 
-```json
-[
-  ...
-  {
-    "print_output": [
-      "Transfer",
-      "Approval",
-      "Burn",
-      "OwnershipTransferred"
-    ]
-  }
-]
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
