@@ -14,34 +14,16 @@ The function also handles inherited modifiers.
 from glider import *
 
 def query():
-  contracts = Contracts().exec(10, 10)
-  
-  result = []
+  contracts = Contracts().exec(1,1)
+
   for contract in contracts:
     modifiers = contract.modifiers().exec()
-
     for modifier in modifiers:
-      result.append(modifier)
+      print(modifier.name)
 
-  return result
+  return contracts
 ```
 
 ## Example output
 
-```json
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "LTP",
-  "sol_modifier": "modifier onlyOwner() {\n        require(owner() == _msgSender(),\"Ownable: caller is not the owner\");\n        _;\n    }"
-}
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "LTP",
-  "sol_modifier": "modifier onlyMinter() {\n        require(msg.sender == minter,'Sender is not the minter');\n        _;\n    }"
-}
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "LTP",
-  "sol_modifier": "modifier onlyMinterOrOwner() {\n        require( (msg.sender == minter) || (msg.sender == owner()),'Sender is not the minter nor owner');\n        _;\n    }"
-}
-```
+<figure><img src="../../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>

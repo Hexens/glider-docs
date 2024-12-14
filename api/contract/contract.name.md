@@ -13,24 +13,13 @@ from glider import *
 
 def query():
   contracts = Contracts().exec(5)
-  
-  names = []
-  for contract in contracts:
-    names.append(contract.name)
 
-  return [{"names": names}]
+  for contract in contracts:
+    print(contract.name)
+
+  return contracts
 ```
 
 ## Example output
 
-```json
-{
-  "names": [
-    "Context",
-    "Ownable",
-    "IERC165",
-    "ERC165",
-    "IERC721"
-  ]
-}
-```
+<figure><img src="../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
