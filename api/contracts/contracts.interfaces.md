@@ -20,9 +20,4 @@ def query():
 
 ## Output Example
 
-```json
-{
-    "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf",
-    "contract_name": "IERC20"
-}
-```
+<figure><img src="../../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
