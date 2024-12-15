@@ -25,13 +25,4 @@ def query():
 
 ## Output
 
-```solidity
-"root":{3 items
-"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
-"contract_name":string"Ownable"
-"sol_modifier":solidity
-modifier onlyOwner() {
-        require(_owner == _msgSender(), "Ownable: caller is not the owner");
-        _;
-    }
-```
+<figure><img src="../../../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>

@@ -27,19 +27,4 @@ def query():
 
 ## Output
 
-```solidity
-"root":{3 items
-"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
-"contract_name":string"Context"
-"sol_function":solidity
-function _msgSender() internal view virtual returns (address) {
-        return msg.sender;
-    }
-},
-"root":{1 item
-"print_output":[2 items
-0:string"MethodProp.IS_VIEW"
-1:string"MethodProp.INTERNAL"
-]
-}
-```
+<figure><img src="../../../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
