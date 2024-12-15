@@ -12,21 +12,16 @@ description: Returns true if the function has modifiers, otherwise returns false
 from glider import *
 
 def query():
-  # Retrieve a function with name _afterTokenTransfer
-  functions = Functions().with_name('_afterTokenTransfer').exec(1)
-  for function in functions:
-    print(function.has_modifiers())
+    functions_with_modifiers = (
+      Functions()
+      .exec(100)
+      .filter(lambda x: x.has_modifiers())
+    )
 
-  return []
+    return functions_with_modifiers
 ```
 
 ## Output
 
-```json
-"root":{1 item
-"print_output":[1 item
-0:string"False"
-]
-}
-```
+<figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
