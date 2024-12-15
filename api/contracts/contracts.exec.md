@@ -19,22 +19,7 @@ def query():
 
 ## Output Example 1
 
-```json
-{
-    {
-        "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf",
-        "contract_name": "Context"
-    },
-    {
-        "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf",
-        "contract_name": "IERC20"
-    },
-    {
-        "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf",
-        "contract_name": "SafeMath"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Example Query 2
 
@@ -49,11 +34,4 @@ def query():
 
 ## Output Query 2
 
-```json
-{
-    {
-        "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf",
-        "contract_name": "SafeMath"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
