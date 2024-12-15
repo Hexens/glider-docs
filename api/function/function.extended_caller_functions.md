@@ -6,7 +6,7 @@ description: >-
 
 # Function.extended\_caller\_functions()
 
-`extended_caller_functions() -> Functions`
+`extended_caller_functions() ->` [`Functions`](../callables/functions/)
 
 The function is the _**extended**_**/**_**inter-procedural**_ variant of function caller\_functions, meaning it works recursively. It returns the Functions object representing all the functions that are eventually called from within the function.&#x20;
 
@@ -29,11 +29,17 @@ The difference between `extended_caller_functions()` and `caller_functions()` is
 
 ## Example Output
 
+#### Source code of depositToken :
+
 ```solidity
-"root":{3 items
-"contract":string"0x965060fd4bd2dd8568d206bedf3ddb76628d3456"
-"contract_name":string"ConvexStrategyUL"
-"sol_function":solidity
+function depositToken() public view returns (address) {
+    return getAddress(_DEPOSIT_TOKEN_SLOT);
+}
+```
+
+#### Source code of extended caller functions:
+
+```solidity
 function depositCurve() internal {
     uint256 tokenBalance = IERC20(depositToken()).balanceOf(address(this));
     IERC20(depositToken()).safeApprove(curveDeposit(), 0);
@@ -59,11 +65,10 @@ function depositCurve() internal {
       }
     }
   }
-},
-"root":{3 items
-"contract":string"0x965060fd4bd2dd8568d206bedf3ddb76628d3456"
-"contract_name":string"ConvexStrategyUL"
-"sol_function":solidity
+
+```
+
+```solidity
 function _liquidateReward() internal {
     if (!sell()) {
       // Profits can be disabled for possible simplified and rapoolId exit
@@ -124,21 +129,19 @@ function _liquidateReward() internal {
       depositCurve();
     }
   }
-},
-"root":{3 items
-"contract":string"0x965060fd4bd2dd8568d206bedf3ddb76628d3456"
-"contract_name":string"ConvexStrategyUL"
-"sol_function":solidity
+
+```
+
+```solidity
 function doHardWork() external onlyNotPausedInvesting restricted {
     IBaseRewardPool(rewardPool()).getReward();
     _liquidateReward();
     investAllUnderlying();
   }
-},
-"root":{3 items
-"contract":string"0x965060fd4bd2dd8568d206bedf3ddb76628d3456"
-"contract_name":string"ConvexStrategyUL"
-"sol_function":solidity
+
+```
+
+```solidity
 function withdrawAllToVault() public restricted {
     if (address(rewardPool()) != address(0)) {
       exitRewardPool();
@@ -146,12 +149,4 @@ function withdrawAllToVault() public restricted {
     _liquidateReward();
     IERC20(underlying()).safeTransfer(vault(), IERC20(underlying()).balanceOf(address(this)));
   }
-},
-"root":{1 item
-"print_output":[1 item
-0:string"function depositToken() public view returns (address) {
-    return getAddress(_DEPOSIT_TOKEN_SLOT);
-  }"
-]
-}
 ```
