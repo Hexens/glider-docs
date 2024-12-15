@@ -23,11 +23,4 @@ def query():
 
 ## Output Example
 
-```json
-{
-    {
-        "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf",
-        "contract_name": "Token"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>

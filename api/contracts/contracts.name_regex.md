@@ -20,11 +20,4 @@ def query():
 
 ## Output Example
 
-```python
-{
-    {
-        "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf"
-        "contract_name": "Context"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>

@@ -20,11 +20,4 @@ def query():
 
 ## Output Example
 
-```python
-{
-    {
-        "contract": "0xc8d60d8273e69e63eafc4ea342f96ad593a4ba10",
-        "contract_name": "CalculationsChainlink"
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
