@@ -13,17 +13,11 @@ from glider import *
 
 def query():
 
-  main_contracts = Contracts().with_name_prefix("Access", sensitivity=True).exec(1)
+  main_contracts = Contracts().with_name_prefix("Acc", sensitivity=True).exec(5)
 
   return main_contracts
 ```
 
 ## Output Example
 
-<pre class="language-python"><code class="lang-python"><strong>{
-</strong><strong>    {
-</strong>        "contract": "0xfb10b1b0f68b3eaaca1ecd12a47cf7f55beabb98",
-        "contract_name": "AccessControlRegistryAdminned"
-    }
-}
-</code></pre>
+<figure><img src="../../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
