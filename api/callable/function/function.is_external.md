@@ -14,15 +14,15 @@ description: >-
 from glider import *
 
 def query():
-    constructors = (
+    external_functions = (
       Functions()
-      .exec(100)
-      .filter(lambda x: x.is_constructor())
+      .exec(10, 100)
+      .filter(lambda x: x.is_external())
     )
 
-    return constructors
+    return external_functions
 ```
 
 ## Output
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
