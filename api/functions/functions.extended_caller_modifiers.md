@@ -23,36 +23,4 @@ def query():
 
 ## Output Example
 
-```solidity
-{
-  "content": [
-    {
-      "contract": "0x80469265317ff8f00c3ce16576949986cebbc543",
-      "contract_name": "OwnedUpgradable",
-      "sol_modifier": solidity
-        modifier onlyOwnerIfSet() {
-            address theOwner = OwnableStorage.getOwner();
-    
-            // if owner is set then check if msg.sender is the owner
-            if (theOwner != address(0)) {
-                OwnableStorage.onlyOwner();
-            }
-    
-            _;
-        }
-      "sol_modifier_souce_line": 88
-    },
-    {
-      "contract": "0x80469265317ff8f00c3ce16576949986cebbc543",
-      "contract_name": "OwnedUpgradable",
-      "sol_modifier": solidity
-        modifier onlyOwner() {
-            OwnableStorage.onlyOwner();
-    
-            _;
-        }
-      "sol_modifier_souce_line": 79
-    }
-  ]
-}
-```
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

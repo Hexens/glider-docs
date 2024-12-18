@@ -12,23 +12,11 @@ from glider import *
 def query():
   
   # Fetch a list of functions with modifiers starting with 'only'
-  functions = Functions().with_modifier_name_regex('^only.*').exec(10)
+  functions = Functions().with_modifier_name_regex('^only.*').exec(3)
 
   return functions
 ```
 
 ## Output
 
-<pre class="language-json"><code class="lang-json"><strong>[
-</strong>  {
-    "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-    "contract_name": "Ownable",
-    "sol_function": "function renounceOwnership() public virtual onlyOwner {\n        _setOwner(address(0));\n    }"
-    },
-  {
-    "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-    "contract_name": "LTP",
-    "sol_function": "function issueNft(address to,uint256 tokenId,uint256 amount,string memory tokenURI) external payable onlyMinterOrOwner { \n        \n        require(to != address(this),\"Issue to a new address\");\n        require(ownerOf(tokenId) == address(this),\"NFT already issued\");\n        \n        \n\n        _setTokenURI(nextId,tokenURI);\n        this.safeTransferFrom(address(this),to,tokenId);\n        emit NFTIssued(tokenId,to,tokenURI);\n    }"
-  }
-]
-</code></pre>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>

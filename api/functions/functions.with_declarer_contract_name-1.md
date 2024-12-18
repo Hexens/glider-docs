@@ -25,53 +25,7 @@ def query():
 
 ## Example Output
 
-```solidity
-"root":{3 items
-"contract":string"0x6b7be5a6d0d432ae4e597f062fdefb021b535298"
-"contract_name":string"ERC721"
-"sol_function":solidity
-function transferFrom(
-        address from,
-        address to,
-        uint256 tokenId
-    ) public virtual override {
-        //solhint-disable-next-line max-line-length
-        require(_isApprovedOrOwner(_msgSender(), tokenId), "ERC721: transfer caller is not owner nor approved");
-
-        _transfer(from, to, tokenId);
-    }
-}
-"root":{3 items
-"contract":string"0x6b7be5a6d0d432ae4e597f062fdefb021b535298"
-"contract_name":string"ERC721URIStorage"
-"sol_function":solidity
-function transferFrom(
-        address from,
-        address to,
-        uint256 tokenId
-    ) public virtual override {
-        //solhint-disable-next-line max-line-length
-        require(_isApprovedOrOwner(_msgSender(), tokenId), "ERC721: transfer caller is not owner nor approved");
-
-        _transfer(from, to, tokenId);
-    }
-}
-"root":{3 items
-"contract":string"0x6b7be5a6d0d432ae4e597f062fdefb021b535298"
-"contract_name":string"TimeSyncNFT"
-"sol_function":solidity
-function transferFrom(
-        address from,
-        address to,
-        uint256 tokenId
-    ) public virtual override {
-        //solhint-disable-next-line max-line-length
-        require(_isApprovedOrOwner(_msgSender(), tokenId), "ERC721: transfer caller is not owner nor approved");
-
-        _transfer(from, to, tokenId);
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 
 

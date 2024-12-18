@@ -19,16 +19,4 @@ def query():
 
 ## Output
 
-<pre class="language-json"><code class="lang-json"><strong>[
-</strong>  {
-    "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-    "contract_name": "Context",
-    "sol_function": "function _msgSender() internal view virtual returns (address) {\n        return msg.sender;\n    }"
-  },
-  {
-    "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-    "contract_name": "Context",
-    "sol_function": "function _msgData() internal view virtual returns (bytes calldata) {\n        return msg.data;\n    }"
-  }
-]
-</code></pre>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>

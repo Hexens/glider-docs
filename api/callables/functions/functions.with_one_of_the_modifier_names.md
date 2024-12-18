@@ -12,23 +12,11 @@ from glider import *
 def query():
   
   # Fetch a list of functions with modifiers from the given list
-  functions = Functions().with_one_of_the_modifier_names(['onlyAdmin','onlyOwner']).exec(10)
+  functions = Functions().with_one_of_the_modifier_names(['onlyAdmin','onlyOwner']).exec(5)
 
   return functions
 ```
 
 ## Output
 
-<pre class="language-json"><code class="lang-json"><strong>[
-</strong>  {
-    "contract": "0x2d8bE62BF76F5c6962E0E44e93374786F329260c",
-    "contract_name": "ComposableHolding",
-    "sol_function": "function addInvestmentStrategy(address strategyAddress)\n    external\n    onlyAdmin\n    validAddress(strategyAddress)\n    {\n        investmentStrategies[strategyAddress] = true;\n    }"
-  },
-  {
-    "contract": "0x2d8bE62BF76F5c6962E0E44e93374786F329260c",
-    "contract_name": "ComposableHolding",
-    "sol_function": "function addInvestmentStrategy(address strategyAddress)\n    external\n    onlyAdmin\n    validAddress(strategyAddress)\n    {\n        investmentStrategies[strategyAddress] = true;\n    }"
-  }
-]
-</code></pre>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>

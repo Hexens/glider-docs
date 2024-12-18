@@ -33,8 +33,8 @@ def query():
 
 ## Output Example
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 To clarify, what is the difference between `backward_df` and `extended_backward_df`? `extended_backward_df` operates recursively. Below is the output when `backward_df` was used instead of `extended_backward_df`
 
-<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
