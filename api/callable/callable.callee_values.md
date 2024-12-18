@@ -14,7 +14,7 @@ description: >-
 from glider import *
 
 def query():
-    functions = Functions().exec(10)
+    functions = Functions().exec(1,5)
 
     for function in functions:
         for call in function.callee_values():
@@ -25,17 +25,4 @@ def query():
 
 ## Example Output
 
-```json
-[
-  ...
-  {
-    "print_output": [
-      "function transfer, call Transfer(msg.sender,_to,_amount)",
-      "function transferFrom, call Transfer(_from,_to,_amount)",
-      "function approve, call Approval(msg.sender,_spender,_amount)",
-      "function burn, call Burn(msg.sender,_value)",
-      "function burnFrom, call Burn(_from,_value)"
-    ]
-  }
-]
-```
+<figure><img src="../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
