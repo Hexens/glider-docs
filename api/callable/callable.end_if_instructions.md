@@ -24,43 +24,4 @@ def query():
 
 ## Example output
 
-```solidity
-[
-  {
-    "contract": "0x0c16f70dBBbCB63a81de06eB2fc2ABE4a19f89F2",
-    "contract_name": "Pausable",
-    "sol_function": `
-    // Formatted for the example
-    function setPaused(bool _paused) external onlyOwner {
-        if (_paused == paused) {
-            return;
-        }
-
-        paused = _paused;
-
-        if (paused) {
-            lastPauseTime = block.timestamp;
-        }
-
-        emit PauseChanged(paused);
-    }
-    `,
-    "sol_instruction": `
-    // Formatted for the example
-    if (_paused == paused) {
-        return;
-    }
-    `,
-  },
-  {
-    ...
-    "sol_instruction": `
-    // Formatted for the example
-    if (paused) {
-        lastPauseTime = block.timestamp;
-    }
-    `,
-  }
-  ...
-]
-```
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>

@@ -28,20 +28,4 @@ def query():
 
 ## Example output
 
-```json
-[
-  {
-    "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-    "contract_name": "Ownable",
-    "sol_function": "constructor() {\\n        _setOwner(_msgSender());\\n    }",
-    "sol_instruction": "_setOwner(_msgSender())"
-  },
-  {
-    "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-    "contract_name": "Ownable",
-    "sol_function": "constructor() {\\n        _setOwner(_msgSender());\\n    }",
-    "sol_instruction": "_setOwner(_msgSender())"
-  },
-  ...
-]
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

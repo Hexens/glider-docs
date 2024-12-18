@@ -24,30 +24,4 @@ def query():
 
 ## Example output
 
-```json
-[
-  {
-    "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-    "contract_name": "Ownable",
-    "sol_function": `
-    // Formatted for the example
-    constructor() {
-        _setOwner(_msgSender());
-    }
-    `,
-    "sol_instruction": "_setOwner(_msgSender())"
-  },
-  {
-    "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-    "contract_name": "Ownable",
-    "sol_function": `
-    // Formatted for the example
-    function renounceOwnership() public virtual onlyOwner {
-        _setOwner(address(0));
-    }
-    `,
-    "sol_instruction": "_setOwner(address(0))"
-  },
-  ...
-]
-```
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
