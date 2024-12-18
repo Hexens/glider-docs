@@ -25,26 +25,4 @@ def query():
 
 ## Output Example
 
-```solidity
-{
-  "content": [
-    {
-      "contract": "0xae690cf07c85bfb2de29ab32080c0ea182ae82b5",
-      "contract_name": "REBITCOIN",
-      "sol_modifier": solidity
-        modifier onlyOwner() {
-          if (msg.sender != owner) {
-            throw;
-          }
-          _;
-        },
-      "sol_modifier_souce_line": 34
-    },
-    {
-      "print_output": [
-        "MethodProp.HAS_STATE_VARIABLES_READ"
-      ]
-    }
-  ]
-}
-```
+<figure><img src="../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
