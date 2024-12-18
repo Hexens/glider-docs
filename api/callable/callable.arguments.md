@@ -4,7 +4,7 @@ description: Returns an Arguments object for the arguments of the function/modif
 
 # Callable.arguments()
 
-`arguments() → ArgumentPoints`
+`arguments() →` [`ArgumentPoints`](../point/argumentpoints/)
 
 ## Example
 
@@ -24,28 +24,7 @@ def query():
 
 ## Example output
 
-```solidity
-[
-  {
-    "contract": "0xae690cf07c85bfb2de29ab32080c0ea182ae82b5",
-    "contract_name": "REBITCOIN",
-    "contract_link": "https://etherscan.io/address/0xae690cf07c85bfb2de29ab32080c0ea182ae82b5",
-    "uuid": "9d43cae9-de12-4774-9d46-689b90409b7c",
-    "severity": "",
-    "sol_function": 
-      function transfer(address _to, uint256 _amount) returns (bool success) 
-       {
-          ...
-       }
-  },
-  {
-    "print_output": [
-      "Function name: transfer, Argument: address _to",
-      "Function name: transfer, Argument: uint256 _amount"
-    ]
-  }
-]
-```
+<figure><img src="../../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
 
 
 
