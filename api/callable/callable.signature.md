@@ -11,28 +11,15 @@ description: Returns the function's or modifier's signature.
 ```python
 from glider import *
 def query():
-  functions = Functions().exec(100)
+  functions = Functions().exec(3,3)
 
-  functions_with_sig = []
   for function in functions:
     # Aggregate the signature of each function along with their name
-    functions_with_sig.append({"function": function.name(), "sig": function.signature()})
+    print(f"function name {function.name} | signature {function.signature()}")
 
-  return functions_with_sig
+  return functions
 ```
 
 ## Example output
 
-```json
-[
-  {
-    "function": "transferOwnership",
-    "sig": "transferOwnership(address)"
-  },
-  {
-    "function": "safeTransferFrom",
-    "sig": "safeTransferFrom(address,address,uint256)"
-  },
-  ...
-]
-```
+<figure><img src="../../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
