@@ -26,15 +26,4 @@ def query():
 
 
 
-```solidity
-"root":{4 items
-"contract":string"0x6c4c4759659d644cb36df4842a7f113321e3f7bb"
-"contract_name":string"SafeMath"
-"sol_function":solidity
-function assert(bool assertion) internal {
-    if (!assertion) throw;
-  }
-"sol_instruction":solidity
-throw
-}
-```
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>

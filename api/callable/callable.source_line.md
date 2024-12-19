@@ -1,5 +1,6 @@
 ---
 description: Returns the function's or modifier's source line numbers.
+hidden: true
 ---
 
 # Callable.source\_line()
