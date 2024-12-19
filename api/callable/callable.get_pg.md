@@ -1,5 +1,6 @@
 ---
 description: Constructs and returns procedure graph of the function/modifier.
+hidden: true
 ---
 
 # Callable.get\_pg()

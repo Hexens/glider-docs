@@ -13,31 +13,14 @@ description: >-
 ```python
 from glider import *
 def query():
-  functions = Functions().exec(100)
+  functions = Functions().exec(3)
+  
+  for func in functions:
+    print({"function": func.name, "sig": func.hashed_signature()})
 
-  functions_with_sig = []
-  for function in functions:
-    functions_with_sig.append({"function": function.name(), "sig": function.hashed_signature()})
-
-  return functions_with_sig
+  return functions
 ```
 
 ## Example output
 
-```json
-[
-  {
-    "function": "ownerOf",
-    "sig": 1666326814
-  },
-  {
-    "function": "balanceOf",
-    "sig": 1889567281
-  },
-  {
-    "function": "transferFrom",
-    "sig": 599290589
-  },
-  ...
-]
-```
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
