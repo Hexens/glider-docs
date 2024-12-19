@@ -25,30 +25,7 @@ def query():
 
 Output:
 
-```json
-[
-    {
-        "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-        "contract_name": "Context"
-    },
-    {
-        "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-        "contract_name": "Ownable"
-    },
-    {
-        "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-        "contract_name": "IERC165"
-    },
-    {
-        "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-        "contract_name": "ERC165"
-    },
-    {
-        "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-        "contract_name": "IERC721"
-    }
-]
-```
+<figure><img src="../../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
 
 ### Modifiers Example
 
@@ -60,32 +37,9 @@ def query():
   contracts = Modifiers().contracts().exec(100)
 
   # Return the first five contracts
-  return contracts[0:5]
+  return contracts[:5]
 ```
 
 Output:
 
-```json
-[
-    {
-        "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-        "contract_name": "Ownable"
-    },
-    {
-        "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-        "contract_name": "LTP"
-    },
-    {
-        "contract": "0x0c16f70dBBbCB63a81de06eB2fc2ABE4a19f89F2",
-        "contract_name": "Owned"
-    },
-    {
-        "contract": "0x0c16f70dBBbCB63a81de06eB2fc2ABE4a19f89F2",
-        "contract_name": "RewardsDistributionRecipient"
-    },
-    {
-        "contract": "0x0c16f70dBBbCB63a81de06eB2fc2ABE4a19f89F2",
-        "contract_name": "ReentrancyGuard"
-    }
-]
-```
+<figure><img src="../../.gitbook/assets/image (141).png" alt=""><figcaption></figcaption></figure>
