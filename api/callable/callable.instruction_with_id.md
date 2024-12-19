@@ -1,5 +1,6 @@
 ---
 description: Returns an Instruction object with specified id from function.
+hidden: true
 ---
 
 # Callable.instruction\_with\_id()
