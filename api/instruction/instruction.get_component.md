@@ -20,25 +20,4 @@ def query():
 
 ## Output Example
 
-```solidity
-[
-  {
-    "contract": "0x6f48d31eB35c9f52ef336aBf12f46E78F18fD7Fb",
-    "contract_name": "Context",
-    "contract_link": "",
-    "uuid": "7cb07206-158e-4511-bb3b-f42d01a53bcf",
-    "severity": "",
-    "sol_function": 
-      function _msgSender() internal view virtual returns (address payable) {
-          return msg.sender;
-      }
-    "sol_instruction": 
-      return msg.sender
-  },
-  {
-    "print_output": [
-      "msg.sender"
-    ]
-  }
-]
-```
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>

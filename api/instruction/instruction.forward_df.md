@@ -47,31 +47,7 @@ def query():
 
 ## Example Output
 
-```solidity
-"root":{4 items
-"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
-"contract_name":string"SafeMath"
-"sol_function":solidity
-function mul(uint256 a, uint256 b) internal pure returns (uint256) {
-        if (a == 0) {
-            return 0;
-        }
-        uint256 c = a * b;
-        require(c / a == b, "SafeMath: multiplication overflow");
-        return c;
-    }
-"sol_instruction":solidity
-uint256 c = a * b
-}
-...
-"sol_instruction":solidity
-require(c / a == b, "SafeMath: multiplication overflow")
-}
-...
-"sol_instruction":solidity
-return c
-}
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 
 
