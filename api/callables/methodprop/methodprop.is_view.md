@@ -25,45 +25,4 @@ def query():
 
 ## Output
 
-```solidity
-"root":{3 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"Context"
-"sol_function":solidity
-function _msgSender() internal view virtual returns (address) {
-        return msg.sender;
-    }
-}
-"root":{3 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"Context"
-"sol_function":solidity
-function _msgData() internal view virtual returns (bytes calldata) {
-        return msg.data;
-    }
-}
-"root":{3 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"Ownable"
-"sol_function":solidity
-function _msgSender() internal view virtual returns (address) {
-        return msg.sender;
-    }
-}
-"root":{3 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"Ownable"
-"sol_function":solidity
-function _msgData() internal view virtual returns (bytes calldata) {
-        return msg.data;
-    }
-}
-"root":{3 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"Ownable"
-"sol_function":solidity
-function owner() public view virtual returns (address) {
-        return _owner;
-    }
-}
-```
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>

@@ -34,14 +34,5 @@ def query():
 
 Output:
 
-```solidity
-"root":{1 item
-"print_output":[2 items
-0:string"function _require(bool condition, uint256 errorCode) pure {
-    if (!condition) _revert(errorCode);
-}"
-1:string"0x0d968094e386f9fbfb3797655ab8e4672c2cb737"
-]
-}
-```
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 

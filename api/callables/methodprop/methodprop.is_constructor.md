@@ -29,48 +29,4 @@ def query():
 
 ## Output
 
-```solidity
-"root":{3 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"Ownable"
-"sol_function":solidity
-constructor() {
-        _setOwner(_msgSender());
-    }
-}
-"root":{3 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"ERC721"
-"sol_function":solidity
-constructor(string memory name_,string memory symbol_) {
-        _name = name_;
-        _symbol = symbol_;
-    }
-}
-"root":{3 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"ERC721URIStorage"
-"sol_function":solidity
-constructor(string memory name_,string memory symbol_) {
-        _name = name_;
-        _symbol = symbol_;
-    }
-}
-"root":{3 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"LTP"
-"sol_function":solidity
-constructor(string memory name_,string memory symbol_) {
-        _name = name_;
-        _symbol = symbol_;
-    }
-}
-"root":{3 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"LTP"
-"sol_function":solidity
-constructor() {
-        _setOwner(_msgSender());
-    }
-}
-```
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
