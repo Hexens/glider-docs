@@ -30,7 +30,7 @@ def query():
 
 ## Output Example
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 To clarify, what is the difference between `forward_df` and `extended_forward_df`? `extended_forward_df` operates recursively. Below is the output when `forward_df` was used instead of `extended_forward_df`
 

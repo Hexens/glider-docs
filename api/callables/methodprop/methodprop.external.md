@@ -25,37 +25,4 @@ def query():
 
 ## Output
 
-```solidity
-"root":{3 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"IERC165"
-"sol_function":solidity
-function supportsInterface(bytes4 interfaceId) external view returns (bool);
-}
-"root":{3 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"IERC721"
-"sol_function":solidity
-function supportsInterface(bytes4 interfaceId) external view returns (bool);
-}
-"root":{3 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"IERC721"
-"sol_function":solidity
-function balanceOf(address owner) external view returns (uint256 balance);
-}
-"root":{3 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"IERC721"
-"sol_function":solidity
-function ownerOf(uint256 tokenId) external view returns (address owner);
-}
-"root":{3 items
-"contract":string"0x798AcB51D8FBc97328835eE2027047a8B54533AD"
-"contract_name":string"IERC721"
-"sol_function":solidity
-function safeTransferFrom(
-        address from,address to,uint256 tokenId
-    ) external;
-}
-```
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
