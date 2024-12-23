@@ -30,40 +30,4 @@ def query():
 
 ## Output
 
-```solidity
-"root":{4 items
-"contract":string"0xa4915dc6ee2652c471397c32ce5c8d3494ef3e6c"
-"contract_name":string"ERC721"
-"sol_function":solidity
-function _mint(address to, uint256 tokenId) internal virtual {
-        require(to != address(0), "ERC721: mint to the zero address");
-        require(!_exists(tokenId), "ERC721: token already minted");
-
-        _beforeTokenTransfer(address(0), to, tokenId, 1);
-
-        // Check that tokenId was not minted by `_beforeTokenTransfer` hook
-        require(!_exists(tokenId), "ERC721: token already minted");
-
-        unchecked {
-            // Will not overflow unless all 2**256 token ids are minted to the same owner.
-            // Given that tokens are minted one by one, it is impossible in practice that
-            // this ever happens. Might change if we allow batch minting.
-            // The ERC fails to describe this case.
-            _balances[to] += 1;
-        }
-
-        _owners[tokenId] = to;
-
-        emit Transfer(address(0), to, tokenId);
-
-        _afterTokenTransfer(address(0), to, tokenId, 1);
-    }
-"sol_instruction":solidity
-require(!_exists(tokenId), "ERC721: token already minted")
-}
-"root":{1 item
-"print_output":[1 item
-0:string"['_exists', 'require']"
-]
-}
-```
+<figure><img src="../../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
