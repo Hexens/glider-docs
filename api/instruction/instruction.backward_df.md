@@ -28,29 +28,7 @@ def query():
 
 ## Output Example
 
-```solidity
-{
-    {
-        "contract": "0x8a93bc8ed29da1b090265137a9d201ebf1154626"
-        "contract_name": "METAANIxKPP"
-        "sol_function":
-            function _verify(bytes32 leaf, bytes32[] memory proof)
-                internal view returns (bool)
-                {
-                    return MerkleProof.verify(proof, allowListRoot, leaf);
-                }
-        "sol_instruction":
-            return MerkleProof.verify(proof, allowListRoot, leaf)
-    },
-    {
-        "print_output":[
-            0: "bytes32 leaf"
-            1: "bytes32[] proof"
-            2: "return MerkleProof.verify(proof, allowListRoot, leaf)"
-        ]
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image (180).png" alt=""><figcaption></figcaption></figure>
 
 For the same contract, this query showcases that the return list elements are type-casted from Point:
 
@@ -61,24 +39,14 @@ def query():
   instructions = Instructions().with_callee_function_name('verify').exec(1)
   
   for points in instructions[0].backward_df():
-    if isinstance(points, Argument):
-      print(points.name)
+    if isinstance(points, ArgumentPoint):
+      print(points.get_variable().name)
     print(points.source_code())
   # return the list of previous instructions of the current instruction
   return instructions
 ```
 
-```solidity
-"root":{1 item
-    "print_output":[5 items
-    0:string"return MerkleProof.verify(proof, allowListRoot, leaf)"
-    1:string"leaf"
-    2:string"bytes32 leaf"
-    3:string"proof"
-    4:string"bytes32[] proof"
-    ]
-}
-```
+<figure><img src="../../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
 
 
 
