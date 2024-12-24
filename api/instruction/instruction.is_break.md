@@ -4,7 +4,7 @@ description: Returns True if the instruction is break instruction, otherwise ret
 
 # Instruction.is\_break()
 
-
+`is_break()` -> `bool`
 
 ## Query Example
 
@@ -19,4 +19,4 @@ With the Glider 1.0 update, calling the [`exec`](../instructions/instructions.ex
 
 ## Output Example
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>

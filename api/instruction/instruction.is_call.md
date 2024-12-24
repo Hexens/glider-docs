@@ -4,29 +4,19 @@ description: Returns True if the instruction is call instruction, otherwise retu
 
 # Instruction.is\_call()
 
-Query
+`is_call` -> `bool`
+
+## Query example
 
 ```python
 from glider import *
+
 def query():
-  calls = []
-  #fetch a list of instructions
-  instructions = Instructions().exec(10) 
-  for instruction in instructions:
-    if(instruction.is_call()):
-      calls.append(instruction)  
-  return calls
+  return Instructions().exec(100).filter(lambda x: x.is_call())
 ```
 
+With the Glider 1.0 update, calling the [`exec`](../instructions/instructions.exec.md) function returns an [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`. You can then use [`Instruction`](./) functions, which are applied to each element of the [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`
 
+## Output example
 
-Output
-
-```json
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "Ownable",
-  "sol_function": "constructor() {\n        _setOwner(_msgSender());\n    }",
-  "sol_instruction": "_setOwner(_msgSender())"
-}
-```
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>

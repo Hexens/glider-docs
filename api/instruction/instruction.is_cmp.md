@@ -7,28 +7,19 @@ description: >-
 
 # Instruction.is\_cmp()
 
-Query
+`is_cmp()` -> `bool`
+
+## Query Example
 
 ```python
 from glider import *
+
 def query():
-  comparisons = []
-  #fetch a list of instructions
-  instructions = Instructions().exec(30)
-  for instruction in instructions:
-    #check if instruction is a comparison instruction
-    if(instruction.is_cmp()):
-      comparisons.append(instruction)  
-  return comparisons
+  return Instructions().exec(1000).filter(lambda x: x.is_cmp())
 ```
 
-Output
+With the Glider 1.0 update, calling the [`exec`](../instructions/instructions.exec.md) function returns an [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`. You can then use [`Instruction`](./) functions, which are applied to each element of the [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`
 
-```json
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "ERC165",
-  "sol_function": "function supportsInterface(bytes4 interfaceId) public view virtual override returns (bool) {\n        return interfaceId == type(IERC165).interfaceId;\n    }",
-  "sol_instruction": "return interfaceId == type(IERC165).interfaceId"
-}
-```
+## Output Example
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
