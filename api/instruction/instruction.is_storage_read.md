@@ -7,31 +7,19 @@ description: >-
 
 # Instruction.is\_storage\_read()
 
-Query
+`is_storage_write()` -> `bool`
+
+## Query Example
 
 ```python
 from glider import *
+
 def query():
-  #fetch a list of instructions
-  instructions = Instructions().exec(1,36) 
-  for instruction in instructions:
-   #print the source code of the instruction
-    print(instruction.source_code())
-    #prints True/False depending on whether the instruction is a storage read 
-    #instruction or not
-    print(instruction.is_storage_read())
-  return []
+  return Instructions().exec(10).filter(lambda x: x.is_storage_read())
 ```
 
-Output
+With the Glider 1.0 update, calling the [`exec`](../instructions/instructions.exec.md) function returns an [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`. You can then use [`Instruction`](./) functions, which are applied to each element of the [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`
 
-```json
-{"print_output": 
-	[
-		"return _balances[owner]", 
-		"True"
-	]
-}
-```
+## Output Example
 
-In the output above, the instruction only reads the \_balances mapping, hence True is returned
+<figure><img src="../../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>

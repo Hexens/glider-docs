@@ -6,28 +6,19 @@ description: >-
 
 # Instruction.is\_return()
 
-Query
+`is_return()` -> `bool`
+
+## Query Example
 
 ```python
 from glider import *
+
 def query():
-  returns = []
-  #fetch a list of instructions
-  instructions = Instructions().exec(3)
-  for instruction in instructions:
-    #check if instruction is a return instruction
-    if(instruction.is_return()):
-      returns.append(instruction)  
-  return returns
+  return Instructions().exec(100).filter(lambda x: x.is_return())
 ```
 
-Output
+With the Glider 1.0 update, calling the [`exec`](../instructions/instructions.exec.md) function returns an [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`. You can then use [`Instruction`](./) functions, which are applied to each element of the [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`
 
-```json
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "Context",
-  "sol_function": "function _msgSender() internal view virtual returns (address) {\n        return msg.sender;\n    }",
-  "sol_instruction": "return msg.sender"
-}
-```
+## Output Example
+
+<figure><img src="../../.gitbook/assets/image (200).png" alt=""><figcaption></figcaption></figure>

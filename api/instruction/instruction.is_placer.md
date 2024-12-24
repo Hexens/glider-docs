@@ -6,28 +6,26 @@ description: >-
 
 # Instruction.is\_placer()
 
-Query
+`is_placer()` -> `bool`
+
+## Query Example
 
 ```python
 from glider import *
+
 def query():
-  placers = []
-  #fetch a list of instructions
-  instructions = Instructions().exec(600)
-  for instruction in instructions:
-    #check if instruction is a placeholder instruction
-    if(instruction.is_placer()):
-      placers.append(instruction)  
-  return placers
+  ins = (
+    Modifiers()
+    .exec(1)
+    .instructions()
+    .exec()
+    .filter(lambda x: x.is_placer())
+  )
+  return ins
 ```
 
-Output
+With the Glider 1.0 update, calling the [`exec`](../instructions/instructions.exec.md) function returns an [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`. You can then use [`Instruction`](./) functions, which are applied to each element of the [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`
 
-```json
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "Ownable",
-  "sol_function": "modifier onlyOwner() {\n        require(owner() == _msgSender(),\"Ownable: caller is not the owner\");\n        _;\n    }",
-  "sol_instruction": "_"
-}
-```
+## Output Example
+
+<figure><img src="../../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
