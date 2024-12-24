@@ -19,4 +19,4 @@ With the Glider 1.0 update, calling the [`exec`](../instructions/instructions.ex
 
 ## Output Example
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>

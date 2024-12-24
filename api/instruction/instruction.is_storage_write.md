@@ -6,32 +6,19 @@ description: >-
 
 # Instruction.is\_storage\_write()
 
-Query
+`is_storage_write()` -> `bool`
+
+## Query Example
 
 ```python
 from glider import *
+
 def query():
-  #fetch a list of instructions
-  instructions = Instructions().exec(2,21) 
-  for instruction in instructions:
-   #print the source code of the instruction(Just to showcase the instruction too)
-    print(instruction.source_code())
-    #prints True/False depending on whether the instruction is a storage write instruction or not
-    print(instruction.is_storage_write())
-  return []
+  return Instructions().exec(30).filter(lambda x: x.is_storage_write())
 ```
 
-Output
+With the Glider 1.0 update, calling the [`exec`](../instructions/instructions.exec.md) function returns an [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`. You can then use [`Instruction`](./) functions, which are applied to each element of the [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`
 
-```json
-{"print_output": 
-	[
-		"_owner = newOwner", 
-		"True", 
-		"emit OwnershipTransferred(oldOwner,newOwner)", 
-		"False"
-	]
-}
-```
+## Output Example
 
-In the output above, the first instruction is a storage write instruction where the `_owner` state variable is written with the value of `newOwner`. Hence, the `is_storage_write()` returns \`True\` whereas for the second instruction it returns \`False\` as it does not write to any state variable&#x20;
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
