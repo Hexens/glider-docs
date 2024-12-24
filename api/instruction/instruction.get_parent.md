@@ -19,10 +19,4 @@ def query():
 
 ## Output
 
-```solidity
-{
-    "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD", 
-    "contract_name": "Context", 
-    "sol_function": "function _msgSender() internal view virtual returns (address) {\n        return msg.sender;\n    }"
-}
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
