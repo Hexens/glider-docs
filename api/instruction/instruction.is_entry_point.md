@@ -6,35 +6,19 @@ description: >-
 
 # Instruction.is\_entry\_point()
 
-Query
+`is_entry_point()` -> `bool`
+
+## Query Example
 
 ```python
 from glider import *
+
 def query():
-  ifs = []
-  #fetch a list of instructions
-  instructions = Instructions().exec(3)
-  for instruction in instructions:
-    #check if instruction is an if instruction
-    if(instruction.is_if()):
-      ifs.append(instruction)  
-  return ifs
+  return Instructions().exec(1000).filter(lambda x: x.is_entry_point())
 ```
 
-Output
+With the Glider 1.0 update, calling the [`exec`](../instructions/instructions.exec.md) function returns an [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`. You can then use [`Instruction`](./) functions, which are applied to each element of the [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`
 
-```json
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "Context",
-  "sol_function": "function _msgSender() internal view virtual returns (address) {\n        return msg.sender;\n    }",
-  "sol_instruction": "{\n        return msg.sender;\n    }"
-}
+## Output Example
 
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "Context",
-  "sol_function": "function _msgData() internal view virtual returns (bytes calldata) {\n        return msg.data;\n    }",
-  "sol_instruction": "{\n        return msg.data;\n    }"
-}
-```
+<figure><img src="../../.gitbook/assets/image (192).png" alt=""><figcaption></figcaption></figure>

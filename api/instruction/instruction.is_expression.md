@@ -6,28 +6,19 @@ description: >-
 
 # Instruction.is\_expression()
 
-Query
+`is_expression()` -> `bool`
+
+## Query Example
 
 ```python
 from glider import *
+
 def query():
-  expressions = []
-  #fetch a list of instructions
-  instructions = Instructions().exec(10)
-  for instruction in instructions:
-    #check if instruction is an expression instruction
-    if(instruction.is_expression()):
-      expressions.append(instruction)  
-  return expressions
+  return Instructions().exec(1000).filter(lambda x: x.is_expression())
 ```
 
-Output
+With the Glider 1.0 update, calling the [`exec`](../instructions/instructions.exec.md) function returns an [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`. You can then use [`Instruction`](./) functions, which are applied to each element of the [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`
 
-```json
-{
-  "contract": "0x798AcB51D8FBc97328835eE2027047a8B54533AD",
-  "contract_name": "Ownable",
-  "sol_function": "constructor() {\n        _setOwner(_msgSender());\n    }",
-  "sol_instruction": "_setOwner(_msgSender())"
-}
-```
+## Output Example
+
+<figure><img src="../../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
