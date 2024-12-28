@@ -12,27 +12,10 @@ description: Returns a list of all low level static call instructions.
 from glider import *
 
 def query():
-  instructions = Instructions().low_level_function_calls().exec(1)
 
-  return instructions
+  return Instructions().low_level_static_calls().exec(3)
 ```
 
 ## Output Example
 
-```solidity
-{
-    "contract": "0xa4915dc6ee2652c471397c32ce5c8d3494ef3e6c"
-    "contract_name": "Address"
-    "sol_function":
-    function functionStaticCall(
-            address target,
-            bytes memory data,
-            string memory errorMessage
-        ) internal view returns (bytes memory) {
-            (bool success, bytes memory returndata) = target.staticcall(data);
-            return verifyCallResultFromTarget(target, success, returndata, errorMessage);
-    }
-    "sol_instruction":
-        (bool success, bytes memory returndata) = target.staticcall(data)
-}
-```
+<figure><img src="../../.gitbook/assets/image (256).png" alt=""><figcaption></figcaption></figure>
