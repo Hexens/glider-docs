@@ -1,7 +1,13 @@
+---
+description: >-
+  The class extends the Instruction class and represents new_variable
+  instruction.
+---
+
 # NewVariableInstruction
 
-The class extends the Instruction class and represents new\_variable instruction.
-
-
-
 Bases: [`Instruction`](./)
+
+Example of `NewVariableInstruciton`
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

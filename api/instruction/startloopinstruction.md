@@ -1,7 +1,11 @@
+---
+description: The class extends the Instruction class and represents start_loop instruction.
+---
+
 # StartLoopInstruction
 
-The class extends the Instruction class and represents start\_loop instruction.
-
-
-
 Bases: [`Instruction`](./)
+
+Example of `StartLoopInstruction`
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>

@@ -1,8 +1,8 @@
+---
+description: The class extends the Instruction class and represents end_loop instruction.
+---
+
 # EndLoopInstruction
-
-The class extends the Instruction class and represents end\_loop instruction.
-
-
 
 Bases: [`Instruction`](./)
 

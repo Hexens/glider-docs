@@ -1,8 +1,10 @@
+---
+description: >-
+  The class extends the Instruction class and represents end_assembly
+  instruction.
+---
+
 # EndAssemblyInstruction
-
-The class extends the Instruction class and represents end\_assembly instruction.
-
-
 
 Bases: [`Instruction`](./)
 

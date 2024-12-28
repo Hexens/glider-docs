@@ -1,7 +1,11 @@
+---
+description: The class extends the Instruction class and represents throw instruction.
+---
+
 # ThrowInstruction
 
-The class extends the Instruction class and represents throw instruction.
-
-
-
 Bases: [`Instruction`](./)
+
+Example of `ThrowInstruction`
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>

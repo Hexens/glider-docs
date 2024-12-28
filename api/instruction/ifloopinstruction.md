@@ -1,7 +1,11 @@
+---
+description: The class extends the Instruction class and represents if_loop instruction.
+---
+
 # IfLoopInstruction
 
-The class extends the Instruction class and represents if\_loop instruction.
-
-
-
 Bases: [`Instruction`](./)
+
+Example of `IfLoopInstruction`
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

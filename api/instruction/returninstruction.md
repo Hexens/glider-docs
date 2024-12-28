@@ -1,7 +1,11 @@
+---
+description: The class extends the Instruction class and represents return instruction.
+---
+
 # ReturnInstruction
 
-The class extends the Instruction class and represents return instruction.
-
-
-
 Bases: [`Instruction`](./)
+
+Example of `ReturnInstruction`
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>

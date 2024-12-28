@@ -1,8 +1,9 @@
+---
+description: The class extends the Instruction class and represents continue instruction.
+---
+
 # ContinueInstruction
 
-The class extends the Instruction class and represents continue instruction.
-
-\
 Bases: [`Instruction`](./)
 
 Example of `ContinueInstruciton`

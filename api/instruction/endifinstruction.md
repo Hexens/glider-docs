@@ -1,8 +1,8 @@
+---
+description: The class extends the Instruction class and represents end_if instruction.
+---
+
 # EndIfInstruction
-
-The class extends the Instruction class and represents end\_if instruction.
-
-
 
 Bases: [`Instruction`](./)
 
