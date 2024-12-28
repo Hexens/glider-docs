@@ -293,6 +293,8 @@
     * [ThrowInstruction](api/instruction/throwinstruction.md)
     * [TryInstruction](api/instruction/tryinstruction/README.md)
       * [TryInstruction.get\_block\_instructions()](api/instruction/tryinstruction/tryinstruction.get_block_instructions.md)
+    * [CatchInstruction](api/instruction/catchinstruction-1/README.md)
+      * [CatchInstruction.get\_block\_instructions()](api/instruction/catchinstruction-1/catchinstruction.get_block_instructions.md)
   * [Instructions](api/instructions/README.md)
     * [Instructions.CALLEES](api/instructions/instructions.callees.md)
     * [Instructions.asm\_block\_instructions()](api/instructions/instructions.asm_block_instructions.md)
