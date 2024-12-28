@@ -8,7 +8,9 @@ description: Returns a list of immediate previous instructions in the control fl
 
 The difference between the previous\_instruction() function and [previous\_instructions()](instruction.previous_instructions.md) is that this function will return a list of immediate previous instructions of the current instruction in the CFG (control-flow-graph).
 
-_The function is intra-procedural._
+
+
+_The function operates non-recursively, meaning it works intra-procedurally._
 
 
 
@@ -47,7 +49,7 @@ def query():
 
 ## Output Example
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 
 

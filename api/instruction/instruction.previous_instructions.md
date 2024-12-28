@@ -10,7 +10,7 @@ description: >-
 
 The difference between the previous\_instructions() function and [previous\_instruction()](instruction.previous_instruction.md) is that this function will return all previous instructions of the current instruction in the CFG (control-flow-graph).
 
-_The function is intra-procedural, and thus will not follow function calls; for the **inter**-procedural variant of this function, use extended\_previous\_instructions()._
+_The function is non-recursive (intra-procedural), and thus will not follow function calls; for the recursive (**inter**-procedural) variant of this function, use extended\_previous\_instructions()._
 
 For example, in the function:
 
@@ -68,7 +68,7 @@ def query():
 
 ## Example Output
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

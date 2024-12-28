@@ -258,6 +258,7 @@
     * [Instruction.extended\_next\_instructions()](api/instruction/instruction.extended_next_instructions.md)
     * [Instruction.previous\_instruction()](api/instruction/instruction.previous_instruction.md)
     * [Instruction.previous\_instructions()](api/instruction/instruction.previous_instructions.md)
+    * [Instruction.extended\_previous\_instructions()](api/instruction/instruction.extended_previous_instructions-1.md)
     * [Instruction.procedure\_graph](api/instruction/instruction.procedure_graph.md)
     * [Instruction.procedure\_graph\_node](api/instruction/instruction.procedure_graph_node.md)
     * [Instruction.solidity\_callee\_names()](api/instruction/instruction.solidity_callee_names.md)

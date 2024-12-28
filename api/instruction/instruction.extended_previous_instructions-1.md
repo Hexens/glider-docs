@@ -1,16 +1,18 @@
 ---
 description: >-
-  Returns the set of all instructions following the current node in the control
-  flow graph.
+  Returns the set of all instructions which could be executed before the current
+  instruction
 ---
 
-# Instruction.extended\_next\_instructions()
+# Instruction.extended\_previous\_instructions()
 
-`extended_next_instructions() →` [`APISet`](../iterables/apiset.md)`[`[`Instruction`](./)`]`
+`extended_previous_instructions() →` [`APISet`](../iterables/apiset.md)`[`[`Instruction`](./)`]`
 
-The difference between the extended\_next\_instructions() function and [next\_instructions()](instruction.next_instructions.md) is that this function works in an recursive (**inter**-procedural) manner and returns all instructions following the current instruction in the CFG (control-flow-graph).
+The difference between the extended\_previous\_instructions() function and [`previous_instructions()`](instruction.previous_instructions.md) is that this function works in an recursive (**inter**-procedural) manner and returns all instructions following the current instruction in the CFG (control-flow-graph).
 
-_The function is recursive (intra-procedural), and follows function calls; for the non-recursive (**intra**-procedural) variant of this function, use_ [_`next_instructions()`_](instruction.next_instructions.md)_._
+
+
+_The function is recursive (intra-procedural), and follows function calls; for the non-recursive (**intra**-procedural) variant of this function, use_ [_`previous_instructions()`_](instruction.previous_instructions.md)_._
 
 
 
@@ -26,10 +28,10 @@ function approve(address spender, uint256 amount) public override returns (bool)
 for the instruction:
 
 ```solidity
-_approve(_msgSender(), spender, amount);
+return true;
 ```
 
-the function will return instructions from `_approve()`.
+the function will return instructions from `_approve()` and `_msgSender()`.
 
 ### Query Example
 
@@ -57,6 +59,10 @@ def query():
 <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The function returns APISet, instead of APIList, in case the result of the function is used as the return value of the query it must be casted to `list()`
