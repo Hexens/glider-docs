@@ -5,3 +5,7 @@ The class extends the Instruction class and represents if instruction,  for both
 
 
 Bases: [`Instruction`](../)
+
+Example of `IfInstruction`
+
+<figure><img src="../../../.gitbook/assets/image (214).png" alt=""><figcaption></figcaption></figure>
