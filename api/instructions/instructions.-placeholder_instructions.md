@@ -8,7 +8,6 @@ description: Returns an Instructions object for the Modifier placeholder instruc
 
 ## Query Example
 
-````python
 ```python
 from glider import *
 
@@ -16,7 +15,6 @@ def query():
 
   return Instructions().placeholder_instructions().exec(1,9)
 ```
-````
 
 ## Output Example
 

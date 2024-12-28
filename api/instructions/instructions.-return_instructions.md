@@ -10,21 +10,10 @@ Returns an [Instructions](./) object for the 'return' instructions.
 from glider import *
 
 def query():
-  instructions = Instructions().return_instructions().exec(1)
 
-  return instructions
+  return Instructions().return_instructions().exec(2,18)
 ```
 
 ## Output Example
 
-<pre class="language-solidity"><code class="lang-solidity">{
-    "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf"
-<strong>    "contract_name": "Context"
-</strong>    "sol_function":
-        function _msgSender() internal view virtual returns (address) {
-            return msg.sender;
-        }
-    "sol_instruction":
-        return msg.sender
-}
-</code></pre>
+<figure><img src="../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
