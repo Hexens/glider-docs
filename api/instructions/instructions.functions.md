@@ -9,31 +9,16 @@ description: >-
 
 **`functions`**`() →` [`Functions`](../callables/functions/)
 
-## Return type
-
-`→` [`Functions`](../callables/functions/)
-
 ## Query Example
 
 ```python
 from glider import *
 
 def query():
-  # Fetch a list of functions of the first instructions
-  instructions = Instructions().functions().exec(1)
   
-  return instructions
+  return Instructions().functions().exec(1)
 ```
 
 ## Output Example
 
-```solidity
-{
-    "contract": "0xd705c24267ed3c55458160104994c55c6492dfcf"
-    "contract_name": "Context"
-    "sol_function":
-        function _msgSender() internal view virtual returns (address) {
-            return msg.sender;
-        }
-}
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
