@@ -1,6 +1,8 @@
-# Instructions.throw\_instructions()
+---
+description: Returns an Instructions object for the 'throw' instructions
+---
 
-Returns an [Instructions](./) object for the 'throw' instructions
+# Instructions.throw\_instructions()
 
 `throw_instructions() →` [`Instructions`](./)
 
@@ -10,21 +12,10 @@ Returns an [Instructions](./) object for the 'throw' instructions
 from glider import *
 
 def query():
-  instructions = Instructions().throw_instructions().exec(1)
 
-  return instructions
+  return Instructions().throw_instructions().exec(2,1)
 ```
 
 ## Output Example
 
-<pre class="language-solidity"><code class="lang-solidity">{
-    "contract":"0x6c4c4759659d644cb36df4842a7f113321e3f7bb"
-    "contract_name":"SafeMath"
-<strong>    "sol_function":
-</strong>        function assert(bool assertion) internal {
-            if (!assertion) throw;
-        }
-    "sol_instruction":
-        throw
-}
-</code></pre>
+<figure><img src="../../.gitbook/assets/image (263).png" alt=""><figcaption></figcaption></figure>
