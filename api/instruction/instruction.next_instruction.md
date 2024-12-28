@@ -8,7 +8,9 @@ description: Returns a list of immediate following instructions in the control f
 
 The difference between the next\_instruction() function and [next\_instructions()](instruction.next_instructions.md) is that this function will return a list of instructions that are immediately following the current instruction in the CFG (control-flow-graph).
 
-_The function is intra-procedural._
+
+
+_The function operates non-recursively, meaning it works intra-procedurally._
 
 
 

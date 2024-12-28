@@ -10,7 +10,7 @@ description: >-
 
 The difference between the extended\_next\_instructions() function and [next\_instructions()](instruction.next_instructions.md) is that this function works in an **inter**-procedural manner and returns all instructions following the current instruction in the CFG (control-flow-graph).
 
-_The function is intra-procedural, and follows function calls; for the **intra**-procedural variant of this function, use_ [_next\_instructions()_](instruction.next_instructions.md)_._
+_The function is recursive (intra-procedural), and follows function calls; for the non-recursive (**intra**-procedural) variant of this function, use_ [_`next_instructions()`_](instruction.next_instructions.md)_._
 
 
 
