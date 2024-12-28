@@ -4,7 +4,7 @@
 
 Returns all instructions from the catch block
 
-## Example
+## Query Example
 
 ```python
 from glider import *
@@ -15,31 +15,16 @@ def query():
   return instructionlist[0].get_block_instructions()
 ```
 
-## Output
+## Output Example&#x20;
 
-```solidity
-"root":{4 items
-"contract":string"0x6f9f14e160282A3D613eD2af3cB579DE4bfC7c1e"
-"contract_name":string"ERC1155"
-"sol_function":solidity
-function _doSafeTransferAcceptanceCheck(
-        address operator,address from,address to,uint256 id,uint256 amount,bytes memory data
-    ) private {
-        if (to.isContract()) {
-            try IERC1155Receiver(to).onERC1155Received(operator,from,id,amount,data) returns (bytes4 response) {
-                if (response != IERC1155Receiver.onERC1155Received.selector) {
-                    revert("ERC1155: ERC1155Receiver rejected tokens");
-                }
-            } catch Error(string memory reason) {
-                revert(reason);
-            } catch {
-                revert("ERC1155: transfer to non ERC1155Receiver implementer");
-            }
-        }
-    }
-"sol_instruction":solidity
-revert(reason)
-}
-```
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-\
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
