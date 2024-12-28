@@ -15,23 +15,24 @@ _The function is intra-procedural._
 For example, in the function:
 
 ```solidity
-function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
-        require(b <= a, errorMessage);
-        uint256 c = a - b;
-        return c;
-    }
+function add(uint256 a, uint256 b) internal pure returns (uint256) {
+    uint256 c = a + b;
+    require(c >= a, "SafeMath: addition overflow");
+
+    return c;
+  }
 ```
 
 for the instruction:&#x20;
 
 ```solidity
-require(b <= a, errorMessage);
+uint256 c = a + b;
 ```
 
 the function will return the instruction:
 
 ```solidity
-uint256 c = a - b;
+require(c >= a, "SafeMath: addition overflow");
 ```
 
 ## Query Example
@@ -39,38 +40,12 @@ uint256 c = a - b;
 ```python
 from glider import *
 def query():
-  instructions = Instructions().exec(1,9)
+  instructions = Instructions().exec(1,7)
 
   return instructions + instructions[0].next_instruction()
 ```
 
 ## Example Output
 
-```solidity
-"root":{4 items
-"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
-"contract_name":string"SafeMath"
-"sol_function":solidity
-function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
-        require(b <= a, errorMessage);
-        uint256 c = a - b;
-        return c;
-    }
-"sol_instruction":solidity
-require(b <= a, errorMessage)
-},
-
-"root":{4 items
-"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
-"contract_name":string"SafeMath"
-"sol_function":solidity
-function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
-        require(b <= a, errorMessage);
-        uint256 c = a - b;
-        return c;
-    }
-"sol_instruction":solidity
-uint256 c = a - b
-}
-```
+<figure><img src="../../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
 

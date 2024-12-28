@@ -12,56 +12,48 @@ The difference between the next\_instructions() function and [next\_instruction(
 
 _The function is intra-procedural, and thus will not follow function calls; for the **inter**-procedural variant of this function, use extended\_next\_instructions()._
 
+
+
+For example, in the function:
+
+```solidity
+function add(uint256 a, uint256 b) internal pure returns (uint256) {
+    uint256 c = a + b;
+    require(c >= a, "SafeMath: addition overflow");
+
+    return c;
+  }
+```
+
+for the instruction:&#x20;
+
+```solidity
+uint256 c = a + b;
+```
+
+the function will return the instructions:
+
+```solidity
+require(c >= a, "SafeMath: addition overflow");
+```
+
+```solidity
+return c;
+```
+
 ### Query Example
 
 ```python
 from glider import *
 def query():
-  instructions = Instructions().exec(1,9)
+  instructions = Instructions().exec(1,7)
 
   return instructions + list(instructions[0].next_instructions())
 ```
 
 ### Output Example
 
-```solidity
-"root":{4 items
-"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
-"contract_name":string"SafeMath"
-"sol_function":solidity
-function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
-        require(b <= a, errorMessage);
-        uint256 c = a - b;
-        return c;
-    }
-"sol_instruction":solidity
-require(b <= a, errorMessage)
-},
-"root":{4 items
-"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
-"contract_name":string"SafeMath"
-"sol_function":solidity
-function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
-        require(b <= a, errorMessage);
-        uint256 c = a - b;
-        return c;
-    }
-"sol_instruction":solidity
-uint256 c = a - b
-},
-"root":{4 items
-"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
-"contract_name":string"SafeMath"
-"sol_function":solidity
-function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
-        require(b <= a, errorMessage);
-        uint256 c = a - b;
-        return c;
-    }
-"sol_instruction":solidity
-return c
-}
-```
+<figure><img src="../../.gitbook/assets/image (205).png" alt=""><figcaption></figcaption></figure>
 
 
 
