@@ -1,5 +1,6 @@
 ---
 description: Returns corresponding node in procedure graph.
+hidden: true
 ---
 
 # Instruction.procedure\_graph\_node

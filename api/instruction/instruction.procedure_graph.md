@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Instruction.procedure\_graph
 
 Returns the instruction's parent function's procedure graph.
