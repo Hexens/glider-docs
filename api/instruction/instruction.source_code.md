@@ -4,24 +4,19 @@ description: Returns the source code of the instruction
 
 # Instruction.source\_code()
 
-Query
+## Query Example
 
 ```python
 from glider import *
 def query():
-  #fetch a list of instructions
-  instructions = Instructions().exec(1) 
-  #print the source code of the instruction
+
+  instructions = Instructions().exec(1,1)
+
   print(instructions[0].source_code())
-  return []
+  
+  return instructions
 ```
 
-Output
+## Output Example
 
-```json
-{
-  "print_output": [
-    "{\n        return msg.sender;\n    }"
-  ]
-}
-```
+<figure><img src="../../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>

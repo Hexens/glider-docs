@@ -1,5 +1,6 @@
 ---
 description: Returns the corresponding source line numbers of a instruction
+hidden: true
 ---
 
 # Instruction.source\_lines()

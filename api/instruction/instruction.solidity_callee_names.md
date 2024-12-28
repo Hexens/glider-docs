@@ -9,43 +9,22 @@ description: >-
 
 `solidity_callee_names() → List[str]`
 
-Like [callee\_names()](instruction.callee\_names.md) the function return list of called function names, but filtered to only built-in functions, like `require, assert, keccak256` etc.
+Like [callee\_names()](instruction.callee_names.md) the function return list of called function names, but filtered to only built-in functions, like `require, assert, keccak256` etc.
 
-Query
+## Query Example
 
 ```python
 from glider import *
 def query():
-  #fetch a list of instructions
-  instructions = Instructions().exec(1,17) 
-  for instruction in instructions:
-    #print the names of solidity functions that are called from the instruction
-    print(instruction.solidity_callee_names())
+
+  instructions = Instructions().exec(1, 95)
+
+  print(instructions[0].solidity_callee_names())
+  
   return instructions
 ```
 
-Output
+## Output Example
 
-```solidity
-"root":{4 items
-"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
-"contract_name":string"SafeMath"
-"sol_function":solidity
-function mul(uint256 a, uint256 b) internal pure returns (uint256) {
-        if (a == 0) {
-            return 0;
-        }
-        uint256 c = a * b;
-        require(c / a == b, "SafeMath: multiplication overflow");
-        return c;
-    }
-"sol_instruction":solidity
-require(c / a == b, "SafeMath: multiplication overflow")
-},
-"root":{1 item
-    "print_output":[1 item
-    0:string"['require']"
-    ]
-}
-```
+<figure><img src="../../.gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
 
