@@ -1,12 +1,12 @@
 ---
-description: This page describes what are the main concepts of writing glides
+description: This page describes what are the main concepts of writing Glider queries.
 ---
 
-# 🏄 Writing Glides
+# 🏄 Writing Queries
 
-A glide code can be separated into two parts: declarative queries (also called online part) and imperative arbitrary logic part (offline part)
+A query can be separated into two parts: declarative queries (also called online part) and imperative arbitrary logic part (offline part)
 
-Imagine the following glide code:
+Imagine the following query:
 
 ```python
 def query(): # The name query() is constant, and should not be changed
@@ -57,7 +57,7 @@ The code part:
   .exec()
 ```
 
-showcases the declarative part of the glide, where we use `api.Functions` class to iterate over all of the functions and filter them, then we continue the chain and "level-down" to the instructions of already filtered functions, and then we filter the instructions.&#x20;
+showcases the declarative part of the query, where we use `api.Functions` class to iterate over all of the functions and filter them, then we continue the chain and "level-down" to the instructions of already filtered functions, and then we filter the instructions.&#x20;
 
 _Note that the query chain always ends with_ [_`exec()`_](https://app.gitbook.com/s/KRI4GLnp45wDq2xrEWyI/instructions/instructions.exec) _call._ &#x20;
 

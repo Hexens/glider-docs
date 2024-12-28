@@ -6,9 +6,9 @@ description: High-level introduction to the Glider query framework
 
 [Glider](https://glide.r.xyz/) is a code query engine designed to run variant and data analysis on smart contracts by providing a framework that gives anyone the ability to query contract code as one would do with data.
 
-The researcher writes a query (called a glide) describing a scenario of code they want to match and runs it against any type of codebase; specifically, now, it can be run against whole blockchains that are integrated into the system.
+The researcher writes a query describing a scenario of code they want to match and runs it against any type of codebase; specifically, now, it can be run against whole blockchains that are integrated into the system.
 
-Example of a glide:
+Example of a query:
 
 ```python
 from glider import *
@@ -50,4 +50,4 @@ One of the reasons why Glider does not introduce a new language for queries and 
 
 ## Reusable
 
-The above mentioned concepts make glides reusable, and while the ability to describe scenarios is distributed, the reported glides can be reused by everyone and even be improved by other users and the community.
+The above mentioned concepts make queries reusable, and while the ability to describe scenarios is distributed, the reported queries can be reused by everyone and even be improved by other users and the community.

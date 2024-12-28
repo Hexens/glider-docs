@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Glider introduction](README.md)
-* [🏄 Writing Glides](writing-glides.md)
+* [🏄 Writing Queries](writing-queries.md)
 * [✍️ Glider and Declarative Query Writing](glider-and-declarative-query-writing.md)
 * [📙 API](api/README.md)
   * [📌 Main concepts](api/main-concepts.md)
