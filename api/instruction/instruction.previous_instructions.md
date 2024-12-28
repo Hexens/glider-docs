@@ -18,6 +18,7 @@ For example, in the function:
 function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
         require(b <= a, errorMessage);
         uint256 c = a - b;
+
         return c;
     }
 ```
@@ -36,47 +37,38 @@ require(b <= a, errorMessage);
 *entry_point_instruction*
 ```
 
+```solidity
+require(b <= a, errorMessage);
+```
+
+```solidity
+*entry_point_instruction*
+{
+        require(b <= a, errorMessage);
+        uint256 c = a - b;
+
+        return c;
+}
+```
+
+{% hint style="info" %}
+Entry point instruction" is a type of instruction that does not exist in real code. It is used internally by the Glider engine
+{% endhint %}
+
 ## Query Example
 
 ```python
 from glider import *
+
 def query():
-  instructions = Instructions().exec(1,11)
+  instructions = Functions().with_name("sub").exec(1,1).instructions().exec(1,3)
 
   return instructions + list(instructions[0].previous_instructions())
 ```
 
 ## Example Output
 
-```solidity
-"root":{4 items
-"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
-"contract_name":string"SafeMath"
-"sol_function":solidity
-function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
-        require(b <= a, errorMessage);
-        uint256 c = a - b;
-        return c;
-    }
-"sol_instruction":solidity
-return c
-},
-...
-"sol_instruction":solidity
-uint256 c = a - b
-},
-...
-"sol_instruction":solidity
-require(b <= a, errorMessage)
-},
-"sol_instruction":solidity
-{
-        require(b <= a, errorMessage);
-        uint256 c = a - b;
-        return c;
-    }
-}
-```
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

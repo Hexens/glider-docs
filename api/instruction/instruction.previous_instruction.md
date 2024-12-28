@@ -18,6 +18,7 @@ For example, in the function:
 function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
         require(b <= a, errorMessage);
         uint256 c = a - b;
+
         return c;
     }
 ```
@@ -25,13 +26,13 @@ function sub(uint256 a, uint256 b, string memory errorMessage) internal pure ret
 for the instruction:&#x20;
 
 ```solidity
-return c;
+uint256 c = a - b;
 ```
 
 the function will return the instruction:
 
 ```solidity
-uint256 c = a - b;
+require(b <= a, errorMessage);
 ```
 
 ## Query Example
@@ -39,39 +40,14 @@ uint256 c = a - b;
 ```python
 from glider import *
 def query():
-  instructions = Instructions().exec(1,11)
+  instructions = Functions().with_name("sub").exec(1,1).instructions().exec(1,2)
 
   return instructions + list(instructions[0].previous_instruction())
 ```
 
 ## Output Example
 
-```solidity
-"root":{4 items
-"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
-"contract_name":string"SafeMath"
-"sol_function":solidity
-function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
-        require(b <= a, errorMessage);
-        uint256 c = a - b;
-        return c;
-    }
-"sol_instruction":solidity
-return c
-},
-"root":{4 items
-"contract":string"0xd705c24267ed3c55458160104994c55c6492dfcf"
-"contract_name":string"SafeMath"
-"sol_function":solidity
-function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
-        require(b <= a, errorMessage);
-        uint256 c = a - b;
-        return c;
-    }
-"sol_instruction":solidity
-uint256 c = a - b
-}
-```
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 
 
