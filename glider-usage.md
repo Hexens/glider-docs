@@ -60,7 +60,7 @@ The **Glider IDE** is a user-friendly platform for writing and running queries o
 
     <figure><img src=".gitbook/assets/Screenshot 2025-01-07 at 16.01.38.png" alt=""><figcaption></figcaption></figure>
 
-### Execution scope: this is place where you choice where to run your query.
+### Execution scope
 
 * **Chain**: The first option allows you to run your query against an entire chain, which you can select from the integrated chain list. You also need access to run queries on the selected chain. The Kovan testnet is available to all users
 
