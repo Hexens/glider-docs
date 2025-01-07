@@ -544,6 +544,7 @@
 * [Changelog](changelog.md)
 * [🚧 Limitations](limitations.md)
 * [🔧 Usage](usage.md)
+* [Glider usage](glider-usage.md)
 * [🗺️ Roadmap](roadmap.md)
 * [👥 Comparison with other tools](comparison-with-other-tools.md)
 

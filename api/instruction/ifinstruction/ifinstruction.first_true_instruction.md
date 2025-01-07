@@ -42,7 +42,7 @@ def query():
 
 ## Output
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The [next\_instruction()](../instruction.next_instruction.md) is not used as it will always return an empty list of instructions. This is because no instruction can be run after a return statement, and the [next\_instruction()](../instruction.next_instruction.md) is non-recursive (intra-procedural).
