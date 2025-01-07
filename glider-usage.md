@@ -1,9 +1,8 @@
 ---
 description: This page explains how the Glider UI works and what features it has
-hidden: true
 ---
 
-# Glider usage
+# 🔧 Glider Usage
 
 ## Using the Glider IDE
 

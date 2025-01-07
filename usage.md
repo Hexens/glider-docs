@@ -1,5 +1,6 @@
 ---
 description: This page describes how to use Glider interface and its features
+hidden: true
 ---
 
 # 🔧 Usage
