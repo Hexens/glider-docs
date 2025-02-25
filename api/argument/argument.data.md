@@ -1,5 +1,16 @@
 ---
 description: Returns the internal data of the Argument
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Argument.data
