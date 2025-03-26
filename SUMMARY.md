@@ -551,4 +551,4 @@
 ## ⚖️ Legal Notices
 
 * [Privacy Notice](legal-notices/privacy-notice.md)
-* [Terms and Conditions](legal-notices/terms-and-conditions.md)
+* [Terms and Conditions](legal-notices/general-provisions.md)

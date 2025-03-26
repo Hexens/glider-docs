@@ -2,7 +2,9 @@
 description: 'Last updated: 26 March 2025 (“Effective Date”)'
 ---
 
-# GENERAL PROVISIONS
+# Terms and Conditions
+
+## GENERAL PROVISIONS
 
 Welcome to the Bug Bounty Platform (as defined below). We are dedicated to building and maintaining a unified bug bounty platform that caters to both security researchers and project developers. This Platform will serve as the cornerstone of our efforts to champion fairness and justice within the bug bounty ecosystem.
 
