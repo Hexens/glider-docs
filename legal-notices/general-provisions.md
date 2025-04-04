@@ -1,12 +1,21 @@
 ---
-description: 'Last updated: 26 March 2025 (“Effective Date”)'
+description: 'Last updated: 02 April 2025 (“Effective Date”)'
 ---
 
 # Terms and Conditions
 
 ## GENERAL PROVISIONS
 
-Welcome to the Bug Bounty Platform (as defined below). We are dedicated to building and maintaining a unified bug bounty platform that caters to both security researchers and project developers. This Platform will serve as the cornerstone of our efforts to champion fairness and justice within the bug bounty ecosystem.
+Welcome to the Platform (as defined below), a cutting-edge security and analysis ecosystem designed for those who demand the highest level of protection, efficiency, and transparency. By combining advanced vulnerability management with revolutionary blockchain analysis, the Platform empowers security researchers, developers, and organizations to stay ahead of emerging threats.\
+
+
+At the heart of the Platform is Remedy Bug Bounty, one of the safest and most efficient bug bounty system. With an elite in-house team ensuring the highest-quality triage, every report is meticulously reviewed to guarantee accuracy and relevance. Gated filtering ensures only valid findings reach project teams, while the integration of Zero-Knowledge Proof of Duplicates adds an extra layer of security and transparency.\
+
+
+Alongside, Glider IDE redefines blockchain security with a first-of-its-kind Solidity query framework. It enables rapid, blockchain-wide searches for vulnerabilities, allowing users to transform Solidity patterns into structured queries and continuously monitor multiple chains. By making smart contract analysis seamless and scalable, Glider introduces a new era of proactive security.\
+
+
+Bringing together expertise and innovation, the Platform establishes a new industry benchmark for vulnerability research and blockchain securityWelcome
 
 ## Agreement to Terms of Use <a href="#agreement-to-terms-of-use" id="agreement-to-terms-of-use"></a>
 
@@ -221,7 +230,7 @@ In the event of a conflict between the Specific terms in Appendix A and these Te
 
 ## Remedy Terms for Additional Products (Specific terms)
 
-If a User, developer, data analyst, organization or other user (“**Glider Recipient**”) is, at the sole discretion of Company, given access to an additional product known as “Glider” (“**Glider**”), then in consideration for the various functionalities and services Glider offers, the Terms of Use between the Glider Recipient and the Company shall include by reference the following specific terms for Glider in addition to the Terms of Use. By accepting the Terms of Use, the Glider Recipient also consents to and agrees to these additional specific terms included in the Terms of Use by reference. Below are the specific terms for a Glider Recipient to use Glider.
+If a User, developer, data analyst, organization or other user (“**Glider Recipient**”) is, at the sole discretion of Company, given access to an additional product known as “Glider” (“**Glider**”), which is provided as part of the Platform, then in consideration for the various functionalities and services Glider offers, the Terms of Use between the Glider Recipient and the Company shall include by reference the following specific terms for Glider in addition to the Terms of Use. By accepting the Terms of Use, the Glider Recipient also consents to and agrees to these additional specific terms included in the Terms of Use by reference. Below are the specific terms for a Glider Recipient to use Glider.
 
 In the event of a conflict between the **Specific terms** in this Appendix A and the Terms of Use, these Specific **terms** shall prevail.
 
@@ -262,6 +271,7 @@ The Company is committed to maintaining a safe and secure environment for all Gl
 * No Disruption: You agree not to use Glider to disrupt or interfere with the normal operation of systems or networks, including denial-of-service attacks or other forms of cyber-attack.
 * Compliance: You agree to comply with all applicable laws, regulations and industry standards governing your use of Glider.
 * No Unauthorized Distribution or Commercial Use: You agree not to sell, lease, repackage, present, or otherwise make available and transfer including but not limited to any data, queries, code, documentation, analytical data, labeled data, or any other materials derived from or associated with Glider to any third party. Furthermore, no commercial use, including redistribution or any use for profit, is permitted. Your right to use Glider is strictly limited to personal, non-commercial use only, and does not grant any rights to redistribute, transfer, or otherwise distribute Glider or its components in any way.
+* Restrictions Upon Expiration of Subscription, Cancellation, Termination or Suspension of Access: Upon the expiration of your subscription or the termination, cancellation or suspension of your access to Glider, you agree not to store, sell, display, distribute, transfer, or otherwise make available any data, queries, code, documentation, analytical data, labeled data, or any other materials derived from or associated with Glider, including but not limited to those obtained through your use of the platform. This obligation shall remain in full force and effect after the expiration of your subscription or the termination, cancellation or suspension of your access to Glider, and any violation of this provision may result in legal action, including, but not limited to, claims for damages as determined by applicable laws or any other relevant legal frameworks.
 
 By using Glider, you acknowledge that violation of this Acceptable Use Policy may result in the termination of your account at the sole discretion of the Company without notice and with potential legal consequences. We reserve the right to investigate and take appropriate action against any violations of this policy.
 
