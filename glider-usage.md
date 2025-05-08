@@ -28,11 +28,11 @@ The **Glider IDE** is a user-friendly platform for writing and running queries o
 
       * **Contract**: When you return a contract, you get the contract address, which is a link to the contract's page on a scanner (like Etherscan), along with the contract's name.
 
-      <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+      <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
       * **Function**: When you return a function, you get the source code of the function, along with the address and name of the contract where it is defined.
 
-      <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
       * **Instruction**: When you return an instruction, you get the source code of the function where the instruction is used. **GliderIDE** will automatically highlight the instruction in the function's source code. It also returns the address and name of the contract where the function is defined and used.
 
