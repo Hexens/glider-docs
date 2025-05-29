@@ -5,7 +5,44 @@ icon: list-check
 
 # Changelog
 
-## V1.0(28.08.2024):
+## V1.0
+
+### API
+
+Added functions:&#x20;
+
+* Add `with_globals` function in `Callables`
+* Add `with_operators` function in `Instructions`
+* Add `with_globals` function in `Instructions`
+* Add `with_function_signature` function in `Contracts`
+* Add `with_function_name_regex` function in `Contracts`
+* Add `with_function_name_suffix` function in `Contracts`
+* Add `with_function_name_prefix` function in `Contracts`
+* Add `with_all_function_signatures` function in `Contracts`
+* Add `with_one_of_the_function_signatures` function in `Contracts`
+* Add `without_function_signature` function in `Contracts`
+* Add `without_function_signatures` function in `Contracts`
+* Add `backward_df` to all `Value` (`Call`, `IndexAccess`, `Literal`, `Operator`, `Value`, `ValueExpression`, `VarValue`) classes
+* Add `forward_df` to all `Value` (`Call`, `IndexAccess`, `Literal`, `Operator`, `Value`, `ValueExpression`, `VarValue`) classes
+* Add `backward_df_recursive` to all `Value` (`Call`, `IndexAccess`, `Literal`, `Operator`, `Value`, `ValueExpression`, `VarValue`) classes
+* Add `forward_df_recursive` to all `Value` (`Call`, `IndexAccess`, `Literal`, `Operator`, `Value`, `ValueExpression`, `VarValue`) classes
+* Add `is_in_loop_recursive` function in `Instruction`
+* Add `is_tainted` function in `Value`
+* Add `is_tainted` function in `Point`
+* Add `loops` function in `Function`
+
+Refactoring:
+
+* Renamed all instances of `extended` to `recursive`
+  * Example: `extended_backward_df` → `backward_df_recursive`
+
+Improvements:
+
+* Optimized all `recursive` (formerly `extended`) functions, achieving approximately 4× performance improvement.
+
+
+
+## V0.9(28.08.2024):
 
 ### API
 
@@ -26,7 +63,7 @@ Bug fixes:
 
 
 
-## V0.9(23.08.2024):
+## V0.8(23.08.2024):
 
 ### API
 
@@ -54,7 +91,7 @@ Bug fixes:
 * `extended_backward_df`/`has_extended_global_df` does not return `state_vars` (when the state var is declared in base contracts) Now `extended_backward_df`/`has_extended_global_df` will work for inherited private variables too.
 * Fixed TypeError: `NoneObject` object is not iterable
 
-## V0.8(01.08.2024):
+## V0.7(01.08.2024):
 
 ### API
 
@@ -76,7 +113,7 @@ Optimizations:
 
 * Optimized (about 10%) `extended_next_instructions` function
 
-## V0.7(09.07.2024):
+## V0.6(09.07.2024):
 
 ### API
 
@@ -98,7 +135,7 @@ Bug fixes:
 
 * Take into account called functions when calling `Instruction::extended_previous_instructions`. The algorithm includes the instructions of called functions too.
 
-## V0.6(21.06.2024):
+## V0.5(21.06.2024):
 
 ### API
 
@@ -128,7 +165,7 @@ Bug fixes:
 * Added missing return data types
 * Fixed bug in the data flow graph
 
-## V0.5 (16.05.2024):
+## V0.4(16.05.2024):
 
 ### API
 
