@@ -20,7 +20,7 @@ def query():
   # Fetch a list of functions
   funs = Functions().exec(10)
 
-  # Return the functions with at least one argument converitble to bytes20
+  # Return the functions with at least one argument convertible to bytes20
   # It will be only the argument of type address
   output = []
   for fun in funs:
