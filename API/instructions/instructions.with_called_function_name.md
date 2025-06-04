@@ -12,7 +12,7 @@ Adds a filter to get instructions that call a function with the given name.
 from glider import *
 
 def query():
-  # Fetch a list of intructions that call the "transfer" function
+  # Fetch a list of instructions that call the "transfer" function
   instructions = Instructions().with_called_function_name("transfer").exec(1)
 
   return instructions
