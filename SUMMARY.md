@@ -562,8 +562,3 @@
 * [🔧 Glider Usage](glider-usage.md)
 * [🗺️ Roadmap](roadmap.md)
 * [👥 Comparison with other tools](comparison-with-other-tools.md)
-
-## ⚖️ Legal Notices
-
-* [Privacy Notice](legal-notices/privacy-notice.md)
-* [Terms and Conditions](legal-notices/general-provisions.md)
