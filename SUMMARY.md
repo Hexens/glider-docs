@@ -1,8 +1,6 @@
 # Table of contents
 
 * [Glider introduction](README.md)
-* [🏄 Writing Queries](writing-queries.md)
-* [✍️ Glider and Declarative Query Writing](glider-and-declarative-query-writing.md)
 * [🎓 Glider: The Basics](glider-the-basics/README.md)
   * [Intro to Python](glider-the-basics/intro-to-python/README.md)
     * [Basic Python](glider-the-basics/intro-to-python/basic-python.md)
@@ -18,6 +16,8 @@
     * [Learning Contracts](glider-the-basics/contracts/learning-contracts.md)
     * [Exercises](glider-the-basics/contracts/exercises.md)
   * [Bonus Challenges](glider-the-basics/bonus-challenges.md)
+* [🏄 Writing Queries](writing-queries.md)
+* [✍️ Glider and Declarative Query Writing](glider-and-declarative-query-writing.md)
 * [📙 API](api/README.md)
   * [📌 Main concepts](api/main-concepts.md)
   * [Iterables](api/iterables/README.md)
@@ -77,7 +77,7 @@
     * [Contracts.with\_name\_prefix()](api/contracts/contracts.name_prefix.md)
     * [Contracts.with\_name\_regex()](api/contracts/contracts.name_regex.md)
     * [Contracts.with\_name\_suffix()](api/contracts/contracts.name_suffix.md)
-    * [Contracts.non\_interface\_contracts()](api/contracts/contracts.non_interface_contracts-1.md)
+    * [Contracts.non\_interface\_contracts()](<api/contracts/contracts.non_interface_contracts (1).md>)
     * [Contracts.with\_all\_function\_names()](api/contracts/contracts.with_all_function_names.md)
     * [Contracts.with\_compiler\_range()](api/contracts/contracts.with_compiler_range.md)
     * [Contracts.with\_compiler\_range\_not()](api/contracts/contracts.with_compiler_range_not.md)
