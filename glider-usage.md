@@ -8,6 +8,16 @@ description: This page explains how the Glider UI works and what features it has
 
 The **Glider IDE** is a user-friendly platform for writing and running queries on smart contracts. This guide gives an overview of its main features and how it works.
 
+### Selecting a Chain
+
+Users can choose from various chains to scan their queries against. These chains include Kovan testnet, Ethereum mainnet, and more!
+
+#### Recent Chains
+
+Recent chains are dynamic databases of contracts active within the past 37 days. Researchers can use recent chains to get more relevant and timely results for their queries.
+
+Unlike non-recent chains, recent chains are not deduplicated - meaning the Glider output may contain contracts with identical bytecode.
+
 ### Writing Queries and Viewing Output
 
 * Glider offers a REPL-like interface divided into two main sections:
