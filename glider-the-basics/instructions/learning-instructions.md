@@ -14,12 +14,12 @@ Let's start by running a simple query to find some instructions:
 from glider import *
 
 def query():
-    return Instructions().exec(10)
+    return Instructions().exec(3)
 ```
 
-After running this query in the Glider IDE. You should find 10 instructions returned in the Output panel.&#x20;
+After running this query in the Glider IDE. You should find 3 instructions returned in the Output panel.&#x20;
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-09 at 2.08.22 PM.png" alt="" width="375"><figcaption><p>Glider IDE instruction output results</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-07-25 at 3.35.51 PM.png" alt="" width="563"><figcaption><p>Glider IDE instruction output results</p></figcaption></figure>
 
 ## Foundational Instructions Query
 
@@ -39,7 +39,7 @@ def query():
     instructions = (
         Instructions()
         .with_callee_name("transferFrom")
-        .exec(10)
+        .exec(3)
     )
 
     instructions.filter(lambda instruction : print(instruction.get_value().get_args().expression))
@@ -72,10 +72,10 @@ This method requires a single argument - the name of the function we want to sea
 
 ### Step 2 - Execute query
 
-Now that we’ve defined a query to search for instructions that call transferFrom, we need to execute it. To do this, we call the .exec() method, which instructs Glider to run the query and return 10 results:
+Now that we’ve defined a query to search for instructions that call transferFrom, we need to execute it. To do this, we call the .exec() method, which instructs Glider to run the query and return 3 results:
 
 ```python
-.exec(10)
+.exec(3)
 ```
 
 #### **Understanding exec()**
@@ -85,7 +85,7 @@ The .exec() method accepts two optional arguments:
 * **Limit** – Specifies how many results Glider should return.
 * **Offset (optional)** – Defines where Glider should start the search (useful for pagination).
 
-In our case, we pass in 10 which tells Glider to return the first 10 results. The offset argument is optional so for now we ignore it.
+In our case, we pass in 3 which tells Glider to return the first 3 results. The offset argument is optional so for now we ignore it.
 
 {% hint style="info" %}
 exec() returns a special type of list called [APIList](../../api/iterables/apilist.md). For now, we won’t focus on the differences between a Python List and APIList, as they won’t impact our use case in this series.
@@ -198,7 +198,7 @@ def query():
     instructions = (
         Instructions()
         .with_callee_name("transferFrom")
-        .exec(10)
+        .exec(3)
     )
   
     instructions.filter(lambda instruction : print(instruction.get_value().get_args().expression))
