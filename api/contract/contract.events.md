@@ -11,11 +11,12 @@ description: The function returns all the events of a Contract.
 ```python
 from glider import *
 
+
 def query():
   contracts = Contracts().with_name("IERC721").exec(1)
 
   for contract in contracts:
-    events = contract.events()
+    events = contract.events().exec()
     for event in events:
       print(event.signature)
 

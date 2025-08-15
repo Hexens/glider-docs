@@ -6,30 +6,25 @@ description: Returns arguments' types of the event.
 
 `arg_list() → List[str]`
 
-## Example
+## Example query
 
 ```python
 from glider import *
+
+
 def query():
   # Find contracts with an event called "Transfer"
   contracts = Contracts().with_event_name('Transfer').exec(100)
 
-  transferEventsArgs = []
   for contract in contracts:
-    for event in contract.events():
+    for event in contract.events().exec():
       if event.name == "Transfer":
-        # For each "Transfer" event in every single contract, return its arguments
-        transferEventsArgs.append(event.arg_list())
+        # For each "Transfer" event in every single contract, print its arguments
+        print(event.arg_list())
 
-  return transferEventsArgs
+  return []
 ```
 
-## Example output
+## Output Example
 
-```json
-[
-  ["address", "address", "uint256"],
-  ["address", "address", "uint256"],
-  ...
-]
-```
+<figure><img src="../../.gitbook/assets/Screenshot 2025-08-14 at 1.45.08 PM.png" alt=""><figcaption></figcaption></figure>

@@ -12,11 +12,9 @@ _`property`_` ``data:`` `_`Dict`_
 from glider import *
 
 def query():
-    contracts = Contracts().exec(1, 166)
-    i = 0
-    contract = contracts[0]
-    
-    for enum in contract.enums().exec():
+    contracts = Contracts().exec(1, 71)
+
+    for enum in contracts[0].enums().exec():
       print(enum.data)
 
     return []
@@ -24,27 +22,28 @@ def query():
 
 ## Example Output
 
+The following query will output the following enum data:
+
 ```json
-[
-  {
-    "print_output": [
-      "{
-        '_key': '909658d784f7d811f4be3298f29f043a', 
-        '_id': 'enums/909658d784f7d811f4be3298f29f043a', 
-        '_rev': '_iaelzA----', 
-        'name': 'RecoverError', 
-        'relative_filepath': '0x96f19828529bFEf13e6aC64DE952cedA2d866f2f_RainVestingV2.sol', 
-        'min': 0, 
-        'max': 4, 
-        'values': [
-          'NoError', 
-          'InvalidSignature', 
-          'InvalidSignatureLength', 
-          'InvalidSignatureS', 
-          'InvalidSignatureV'
-        ]
-      }"
-    ]
-  }
-]
+{
+    '_key': '1c509fde9e5a2a8dbd30759d4e24e81b', 
+    '_id': 'enums/1c509fde9e5a2a8dbd30759d4e24e81b', 
+    '_rev': '_jw0UR9m---', 
+    'name': 'CollateralManagerErrors', 
+    'min': 0, 
+    'max': 10, 
+    'values': [
+        'NO_ERROR', 'NO_COLLATERAL_AVAILABLE', 'COLLATERAL_CANNOT_BE_LIQUIDATED', 
+        'CURRRENCY_NOT_BORROWED', 'HEALTH_FACTOR_ABOVE_THRESHOLD', 
+        'NOT_ENOUGH_LIQUIDITY', 'NO_ACTIVE_RESERVE', 
+        'HEALTH_FACTOR_LOWER_THAN_LIQUIDATION_THRESHOLD', 
+        'INVALID_EQUAL_ASSETS_TO_SWAP', 'FROZEN_RESERVE', 'PAUSED_RESERVE'
+    ], 
+    'relative_filepath': '0xa52E67Ae57E9A029a117145700a2E4514762498C_DefaultReserveInterestRateStrategy.sol', 
+    'first_source_line': 565, 
+    'last_source_line': 567, 
+    'start_column': 3, 
+    'end_column': 4, 
+    'address': '0xa52E67Ae57E9A029a117145700a2E4514762498C'
+}
 ```

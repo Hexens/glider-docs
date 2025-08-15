@@ -11,15 +11,18 @@ description: >-
 
 ```python
 from glider import *
+
+
 def query():
-    func = Contracts().with_name('Pair').non_interface_contracts().functions().with_arg_count(5).exec(1)[0]
+    func = Contracts().with_name('LendingPool').non_interface_contracts().functions().with_arg_count(5).exec(1)
+
     arg = func.arguments().list()[0]
     
     results = [func]
     for (f, arg_index) in arg.df_reaching_functions_arguments():
         results.append(f)
         print(f.source_code() + '\n\n'+str(arg_index))
-    return results
+    return func
 ```
 
 For the argument `uint256 lpTokenAmount` in the function `nftRemove` at address 0xf792e438b3bd8501274d98a58d19f2777cacd9f6

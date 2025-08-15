@@ -6,35 +6,22 @@ description: Returns the name of the argument.
 
 _`property`_` ``name`_`: str`_
 
-
+## Query Example
 
 ```python
+from glider import *
+
+
 def query():
-  functions = Functions().exec(100)
-
-  function_with_args = []
+  functions = Functions().with_arg_count(2).exec(100)
+ 
   for f in functions:
-    # Prepare the object for this function
-    function = {"Function Name": f.name(), "Arguments": []}
-
-    # For each of its arguments...
     for arg in f.arguments().list():
-      # ...return the data of the argument
-      function["Arguments"].append({"Argument Name": arg.name})
-      function_with_args.append(function)
+        print(f"Argument: {arg.get_variable().name}")
 
-  return function_with_args
+  return []
 ```
 
-Output:
+## Output Example
 
-```json
-{
-  "Function Name": "transferOwnership",
-  "Arguments": [
-    {
-      "Argument Name": "newOwner"
-    }
-  ]
-}
-```
+<figure><img src="../../.gitbook/assets/Screenshot 2025-07-23 at 6.18.11 PM.png" alt=""><figcaption></figcaption></figure>

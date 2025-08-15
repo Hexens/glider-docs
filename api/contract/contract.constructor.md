@@ -14,7 +14,7 @@ from glider import *
 def query():
   constructors = (
     Contracts()
-    .exec(3)
+    .exec(8)
     .constructor()
     .filter(lambda x: not isinstance(x, NoneObject))
   )
@@ -28,4 +28,4 @@ Additionally, the filter function is used to ignore [`NoneObject`](../internal/n
 
 ## Example output
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-07-24 at 11.55.41 AM.png" alt=""><figcaption></figcaption></figure>

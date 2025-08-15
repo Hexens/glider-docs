@@ -24,7 +24,7 @@ def query():
     return []
 ```
 
-## Output
+## Output Example
 
 ```solidity
 "root":{1 item

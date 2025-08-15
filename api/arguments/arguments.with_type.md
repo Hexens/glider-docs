@@ -6,49 +6,35 @@ description: Returns a list of arguments having specified memory type.
 
 `with_type(`_`arg_type: str`_`) → List[`[`Argument`](../argument/)`]`
 
-
-
 ## Query Example
 
 ```python
+from glider import *
+ 
+ 
 def query():
   functions = Functions().exec(1000)
 
-  function_with_args = []
   for f in functions:
-    # Prepare the object for this function
-    function = {"Function Name": f.name(), "Arguments": []}
-
-    # For each of its arguments...
+    # Find arguments that are the bytes32 type 
     for arg in f.arguments().with_type("bytes32"):
-      # ...return the data of the arguent
-      function["Arguments"].append({"Argument data": arg.data})
-      
-      if len(function["Arguments"]) > 0:
-        function_with_args.append(function)
+      print(arg.get_variable().data)
 
-  return function_with_args
+  return []
 ```
-
-Example of an Argument with the memory type bytes32
-
-
 
 ## Output Example
 
+Example output of an Argument with the memory type bytes32:
+
 ```json
 {
-  "Function Name": "afterAgreementCreated",
-  "Arguments": [
-    {
-      "Argument data": {
-        "name": "_agreementId",
-        "name_ssa": "_agreementId_0",
-        "canonical_name": "LTP.afterAgreementCreated(ISuperToken,address,bytes32,bytes,bytes,bytes)._agreementId",
-        "type": "bytes32",
-        "memory_type": "memory"
-      }
-    }
-  ]
+    'name': '_keyHash', 
+    'canonical_name': 'VRFRequestIDBase.makeVRFInputSeed(bytes32,uint256,address,uint256)._keyHash', 
+    'type': {
+        'type': 'elementary', 
+        'name': 'bytes32'
+    }, 
+    'memory_type': 'memory'
 }
 ```

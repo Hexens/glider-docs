@@ -12,7 +12,7 @@ description: Executes the formed query and returns the list of Enum objects.
 from glider import *
 
 def query():
-  contracts = Contracts().exec(1, 357)
+  contracts = Contracts().exec(1, 71)
 
   for contract in contracts:
     for enum in contract.enums().exec():
@@ -23,13 +23,4 @@ def query():
 
 ## Example Output
 
-```json
-[
-  {
-    "print_output": [
-      "States",
-      "MessageStatus"
-    ]
-  }
-]
-```
+<figure><img src="../../.gitbook/assets/Screenshot 2025-07-25 at 6.33.58 PM.png" alt=""><figcaption></figcaption></figure>

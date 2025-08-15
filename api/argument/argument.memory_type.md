@@ -1,38 +1,27 @@
+---
+description: Returns the memory type of the argument
+---
+
 # Argument.memory\_type
 
-Returns the memory type of the argument.
+_`property`_` ``memory_type:`` `_`str`_
 
-_`property`_` ``memory_type`_`: str`_
-
-
+## Query Example
 
 ```python
+from glider import *
+
+
 def query():
-  functions = Functions().exec(100)
-
-  function_with_args = []
+  functions = Functions().with_arg_count(2).exec(100)
+ 
   for f in functions:
-    # Prepare the object for this function
-    function = {"Function Name": f.name(), "Arguments": []}
-
-    # For each of its arguments...
     for arg in f.arguments().list():
-      # ...return the data of the argument
-      function["Arguments"].append({"Argument memory type": arg.memory_type})
-      function_with_args.append(function)
+        print(f"Argument: {arg.get_variable().name} - {arg.get_variable().memory_type}")
 
-  return function_with_args
+  return []
 ```
 
-Output:
+## Output Example
 
-```json
-{
-  "Function Name": "transferOwnership",
-  "Arguments": [
-    {
-      "Argument memory type": "memory"
-    }
-  ]
-}
-```
+<figure><img src="../../.gitbook/assets/Screenshot 2025-07-23 at 6.03.31 PM (1).png" alt=""><figcaption></figcaption></figure>

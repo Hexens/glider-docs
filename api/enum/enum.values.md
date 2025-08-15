@@ -12,8 +12,8 @@ _`property`_` ``value:`` `_`str`_
 from glider import *
 
 def query():
-    contracts = Contracts().exec(1, 166)
-    i = 0
+    contracts = Contracts().exec(1, 71)
+
     contract = contracts[0]
     
     for enum in contract.enums().exec():
@@ -25,16 +25,4 @@ def query():
 
 ## Example Output
 
-```json
-[
-  {
-    "print_output": [
-      "NoError",
-      "InvalidSignature",
-      "InvalidSignatureLength",
-      "InvalidSignatureS",
-      "InvalidSignatureV"
-    ]
-  }
-]
-```
+<figure><img src="../../.gitbook/assets/Screenshot 2025-07-25 at 6.32.13 PM.png" alt=""><figcaption></figcaption></figure>

@@ -12,23 +12,15 @@ description: Executes the formed query and returns the list of Error objects.
 from glider import *
 
 def query():
-  contracts = Contracts().exec(1, 1336)
+  contracts = Contracts().exec(1, 2265)
 
   for contract in contracts:
     for error in contract.errors().exec():
       print(error.name)
- 
+
   return []
 ```
 
 ## Example Output
 
-```json
-[
-  {
-    "print_output": [
-      "OnlySimulatedBackend"
-    ]
-  }
-]
-```
+<figure><img src="../../.gitbook/assets/Screenshot 2025-07-29 at 6.21.15 PM.png" alt=""><figcaption></figcaption></figure>

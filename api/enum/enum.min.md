@@ -12,11 +12,9 @@ _`property`_` ``min:`` `_`int`_
 from glider import *
 
 def query():
-    contracts = Contracts().exec(1, 166)
-    i = 0
-    contract = contracts[0]
-    
-    for enum in contract.enums().exec():
+    contracts = Contracts().exec(1, 71)
+
+    for enum in contracts[0].enums().exec():
       print(enum.min)
 
     return []
@@ -24,12 +22,4 @@ def query():
 
 ## Example Output
 
-```json
-[
-  {
-    "print_output": [
-      "0"
-    ]
-  }
-]
-```
+<figure><img src="../../.gitbook/assets/Screenshot 2025-07-25 at 6.24.09 PM.png" alt=""><figcaption></figcaption></figure>

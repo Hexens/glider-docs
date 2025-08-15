@@ -12,37 +12,15 @@ _`property`_` ``args:`` `_`List[Dict]`_
 from glider import *
 
 def query():
-  contracts = Contracts().exec(1, 466)
+  contracts = Contracts().exec(1, 2265) 
 
   for contract in contracts:
     for error in contract.errors().exec():
-      print(error.args)
+      print(f"{error.name} - {error.args}")
 
   return []
 ```
 
 ## Example Output
 
-```json
-[
-  {
-    "print_output": [
-      "[
-        {
-          'type': {
-            'type': 'elementary', 
-            'name': 'address'
-          }, 
-          'name': 'addr'
-        }, {
-          'type': {
-            'type': 'elementary', 
-            'name': 'uint256'
-          }, 
-          'name': 'balance'
-        }
-      ]"
-    ]
-  }
-]
-```
+<figure><img src="../../.gitbook/assets/Screenshot 2025-07-29 at 6.10.29 PM.png" alt=""><figcaption></figcaption></figure>

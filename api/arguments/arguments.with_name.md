@@ -6,45 +6,35 @@ description: Returns a list of arguments having specified name
 
 `with_name(arg_name: str, sensitivity: bool = False) -> List[`[`Argument`](../argument/)`]`
 
-
-
 ## Query Example
 
 ```python
+from glider import *
+ 
+
 def query():
-  functions = Contracts().non_interface_contracts().functions().exec(25)
+  functions = Functions().exec(1000)
 
-  function_with_args = []
   for f in functions:
-    # Prepare the object for this function
-    function = {"Function Name": f.name(), "Arguments": []}
-
-    # For each of its arguments...
+    # Find arguments named "account"
     for arg in f.arguments().with_name("account"):
-      # ...return the data of the argument with specified argument name
-      function["Arguments"].append({"Argument data": arg.data})
-      
-      if len(function["Arguments"]) > 0:
-        function_with_args.append(function)
+      print(arg.get_variable().data)
 
-  return function_with_args
+  return []
 ```
 
-## Output Example
+## Output Example&#x20;
+
+Example output of an Argument named "account":
 
 ```json
 {
-    "Function Name": "balanceOf",
-    "Arguments":[
-        "Argument data": {
-            "name": "account",
-            "canonical_name": "Token.balanceOf(address).account",
-            "type": {
-                "type": "elementary",
-                "name": "address"
-            },
-            "memory_type": "memory"
-        }
-    ],    
+    'name': 'account', 
+    'canonical_name': 'Datagold.queryAccountInfo(address,string).account', 
+    'type': {
+        'type': 'elementary', 
+        'name': 'address'
+    }, 
+    'memory_type': 'memory'
 }
 ```

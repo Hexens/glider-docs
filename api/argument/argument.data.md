@@ -1,16 +1,5 @@
 ---
 description: Returns the internal data of the Argument
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Argument.data
@@ -20,40 +9,31 @@ _`property`_` ``data`
 It contains the name, canonical\_name, type, and memory\_type of the Argument.
 
 ```python
+from glider import *
+
+
 def query():
-  functions = Functions().exec(1,2)
-
-  function_with_args = []
+  functions = Functions().with_arg_count(2).exec(100)
+ 
   for f in functions:
-    # Prepare the object for this function
-    function = {"Function Name": f.name(), "Arguments": []}
-
-    # For each of its arguments...
     for arg in f.arguments().list():
-      # ...return the data of the argument
-      function["Arguments"].append({"Argument data": arg.data})
-      function_with_args.append(function)
+        print(f"Argument: {arg.get_variable().data}")
 
-  return function_with_args
+  return []
 ```
 
-Output:
+## Output Example
 
-```json
+In the query above, the `data` property will return:
+
+```python
 {
-  "Function Name": "balanceOf",
-  "Arguments": [
-    {
-      "Argument data": {
-        "name": "account",
-        "canonical_name": "IERC20.balanceOf(address).account",
-        "type": {
-          "type": "elementary",
-          "name": "address"
-        },
-        "memory_type": "memory"
-      }
-    }
-  ]
+    'name': 'recipient', 
+    'canonical_name': 'IERC20.transfer(address,uint256).recipient', 
+    'type': {
+        'type': 'elementary', 
+        'name': 'address'
+    }, 
+    'memory_type': 'memory'
 }
 ```

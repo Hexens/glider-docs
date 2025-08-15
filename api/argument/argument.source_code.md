@@ -6,39 +6,21 @@ description: Returns the source code of the argument.
 
 `source_code() → str`
 
-
+## Query Example
 
 ```python
+from glider import *
+
 def query():
   functions = Functions().exec(100)
 
-  function_with_args = []
   for f in functions:
-    # Prepare the object for this function
-    function = {"Function Name": f.name(), "Arguments": []}
-
-    # For each of its arguments...
     for arg in f.arguments().list():
-      # ...return the data of the argument
-      function["Arguments"].append({"Argument Source code": arg.source_code()})
-      function_with_args.append(function)
+      print(f"Argument Source code: {arg.source_code()}")
 
-  return function_with_args
-  
+  return []
 ```
 
-Output:
+## Output Example
 
-```json
-{
-  "Function Name": "approve",
-  "Arguments": [
-    {
-      "Argument Source code": "address to"
-    },
-    {
-      "Argument Source code": "uint256 tokenId"
-    }
-  ]
-}
-```
+<figure><img src="../../.gitbook/assets/Screenshot 2025-07-23 at 5.29.15 PM.png" alt=""><figcaption></figcaption></figure>

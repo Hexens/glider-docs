@@ -4,52 +4,26 @@ description: Returns the signature of the event.
 
 # Event.signature
 
-_`property`_` ``signature`_`: str`_
+_`property`_` ``signature:`` `_`str`_
 
 ## Example
 
 ```python
 from glider import *
+
+
 def query():
   # Find contracts with the suffix "ERC20"
-  contracts = Contracts().name_suffix("ERC20").exec(100)
+  contracts = Contracts().with_name_suffix("ERC20").exec(100)
 
-  contractsWithEvents = []
   for c in contracts:
-    contract = {"name": c.name, "events": []}
-    for event in c.events():
-      contract["events"].append(event.signature)
+    for event in c.events().exec():
+      # For each contract's events, print the event signature
+      print(event.signature)
 
-    # For each contract, return its name and the signatures of its events
-    contractsWithEvents.append(contract)
-
-  return contractsWithEvents
+  return []
 ```
 
 ## Example output
 
-```json
-[
-  {
-    "name": "ERC20",
-    "events": [
-      "OwnershipTransferred(address,address)",
-      "Transfer(address,address,uint256)",
-      "Approval(address,address,uint256)"
-    ]
-  },
-  {
-    "name": "DelegateERC20",
-    "events": [
-      "OwnershipTransferred(address,address)",
-      "Transfer(address,address,uint256)",
-      "Approval(address,address,uint256)",
-      "Burn(address,uint256)",
-      "SetBurnBounds(uint256,uint256)",
-      "Blacklisted(address,bool)",
-      "Mint(address,uint256)"
-    ]
-  },
-  ...
-]
-```
+<figure><img src="../../.gitbook/assets/Screenshot 2025-08-14 at 1.46.31 PM.png" alt=""><figcaption></figcaption></figure>

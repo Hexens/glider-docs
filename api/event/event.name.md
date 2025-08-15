@@ -4,48 +4,26 @@ description: Returns the name of the event.
 
 # Event.name
 
-_`property`_` ``name`_`: str`_
+_`property`_` ``name:`` `_`str`_
 
 ## Example
 
 ```python
 from glider import *
+
+
 def query():
   # Find contracts with the suffix "ERC20"
-  contracts = Contracts().name_suffix("ERC20").exec(100)
+  contracts = Contracts().with_name_suffix("ERC20").exec(100)
 
-  contractsWithEvents = []
   for c in contracts:
-    contract = {"name": c.name, "events": []}
-    for event in c.events():
-      contract["events"].append(event.name)
+    for event in c.events().exec():
+      # For each contract's event, print the event name
+      print(event.name)
 
-    # For each contract, return its name and the names of its events
-    contractsWithEvents.append(contract)
-
-  return contractsWithEvents
+  return []
 ```
 
 ## Example output
 
-```json
-[
-  {
-    "name": "ERC20",
-    "events": ["OwnershipTransferred", "Transfer", "Approval"]
-  },
-  {
-    "name": "DelegateERC20",
-    "events": [
-      "OwnershipTransferred",
-      "Transfer",
-      "Approval",
-      "Burn",
-      "SetBurnBounds",
-      "Blacklisted",
-      "Mint"
-    ]
-  },
-  ...
-]
-```
+<figure><img src="../../.gitbook/assets/Screenshot 2025-08-14 at 1.45.08 PM (1).png" alt=""><figcaption></figcaption></figure>

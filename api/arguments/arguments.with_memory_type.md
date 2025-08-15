@@ -6,51 +6,37 @@ description: Returns a list of arguments having specified memory type.
 
 `with_memory_type(memory_type: str) -> List[`[`Argument`](../argument/)`]`
 
-
-
 ## Query Example
 
 ```python
+from glider import *
+
+
 def query():
-  functions = Functions().exec(45)
+  functions = Functions().exec(1000)
 
-  function_with_args = []
   for f in functions:
-    # Prepare the object for this function
-    function = {"Function Name": f.name(), "Arguments": []}
-
-    # For each of its arguments...
+    # Find arguments that have storage memory types
     for arg in f.arguments().with_memory_type("storage"):
-      # ...return the data of the arguent
-      function["Arguments"].append({"Argument data": arg.data})
-      
-      if len(function["Arguments"]) > 0:
-        function_with_args.append(function)
+      print(arg.get_variable().data)
 
-  return function_with_args
+  return []
 ```
-
-Example of an Argument with the memory type storage&#x20;
 
 ## Output Example
 
-```json
+Example output of a memory storage Argument:
+
+```python
 {
-  "Function Name": "current",
-  "Arguments": [
-    {
-      "Argument data": {
-        "name": "counter",
-        "canonical_name": "Counters.current(Counters.Counter).counter",
-        "type": {
-          "type": "struct",
-          "name": "Counter",
-          "relative_filepath": "AirdropNFTs.sol",
-          "contract_name": "Counters"
-        },
-        "memory_type": "storage"
-      }
-    }
-  ]
+    'name': 'role', 
+    'canonical_name': 'Roles.add(Roles.Role,address).role', 
+    'type': {
+        'type': 'struct', 
+        'name': 'Role', 
+        'contract_name': 'Roles', 
+        'relative_filepath': '0xa5CFFF6a2c1a48AE38e8279Cf708AdbF16023e50_Exercies.sol'
+    }, 
+    'memory_type': 'storage'
 }
 ```

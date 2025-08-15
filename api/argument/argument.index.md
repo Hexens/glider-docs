@@ -6,10 +6,13 @@ description: Returns the index of the argument.
 
 _`property`_` ``index`_`: int`_
 
-
+## Query Example
 
 ```python
+
 from glider import *
+
+
 def query():
   functions = Functions().with_arg_count(5).exec(1)
 
@@ -18,12 +21,12 @@ def query():
     # For each of its arguments...
     for arg in f.arguments().list():
         # ...return the data of the argument
-        print(arg.source_code()+'\n\n'+str(arg.index))
+        print(arg.source_code() + '\n\n' + str(arg.index))
 
   return functions
 ```
 
-## Output
+## Example Output
 
 ```solidity
 "root":{3 items
