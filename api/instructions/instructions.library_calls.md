@@ -11,12 +11,12 @@ description: Returns a list of all library call instructions.
 ```python
 from glider import *
 
-def query():
 
+def query():
   return Instructions().library_calls().exec(1,4)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (255).png" alt=""><figcaption></figcaption></figure>
 

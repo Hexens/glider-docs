@@ -6,6 +6,10 @@ description: >-
 
 # CallNode.callee\_functions()
 
+`callee_functions() →` [`Functions`](../../callables/functions/)
+
+## Query Example
+
 ```python
 from glider import *
 
@@ -13,7 +17,9 @@ from glider import *
 
 def query():
   data = []
-  instructions = Instructions().with_called_function_name_prefix('burn').exec(10)
+
+  instructions = Instructions().with_callee_name_prefix('burn').exec(10)
+
   for instruction in instructions:
     if len(data) > 0:
       break # demo first result only
@@ -21,20 +27,27 @@ def query():
     contract = functionContainsBurn.get_contract() #api.contracts.Contract
     call_graph = contract.call_graph() #api.call_graph.CallGraph 
     nodes = call_graph.nodes() #Dict[str, CallNode]
+
     for id in nodes:
       if(id != functionContainsBurn.db_id):
         continue
-      callee_functions = nodes[id].callee_functions #api.functions.Functions
-      callees = callee_functions().exec() #List[Function]
+      callee_functions = nodes[id].callee_functions() #api.functions.Functions
+      callees = callee_functions.exec() #List[Function]
+
       if len(callees) > 0:
         print(functionContainsBurn.source_code())
+
         for callee in callees:
-          print("callee: " + callee.name())
+          print("callee: " + callee.name)
+        
         data.append(instruction)
+        
   return data
 ```
 
-Output:
+## Example Output
+
+Output below represents printed output from the caller's source code:
 
 ```json
 {

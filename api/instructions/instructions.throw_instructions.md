@@ -11,11 +11,11 @@ description: Returns an Instructions object for the 'throw' instructions
 ```python
 from glider import *
 
-def query():
 
+def query():
   return Instructions().throw_instructions().exec(2,1)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (263).png" alt=""><figcaption></figcaption></figure>

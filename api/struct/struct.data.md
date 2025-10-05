@@ -11,50 +11,68 @@ _`property`_` ``data :`` `_`Dict`_
 ```python
 from glider import *
 
+
 def query():
-  contracts = Contracts().exec(1, 26)
+  contracts = Contracts().with_name("DefaultReserveInterestRateStrategy").exec(1)
 
-  for struct in contracts[0].structs().exec():
-    print(struct.data)
+  for contract in contracts:
+    for struct in contract.structs().exec():
+      print(struct.data)
 
-  return []
+  return contracts
 ```
 
 ## Example Output
 
-```json
-[
-  {
-    "print_output": [
-      "{
-        '_key': 'caf2be195cea94c92ba1b8dc8c9da541', 
-        '_id': 'structs/caf2be195cea94c92ba1b8dc8c9da541', 
-        '_rev': '_iaelySK--_', 
-        'name': 'UserInfo', 
-        'fields': [
-          {
-            'name': 'amount', 
-            'type': {
-              'type': 'elementary', 
-              'name': 'uint256'
+Input below represents the return value of struct.data:
+
+```python
+{
+    '_key': 'd579420667d21aefc3e8d360573a0b7f', 
+    '_id': 'structs/d579420667d21aefc3e8d360573a0b7f', 
+    '_rev': '_jw0UR9a-_M', 
+    'name': 'CalcInterestRatesLocalVars', 
+    'fields': [
+        {
+            'name': 'totalDebt', 
+            'type': 
+                {
+                    'type': 'elementary', 
+                    'name': 'uint256'
+                }
+            }, 
+            {
+                'name': 'currentVariableBorrowRate', 
+                'type': {
+                    'type': 'elementary', 
+                    'name': 'uint256'
+                }
+            }, {
+                'name': 'currentStableBorrowRate', 
+                'type': {
+                    'type': 'elementary', 
+                    'name': 'uint256'
+                }
+            }, {
+                'name': 'currentLiquidityRate', 
+                'type': {
+                    'type': 'elementary', 
+                    'name': 'uint256'
+                }
+            }, {
+                'name': 'utilizationRate', 
+                'type': {
+                    'type': 'elementary', 
+                    'name': 'uint256'
+                }
             }
-          }, {
-            'name': 'rewardDebt', 
-            'type': {
-              'type': 'elementary', 
-              'name': 'uint256'
-            }
-          }, {
-            'name': 'registrated', 
-            'type': {
-              'type': 'elementary', 
-              'name': 'bool'
-            }
-          }
         ], 
-        'relative_filepath': '0xe5fA13058EdE558a2bFA675043f175148858A5F6_StakeMaster.sol'
-      }"
-    ]
-  }
-]
+        'relative_filepath': '0xa52E67Ae57E9A029a117145700a2E4514762498C_DefaultReserveInterestRateStrategy.sol', 
+        'first_source_line': 148, 
+        'last_source_line': 154, 
+        'start_column': 3, 
+        'end_column': 4, 
+        'address': '0xa52E67Ae57E9A029a117145700a2E4514762498C'
+    }
+}
 ```

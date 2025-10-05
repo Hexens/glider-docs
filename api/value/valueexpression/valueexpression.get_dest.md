@@ -15,9 +15,11 @@ This function will return '`a`' in this case: '`a = b = c = 5`'
 ```python
 from glider import *
 
+
 def query():
     instructions = (
         Instructions()
+        .new_variable_instructions()
         .exec(1,1)
     )
     for instruction in instructions:
@@ -25,6 +27,6 @@ def query():
     return instructions
 ```
 
-## Output Example
+## Example Output&#x20;
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>

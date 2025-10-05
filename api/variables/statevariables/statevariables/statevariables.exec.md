@@ -11,8 +11,8 @@ description: Executes the formed query and returns the list of StateVariable obj
 ```python
 from glider import *
 
-def query():
 
+def query():
   state_variables = (
     StateVariables()
     .exec(5, 5)
@@ -20,6 +20,6 @@ def query():
   return state_variables
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

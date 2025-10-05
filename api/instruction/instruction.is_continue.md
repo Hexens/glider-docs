@@ -14,7 +14,7 @@ description: >-
 from glider import *
 
 def query():
-  return Instructions().exec(1000).filter(lambda x: x.is_continue())
+  return Instructions().exec(100000).filter(lambda x: x.is_continue())
 ```
 
 With the Glider 1.0 update, calling the [`exec`](../instructions/instructions.exec.md) function returns an [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`. You can then use [`Instruction`](./) functions, which are applied to each element of the [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`

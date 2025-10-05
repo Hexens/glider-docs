@@ -11,11 +11,11 @@ description: Returns an Instructions object for the 'if loop' instructions.
 ```python
 from glider import *
 
-def query():
 
+def query():
   return Instructions().if_loop_instructions().exec(2)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>

@@ -9,11 +9,11 @@ Returns [Modifiers](../callables/modifiers/) object for the modifiers of the ins
 ```python
 from glider import *
 
-def query():
 
+def query():
   return Instructions().modifiers().exec(1)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (257).png" alt=""><figcaption></figcaption></figure>

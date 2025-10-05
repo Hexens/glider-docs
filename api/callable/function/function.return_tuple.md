@@ -4,7 +4,7 @@
 
 Returns the function's `return (type, value)` tuples.
 
-## Example
+## Query Example
 
 ```python
 from glider import *
@@ -23,8 +23,6 @@ def query():
   return functions
 ```
 
+## Example Output
 
-
-## Output
-
-<figure><img src="../../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-08-19 at 2.57.57 PM.png" alt=""><figcaption></figcaption></figure>

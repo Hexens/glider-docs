@@ -11,26 +11,18 @@ _`property`_` ``fields :` [_`APIList`_](../iterables/apilist.md)_`[`_[_`StructFi
 ```python
 from glider import *
 
+
 def query():
-  contracts = Contracts().exec(1, 26)
+  contracts = Contracts().with_name("DefaultReserveInterestRateStrategy").exec(1)
 
-  for struct in contracts[0].structs().exec():
-    for struct_field in struct.fields:
-      print(struct_field.name)
+  for contract in contracts:
+    for struct in contract.structs().exec():
+      for struct_field in struct.fields:
+        print(struct_field.name)
 
-  return []
+  return contracts
 ```
 
 ## Example Output
 
-```json
-[
-  {
-    "print_output": [
-      "amount",
-      "rewardDebt",
-      "registrated"
-    ]
-  }
-]
-```
+<figure><img src="../../.gitbook/assets/Screenshot 2025-09-10 at 5.33.42 PM.png" alt=""><figcaption></figcaption></figure>

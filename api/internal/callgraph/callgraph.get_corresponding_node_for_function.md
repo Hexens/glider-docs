@@ -11,6 +11,7 @@ description: Returns the node which represents the given function.
 ```python
 from glider import *
 
+
 def query():
     contracts = Contracts().exec(1)
     contract = contracts[0]
@@ -19,7 +20,7 @@ def query():
         call_node = contract.call_graph().get_corresponding_node_for_function(func)
         print(call_node.callable_name())
 
-    return []
+    return contracts
 ```
 
 ## Example Output

@@ -11,6 +11,7 @@ _`property`_` ``is_function : bool`
 ```python
 from glider import *
 
+
 def query():
     contracts = Contracts().exec(1,3)
     contract = contracts[0]
@@ -20,17 +21,9 @@ def query():
     
     print(f"Is call node {call_node.callable_name()} a modifier: {call_node.is_modifier}")
   
-    return []
+    return contracts
 ```
 
 ## Example Output
 
-```json
-[
-  {
-    "print_output": [
-      "Is call node onlyOwner a modifier: True"
-    ]
-  }
-]
-```
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-10 at 6.07.36 PM.png" alt=""><figcaption></figcaption></figure>

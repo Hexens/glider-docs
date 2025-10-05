@@ -8,7 +8,7 @@ description: >-
 
 `is_private() → bool`
 
-## Example
+## Query Example
 
 ```python
 from glider import *
@@ -23,6 +23,6 @@ def query():
     return private_functions
 ```
 
-## Output
+## Example Output
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-08-15 at 3.00.38 PM.png" alt=""><figcaption></figcaption></figure>

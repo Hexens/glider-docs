@@ -18,7 +18,6 @@ from glider import *
 
 
 def query():
-
   instructions = Instructions().exec(1,1)
 
   affected_points = instructions[0].get_tainted_sources_affecting_point()

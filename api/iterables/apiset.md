@@ -18,8 +18,8 @@ When a function returns another `APISet`, the results are flattened into a singl
 
 * [`instruction.backward_df()`](../instruction/instruction.backward_df.md)
 * [`instruction.forward_df()`](../instruction/instruction.forward_df.md)
-* [`instruction.extended_next_instructions()`](../instruction/instruction.extended_next_instructions.md)
-* [`instruction.extended_previous_instructions()`](../instruction/instruction.extended_previous_instructions.md)
+* [`instruction.extended_next_instructions()`](../instruction/instruction.next_instructions_recursive.md)
+* [`instruction.extended_previous_instructions()`](../instruction/instruction.previous_instructions_recursive.md)
 * [`instruction.next_instructions()`](../instruction/instruction.next_instructions.md)
 * [`instruction.previous_instruction()`](../instruction/instruction.previous_instruction.md)
 * [`instruction.previous_instructions()`](../instruction/instruction.previous_instructions.md)

@@ -16,7 +16,7 @@ from glider import *
 def query():
     public_functions = (
       Functions()
-      .exec(10)
+      .exec(1000)
       .filter(lambda x: x.is_public())
     )
 

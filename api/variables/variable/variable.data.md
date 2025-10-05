@@ -4,15 +4,15 @@ description: Returns the canonical name of the variable.
 
 # Variable.data
 
-property data: Dict
+`property data: Dict`
 
 ## Query Example
 
 ```python
 from glider import *
 
-def query():
 
+def query():
   state_variables = (
     StateVariables()
     .exec(5)
@@ -23,7 +23,7 @@ def query():
   return state_variables
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

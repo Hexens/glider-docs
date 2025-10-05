@@ -11,8 +11,8 @@ description: Returns state variable's parent contract if it exists.
 ```python
 from glider import *
 
-def query():
 
+def query():
   return [
     state_var.contract()
     for state_var 
@@ -20,6 +20,6 @@ def query():
   ]
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2024-09-23 at 18.59.20.png" alt=""><figcaption></figcaption></figure>

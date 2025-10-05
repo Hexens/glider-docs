@@ -14,11 +14,11 @@ description: >-
 ```python
 from glider import *
 
-def query():
 
+def query():
   return Instructions().internal_calls().exec(3,3)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (254).png" alt=""><figcaption></figcaption></figure>

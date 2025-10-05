@@ -11,11 +11,11 @@ description: Returns an Instructions object for the new variable creation instru
 ```python
 from glider import *
 
-def query():
 
+def query():
   return Instructions().new_variable_instructions().exec(2,3)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>

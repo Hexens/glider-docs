@@ -12,11 +12,13 @@ The function returns a [Callable](../callable/) object, specifically either a [F
 
 ```python
 from glider import *
+
+
 def query():
   #return the parent function/modifier of an instruction
   return [Instructions().exec(1)[0].get_parent()]
 ```
 
-## Output
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>

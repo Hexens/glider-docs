@@ -32,30 +32,38 @@ IUniswapV2Factory(factory).createPair(address(this),uniswapV2Router.WETH())
 it will return a function object representing the `IUniswapV2Factory` interface's `createPair` function
 {% endhint %}
 
-**Query Example**
+## **Query Example**
 
 ```python
 from glider import *
 
 def query():
-  instructions = Instructions().with_callee_function_name('require').exec(10)
+  instructions = (
+    Instructions()
+    .calls()
+    .exec(10, 80)
+    .filter(lambda instruction : instruction.get_parent().name in "slippedDailyRate")
+  )
 
   results = []
   for instruction in instructions:
-    for call in instruction.get_callee_values():
-      if not isinstance(call.get_function(),NoneObject):
-        print(call.expression)
-        results.append(call.get_function())
-      else:
-        print('no function object: ' + call.get_signature())
-
+    for call in instruction.get_components():
+      if isinstance(call, Call):
+        if not isinstance(call.get_function(), NoneObject):
+          print(call.expression)
+          print(instruction.get_parent().get_contract().address())
+          results.append(call.get_function())
+          break
+        else:
+          print('no function object: ' + call.signature)
+    break
   return results
 ```
 
-**Output Example**
+## **Example Output**
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-09 at 2.29.13 PM.png" alt=""><figcaption></figcaption></figure>
 
-### The function was called from the `_fallback()` instruction
+### The function was called from the `slippedDailyRate()` function:
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-09 at 2.34.38 PM.png" alt=""><figcaption></figcaption></figure>

@@ -1,2 +1,0 @@
-# Literal.get\_type()
-

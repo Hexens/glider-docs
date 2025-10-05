@@ -11,11 +11,11 @@ description: Returns an Instructions object for the 'start assembly' instruction
 ```python
 from glider import *
 
-def query():
 
+def query():
   return Instructions().start_asm_instructions().exec(1)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (261).png" alt=""><figcaption></figcaption></figure>

@@ -11,11 +11,11 @@ description: Returns an Instructions object for the call instructions
 ```python
 from glider import *
 
-def query():
-  
+
+def query():  
   return Instructions().calls().exec(3, 72)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure>

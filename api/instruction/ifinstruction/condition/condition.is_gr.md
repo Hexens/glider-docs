@@ -10,13 +10,11 @@ description: Returns true if it is ">" check, otherwise returns false.
 from glider import *
 
 def query():
-
-  instructions = Functions().with_name("checkIfBot").exec(1,1).instructions().if_instructions().exec(1)
-  print(instructions[0].get_condition().is_gr())
+  instructions = Instructions().if_instructions().exec(10).filter(lambda instruction : instruction.get_condition().is_gr())
 
   return instructions
 ```
 
 ## Output Example
 
-<figure><img src="../../../../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-09-03 at 1.42.09 PM.png" alt=""><figcaption></figcaption></figure>

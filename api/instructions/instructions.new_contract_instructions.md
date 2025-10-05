@@ -11,11 +11,11 @@ description: Returns an Instructions object for the instructions that create new
 ```python
 from glider import *
 
-def query():
 
+def query():
   return Instructions().new_contract_instructions().exec(1,2)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (258).png" alt=""><figcaption></figcaption></figure>

@@ -16,13 +16,16 @@ The function returns the derived classes from [Point](../point/), such as [Argum
 
 ```python
 from glider import *
+
+
 def query():
-  #fetch an instruction
-  instructions = Instructions().with_callee_function_name('verify').exec(1)
+  # Fetch an instruction
+  instructions = Instructions().with_callee_name('verify').exec(1)
   
   for points in instructions[0].backward_df():
     print(points.source_code())
-  # return the list of previous instructions of the current instruction
+
+  # Return the list of previous instructions of the current instruction
   return instructions
 ```
 
@@ -34,15 +37,18 @@ For the same contract, this query showcases that the return list elements are ty
 
 ```python
 from glider import *
+
+
 def query():
-  #fetch an instruction
-  instructions = Instructions().with_callee_function_name('verify').exec(1)
+  # Fetch an instruction
+  instructions = Instructions().with_callee_name('verify').exec(1)
   
   for points in instructions[0].backward_df():
     if isinstance(points, ArgumentPoint):
       print(points.get_variable().name)
     print(points.source_code())
-  # return the list of previous instructions of the current instruction
+
+  # Return the list of previous instructions of the current instruction
   return instructions
 ```
 

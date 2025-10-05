@@ -14,7 +14,7 @@ from glider import *
 def query():
     instructions = (
         Instructions()
-        .low_level_function_calls()
+        .low_level_external_calls()
         .exec(1, 137)
     )
 
@@ -25,6 +25,6 @@ def query():
     return instructions
 ```
 
-## Output Example
+## Example Output
 
-<figure><img src="../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-08 at 11.13.01 AM.png" alt=""><figcaption></figcaption></figure>

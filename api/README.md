@@ -193,7 +193,7 @@ contract Ownable {
 
 As one address (one main contract) can have multiple interfaces, libraries, contracts declared or even derived, built in a complex folder structure, Glider will generate Contract objects for all of them, though the address will be the same, and only one contract will be considered to be the main.&#x20;
 
-For the contract that is "main", meaning that its functions are being executed if a transaction is called, the engine marks this contract as "main" to distinguish it from others on the same address; see [Contract.is\_main()](contract/contract.is\_main.md).
+For the contract that is "main", meaning that its functions are being executed if a transaction is called, the engine marks this contract as "main" to distinguish it from others on the same address; see [Contract.is\_main()](contract/contract.is_main.md).
 
 While the [Contract](contract/) class is used to obtain information about a single contract, the [Contracts](./#contracts) class is used to query and/or filter contracts from a set or the whole database.
 
@@ -365,7 +365,7 @@ _;
 {% hint style="info" %}
 Note that the special underline symbol (\_), which is also called placer/placeholder, is also considered an instruction.
 
-See methods: [Instruction.is\_placer()](instruction/instruction.is\_placer.md), [Modifier.placer\_instructions()](callable/modifier/modifier.placer\_instructions.md), [Modifiers.placer\_instructions()](callables/modifiers/modifiers.placer\_instructions.md)
+See methods: [Instruction.is\_placer()](instruction/instruction.is_placeholder.md), [Modifier.placer\_instructions()](modifier/modifier.placeholder_instructions.md), [Modifiers.placer\_instructions()](modifiers/modifiers.placeholder_instructions.md)
 {% endhint %}
 
 The constructors are also considered functions; special methods can be used to query and check that a function is a constructor.
@@ -384,7 +384,7 @@ In Glider, the "parts" of the instruction are called [values](value/).
 
 ### Value
 
-The Value object represents a "part" of the instruction. Value by itself is a base class for different types of values such as [Call](value/call/), [Var](value/var/), [Literal](value/literal/) etc.
+The Value object represents a "part" of the instruction. Value by itself is a base class for different types of values such as [Call](value/call/), [Var](broken-reference), [Literal](value/literal/) etc.
 
 E.g. in the instruction
 
@@ -394,7 +394,7 @@ require(paused);
 <----Call----->
 ```
 
-The "part" representing the require call, will be of type [Call](value/call/) (class derived from Value), and the value `paused` will be of type [Var](value/var/) (class derived from Value) as it represents a variable.
+The "part" representing the require call, will be of type [Call](value/call/) (class derived from Value), and the value `paused` will be of type [Var](broken-reference) (class derived from Value) as it represents a variable.
 
 ## Arguments
 

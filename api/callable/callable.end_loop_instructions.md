@@ -15,7 +15,7 @@ end\_loop instruction is not a "real" instruction but rather an abstract one rep
 ```python
 from glider import *
 def query():
-  functions = Functions().exec(100)
+  functions = Functions().exec(500)
 
   loop = []
   for function in functions:

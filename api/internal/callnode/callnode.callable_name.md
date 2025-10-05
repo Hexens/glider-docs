@@ -11,6 +11,7 @@ description: Returns corresponding callable name.
 ```python
 from glider import *
 
+
 def query():
     contracts = Contracts().exec(1)
     contract = contracts[0]
@@ -19,10 +20,12 @@ def query():
     for call_node in call_nodes:
         print(call_node.callable_name())
 
-    return []
+    return contracts
 ```
 
 ## Example Output
+
+Output below represents printed output from the caller's source code:
 
 ```json
 [

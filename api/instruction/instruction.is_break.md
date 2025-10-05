@@ -12,7 +12,7 @@ description: Returns True if the instruction is break instruction, otherwise ret
 from glider import *
 
 def query():
-  return Instructions().exec(1000).filter(lambda x: x.is_break())
+  return Instructions().exec(10000).filter(lambda x: x.is_break())
 ```
 
 With the Glider 1.0 update, calling the [`exec`](../instructions/instructions.exec.md) function returns an [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`. You can then use [`Instruction`](./) functions, which are applied to each element of the [`APIList`](../iterables/apilist.md)`[`[`Instruction`](./)`]`

@@ -38,10 +38,10 @@ The easy way to put this is that it will follow the nodes where the variable `c`
 from glider import *
 
 def query():
-    #fetch an instruction
+    # Fetch an instruction
     instructions = Instructions().exec(1,16)
-    # return the list of instructions following the current instruction
-  
+    
+    # Return the list of instructions following the current instruction
     return instructions + list(instructions[0].forward_df())
 ```
 

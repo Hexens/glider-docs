@@ -13,12 +13,12 @@ The [Instructions](./) object returned includes all entry points to functions.
 ```python
 from glider import *
 
+
 def query():
-  
   return Instructions().entry_point_instructions().exec(1)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
 

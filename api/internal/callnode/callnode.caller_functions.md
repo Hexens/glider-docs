@@ -17,7 +17,8 @@ from glider import *
 
 def query():
   data = []
-  instructions = Instructions().with_callee_function_name_prefix('burn').exec(10)
+  instructions = Instructions().with_callee_name_prefix('burn').exec(10)
+  
   for instruction in instructions:
     if len(data) > 0:
       break # demo first result only
@@ -25,6 +26,7 @@ def query():
     contract = functionContainsBurn.get_contract() #api.contracts.Contract
     call_graph = contract.call_graph() #api.call_graph.CallGraph 
     nodes = call_graph.nodes() #Dict[str, CallNode]
+    
     for id in nodes:
       if(id != functionContainsBurn.db_id):
         continue
@@ -35,10 +37,13 @@ def query():
         for caller in callers:
           print(caller.source_code())
         data.append(instruction)
+        
   return data
 ```
 
 ## Example Output
+
+Output below represents printed output from the caller's source code:
 
 ```json
 {

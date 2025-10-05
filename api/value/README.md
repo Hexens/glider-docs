@@ -23,7 +23,7 @@ the `bar()` - call, `bar()-1` expression and `foo(bar()-1)` calls will be the va
 While the Value is a very important part of the engine, one will most likely never work with the Value class directly, but rather with the derived classes of the Value, which are:
 
 * [Call](call/)
-* [Var](var/)
+* [Var](broken-reference)
 * [ValueExpression](valueexpression/)
 * ValueContractType
 * [Literal](literal/)

@@ -20,7 +20,9 @@ The qualifier is the:
 feeCollector_
 ```
 
-**Query Example**
+Sometimes, the qualifier itself is a call. In that case, you will be returned another Call.
+
+## **Query Example**
 
 ```python
 from glider import *
@@ -28,8 +30,9 @@ from glider import *
 def query():
     instructions = (
         Instructions()
-        .low_level_function_calls()
-        .exec(1, 137)
+        .low_level_external_calls()
+        .exec(1000)
+        .filter(lambda instruction : instruction.get_parent().get_contract().name == "PoolEth")
     )
 
     for ins in instructions:
@@ -39,8 +42,6 @@ def query():
     return instructions
 ```
 
-**Output**
+## **Example Output**
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-Sometimes, the qualifier itself is a cal
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-09 at 1.04.07 PM.png" alt=""><figcaption></figcaption></figure>

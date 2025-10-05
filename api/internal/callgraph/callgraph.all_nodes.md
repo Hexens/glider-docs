@@ -11,6 +11,7 @@ description: Returns the list of all call nodes.
 ```python
 from glider import *
 
+
 def query():
     contracts = Contracts().exec(1)
     contract = contracts[0]
@@ -20,7 +21,7 @@ def query():
         for call_node in call_nodes:
             print(call_node.callable_name())
 
-    return []
+    return contracts
 ```
 
 ## Example Output

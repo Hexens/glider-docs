@@ -13,11 +13,11 @@ description: Executes the formed query and returns the list of Instruction objec
 ```python
 from glider import *
 
+
 def query():
-  
   return Instructions().exec(10)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>

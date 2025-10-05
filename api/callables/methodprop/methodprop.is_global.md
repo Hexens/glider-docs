@@ -29,7 +29,7 @@ def query():
       .exec(1)
   print(functions[0].source_code())
   print(functions[0].address())
-  return []
+  return functions
 ```
 
 Output:

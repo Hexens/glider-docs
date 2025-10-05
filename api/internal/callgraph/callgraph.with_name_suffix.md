@@ -13,6 +13,7 @@ description: >-
 ```python
 from glider import *
 
+
 def query():
     # Fetch the first contract
     contracts = Contracts().exec(1)
@@ -21,7 +22,8 @@ def query():
     call_nodes = contracts[0].call_graph().with_name_suffix("Sender")
     for node in call_nodes:
         print(node.callable_name())
-    return []
+
+    return contracts
 ```
 
 ## Output Example

@@ -11,10 +11,13 @@ description: >-
 ## Query Example
 
 ```python
+from glider import *
+
+
 def query():
   instructions = (
     Instructions()
-    .exec(10, 10)
+    .exec(10)
     .filter(lambda x: x.has_global_df())
   )
   

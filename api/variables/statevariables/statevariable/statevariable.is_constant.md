@@ -6,18 +6,16 @@ description: Returns true if the state variable is constant, otherwise returns f
 
 `is_constant() → bool`
 
-
-
 ## Query Example
 
 ```python
 from glider import *
 
-def query():
 
+def query():
   state_variables = (
     StateVariables()
-    .exec(20)
+    .exec(40)
     .filter(lambda state_variable: state_variable.is_constant())
   )
 
@@ -26,6 +24,6 @@ def query():
   return state_variables
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

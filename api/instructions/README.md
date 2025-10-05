@@ -72,8 +72,8 @@ Bases: [Queryable](../internal/queryable/)
 [Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="instructions.low_level_function_calls.md" %}
-[instructions.low\_level\_function\_calls.md](instructions.low_level_function_calls.md)
+{% content-ref url="instructions.low_level_external_calls.md" %}
+[instructions.low\_level\_external\_calls.md](instructions.low_level_external_calls.md)
 {% endcontent-ref %}
 
 {% content-ref url="instructions.low_level_static_calls.md" %}
@@ -88,24 +88,24 @@ Bases: [Queryable](../internal/queryable/)
 [Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="instructions.with_callee_function_name.md" %}
-[instructions.with\_callee\_function\_name.md](instructions.with_callee_function_name.md)
+{% content-ref url="instructions.with_callee_name.md" %}
+[instructions.with\_callee\_name.md](instructions.with_callee_name.md)
 {% endcontent-ref %}
 
-{% content-ref url="instructions.without_callee_function_names.md" %}
-[instructions.without\_callee\_function\_names.md](instructions.without_callee_function_names.md)
+{% content-ref url="instructions.without_callee_names.md" %}
+[instructions.without\_callee\_names.md](instructions.without_callee_names.md)
 {% endcontent-ref %}
 
-{% content-ref url="instructions.with_called_function_name_prefix.md" %}
-[instructions.with\_called\_function\_name\_prefix.md](instructions.with_called_function_name_prefix.md)
+{% content-ref url="instructions.with_callee_name_prefix.md" %}
+[instructions.with\_callee\_name\_prefix.md](instructions.with_callee_name_prefix.md)
 {% endcontent-ref %}
 
-{% content-ref url="instructions.with_callee_function_name_suffix.md" %}
-[instructions.with\_callee\_function\_name\_suffix.md](instructions.with_callee_function_name_suffix.md)
+{% content-ref url="instructions.with_callee_name_suffix.md" %}
+[instructions.with\_callee\_name\_suffix.md](instructions.with_callee_name_suffix.md)
 {% endcontent-ref %}
 
-{% content-ref url="instructions.with_called_function_signature.md" %}
-[instructions.with\_called\_function\_signature.md](instructions.with_called_function_signature.md)
+{% content-ref url="instructions.with_callee_signature.md" %}
+[instructions.with\_callee\_signature.md](instructions.with_callee_signature.md)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}

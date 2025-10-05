@@ -23,7 +23,7 @@ def query():
   return state_variables
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

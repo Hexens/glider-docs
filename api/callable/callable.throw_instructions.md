@@ -6,12 +6,14 @@ description: Returns throw instructions of the function/modifier.
 
 `throw_instructions() →` [`Instructions`](../instructions/)
 
-## Example
+## Query Example&#x20;
 
 ```python
 from glider import *
+
+
 def query():
-  functions = Functions().exec(10000)
+  functions = Functions().with_name("setTokenExchangeRate").exec(1)
 
   throw_instructions = []
   for function in functions:
@@ -22,8 +24,7 @@ def query():
   return throw_instructions
 ```
 
-## Example output
+## Example Output
 
+<figure><img src="../../.gitbook/assets/Screenshot 2025-08-25 at 2.12.14 PM.png" alt=""><figcaption></figcaption></figure>
 
-
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

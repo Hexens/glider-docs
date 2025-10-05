@@ -12,7 +12,7 @@ description: Returns start assembly instructions of the function/modifier.
 from glider import *
 
 def query():
-  functions = Functions().exec(100)
+  functions = Functions().exec(500)
 
   start_asm_instructions = []
   for function in functions:

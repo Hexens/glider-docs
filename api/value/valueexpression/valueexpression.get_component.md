@@ -15,6 +15,7 @@ from glider import *
 def query():
     instructions = (
         Instructions()
+        .new_variable_instructions()
         .exec(1,1)
     )
     for instruction in instructions:

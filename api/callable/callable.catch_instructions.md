@@ -11,7 +11,7 @@ description: Returns catch instructions of the function/modifier.
 ```python
 from glider import *
 def query():
-  functions = Functions().exec(400)
+  functions = Functions().exec(5000)
 
   catch_instructions = []
   for function in functions:

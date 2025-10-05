@@ -8,15 +8,13 @@ description: >-
 
 `with_one_property(properties: List[`[`StateVariableProp`](../statevariableprop.md)`]) →` [`StateVariables`](./)
 
-
-
 ## Query Example
 
 ```python
 from glider import *
 
-def query():
 
+def query():
   state_variables = (
     StateVariables()
     .with_one_property([StateVariableProp.PRIVATE, StateVariableProp.PUBLIC])
@@ -29,7 +27,7 @@ def query():
   return state_variables
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

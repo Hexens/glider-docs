@@ -13,11 +13,11 @@ description: >-
 ```python
 from glider import *
 
-def query():
 
+def query():
   return Instructions().asm_block_instructions().exec(2, 2)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure>

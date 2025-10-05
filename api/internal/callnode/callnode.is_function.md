@@ -20,17 +20,9 @@ def query():
     
     print(f"Is call node {call_node.callable_name()} a function: {call_node.is_function}")
  
-    return []
+    return contracts
 ```
 
 ## Example Output
 
-```json
-[
-  {
-    "print_output": [
-      "Is call node transferAndCall a function: True"
-    ]
-  }
-]
-```
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-10 at 6.08.26 PM.png" alt=""><figcaption></figcaption></figure>

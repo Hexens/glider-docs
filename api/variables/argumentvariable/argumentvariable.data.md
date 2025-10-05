@@ -9,20 +9,21 @@ description: Returns detailed information about the argument variable.
 ```python
 from glider import *
 
-def query():
 
+def query():
   functions = (
     Functions()
     .exec(1, 50)
-    )
+  )
 
   for func in functions:
     args = func.arguments()
     print(args.list()[0].get_variable().data)
+    
   return functions
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 

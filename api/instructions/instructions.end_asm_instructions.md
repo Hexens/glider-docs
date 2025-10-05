@@ -11,11 +11,11 @@ description: Returns an Instructions object for the 'end assembly' instructions.
 ```python
 from glider import *
 
+
 def query():
-  
   return Instructions().end_asm_instructions().exec(1)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>

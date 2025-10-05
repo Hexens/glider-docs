@@ -11,6 +11,7 @@ description: Returns the map of all call nodes. The key of the map is the id of 
 ```python
 from glider import *
 
+
 def query():
   # Query first contract
   contracts = Contracts().exec(1)
@@ -21,7 +22,8 @@ def query():
   # print all call nodes' corresponding function names
   for node_id in call_nodes:
     print(call_nodes[node_id].callable_name())
-  return []
+    
+  return contracts
 ```
 
 ## Example Output

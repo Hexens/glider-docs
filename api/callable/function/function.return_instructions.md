@@ -9,7 +9,7 @@ from glider import *
 
 def query():
   # Fetch a list of functions
-  functions = Functions().exec(10, 10)
+  functions = Functions().exec(20)
 
   # Retrieve the return instructions of the first function
   instruction = functions[0].return_instructions().exec()

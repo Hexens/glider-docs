@@ -11,11 +11,11 @@ description: Returns an Instructions object for the 'try' instructions.
 ```python
 from glider import *
 
-def query():
 
+def query():
   return Instructions().try_instructions().exec(1)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>

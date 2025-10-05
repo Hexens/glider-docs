@@ -6,9 +6,7 @@ description: Returns Value representing the gas-parameter used in the external c
 
 `get_call_gas() ->` [`APIList`](../../iterables/apilist.md)`[Union[`[`Value`](../value/)`,` [`NoneObject`](../../internal/noneobject/)`]]`
 
-
-
-**Query Example**
+## **Query Example**
 
 ```python
 from glider import *
@@ -16,17 +14,19 @@ from glider import *
 def query():
     instructions = (
         Instructions()
-        .low_level_function_calls()
-        .exec(1, 137)
+        .low_level_external_calls()
+        .exec(1000)
+        .filter(lambda instruction : instruction.get_parent().get_contract().name == "PoolEth")
     )
 
     for ins in instructions:
-        print(ins.get_value().get_callee_values().get_call_gas())
-        print(ins.get_value().get_callee_values().get_call_gas().expression)
+        callee_values = ins.get_value().get_callee_values()
+        print(callee_values.get_call_gas())
+        print(callee_values.get_call_gas().expression)
 
     return instructions
 ```
 
-**Output**
+## **Example Output**
 
-<figure><img src="../../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-09 at 1.01.24 PM.png" alt=""><figcaption></figcaption></figure>

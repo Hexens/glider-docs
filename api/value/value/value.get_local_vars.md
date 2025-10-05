@@ -15,17 +15,20 @@ The function returns all the local variables used (read/written) inside the Valu
 ```python
 from glider import *
 
+
 def query():
     instructions = (
         Instructions()
-        .exec(1,79)
+        .new_variable_instructions()
+        .exec(1)
     )
+
     for instruction in instructions:
-        print(instruction.get_components().get_local_vars().expression)
+        print(instruction.get_dest().get_local_vars().expression)
+
     return instructions
 ```
 
 ## Example Output
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-10-11 at 15.27.43.png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-08 at 11.32.26 AM.png" alt=""><figcaption></figcaption></figure>

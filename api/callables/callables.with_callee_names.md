@@ -15,6 +15,7 @@ This method can be called on all [Callables](./) child classes: [Functions](func
 ```python
 from glider import *
 
+
 def query():
   # Retrieve all the modifiers with the signature `nonReentrant()`
   functions = Functions().with_callee_names(["owner", "msgSender"]).exec(1)
@@ -31,6 +32,7 @@ def query():
 
 ```python
 from glider import *
+
 
 def query():
   # Retrieve all the modifiers with the signature `nonReentrant()`

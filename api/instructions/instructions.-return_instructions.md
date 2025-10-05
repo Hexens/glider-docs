@@ -9,11 +9,11 @@ Returns an [Instructions](./) object for the 'return' instructions.
 ```python
 from glider import *
 
-def query():
 
+def query():
   return Instructions().return_instructions().exec(2,18)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>

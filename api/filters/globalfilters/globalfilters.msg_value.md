@@ -1,0 +1,23 @@
+# GlobalFilters.MSG\_VALUE
+
+The MSG\_VALUE property is used to add a filter to include or exclude functions that calls `msg.value`.&#x20;
+
+### Query Example
+
+```python
+from glider import *
+
+
+def query():
+  functions = (
+    Functions()
+    .with_globals(GlobalFilters.MSG_VALUE)
+    .exec(1)
+  )
+  
+  return functions
+```
+
+### Example Output
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-08-28 at 12.47.41 PM.png" alt=""><figcaption></figcaption></figure>

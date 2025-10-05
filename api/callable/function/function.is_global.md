@@ -6,7 +6,7 @@ description: Returns true if the function is global, otherwise returns false.
 
 `is_global() → bool`
 
-## Example
+## Query Example
 
 ```python
 from glider import *
@@ -14,13 +14,13 @@ from glider import *
 def query():
     global_functions = (
       Functions()
-      .exec(30_000)
+      .exec(85_200)
       .filter(lambda x: x.is_global())
     )
 
     return global_functions
 ```
 
-## Output
+## Example Output
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-08-15 at 2.58.32 PM.png" alt=""><figcaption></figcaption></figure>

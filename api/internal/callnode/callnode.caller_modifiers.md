@@ -13,6 +13,7 @@ description: >-
 ```python
 from glider import *
 
+
 def query():
     contracts = Contracts().exec(1,3)
     contract = contracts[0]
@@ -25,18 +26,9 @@ def query():
     for modifier in call_node.caller_modifiers().exec():
         print(f"Caller modifier name {modifier.name}")
 
-    return []
+    return contracts
 ```
 
 ## Example Output
 
-```json
-[
-  {
-    "print_output": [
-      "Call node function name: _msgSender",
-      "Caller modifier name onlyOwner"
-    ]
-  }
-]
-```
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-10 at 6.10.08 PM.png" alt=""><figcaption></figcaption></figure>

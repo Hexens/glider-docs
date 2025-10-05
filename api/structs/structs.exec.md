@@ -11,23 +11,17 @@ description: Executes the formed query and returns the list of Struct objects.
 ```python
 from glider import *
 
+
 def query():
-  contracts = Contracts().exec(1, 26)
+  contracts = Contracts().with_name("DefaultReserveInterestRateStrategy").exec(1)
 
-  for struct in contracts[0].structs().exec():
-    print(struct.name)
+  for contract in contracts:
+    for struct in contract.structs().exec():
+      print(struct.name)
 
-  return []
+  return contracts
 ```
 
 ## Example Output
 
-```json
-[
-  {
-    "print_output": [
-      "UserInfo"
-    ]
-  }
-]
-```
+<figure><img src="../../.gitbook/assets/Screenshot 2025-09-10 at 5.43.41 PM.png" alt=""><figcaption></figcaption></figure>

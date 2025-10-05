@@ -11,11 +11,11 @@ description: Returns an Instructions object for the 'catch' instructions
 ```python
 from glider import *
 
-def query():
-  
+
+def query():  
   return Instructions().catch_instructions().exec(1,1)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>

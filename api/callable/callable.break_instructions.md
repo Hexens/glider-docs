@@ -10,8 +10,10 @@ description: Returns break instructions of the function/modifier.
 
 ```python
 from glider import *
+
+
 def query():
-  functions = Functions().exec(100)
+  functions = Functions().with_name("removeLiquidityPool").exec(1, 1)
 
   results = []
   for function in functions:
@@ -24,4 +26,4 @@ def query():
 
 ## Example output
 
-<figure><img src="../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-08-21 at 11.22.13 AM.png" alt=""><figcaption></figcaption></figure>

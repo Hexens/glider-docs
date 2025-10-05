@@ -14,11 +14,11 @@ description: >-
 ```python
 from glider import *
 
+
 def query():
-  
   return Instructions().functions().exec(1)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>

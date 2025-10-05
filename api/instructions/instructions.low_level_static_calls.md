@@ -11,11 +11,11 @@ description: Returns a list of all low level static call instructions.
 ```python
 from glider import *
 
-def query():
 
+def query():
   return Instructions().low_level_static_calls().exec(3)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (256).png" alt=""><figcaption></figcaption></figure>

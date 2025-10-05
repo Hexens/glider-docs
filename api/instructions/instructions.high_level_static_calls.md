@@ -11,12 +11,12 @@ description: Returns a list of all high level static call instructions.
 ```python
 from glider import *
 
-def query():
 
+def query():
   return Instructions().high_level_static_calls().exec(1, 5)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 

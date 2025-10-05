@@ -12,6 +12,7 @@ description: >-
 
 <pre class="language-python"><code class="lang-python">from glider import *
 
+
 def query():
 <strong>    # Fetch the first contract
 </strong><strong>    contracts = Contracts().exec(1)
@@ -21,7 +22,7 @@ def query():
     for node in call_nodes:
         print(node.callable_name())
     
-    return []
+    return contracts
 </code></pre>
 
 ## Example Output

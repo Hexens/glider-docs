@@ -9,15 +9,13 @@ description: >-
 
 `is_accessible() → bool`
 
-
-
 ## Query Example
 
 ```python
 from glider import *
 
-def query():
 
+def query():
   state_variables = (
     StateVariables()
     .exec(5, 10)
@@ -29,6 +27,6 @@ def query():
   return state_variables
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

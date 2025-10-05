@@ -4,19 +4,19 @@ description: Returns the Instructions object withe all the external call instruc
 
 # Instructions.external\_calls()
 
-**`external_calls`**`() →` [`Instructions`](./)
+`external_calls() →` [`Instructions`](./)
 
 ## Query Example
 
 ```python
 from glider import *
 
+
 def query():
-  
   return Instructions().external_calls().exec(3, 13)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 

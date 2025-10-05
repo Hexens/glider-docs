@@ -14,13 +14,15 @@ description: >-
 ```python
 from glider import *
 
-def query():
 
+def query():
   instructions = Instructions().exec(1, 77)
+  
   for ins in instructions:
     reaching_points = ins.df_reaching_functions_arguments()
     for reaching_point in reaching_points:
       print(f"Point: {reaching_point[0].source_code()} | Argument index {reaching_point[1]}")
+  
   return instructions
 ```
 

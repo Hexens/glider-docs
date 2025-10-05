@@ -11,6 +11,7 @@ description: Returns the list of ArgumentPoints having specified name.
 ```python
 from glider import *
 
+
 def query():
     functions = (
         Functions()

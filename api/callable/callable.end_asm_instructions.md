@@ -12,7 +12,7 @@ description: Returns end_assembly instructions of the function/modifier.
 from glider import *
 
 def query():
-    functions = Functions().exec(100)
+    functions = Functions().exec(300)
 
     assembly = []
     for function in functions:

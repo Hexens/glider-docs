@@ -11,11 +11,11 @@ description: Returns an Instructions object for the 'end loop' instructions.
 ```python
 from glider import *
 
+
 def query():
-  
   return Instructions().end_loop_instructions().exec(1)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>

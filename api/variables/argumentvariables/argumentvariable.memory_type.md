@@ -11,8 +11,8 @@ description: Returns the memory type of the argument variable.
 ```python
 from glider import *
 
-def query():
 
+def query():
   functions = (
     Functions()
     .exec(1, 50)
@@ -21,10 +21,11 @@ def query():
   for func in functions:
     args = func.arguments()
     print(f"Memory type: {args.list()[0].get_variable().memory_type}")
+
   return functions
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 

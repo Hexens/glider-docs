@@ -11,8 +11,8 @@ description: Adds a filter to get state variables that have the given type.
 ```python
 from glider import *
 
-def query():
 
+def query():
   state_variables = (
     StateVariables()
     .with_type("mapping(uint256 => uint256)")
@@ -25,6 +25,6 @@ def query():
   return state_variables
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

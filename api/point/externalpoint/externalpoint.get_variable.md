@@ -11,8 +11,8 @@ description: Abstract method that returns object of variable
 ```python
 from glider import *
 
-def query():
 
+def query():
     functions = (
         Functions()
         .with_name("transferFrom")
@@ -29,4 +29,3 @@ def query():
 ## Output Example
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-

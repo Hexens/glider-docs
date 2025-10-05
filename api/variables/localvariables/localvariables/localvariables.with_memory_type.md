@@ -11,21 +11,22 @@ description: Returns the list of local variables having specified memory type.
 ```python
 from glider import *
 
-def query():
 
+def query():
   functions = (
     Functions()
-    .exec(1, 50)
-    )
+    .with_name("functionCallWithValue")
+    .exec(3)
+  )
 
   for func in functions:
     local_vars = func.local_variables().with_memory_type("memory")
-    print(local_vars[0].source_code())
+    for local_var in local_vars:
+      print(local_var.source_code())
 
   return functions
 ```
 
-## Output Example
+## Example Output
 
-<figure><img src="../../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-09-10 at 3.51.37 PM.png" alt=""><figcaption></figcaption></figure>

@@ -32,6 +32,8 @@ contract Example {
 }
 ```
 
+## Query Example
+
 An example of a query which adds a filter to select functions which have modifiers with the name "onlyOwner" is:
 
 ```python
@@ -47,6 +49,6 @@ def query():
   return modifiers
 ```
 
-## Output
+## Example Output
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -11,18 +11,23 @@ description: Returns the value expression's components
 ```python
 from glider import *
 
+
 def query():
     instructions = (
         Instructions()
-        .exec(1,27)
+        .exec(1, 6)
     )
     for instruction in instructions:
-        for component in instruction.get_value().get_components():
-            print(component)
-            print(component.expression)
+        main_value = instruction.get_value()
+
+        if isinstance(main_value, ValueExpression):
+          for component in main_value.get_components():
+              print(component)
+              print(component.expression)
+              
     return instructions
 ```
 
-## Output Example
+## Example Output
 
-<figure><img src="../../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-08 at 1.49.30 PM.png" alt=""><figcaption></figcaption></figure>

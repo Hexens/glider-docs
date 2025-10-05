@@ -10,30 +10,40 @@ description: >-
 
 ## Function Example
 
+### Example Query
+
 ```python
 from glider import *
 
-def query():
-  functions = Functions().with_declarer_contract_name("OFTCoreUpgradeable").exec(10)
 
-  return functions
+def query():
+  # Retrieve the contracts of a list of functions
+  contracts = Functions().with_declarer_contract_name("TestToken").exec(2)
+
+  # Return the first five contracts
+  return contracts[:5]
 ```
 
-## Output&#x20;
+### Query Output&#x20;
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-08-25 at 5.22.26 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## Modifier Example
 
+### Example Query
+
 ```python
 from glider import *
 
-def query():
-  functions = Modifiers().with_declarer_contract_name("Ownable").exec(10)
 
-  return functions
+def query():
+  # Retrieve the contracts of a list of modifiers
+  contracts = Modifiers().with_declarer_contract_name("TestToken").exec(2)
+
+  # Return the first five contracts
+  return contracts[:5]
 ```
 
-## Output
+### Query Output
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-08-25 at 5.19.25 PM.png" alt=""><figcaption></figcaption></figure>

@@ -11,7 +11,7 @@ description: Returns continue instructions of the function/modifier.
 ```python
 from glider import *
 def query():
-  functions = Functions().exec(100)
+  functions = Functions().exec(9000)
 
   continue_instructions = []
   for function in functions:

@@ -11,8 +11,8 @@ description: Convert ArgumentPoints to List[ArgumentPoint]
 ```python
 from glider import *
 
-def query():
 
+def query():
     functions = (
         Functions()
         .with_name("transferFrom")

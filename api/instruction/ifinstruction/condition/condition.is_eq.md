@@ -19,6 +19,6 @@ def query():
   return instructionlist
 ```
 
-Outputs:
+## Example Output
 
 <figure><img src="../../../../.gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>

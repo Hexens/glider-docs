@@ -13,6 +13,7 @@ description: >-
 ```python
 from glider import *
 
+
 def query():
     contracts = Contracts().exec(10,1)
     contract = contracts[0]
@@ -24,10 +25,12 @@ def query():
     for modifier in call_node.callee_modifiers().exec():
         print(f"Function name: {call_node_name} | Callee modifier name: {modifier.name}")
 
-    return []
+    return contracts
 ```
 
 ## Output Example
+
+Output below represents printed output from the caller's source code:
 
 ```json
 [

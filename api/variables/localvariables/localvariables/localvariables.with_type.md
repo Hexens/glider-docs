@@ -6,26 +6,27 @@ description: Returns the list of local variables having specified type.
 
 `with_type(var_type: str) →` [`APIList`](../../../iterables/apilist.md)`[`[`LocalVariable`](../localvariable/)`]`
 
-
-
 ## Query Example
 
 ```python
 from glider import *
 
+
 def query():
-
-  local_variables = (
+  functions = (
     Functions()
-    .exec(1, 17)
-    .local_variables()
-    )
+    .with_name("purchaseDataset")
+    .exec(1)
+  )
 
-  print(local_variables[0].with_type("address").source_code())
+  for func in functions:
+    local_vars = func.local_variables().with_type("address")
+    for local_var in local_vars:
+      print(local_var.source_code())
 
-  return []
+  return functions
 ```
 
-## Output Example&#x20;
+## Example Output
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-09-10 at 3.57.27 PM.png" alt=""><figcaption></figcaption></figure>

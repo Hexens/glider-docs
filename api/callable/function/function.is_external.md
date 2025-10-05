@@ -8,7 +8,7 @@ description: >-
 
 `is_external() → bool`
 
-## Example
+## Query Example
 
 ```python
 from glider import *
@@ -16,13 +16,13 @@ from glider import *
 def query():
     external_functions = (
       Functions()
-      .exec(10, 100)
+      .exec(100)
       .filter(lambda x: x.is_external())
     )
 
     return external_functions
 ```
 
-## Output
+## Example Output
 
-<figure><img src="../../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-08-15 at 2.48.19 PM.png" alt=""><figcaption></figcaption></figure>

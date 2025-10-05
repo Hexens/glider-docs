@@ -13,9 +13,10 @@ description: >-
 ```python
 from glider import *
 
+
 def query():
     data = []
-    instructions = Instructions().with_callee_function_name_prefix('burn').exec(10)
+    instructions = Instructions().with_callee_name_prefix('burn').exec(10)
 
     for instruction in instructions:
         if len(data) > 0:
@@ -39,43 +40,4 @@ def query():
 
 ## Example Output
 
-```solidity
-{
-  "print_output": [
-    function createStakingPool(
-            IERC20 _stakingToken,IERC20 _poolToken,uint256 _startTime,uint256 _finishTime,uint256 _poolTokenAmount,bool _hasWhitelisting
-        ) external {
-    
-            if(feeAmount > 0) {
-                uint256 burnAmount = feeAmount.mul(burnPercent).div(divider);
-    
-                feeToken.safeTransferFrom(
-                    msg.sender,feeWallet,feeAmount.sub(burnAmount)
-                );
-                
-                if(burnAmount > 0) {
-                    feeToken.safeTransferFrom(msg.sender,address(this),burnAmount);
-                    feeToken.burn(burnAmount);
-                }
-            }
-    
-            StakingPool stakingPool =
-                new StakingPool(
-                    _stakingToken,_poolToken,_startTime,_finishTime,_poolTokenAmount,_hasWhitelisting
-                );
-            stakingPool.transferOwnership(msg.sender);
-    
-            _poolToken.safeTransferFrom(
-                msg.sender,address(stakingPool),_poolTokenAmount
-            );
-            
-            require(_poolToken.balanceOf(address(stakingPool)) == _poolTokenAmount,"Unsupported token");
-    
-            emit StakingPoolCreated(msg.sender,address(stakingPool),address(_stakingToken),address(_poolToken),_startTime,_finishTime,_poolTokenAmount);
-    }    
-    "caller: _mint",
-    "caller: _burn",
-    "caller: _transfer"
-  ]
-}
-```
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-10 at 6.09.37 PM.png" alt=""><figcaption></figcaption></figure>

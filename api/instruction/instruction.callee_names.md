@@ -20,14 +20,17 @@ The functions will return `['_exists', 'require']`
 
 ```python
 from glider import *
+
+
 def query():
-  #fetch an instruction
-  instruction = Instructions().with_callee_function_name('require').exec(1,30)
-  #print the list of function names called from the instruction
+  # Fetch an instruction
+  instruction = Instructions().with_callee_name('require').exec(1,30)
+  
+  # Print the list of function names called from the instruction
   print(instruction[0].callee_names()) 
   return instruction
 ```
 
-## Output
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>

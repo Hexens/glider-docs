@@ -11,11 +11,11 @@ description: Returns a list of delegate call instructions from assembly.
 ```python
 from glider import *
 
+
 def query():
-  
   return Instructions().delegate_calls_from_assembly().exec(1)
 ```
 
-## Output Example
+## Example Output
 
 <figure><img src="../../.gitbook/assets/image (245).png" alt=""><figcaption></figcaption></figure>
