@@ -1,8 +1,9 @@
 ---
 description: This page explains how the Glider UI works and what features it has
+icon: play
 ---
 
-# 🔧 Glider Usage
+# Glider Usage
 
 ## Using the Glider IDE
 
@@ -38,19 +39,19 @@ Unlike non-recent chains, recent chains are not deduplicated - meaning the Glide
 
       * **Contract**: When you return a contract, you get the contract address, which is a link to the contract's page on a scanner (like Etherscan), along with the contract's name.
 
-      <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
       * **Function**: When you return a function, you get the source code of the function, along with the address and name of the contract where it is defined.
 
-      <figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src=".gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
       * **Instruction**: When you return an instruction, you get the source code of the function where the instruction is used. **GliderIDE** will automatically highlight the instruction in the function's source code. It also returns the address and name of the contract where the function is defined and used.
 
-      <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src=".gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
       * **Print**: The print output appears in a separate window at the bottom of the output area, displaying any text you choose to print.
 
-      <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src=".gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Creating, Importing, and Sharing Queries
 

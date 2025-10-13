@@ -2,9 +2,10 @@
 description: >-
   This page describes the current functionality and future development
   milestones.
+icon: map-location-dot
 ---
 
-# 🗺️ Roadmap
+# Roadmap
 
 Currently, Glider has the capability to run queries and do CFG/DFG analysis on a scale, but there is still a lot to do and to improve; this is not even version 1.0.
 

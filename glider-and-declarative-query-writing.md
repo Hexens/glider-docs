@@ -1,4 +1,8 @@
-# ✍️ Glider and Declarative Query Writing
+---
+icon: pen-fancy
+---
+
+# Glider and Declarative Query Writing
 
 ## Glider and Declarative Query Writing
 

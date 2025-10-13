@@ -1,8 +1,9 @@
 ---
 description: Glider, Semgrep, Solgrep, SAST
+icon: web-awesome
 ---
 
-# 👥 Comparison with other tools
+# Comparison with other tools
 
 There are a variety of static analysis tools that one can use for security research purposes. In this page, we will compare Glider to some of the other tools mainly used by researchers.
 

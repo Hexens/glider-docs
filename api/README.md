@@ -1,8 +1,9 @@
 ---
 description: Write queries, describe code scenarios and find matching contract code
+icon: plug
 ---
 
-# 📙 API
+# API
 
 
 

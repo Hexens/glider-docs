@@ -2,7 +2,7 @@
 description: High-level introduction to the Glider query framework
 ---
 
-# Glider introduction
+# 🚀 Glider introduction
 
 [Glider](https://glide.r.xyz/) is a code query engine designed to run variant and data analysis on smart contracts by providing a framework that gives anyone the ability to query contract code as one would do with data.
 

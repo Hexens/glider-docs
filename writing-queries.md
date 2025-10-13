@@ -1,8 +1,9 @@
 ---
 description: This page describes what are the main concepts of writing Glider queries.
+icon: pen-line
 ---
 
-# 🏄 Writing Queries
+# Writing Queries
 
 A query can be separated into two parts: declarative queries (also called online part) and imperative arbitrary logic part (offline part)
 

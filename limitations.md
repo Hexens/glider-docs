@@ -1,8 +1,9 @@
 ---
 description: This page describes limitations implemented on query execution.
+icon: road-barrier
 ---
 
-# 🚧 Limitations
+# Limitations
 
 ## Time limit
 
