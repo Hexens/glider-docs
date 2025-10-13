@@ -1,4 +1,5 @@
 ---
+description: Find frequently asked questions about Glider and the Glider contest below.
 icon: question
 cover: ../.gitbook/assets/Glider QDB.png
 coverY: 0
@@ -40,19 +41,19 @@ No. Remedy doesn’t claim any rewards, fees, or commissions associated with any
 
 <details>
 
-<summary>What is “Rarity”? !!!</summary>
+<summary>What is “Rarity”?</summary>
 
 Rarity (Uncommon/Rare/Epic/Legendary) is used to measure Glider query’s quality. It is set by the triager using weighted risk metrics (e.g., Risk Likelihood, Impact, Potential, Initial Damage, Remedy Opinion). Legendary is the rarest.
 
-Learn more about rarity and how it's being defined in (link)
+Learn more about rarity and how it's being defined in [triage-guidelines.md](triage-guidelines.md "mention")
 
 </details>
 
 <details>
 
-<summary><span data-gb-custom-inline data-tag="emoji" data-code="2b50">⭐</span> Which bugs are queryable with Glider? !!!</summary>
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="2b50">⭐</span> Which bugs are queryable with Glider?</summary>
 
-Ideally participants should come up with any vulnerability scenario that no one has reported yet, if you run out of ideas you can always check out Glider Query Guide: Recommended Vulnerabilities for hand-picked bugs that are suggested to formalize as Glider queries.
+Ideally participants should come up with any vulnerability scenario that no one has reported yet, if you run out of ideas you can always check out [recommended-vulnerabilities-to-query.md](recommended-vulnerabilities-to-query.md "mention") for hand-picked bugs that are suggested to formalize as Glider queries.
 
 </details>
 
@@ -74,11 +75,11 @@ No, however, in certain cases, the Triager has the right and the ability to set 
 
 <details>
 
-<summary>Who and how assess the queries?  !!</summary>
+<summary>Who and how assess the queries?</summary>
 
-After query submission the system creates a thread with a Remedy triager. All communications around the submission take place in that thread.&#x20;
+After query submission, the system creates a thread with a Remedy triager. All communications around the submission take place in that thread.&#x20;
 
-Learn more about the Triage process here (link)
+Learn more about the [triage-guidelines.md](triage-guidelines.md "mention")
 
 </details>
 
@@ -121,3 +122,4 @@ Not yet. On-chain runs are limited to Ethereum mainnet. After approval, we provi
 oin [Discord](https://discord.com/invite/remedy) to get help from the community and Glider experts.
 
 </details>
+
