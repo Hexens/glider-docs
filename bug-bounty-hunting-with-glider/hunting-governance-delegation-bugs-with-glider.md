@@ -19,8 +19,6 @@ Targets: `Contracts()`, `Functions()` Filters: `.with_signature(...)`, `.with_na
 
 ***
 
-***
-
 #### 1) Research phase <a href="#id-1-research-phase" id="id-1-research-phase"></a>
 
 To start off we need some idea that we can turn into a query and result in actual reportable bugs. As a bug bounty hunter, you have a portfolio of previous findings that you can use. For example, I have gone through all of my findings on bug bounty platforms, as well as audits to identify patterns in bug findings. Some of it will be more specific and unique to the codebase, some of it can be generalized more, this really depends on the bug. In any case, it is always worthwhile to try and turn a finding into a query.
