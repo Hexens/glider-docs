@@ -4,7 +4,7 @@ description: >-
   control flow graph.
 ---
 
-# WIP Callable.instructions\_recursive()
+# Callable.instructions\_recursive()
 
 `instructions_recursive() ->` [`APISet`](../iterables/apiset.md)`[`[`Instruction`](../instruction/)`]`
 
@@ -14,19 +14,20 @@ Also, note that the return types of `instructions_recursive() -> APISet[Instruct
 
 ## Query Example
 
-<pre class="language-python"><code class="lang-python"><strong>from glider import *
-</strong>
+```python
+from glider import *
+
 def query():
-    # lets find a function with name transferFrom
+    # Let's find a function with name transferFrom
     functions = Functions().with_name('transferOwnership').exec(1)
 
-    #print the code of the function
+    # Print the code of the function
     print(functions[0].source_code())
 
-    #return the list of (extended) instructions, as it return a set, we need to cast it to list
-    return list(functions[0].extended_instructions())
+    # Return the list of (recursive) instructions, as it return a set, we need to cast it to list
+    return list(functions[0].instructions_recursive().exec(10))
 
-</code></pre>
+```
 
 For the function:
 
