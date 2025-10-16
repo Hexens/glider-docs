@@ -1,3 +1,7 @@
+---
+icon: clipboard-list-check
+---
+
 # Glider Cheatsheet
 
 This cheatsheet brings together a collection of Glider query code snippets, designed to help you write queries more effectively without starting from scratch.
