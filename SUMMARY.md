@@ -20,6 +20,7 @@
 * [💫 Glider Contest](glider-contest/README.md)
   * [Recommended Vulnerabilities to Query](glider-contest/recommended-vulnerabilities-to-query.md)
   * [Triage Guidelines](glider-contest/triage-guidelines.md)
+  * [PoC Guidelines](glider-contest/poc-guidelines.md)
   * [FAQ](glider-contest/faq.md)
 * [🔮 Bug Bounty Hunting With Glider](bug-bounty-hunting-with-glider/README.md)
   * [Hunting Governance Delegation Bugs with Glider](bug-bounty-hunting-with-glider/hunting-governance-delegation-bugs-with-glider.md)
