@@ -24,6 +24,7 @@
   * [FAQ](glider-contest/faq.md)
 * [🔮 Bug Bounty Hunting With Glider](bug-bounty-hunting-with-glider/README.md)
   * [Hunting Governance Delegation Bugs with Glider](bug-bounty-hunting-with-glider/hunting-governance-delegation-bugs-with-glider.md)
+  * [Finding Smart Contract Vulnerabilities with Glider’s Function Filters](bug-bounty-hunting-with-glider/finding-smart-contract-vulnerabilities-with-gliders-function-filters.md)
 * [Writing Queries](writing-queries.md)
 * [Glider and Declarative Query Writing](glider-and-declarative-query-writing.md)
 * [API](api/README.md)
