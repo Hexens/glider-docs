@@ -17,16 +17,21 @@ from glider import *
 
 
 def query():
-  # Retrieve all the modifiers with the signature `nonReentrant()`
+  # Retrieve all functions that call both the owner() and msgSender() functions
   functions = Functions().with_callee_names(["owner", "msgSender"]).exec(1)
 
-  # Return the first five modifiers
+  # Returns the function found
   return functions
 ```
 
-## Output
+## Example Output
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+```solidity
+constructor () {
+    _balances[_msgSender()] = 10000;
+    _isExcludedFromFee[owner()] = true;
+}
+```
 
 ## Modifier Example
 
@@ -35,16 +40,19 @@ from glider import *
 
 
 def query():
-  # Retrieve all the modifiers with the signature `nonReentrant()`
+  # Retrieve all the modifiers that call both the owner() and msgSender() functions
   modifiers = Modifiers().with_callee_names(["owner", "msgSender"]).exec(1)
 
-  # Return the first five modifiers
+  # Return the modifier found
   return modifiers
 ```
 
-## Output
+## Example Output
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
-
-
+```solidity
+modifier onlyOwner() {
+    require(owner() == _msgSender(), "Ownable: caller is not the owner");
+    _;
+}
+```
 
