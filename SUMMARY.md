@@ -19,6 +19,7 @@
   * [Glider Cheatsheet](glider-the-basics/glider-cheatsheet.md)
 * [💫 Glider Contest](glider-contest/README.md)
   * [Recommended Vulnerabilities to Query](glider-contest/recommended-vulnerabilities-to-query.md)
+  * [Common pitfalls of Glider](glider-contest/common-pitfalls-of-glider.md)
   * [Triage Guidelines](glider-contest/triage-guidelines.md)
   * [PoC Guidelines](glider-contest/poc-guidelines.md)
   * [FAQ](glider-contest/faq.md)
