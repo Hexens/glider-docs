@@ -63,8 +63,8 @@ In this challenge, your goal is to:
 {% hint style="info" %}
 This challenge will require you to use function/methods that you haven’t worked with before. Since the goal is to identify calls and print out call arguments, the following Glider methods will be helpful:
 
-* [get\_components()](https://glide.gitbook.io/main/api/instruction/instruction.get_components) – To retrieve the different parts of an instruction.
-* [get\_arg()](https://glide.gitbook.io/main/api/value/call/call.get_arg) – To find the spender argument in a call.
+* [get\_components()](https://glide.gitbook.io/main/glider-ide/api/instruction/instruction.get_components) – To retrieve the different parts of an instruction.
+* [get\_arg()](https://glide.gitbook.io/main/glider-ide/api/value/call/call.get_arg) – To find the spender argument in a call.
 * [isinstance()](https://www.w3schools.com/python/ref_func_isinstance.asp) - Checks if a variable belongs to a specific class.
 {% endhint %}
 
@@ -85,7 +85,7 @@ Stuck or want to confirm your answer? Visit the link below where you can view an
 In the second part of this challenge, your goal is to determine if the spender argument passed to the **approve()** function comes from a function argument. If the spender originates from a function argument, it likely means that the user can arbitrarily set the spender, which could be a potential security risk.
 
 {% hint style="info" %}
-To check if a variable comes from a function argument, call [get\_object\_of\_var()](https://glide.gitbook.io/main/api/value/var/var.get_object_of_var) on the variable and verify if it is an instance of [ArgumentVariable](https://glide.gitbook.io/main/api/variables/argumentvariable).
+To check if a variable comes from a function argument, call [get\_object\_of\_var()](https://glide.gitbook.io/main/glider-ide/api/point/varvalue/varvalue.get_object_of_var) on the variable and verify if it is an instance of [ArgumentVariable](https://glide.gitbook.io/main/glider-ide/api/variables/argumentvariable).
 {% endhint %}
 
 #### **Bonus Task**

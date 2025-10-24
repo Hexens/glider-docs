@@ -47,7 +47,7 @@ Now let's start by breaking down each query into sections below.
 
 ### Step 1 - Finding Contracts
 
-To find smart contracts, we first create an instance of the [Contracts class](../../api/contracts/):
+To find smart contracts, we first create an instance of the [Contracts class](https://glide.gitbook.io/main/glider-ide/api/contracts):
 
 ```python
 Contracts()
@@ -73,7 +73,7 @@ Contracts that expect to receive ERC-721 tokens must implement the onERC721Recei
 
 #### **Filtering with .filter()**
 
-We add a .filter() method to our [method call chain](../intro-to-python/basic-python.md#chaining-function-calls) to exclude contracts that lack the onERC721Received function. The filter uses a lambda function to apply this criterion:
+We add a .filter() method to our [method call chain](https://glide.gitbook.io/main/glider-ide/glider-the-basics/intro-to-python/basic-python#chaining-function-calls) to exclude contracts that lack the onERC721Received function. The filter uses a lambda function to apply this criterion:
 
 ```python
 .filter(lambda contract: "onERC721Received" in contract.functions().exec().name)

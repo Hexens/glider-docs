@@ -60,7 +60,7 @@ Instructions()
 By initializing this class, we gain access to a variety of Instruction API methods provided by Glider. These methods allow us to further filter and query instructions programmatically.
 
 {% hint style="info" %}
-For a full list of available Instructions methods, refer to the [Glider API documentation](../../api/instructions/).
+For a full list of available Instructions methods, refer to the [Glider API documentation](https://glide.gitbook.io/main/glider-ide/api/instructions).
 {% endhint %}
 
 Next, we use the .with\_callee\_name() method, which allows us to locate instructions that contain function calls to transferFrom.
@@ -95,11 +95,11 @@ exec() returns a special type of list called [APIList](../../api/iterables/apili
 
 Now that we have our query results, we can extract additional info from our instructions. In this case, we want to analyze the arguments passed into the transferFrom function calls.
 
-There are multiple ways to achieve this, but for this query, we use the [.filter() method](../../api/iterables/apilist.md#the-filter-function) provided by Glider.
+There are multiple ways to achieve this, but for this query, we use the [.filter() method](https://glide.gitbook.io/main/glider-ide/api/iterables/apilist#the-filter-function) provided by Glider.
 
 #### **Using filter() to iterate through results**
 
-We’ve previously discussed using filter to [iterate through results](../intro-to-glider.md#iterating-through-the-results) in an earlier section. Here, we’ll use filter again to iterate through our results.
+We’ve previously discussed using filter to [iterate through results](https://glide.gitbook.io/main/glider-ide/glider-the-basics/intro-to-glider#iterating-through-the-results) in an earlier section. Here, we’ll use filter again to iterate through our results.
 
 The .filter() method accepts either a named function or a lambda function. In our query, we pass a lambda function to filter():
 
@@ -129,7 +129,7 @@ This expression retrieves the arguments passed to the transferFrom function from
 
 #### **What's exactly happening here?**
 
-In our query, the instruction variable represents a single instruction from the instructions list. Using the instruction variable, we can apply a [method chain call](../intro-to-python/basic-python.md#chaining-function-calls) to execute a series of methods in sequence.
+In our query, the instruction variable represents a single instruction from the instructions list. Using the instruction variable, we can apply a [method chain call](https://app.gitbook.com/u/ItI9MpjZYhZFWETgtahyOaTO8ym2) to execute a series of methods in sequence.
 
 To extract the arguments passed into the transferFrom function, we call the following methods in sequence:
 

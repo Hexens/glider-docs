@@ -10,7 +10,7 @@ In this section, we will present several exercises that will fortify your Functi
 
 In this exercise, your task is to identify contracts that contain the term "Swap" in their contract names.
 
-As we’ve done in previous sections, start by reviewing the [Glider API documentation](https://glide.gitbook.io/main/api/contract) to find any Glider functions that can help you find contracts by their name.
+As we’ve done in previous sections, start by reviewing the [Glider API documentation](https://glide.gitbook.io/main/glider-ide/api) to find any Glider functions that can help you find contracts by their name.
 
 **Challenge**: Find the necessary Glider function that finds contracts given a regex. Then update the query with the found Glider function.
 
@@ -33,7 +33,7 @@ Now that we’ve identified contracts with names containing the word "Swap", let
 **Challenge**: Update your query from Example #1 to filter out contracts that don’t contain the **setOracleAddress** function.
 
 {% hint style="info" %}
-Refer to the [Contracts API documentation section](https://glide.gitbook.io/main/api/contracts) to find the function needed to complete this challenge.
+Refer to the [Contracts API documentation section](https://glide.gitbook.io/main/glider-ide/api/contracts) to find the function needed to complete this challenge.
 {% endhint %}
 
 <details>
@@ -93,7 +93,7 @@ Using a `filter()` can simplify our query.
 {% endhint %}
 
 {% hint style="info" %}
-In this query, we’ll need to retrieve each contract’s functions. As a hint, refer to the relevant [Glider method](https://glide.gitbook.io/main/api/contract/contract.functions) in the documentation that allows you to query a contract’s functions.
+In this query, we’ll need to retrieve each contract’s functions. As a hint, refer to the relevant [Glider method](https://glide.gitbook.io/main/glider-ide/api/contracts/contracts.functions) in the documentation that allows you to query a contract’s functions.
 {% endhint %}
 
 <details>

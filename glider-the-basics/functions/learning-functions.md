@@ -75,7 +75,7 @@ With our Functions class instance, we can now call the .with\_name() method to s
 
 #### **Executing the Query with .exec()**
 
-To run the query, we call .exec(), which executes the query. As discussed in the [Learning Instructions section](../instructions/learning-instructions.md#breaking-query-down), exec() requires an integer argument specifying the maximum number of results to return.
+To run the query, we call .exec(), which executes the query. As discussed in the [Learning Instructions section](https://glide.gitbook.io/main/glider-ide/glider-the-basics/instructions/learning-instructions#breaking-the-query-down), exec() requires an integer argument specifying the maximum number of results to return.
 
 In this case, we pass 100, meaning we want to retrieve up to 100 results:&#x20;
 

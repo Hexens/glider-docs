@@ -80,7 +80,7 @@ In this example, we are calling two Glider API functions:
 These built-in methods make it easier to write powerful and easy-to-understand Glider queries.
 
 {% hint style="info" %}
-The [Glider API documentation](https://glide.gitbook.io/main/api) is a valuable resource for understanding and utilizing Glider’s API methods. It offers detailed explanations, practical code examples, and a complete reference to the available classes and their methods, making it easier to integrate and work with the API effectively.
+The [Glider API documentation](https://glide.gitbook.io/main/glider-ide/api) is a valuable resource for understanding and utilizing Glider’s API methods. It offers detailed explanations, practical code examples, and a complete reference to the available classes and their methods, making it easier to integrate and work with the API effectively.
 {% endhint %}
 
 ## Lists

@@ -72,7 +72,7 @@ Functions().with_name("swap").exec(10)
 
 Finally, we call .exec(10), which executes the query and retrieves the first 10 results that match our criteria.
 
-As mentioned in the [Intro to Python section](intro-to-python/basic-python.md#integers), .exec() returns a list of results. In this case, the list will contain the swap functions found by Glider.
+As mentioned in the [Intro to Python section](https://glide.gitbook.io/main/glider-ide/glider-the-basics/intro-to-python/basic-python#integers), .exec() returns a list of results. In this case, the list will contain the swap functions found by Glider.
 
 #### **Step 5: Storing the Results**
 
@@ -94,11 +94,11 @@ In the next code snippet from the query, we call the filter() function.&#x20;
 swap_functions.filter(lambda function : print(function.address()))
 ```
 
-As mentioned in the [Advanced Python section](intro-to-python/advanced-python.md#filtering-lists), the filter() function is used to filter out items in the list we don't want. That said, there is another nifty trick we can use with filter() that doesn't deal with filtering at all!
+As mentioned in the [Advanced Python section](https://glide.gitbook.io/main/glider-ide/glider-the-basics/intro-to-python/advanced-python#filtering-lists), the filter() function is used to filter out items in the list we don't want. That said, there is another nifty trick we can use with filter() that doesn't deal with filtering at all!
 
 Let's say we want to get more info on each item in the swap\_functions variable. One way we can do this is call filter(). Since filter() iterates through the list, we have the ability to access each item in the list. In our case, we can use print() in combination with filter() to get more info on each item.
 
-To accomplish this, we call filter() on the swap\_functions variable and pass in a lambda function. This lambda function includes print() and call to get a [function’s address](../api/callable/callable.address.md):
+To accomplish this, we call filter() on the swap\_functions variable and pass in a lambda function. This lambda function includes print() and call to get a [function’s address](https://glide.gitbook.io/main/glider-ide/api/callable/callable.address):
 
 ```python
 print(function.address())
