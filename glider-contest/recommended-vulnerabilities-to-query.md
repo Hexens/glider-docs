@@ -274,7 +274,7 @@ function verifyWithdrawal(
 
 <details>
 
-<summary>Draining ETH using flat fee without msg.value chec</summary>
+<summary>Draining ETH using flat fee without msg.value check</summary>
 
 In the contracts/DvBridge.sol when the user calls the initiateTransfer() at the end of it the function calls the rewardValidators() function which distributes rewards to the validators. However the way it’s implemented currently allows a malicious user to slowly drain the pool or even steal native funds from the bridge because when initiating a transfer the function doesn’t check wether the user has supplied enough native funds to distribute rewards to the validators and because the fee that’s being distributed to the validators is a flat fee not a percentage of the msg.value it allows the user to initiate a transfer supplying 1 wei of native funds but distributing much more native funds to the validators and in some cases even gaining profit because the remainder of the fee is being sent back to the msg.sender as can be seen here:
 
