@@ -6,6 +6,8 @@ coverY: 0
 
 # Finding Smart Contract Vulnerabilities with Glider’s Function Filters
 
+Article by [@Andy Koo](https://x.com/_nd_koo)
+
 ## Introduction
 
 Smart contract audits often involve large codebases where small mistakes can lead to serious consequences. Manually checking every function is not only time-consuming but also can lead to overlooking subtle issues.

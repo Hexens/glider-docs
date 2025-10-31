@@ -7,6 +7,8 @@ coverY: 0
 
 # Hunting Governance Delegation Bugs with Glider
 
+Article by [@Kasper](https://x.com/0xkasper)
+
 #### 0) Overview <a href="#id-0-overview" id="id-0-overview"></a>
 
 This write-up explains how you can actually use Glider to turn a concrete finding into a repeatable query. The running example is a Nouns governance issue where delegation to the **zero address** interacts badly with vote-moving helpers.
