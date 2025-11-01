@@ -1,2 +1,0 @@
-# Function.is\_constructor()
-

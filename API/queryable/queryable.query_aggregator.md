@@ -1,2 +1,0 @@
-# Queryable.query\_aggregator
-

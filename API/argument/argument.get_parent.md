@@ -1,2 +1,0 @@
-# Argument.get\_parent()
-

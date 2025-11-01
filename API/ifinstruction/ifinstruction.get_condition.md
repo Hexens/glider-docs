@@ -1,2 +1,0 @@
-# IfInstruction.get\_condition()
-

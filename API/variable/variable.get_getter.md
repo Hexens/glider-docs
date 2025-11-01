@@ -1,2 +1,0 @@
-# Variable.get\_getter()
-
