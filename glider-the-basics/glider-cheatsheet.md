@@ -481,3 +481,23 @@ def calls_msg_sender(values):
     # Checks if any of the components contain a call to msg.sender.
     return any(value.expression in msg_sender_calls for value in values) 
 ```
+
+### Check if an instruction could revert
+
+#### Problem
+
+I want to check if an instruction could revert either through a require or assert check or a direct call to a revert.
+
+#### Solution
+
+```python
+def revert_condition(instruction):
+    builtin_callee_names = instruction.callee_names()
+    if 'require' in builtin_callee_names or 'assert' in builtin_callee_names:
+        return True
+
+    if not instruction.is_if():
+        return False
+        
+    return any('revert' in x for x in instruction.first_true_instruction().callee_names())
+```
