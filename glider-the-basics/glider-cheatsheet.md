@@ -113,18 +113,10 @@ def query():
     # We can pass has_guard_check into a filter to filter out results.
     functions_with_guard_checks = functions.filter(
         lambda function : 
-        any(function.instructions().exec().filter(has_guard_check))
+        any(function.instructions().with_one_of_callee_names(["require", "assert"]).exec())
     )
 
     return functions_with_guard_checks
- 
- 
-# The has_guard_check function can be used to filter out if a function has a require/assert statement.
-def has_guard_check(instruction):
-    # This will retrieve all of the calls made in the instruction
-    callee_names = instruction.callee_names()
-    # Checks if require or assert are called in the Instruction.
-    return "require" in callee_names or "assert" in callee_names
 ```
 
 #### Problem #2
@@ -135,16 +127,13 @@ I want to know if the Instruction I'm working with is a require or assert statem
 
 ```python
 def query():
-    # The function variable represents a function we are querying
-    function = Functions().exec(1)[0]
-
     # Find some instructions for demo purposes
-    instructions = function.instructions().exec()
+    instructions = Instructions().exec(1,1)
 
     # We can pass has_guard_check into a filter to filter out results.
-    instructions_with_guard_checks = instructions.filter(has_guard_check)
+    print(has_guard_check(instructions[0]))
 
-    return instructions_with_guard_checks
+    return instructions
  
  
 # The has_guard_check function can be used to filter out if a function has a require/assert statement.
