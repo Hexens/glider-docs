@@ -140,3 +140,11 @@ oin [Discord](https://discord.com/invite/remedy) to get help from the community 
 
 </details>
 
+<details>
+
+<summary>How to get paid for Glider Contest participation?</summary>
+
+Write a Glider query that detects a smart contract vulnerability on any EVM chain. Queries targeting past exploits and known vulnerabilities are eligible for rewards.\
+If your query uncovers a real-world issue with funds at risk, your Query Rarity and contest payout may increase!
+
+</details>
