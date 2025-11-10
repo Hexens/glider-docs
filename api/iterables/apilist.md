@@ -18,20 +18,67 @@ When a function return another `APIList`, the results are flattened into a singl
 
 ### Functions that return APIList
 
-* [`function.callee_values()`](../callable/callable.callee\_values.md)
-* [`function.properties()`](../callable/function/function.properties.md)
+
+
+* callables.exec()
+* callable.callee\_values()
+* callable.loops()
 * [`functions.exec()`](../callables/functions/functions.exec.md)
+* functions.list()
+* [`function.properties()`](../callable/function/function.properties.md)
+* modifiers.list()
 * [`modifier.exec()`](../callables/modifiers/modifiers.exec.md)
-* [`instruction.get_dest()`](../instruction/instruction.get\_dest.md)
-* [`instruction.next_block()`](../instruction/instruction.next\_block.md)
-* [`instruction.next_instruction()`](../instruction/instruction.next\_instruction.md)
+* modifier.properties()
+* instructions.exec()
+* instructions.list()
+* `instruction.get_dests()`
+* [`instruction.next_block()`](../instruction/instruction.next_block.md)
+* [`instruction.next_instruction()`](../instruction/instruction.next_instruction.md)
 * [`instruction.exec()`](../instructions/instructions.exec.md)
-* [`call.get_args()`](../value/call/call.get\_args.md)
-* [`call.get_call_gas()`](../value/call/call.get\_call\_gas.md)
-* [`call.get_call_salt()`](../value/call/call.get\_call\_salt.md)
-* [`call.get_call_value()`](../value/call/call.get\_call\_value.md)
-* [`value.get_arg_vars()`](../value/value/value.get\_arg\_vars.md)
-* [`value.get_global_vars()`](../value/value/value.get\_global\_vars.md)
-* [`value.get_state_vars()`](../value/value/value.get\_state\_vars.md)
-* [`value.get_vars()`](../value/value/value.get\_vars.md)
+* instruction.get\_components()
+* breakinstruction.get\_block\_instructions()
+* startassemblyinstruction.get\_block\_instructions()
+* tryinstruction.get\_block\_instructions()
+* [`call.get_args()`](../value/call/call.get_args.md)
+* [`call.get_call_gas()`](../value/call/call.get_call_gas.md)
+* [`call.get_call_salt()`](../value/call/call.get_call_salt.md)
+* [`call.get_call_value()`](../value/call/call.get_call_value.md)
+* [`value.get_arg_vars()`](../value/value/value.get_arg_vars.md)
+* value.get\_callee\_values()
+* [`value.get_global_vars()`](../value/value/value.get_global_vars.md)
+* value.get\_local\_vars()
+* [`value.get_state_vars()`](../value/value/value.get_state_vars.md)
+* [`value.get_vars()`](../value/value/value.get_vars.md)
+* tupleexpression.get\_components()
+* value.expression.get\_components()
+* value.get\_dests()
+* varvalue.get\_defining\_points()
+* point.df\_reaches\_from\_functions\_arguments()
+* point.df\_reaching\_functions\_arguments()
+* argumentpoint.list()
+* argumentpoint.with\_memory\_type()
+* argumentpoint.with\_name()
+* argumentpoint.with\_type()
+* argumentpoint.with\_type\_convertible()
+* globalvariables.list()
+* localvariables.list()
+* localvariables.with\_memory\_type()
+* localvariables.with\_type()
+* statevariables.exec()
+* statevariables.list()
+* callnode.callees()
+* callnode.callers()
+* contract.get\_contracts\_from\_same\_src\_file()
+* contracts().exec()
+* enums.exec()
+* errors.exec()
+* events.exec()
+
+
+
+
+
+
+
+
 

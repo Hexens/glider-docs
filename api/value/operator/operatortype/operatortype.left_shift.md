@@ -1,0 +1,2 @@
+# OperatorType.LEFT\_SHIFT
+

@@ -16,14 +16,30 @@ When a function returns another `APISet`, the results are flattened into a singl
 
 ### Functions that return APISet
 
-* [`instruction.backward_df()`](../instruction/instruction.backward_df.md)
+* instructions.callabes\_recursive()
+* instructions.modifiers\_recursive()
+* [`instruction.backward_df()`](../instruction/instruction.backward_df.md)&#x20;
 * [`instruction.forward_df()`](../instruction/instruction.forward_df.md)
-* [`instruction.extended_next_instructions()`](../instruction/instruction.next_instructions_recursive.md)
-* [`instruction.extended_previous_instructions()`](../instruction/instruction.previous_instructions_recursive.md)
+* [`instruction.next_instructions_recursive()`](../instruction/instruction.next_instructions_recursive.md)
+* [`instruction.previous_instructions_recursive()`](../instruction/instruction.previous_instructions_recursive.md)
 * [`instruction.next_instructions()`](../instruction/instruction.next_instructions.md)
 * [`instruction.previous_instruction()`](../instruction/instruction.previous_instruction.md)
 * [`instruction.previous_instructions()`](../instruction/instruction.previous_instructions.md)
 * [`callable.get_reachable_instructions()`](../callable/callable.get_reachable_instructions.md)
+* point.backward\_df()
+* point.backward\_df\_recursive()
+* point.forward\_df()
+* point.forward\_df\_recursive()
+* point.get\_all\_tainted\_paths\_affecting\_point()
+* point.get\_tainted\_sources\_affecting\_point()
+* value.backward\_df()
+* value.backward\_df\_recursive()
+* value.forward\_df()
+* value.forward\_df\_recursive()&#x20;
+* callnode.callees\_recursive()
+* callnode.callers\_recursive()
+* callable.get\_reachable\_instructions()
+* callable.instructions\_recursive()
 
 
 

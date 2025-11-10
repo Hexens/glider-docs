@@ -1,6 +1,6 @@
 # Functions.with\_modifier\_name\_regex()
 
-`with_modifier_name_regex(`_`regex: str`_`) →` [`Functions`](./)
+`with_modifier_name_regex(`_`regex: str`_`) →` [`Functions`](../callables/functions/)
 
 Adds a filter to get functions, that have modifier whose name matches the given regex.
 
@@ -19,4 +19,4 @@ def query():
 
 ## Output
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
