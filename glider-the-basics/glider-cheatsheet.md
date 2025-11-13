@@ -226,7 +226,7 @@ def get_components_recursive(component):
 
         # If we are dealing with a call, we get the call arguments as components
         if isinstance(component, Call):
-            components = component.get_args()
+            components.extend(component.get_args()) 
             call_qualifier = component.get_call_qualifier()
 
             # Get components of an IndexAccess
@@ -245,8 +245,7 @@ def get_components_recursive(component):
 
     for comp in components:
         results.append(comp)
-        for sub_comp in get_components_recursive(comp):
-            results.append(sub_comp)
+        results.extend(get_components_recursive(comp))
     
     return results
 ```
@@ -301,14 +300,26 @@ def does_arithmetic(instruction):
     return False
     
     
-# This function finds all components within a given instruction and/or component.    
+# This function accepts a component as an argument whether that's an Instruction or another component. The function returns an array of sub-components.
 def get_components_recursive(component):
     components = []
 
     try:
-        # Since we are dealing with a call, we get the call arguments as components
+        # Get components of an IndexAccess
+        if "IndexAccess" in str(component): 
+            components.append(component.get_sequence()) 
+            components.append(component.get_index())
+
+        # If we are dealing with a call, we get the call arguments as components
         if isinstance(component, Call):
-            components = component.get_args()
+            components.extend(component.get_args()) 
+            call_qualifier = component.get_call_qualifier()
+
+            # Get components of an IndexAccess
+            if "IndexAccess" in str(call_qualifier): 
+                components.append(call_qualifier)
+                components.append(call_qualifier.get_sequence()) 
+                components.append(call_qualifier.get_index())
         else:
             # Get components within components
             components = component.get_components()
@@ -320,10 +331,9 @@ def get_components_recursive(component):
 
     for comp in components:
         results.append(comp)
-        for sub_comp in get_components_recursive(comp):
-            results.append(sub_comp)
+        results.extend(get_components_recursive(comp))
     
-    return results    
+    return results  
 ```
 
 ### Identify functions that receives or send ETH
@@ -403,84 +413,108 @@ def has_address_argument(function):
 
 #### Problem
 
-I want to check if a function does any msg.sender validations.
+I want to check if a function has any msg.sender validations.
 
 #### Solution
 
 ```python
-def query():
+from glider import *
+
+def query(): 
     return (
         Functions()
-        .exec(100)
-        .filter(missing_msg_sender_validations)
-    ) 
+        .exec(1000) 
+        .filter(validates_msg_sender)
+    )
  
+# Note: msg.sender passed into a Call or used as IndexAccess and the return value is equated against are treated as a msg.sender validation.
+def validates_msg_sender(function):
+    for instruction in function.instructions_recursive():
+        if revert_condition(instruction) and potential_msg_sender_call(instruction):
+            return True 
 
-# Checks if a given function is missing msg.sender validations
-def missing_msg_sender_validations(func):
-    # instructions() is temporary and in reality we should use instructions_recursive().
-    instructions = func.instructions().with_one_of_callee_names(["require", "assert"]).exec()
-    if not any(instructions):
+    return False 
+    
+
+# Checks if revert is called
+def revert_condition(instruction):
+    builtin_callee_names = instruction.callee_names()
+    if 'require' in builtin_callee_names or 'assert' in builtin_callee_names:
         return True
 
-    for inst in instructions:
-        if calls_msg_sender(get_components_recursive(inst)):
-            return False 
-
-    return True
- 
-
-# This function accepts a component as an argument whether that's an Instruction or another component. The function returns an array of sub-components.
-def get_components_recursive(component):
-    components = []
-
-    try:
-        # Get components of an IndexAccess
-        if "IndexAccess" in str(component): 
-            components.append(component.get_sequence()) 
-            components.append(component.get_index())
-
-        # If we are dealing with a call, we get the call arguments as components
-        if isinstance(component, Call):
-            components = component.get_args()
-            call_qualifier = component.get_call_qualifier()
-
-            # Get components of an IndexAccess
-            if "IndexAccess" in str(call_qualifier): 
-                components.append(call_qualifier)
-                components.append(call_qualifier.get_sequence()) 
-                components.append(call_qualifier.get_index())
-        else:
-            # Get components within components
-            components = component.get_components()
-    except Exception:
-        # This handles cases where the component can't be broken down further
-        None
-
-    results = []
-
-    for comp in components:
-        results.append(comp)
-        for sub_comp in get_components_recursive(comp):
-            results.append(sub_comp)
-    
-    return results
+    if not instruction.is_if():
+        return False
+        
+    return any('revert' in x for x in instruction.first_true_instruction().callee_names())
 
 
-# Checks if a given list of components contains a call to msg.sender
-def calls_msg_sender(values):
-    # Common msg sender functions
-    msg_sender_calls = [
+# Checks if an instruction calls msg.sender in any call
+def potential_msg_sender_call(instruction):
+    components = get_components_recursive(instruction)
+
+    for component in components:
+        # Ignore Calls and IndexAccesses since they produce a large number of FPs.
+        if isinstance(component, Call) or "IndexAccess" in str(component):
+            continue
+
+        # There are cases where msg.sender is passed into a check that isn't validating the msg.sender address. For example balance >= balances[msg.sender]. This skips those cases.
+        if isinstance(component, ValueExpression) and not contains_equality_op(component):
+            continue
+
+        for msg_sender_call in msg_sender_calls():
+            if msg_sender_call in component.source_code(): 
+                return True
+
+    return False
+
+
+# Iterate through a component's operations and check for equality checks. 
+def contains_equality_op(component):
+    ops = component.get_components().filter(lambda component : "Operator" in str(component)).get_operator()
+
+    for operator in ops:
+        if "OperatorType.NOT_EQUAL" in str(operator) or "OperatorType.EQUAL" in str(operator):
+            return True
+
+    return False
+
+# Returns a list of common ways to retrieve msg.sender
+def msg_sender_calls():
+    return [
         "msg.sender",
         "msgSender",
         "_msgSender",
-        "msgSender()",
-        "_msgSender()"
+        "_msgSenderERC1155",
+        "caller" # Assembly msg.sender call
     ]
 
-    # Checks if any of the components contain a call to msg.sender.
-    return any(value.expression in msg_sender_calls for value in values) 
+
+# Returns all components in Instruction through recursive manner suited for msg.sender validations.
+def get_components_recursive(component):
+    components = []
+    results = [] 
+
+    try:
+        # If we are dealing with a call, we get the call arguments as components
+        if isinstance(component, Call):
+            components.extend(component.get_args()) 
+        else:
+            # Get components within components
+            components = component.get_components()
+    except: 
+        # This handles cases where the component can't be broken down further
+        None
+
+    for comp in components:    
+        results.append(comp)
+
+        for sub_comp in get_components_recursive(comp):
+            results.append(sub_comp)
+
+    return results
 ```
+
+####
 
 ### Check if an instruction could revert
 
